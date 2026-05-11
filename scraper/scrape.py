@@ -98,13 +98,19 @@ def _maybe_alert(conn, *, row: SectionRow, prev_status: str | None,
 def scrape_one_query(client: WebTracClient, conn, *, ts: str,
                      type_code: str | None = None,
                      reg_event: str | None = None,
+                     fetch_counts: bool = True,
                      fetch_counts_for_unavailable: bool = False) -> int:
-    """Run one search query, store all returned sections. Returns row count."""
+    """Run one search query, store all returned sections. Returns row count.
+
+    fetch_counts=False skips all enrollment-count lookups (fastest path; used
+    during hot windows where status transitions are the time-series of interest
+    and counts can be filled in by the routine cron afterwards).
+    """
     rows = client.search(type_code=type_code, registrationevent=reg_event)
     log.info("query (type=%s event=%s) -> %d rows", type_code, reg_event, len(rows))
     for row in rows:
         counts: EnrollmentCounts | None = None
-        if row.status != "Unavailable" or fetch_counts_for_unavailable:
+        if fetch_counts and (row.status != "Unavailable" or fetch_counts_for_unavailable):
             try:
                 counts = client.enrollment_counts(row.fmid)
             except Exception:
@@ -165,11 +171,12 @@ def _watchlist_status_row(client: WebTracClient, fmid: str) -> SectionRow | None
     )
 
 
-def scrape_catalog(client: WebTracClient, conn, *, ts: str) -> int:
+def scrape_catalog(client: WebTracClient, conn, *, ts: str, fetch_counts: bool = True) -> int:
     total = 0
     for type_code in config.KID_TYPES:
         try:
-            total += scrape_one_query(client, conn, ts=ts, type_code=type_code)
+            total += scrape_one_query(client, conn, ts=ts, type_code=type_code,
+                                       fetch_counts=fetch_counts)
         except Exception:
             log.warning("catalog query failed for type=%s", type_code, exc_info=True)
     return total
@@ -185,21 +192,26 @@ def main() -> int:
     p.add_argument("--mode", required=True, choices=["watchlist", "catalog", "event"])
     p.add_argument("--event", help="registrationevent code (for --mode event)")
     p.add_argument("--db", default=config.DB_PATH)
+    p.add_argument("--skip-counts", action="store_true",
+                   help="Skip per-section enrollment count lookups (faster; status only)")
     args = p.parse_args()
 
     client = WebTracClient()
     client.warm_up()
     ts = utcnow_iso()
 
+    fetch_counts = not args.skip_counts
     with db.connect(args.db) as conn:
         if args.mode == "watchlist":
+            # Watch-list always pulls counts — that's the whole point of the list.
             n = scrape_watchlist(client, conn, ts=ts)
         elif args.mode == "catalog":
-            n = scrape_catalog(client, conn, ts=ts)
+            n = scrape_catalog(client, conn, ts=ts, fetch_counts=fetch_counts)
         elif args.mode == "event":
             if not args.event:
                 p.error("--event is required when --mode event")
-            n = scrape_one_query(client, conn, ts=ts, reg_event=args.event)
+            n = scrape_one_query(client, conn, ts=ts, reg_event=args.event,
+                                 fetch_counts=fetch_counts)
         else:
             raise AssertionError(args.mode)
     log.info("done: %d sections recorded at %s", n, ts)

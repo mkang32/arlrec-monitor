@@ -86,8 +86,11 @@ jobs:
           fi
           echo "Begin dense polling at $(date -u +%FT%TZ) for event $EVENT"
 
+          # During the hot window we only want status (Available/Waitlist/Full/Unavailable)
+          # over time — enrollment counts get filled in by the routine cron after the
+          # window ends. Each iteration is ~5-10s instead of minutes.
           poll_and_commit() {
-            python -m scraper.scrape --mode event --event "$EVENT"
+            python -m scraper.scrape --mode event --event "$EVENT" --skip-counts
             git add data/snapshots.sqlite
             if ! git diff --staged --quiet; then
               git pull --rebase --autostash || true
