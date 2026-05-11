@@ -1,0 +1,42 @@
+name: smoke-test
+# Manually-triggered: run a single watchlist scrape from the GH runner and
+# commit the result. Used after initial push to confirm Cloudflare does NOT
+# block GitHub Actions runner IPs.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-write
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Watchlist scrape (no alerts even if creds set, since first run)
+        env:
+          ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
+          ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+        run: python -m scraper.scrape --mode watchlist
+      - name: Commit smoke result
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "github-actions"
+          git add data/snapshots.sqlite
+          if git diff --staged --quiet; then
+            echo "no DB change"
+          else
+            git commit -m "smoke $(date -u +%FT%TZ)"
+            git push
+          fi

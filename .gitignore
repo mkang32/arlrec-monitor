@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+/tmp/
+# Per-machine assistant memory — not source code, not for the public repo
+memory/
+# Per-machine Claude Code settings
+.claude/

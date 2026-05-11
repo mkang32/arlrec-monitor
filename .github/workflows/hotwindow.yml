@@ -1,0 +1,119 @@
+name: hot-window
+# Dense polling during the moment a registration window opens.
+# Fires ~50 min before noon ET on May 12/13/14 2026, then sleeps until 15:55 UTC
+# and polls every ~60s for 30 min, then every ~5 min for another 30 min.
+# (GitHub Actions cron is often delayed; firing early + sleeping is the safe pattern.)
+
+on:
+  schedule:
+    # 15:07 UTC = 11:07 ET on the trigger day (giving ~48 min of buffer)
+    - cron: "7 15 12 5 *"
+    - cron: "7 15 13 5 *"
+    - cron: "7 15 14 5 *"
+  workflow_dispatch:
+    inputs:
+      event:
+        description: "registrationevent code (e.g. ENJOYSUMMER1)"
+        required: true
+        type: string
+      skip_wait:
+        description: "Start polling immediately, don't wait until 15:55 UTC"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-write
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Pick event based on UTC date
+        id: pick
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "event=${{ inputs.event }}" >> "$GITHUB_OUTPUT"
+            echo "skip_wait=${{ inputs.skip_wait }}" >> "$GITHUB_OUTPUT"
+          else
+            DATE=$(date -u +%m%d)
+            case "$DATE" in
+              0512) echo "event=ENJOYSUMMER1" >> "$GITHUB_OUTPUT" ;;  # Gymnastics
+              0513) echo "event=ENJOYSUMMER2" >> "$GITHUB_OUTPUT" ;;  # Aquatics
+              0514) echo "event=ENJOYSUMMER"  >> "$GITHUB_OUTPUT" ;;  # Other
+              *)
+                echo "Not a registration day ($DATE) — exiting."
+                echo "event=" >> "$GITHUB_OUTPUT"
+                ;;
+            esac
+            echo "skip_wait=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Poll loop
+        if: steps.pick.outputs.event != ''
+        env:
+          ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
+          ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+          EVENT: ${{ steps.pick.outputs.event }}
+          SKIP_WAIT: ${{ steps.pick.outputs.skip_wait }}
+        run: |
+          set -e
+          git config user.email "actions@github.com"
+          git config user.name "github-actions"
+
+          # Wait until 15:55 UTC (5 min before registration noon ET) — unless manually overridden
+          if [[ "$SKIP_WAIT" != "true" ]]; then
+            while :; do
+              HM=$(date -u +%H%M)
+              # Numeric comparison: 1555 = 15:55 UTC
+              if [[ "$HM" -ge 1555 ]]; then break; fi
+              sleep 15
+            done
+          fi
+          echo "Begin dense polling at $(date -u +%FT%TZ) for event $EVENT"
+
+          poll_and_commit() {
+            python -m scraper.scrape --mode event --event "$EVENT"
+            git add data/snapshots.sqlite
+            if ! git diff --staged --quiet; then
+              git pull --rebase --autostash || true
+              git commit -m "hot $(date -u +%FT%TZ) $EVENT"
+              # Retry push once on conflict
+              git push || (git pull --rebase --autostash && git push)
+            fi
+          }
+
+          # Phase 1: 30 minutes of ~60s polling
+          for i in $(seq 1 30); do
+            start=$(date +%s)
+            poll_and_commit
+            elapsed=$(( $(date +%s) - start ))
+            # aim for 60s cadence
+            sleep_for=$(( 60 - elapsed ))
+            if [[ $sleep_for -gt 0 ]]; then sleep $sleep_for; fi
+          done
+
+          # Phase 2: 30 minutes of ~5-min polling
+          for i in $(seq 1 6); do
+            start=$(date +%s)
+            poll_and_commit
+            elapsed=$(( $(date +%s) - start ))
+            sleep_for=$(( 300 - elapsed ))
+            if [[ $sleep_for -gt 0 ]]; then sleep $sleep_for; fi
+          done
+
+          echo "Hot window done at $(date -u +%FT%TZ)"

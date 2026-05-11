@@ -1,0 +1,53 @@
+name: routine-snapshot
+# Ambient polling for the three summer registration events. Runs every 30 min.
+# During hot windows the dedicated hot-window workflow takes over; both can
+# safely overlap (concurrency below serializes them so they don't race on git).
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-write
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Scrape all three registration events
+        env:
+          ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
+          ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+        run: |
+          set -e
+          for ev in ENJOYSUMMER1 ENJOYSUMMER2 ENJOYSUMMER; do
+            python -m scraper.scrape --mode event --event "$ev"
+          done
+
+      - name: Commit snapshot
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "github-actions"
+          git add data/snapshots.sqlite
+          if git diff --staged --quiet; then
+            echo "no DB change"
+          else
+            git pull --rebase --autostash
+            git commit -m "routine snapshot $(date -u +%FT%TZ)"
+            git push
+          fi
