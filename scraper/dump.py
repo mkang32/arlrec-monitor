@@ -158,7 +158,7 @@ def _dump_index_html(conn) -> None:
     if not active:
         parts.append("<p class='dim'>Nothing is open yet. Registration hasn't started.</p>")
     else:
-        parts.append(_render_table(active, include_actions=True))
+        parts.append(_render_filterable_table(active, table_id="active", include_actions=True))
 
     parts.append("<h2>Recent status changes</h2>")
     if not transitions:
@@ -206,9 +206,10 @@ def _latest_row_for(conn, fmid: str):
     ).fetchone()
 
 
-def _render_table(rows, *, include_actions: bool) -> str:
+def _render_table(rows, *, include_actions: bool, table_id: str | None = None) -> str:
+    table_attrs = f" id='{table_id}'" if table_id else ""
     head = (
-        "<table><thead><tr>"
+        f"<table{table_attrs}><thead><tr>"
         "<th>Status</th><th>Type</th><th>Class</th><th>Activity</th><th>When</th>"
         "<th>Location</th><th>Ages</th><th>Enrolled</th><th>Waitlist</th>"
         "<th>Last seen</th>"
@@ -220,13 +221,23 @@ def _render_table(rows, *, include_actions: bool) -> str:
     for r in rows:
         time_label = f"{r['days'] or ''} {r['time_start'] or ''}-{r['time_end'] or ''}".strip()
         status = r["status"] or "?"
-        type_label = config.TYPE_LABELS.get(r["type_code"] or "", r["type_code"] or "")
+        type_code = r["type_code"] or ""
+        type_label = config.TYPE_LABELS.get(type_code, type_code)
         link = (
             f"<a href='https://vaarlingtonweb.myvscloud.com/webtrac/web/iteminfo.html?"
             f"Module=AR&FMID={html.escape(r['fmid'])}' target='_blank'>open</a>"
         ) if include_actions else ""
+        # Searchable blob for client-side text filter
+        search_blob = " ".join(filter(None, [
+            r["name"], r["activity_code"], r["location"], time_label,
+            r["ages"], type_label, r["fmid"],
+        ])).lower()
         body.append(
-            f"<tr>"
+            f"<tr"
+            f" data-status='{html.escape(status)}'"
+            f" data-type='{html.escape(type_code)}'"
+            f" data-search='{html.escape(search_blob)}'"
+            f">"
             f"<td><span class='pill pill--{_pill_class(status)}'>{html.escape(status)}</span></td>"
             f"<td>{html.escape(type_label)}</td>"
             f"<td>{html.escape(r['name'] or '')}</td>"
@@ -242,6 +253,53 @@ def _render_table(rows, *, include_actions: bool) -> str:
         )
     body.append("</tbody></table>")
     return "".join(body)
+
+
+def _render_filterable_table(rows, *, table_id: str, include_actions: bool) -> str:
+    """Wrap _render_table with a filter bar (search + status + type) and the
+    tiny vanilla-JS that wires them up. No external libraries."""
+    if not rows:
+        return ""
+    statuses = sorted({r["status"] for r in rows if r["status"]})
+    types_seen = sorted({r["type_code"] or "" for r in rows})
+    status_options = "".join(
+        f"<option value='{html.escape(s)}'>{html.escape(s)}</option>" for s in statuses
+    )
+    type_options = "".join(
+        f"<option value='{html.escape(c)}'>{html.escape(config.TYPE_LABELS.get(c, c) or '(untyped)')}</option>"
+        for c in types_seen
+    )
+    filters = (
+        f"<div class='filters'>"
+        f"<input type='search' id='{table_id}-q' placeholder='Search name, location, day, time…'>"
+        f"<select id='{table_id}-status'><option value=''>All statuses</option>{status_options}</select>"
+        f"<select id='{table_id}-type'><option value=''>All types</option>{type_options}</select>"
+        f"<span class='count'>Showing <b id='{table_id}-shown'>{len(rows)}</b> of {len(rows)}</span>"
+        f"</div>"
+    )
+    table = _render_table(rows, include_actions=include_actions, table_id=table_id)
+    script = (
+        "<script>(function(){"
+        f"var id={table_id!r};"
+        "var q=document.getElementById(id+'-q'),"
+        "ss=document.getElementById(id+'-status'),"
+        "ts=document.getElementById(id+'-type'),"
+        "shown=document.getElementById(id+'-shown'),"
+        "tbl=document.getElementById(id);"
+        "function apply(){"
+        "var qv=q.value.toLowerCase().trim(),sv=ss.value,tv=ts.value,n=0;"
+        "tbl.querySelectorAll('tbody tr').forEach(function(tr){"
+        "var m=(!sv||tr.dataset.status===sv)"
+        "&&(!tv||tr.dataset.type===tv)"
+        "&&(!qv||tr.dataset.search.indexOf(qv)>=0);"
+        "tr.style.display=m?'':'none';if(m)n++;"
+        "});shown.textContent=n;}"
+        "q.addEventListener('input',apply);"
+        "ss.addEventListener('change',apply);"
+        "ts.addEventListener('change',apply);"
+        "})();</script>"
+    )
+    return filters + table + script
 
 
 def _pill_class(status: str | None) -> str:
@@ -278,6 +336,13 @@ _HTML_HEAD = """<!doctype html>
   .pill--full {{ background: var(--full); }}
   .pill--off  {{ background: var(--off); }}
   a {{ color: #1a64c8; }}
+  .filters {{ display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+              margin: 8px 0 12px; }}
+  .filters input, .filters select {{
+      padding: 4px 8px; font-size: 13px;
+      border: 1px solid var(--line); border-radius: 4px; background: white; }}
+  .filters input[type=search] {{ min-width: 240px; flex: 1; max-width: 380px; }}
+  .filters .count {{ color: var(--dim); font-size: 13px; margin-left: auto; }}
 </style>
 </head><body>
 <h1>Arlington Park &amp; Rec — registration monitor</h1>
