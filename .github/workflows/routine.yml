@@ -5,7 +5,8 @@ name: routine-snapshot
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/30 * * * *"            # ambient: every 30 min, year-round
+    - cron: "*/10 * 11-14 5 *"        # dense: every 10 min during May 11-14 (registration period)
   workflow_dispatch: {}
 
 permissions:
@@ -33,19 +34,23 @@ jobs:
         env:
           ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
           ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: |
           set -e
           for ev in ENJOYSUMMER1 ENJOYSUMMER2 ENJOYSUMMER; do
             python -m scraper.scrape --mode event --event "$ev"
           done
 
-      - name: Commit snapshot
+      - name: Render CSV + HTML
+        run: python -m scraper.dump
+
+      - name: Commit snapshot + dumps
         run: |
           git config user.email "actions@github.com"
           git config user.name "github-actions"
-          git add data/snapshots.sqlite
+          git add data/snapshots.sqlite data/latest.csv data/snapshots.csv data/index.html
           if git diff --staged --quiet; then
-            echo "no DB change"
+            echo "no change"
           else
             git pull --rebase --autostash
             git commit -m "routine snapshot $(date -u +%FT%TZ)"

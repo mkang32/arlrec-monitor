@@ -68,6 +68,7 @@ jobs:
         env:
           ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
           ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
           EVENT: ${{ steps.pick.outputs.event }}
           SKIP_WAIT: ${{ steps.pick.outputs.skip_wait }}
         run: |
@@ -91,7 +92,8 @@ jobs:
           # window ends. Each iteration is ~5-10s instead of minutes.
           poll_and_commit() {
             python -m scraper.scrape --mode event --event "$EVENT" --skip-counts
-            git add data/snapshots.sqlite
+            python -m scraper.dump
+            git add data/snapshots.sqlite data/latest.csv data/snapshots.csv data/index.html
             if ! git diff --staged --quiet; then
               git pull --rebase --autostash || true
               git commit -m "hot $(date -u +%FT%TZ) $EVENT"

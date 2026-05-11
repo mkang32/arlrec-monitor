@@ -24,19 +24,23 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Watchlist scrape (no alerts even if creds set, since first run)
+      - name: Watchlist scrape
         env:
           ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
           ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: python -m scraper.scrape --mode watchlist
+      - name: Render CSV + HTML
+        run: python -m scraper.dump
       - name: Commit smoke result
         run: |
           git config user.email "actions@github.com"
           git config user.name "github-actions"
-          git add data/snapshots.sqlite
+          git add data/snapshots.sqlite data/latest.csv data/snapshots.csv data/index.html
           if git diff --staged --quiet; then
-            echo "no DB change"
+            echo "no change"
           else
+            git pull --rebase --autostash
             git commit -m "smoke $(date -u +%FT%TZ)"
             git push
           fi
