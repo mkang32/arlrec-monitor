@@ -93,7 +93,7 @@ jobs:
           poll_and_commit() {
             python -m scraper.scrape --mode event --event "$EVENT" --skip-counts
             python -m scraper.dump
-            git add data/snapshots.sqlite data/latest.csv data/snapshots.csv data/index.html
+            git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
             if ! git diff --staged --quiet; then
               git pull --rebase --autostash || true
               git commit -m "hot $(date -u +%FT%TZ) $EVENT"
