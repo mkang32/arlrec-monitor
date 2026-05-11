@@ -1,10 +1,11 @@
 """Static config. Edit this file to change what's monitored."""
 from __future__ import annotations
 
-# Sections the user wants email alerts on (Fin 1 Aquatics for their kid).
+# Sections the user wants email alerts on.
 WATCH_FMIDS: list[str] = [
-    "350201712",
-    "350201635",
+    "350201712",   # Fin 1 (Aquatics) — Sun 10:35am, Long Bridge
+    "350201635",   # Fin 1 (Aquatics) — Fri 4:25pm, Long Bridge
+    "350216762",   # Gymnasticats Age 4 — Sat 10:30am, Barcroft
 ]
 
 # State transitions that should trigger an alert (prev -> new).
