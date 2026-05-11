@@ -1,12 +1,16 @@
-name: routine-snapshot
-# Ambient polling for the three summer registration events. Runs every 30 min.
-# During hot windows the dedicated hot-window workflow takes over; both can
-# safely overlap (concurrency below serializes them so they don't race on git).
+name: ambient-snapshot
+# Hourly polling during the active registration period (May 11-15), with a
+# denser every-10-min boost during the registration days themselves. The
+# dedicated hot-window workflow takes over for the minute-by-minute polling
+# at noon ET; both can safely overlap because of the concurrency group below.
+#
+# Outside May 11-15, daily polling is handled by tail.yml (May 16 - July 10),
+# after which nothing runs — every class will be Unavailable by then.
 
 on:
   schedule:
-    - cron: "*/30 * * * *"            # ambient: every 30 min, year-round
-    - cron: "*/10 * 11-14 5 *"        # dense: every 10 min during May 11-14 (registration period)
+    - cron: "0 * 11-15 5 *"           # hourly, May 11-15
+    - cron: "*/10 * 11-14 5 *"        # every 10 min, May 11-14 (registration crunch)
   workflow_dispatch: {}
 
 permissions:
@@ -53,6 +57,6 @@ jobs:
             echo "no change"
           else
             git pull --rebase --autostash
-            git commit -m "routine snapshot $(date -u +%FT%TZ)"
+            git commit -m "ambient $(date -u +%FT%TZ)"
             git push
           fi

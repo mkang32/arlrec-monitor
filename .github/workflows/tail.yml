@@ -1,0 +1,61 @@
+name: tail-snapshot
+# Daily snapshot during the post-registration tail (May 16 - July 10). After
+# registration closes, most state changes happen slowly (cancellations,
+# waitlist promotions, late add/drops); hourly polling is overkill. After
+# July 10 we stop entirely — every section will have started by then and be
+# locked as Unavailable.
+
+on:
+  schedule:
+    - cron: "0 12 16-31 5 *"          # daily 12:00 UTC (8am ET) — May 16 to 31
+    - cron: "0 12 * 6 *"              # daily 12:00 UTC — all of June
+    - cron: "0 12 1-10 7 *"           # daily 12:00 UTC — July 1 to 10
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-write
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Scrape all three registration events
+        env:
+          ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
+          ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: |
+          set -e
+          for ev in ENJOYSUMMER1 ENJOYSUMMER2 ENJOYSUMMER; do
+            python -m scraper.scrape --mode event --event "$ev"
+          done
+
+      - name: Render CSV + HTML
+        run: python -m scraper.dump
+
+      - name: Commit snapshot + dumps
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "github-actions"
+          git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git pull --rebase --autostash
+            git commit -m "tail $(date -u +%FT%TZ)"
+            git push
+          fi
