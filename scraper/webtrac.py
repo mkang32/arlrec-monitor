@@ -1,7 +1,9 @@
 """HTTP + HTML parsing for vaarlingtonweb.myvscloud.com (Vermont Systems WebTrac).
 
 Cloudflare in front of the site blocks plain requests/urllib/curl — we MUST use
-curl_cffi with a real browser TLS fingerprint. impersonate='chrome124' tested OK.
+curl_cffi with a real browser TLS fingerprint. From GitHub Actions runner IPs,
+Chrome fingerprints (chrome120/124/131) return 403; Safari and Firefox profiles
+return 200. We default to Safari (safari17_0).
 """
 from __future__ import annotations
 
@@ -17,7 +19,7 @@ BASE = "https://vaarlingtonweb.myvscloud.com/webtrac/web"
 SEARCH_URL = f"{BASE}/search.html"
 ITEMINFO_URL = f"{BASE}/iteminfo.html"
 LANDING_PARAMS = {"interfaceparameter": "WebTrac"}
-IMPERSONATE = "chrome124"
+IMPERSONATE = "safari17_0"
 
 # Status pill values that appear in the results table
 STATUS_VALUES = {"Available", "Waitlist", "Full", "Unavailable"}
