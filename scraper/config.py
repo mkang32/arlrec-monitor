@@ -17,40 +17,42 @@ ALERT_TRANSITIONS: list[tuple[str | None, str]] = [
     ("Available", "Full"),        # filled so fast we never saw Waitlist
 ]
 
-# Type-code filter values to iterate during catalog scans. From the type dropdown.
-# Focused on kids/family-relevant categories; trim or expand as desired.
-KID_TYPES: list[str] = [
-    "AQUAT",       # Aquatics
-    "AQUATPVT",    # Aquatics - Private Lessons
-    "CRART",       # Arts & Crafts
-    "CERAM",       # Ceramics
-    "COOKI",       # Cooking
-    "DANCE",       # Dance
-    "DWPT",        # Drawing/Painting
-    "FAMLY",       # Family Programs
-    "GYMNA",       # Gymnastics
-    "JEWEL",       # Jewelry
-    "LANGU",       # Language
-    "MARTS",       # Martial Arts
-    "MOVE",        # Movement
-    "MUSIC",       # Music
-    "NCTR",        # Nature & History
-    "OST",         # Out of School Time
-    "PHOTO",       # Photography
-    "PREK",        # Preschool/Playgroups
-    "SCDI",        # Science & Discovery
-    "FIBER",       # Sewing & Fiber Arts
-    "SPORT",       # Sports
-    "SPCDI",       # Sports Clinics/Drop In
-    "LEAGUE",      # Sports League
-    "CAMP",        # Summer Camp
-    "TEEN",        # Teen Programs
-    "TENIS",       # Tennis
-    "THEAT",       # Theater
-    "WELLN",       # Wellness
-    "WOOD",        # Woodworking
-    "YOGA",        # Yoga
-]
+# Type-code → human label. Order is meaningful: matches the WebTrac type dropdown.
+# Used to enumerate the catalog and to render filterable labels in the viz.
+TYPE_LABELS: dict[str, str] = {
+    "AQUAT":     "Aquatics",
+    "AQUATPVT":  "Aquatics - Private Lessons",
+    "CRART":     "Arts & Crafts",
+    "CERAM":     "Ceramics",
+    "COOKI":     "Cooking",
+    "DANCE":     "Dance",
+    "DWPT":      "Drawing/Painting",
+    "FAMLY":     "Family Programs",
+    "GYMNA":     "Gymnastics",
+    "JEWEL":     "Jewelry",
+    "LANGU":     "Language",
+    "MARTS":     "Martial Arts",
+    "MOVE":      "Movement",
+    "MUSIC":     "Music",
+    "NCTR":      "Nature & History",
+    "OST":       "Out of School Time",
+    "PHOTO":     "Photography",
+    "PREK":      "Preschool/Playgroups",
+    "SCDI":      "Science & Discovery",
+    "FIBER":     "Sewing & Fiber Arts",
+    "SPORT":     "Sports",
+    "SPCDI":     "Sports Clinics/Drop In",
+    "LEAGUE":    "Sports League",
+    "CAMP":      "Summer Camp",
+    "TEEN":      "Teen Programs",
+    "TENIS":     "Tennis",
+    "THEAT":     "Theater",
+    "WELLN":     "Wellness",
+    "WOOD":      "Woodworking",
+    "YOGA":      "Yoga",
+}
+
+KID_TYPES: list[str] = list(TYPE_LABELS.keys())
 
 # Registration-event filters for narrow hot-window polling.
 # These match the actual events in the registrationevent dropdown.
@@ -60,6 +62,17 @@ REG_EVENTS = {
     "other_2026_summer":      "ENJOYSUMMER",   # 2026-05-14 12:00 ET
     "camp_2026_dpr":          "CAMP",
     "camp_2026_partner":      "CAMP1",
+}
+
+# Fallback type when a section is discovered via a registrationevent filter but
+# not (yet) under any WebTrac `type` filter — common for new-season sessions
+# whose category is assigned by WebTrac only after registration opens. Use only
+# for events that are single-category; mixed events like ENJOYSUMMER are skipped.
+EVENT_TYPE_FALLBACK: dict[str, str] = {
+    "ENJOYSUMMER1": "GYMNA",
+    "ENJOYSUMMER2": "AQUAT",
+    "CAMP":         "CAMP",
+    "CAMP1":        "CAMP",
 }
 
 DB_PATH = "data/snapshots.sqlite"

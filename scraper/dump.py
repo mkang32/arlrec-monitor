@@ -71,13 +71,21 @@ def _dump_latest_csv(conn) -> None:
     with LATEST_CSV.open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow([
-            "fmid", "activity_code", "name", "reg_event", "type_code",
+            "fmid", "activity_code", "name", "reg_event", "type_code", "type_label",
             "date_start", "date_end", "time_start", "time_end", "days",
             "location", "ages", "cost",
             "last_seen_ts", "status", "enrolled", "waitlist",
         ])
         for r in rows:
-            w.writerow([r[k] for k in r.keys()])
+            d = dict(r)
+            d["type_label"] = config.TYPE_LABELS.get(d.get("type_code") or "", "")
+            w.writerow([
+                d["fmid"], d["activity_code"], d["name"], d["reg_event"],
+                d["type_code"], d["type_label"],
+                d["date_start"], d["date_end"], d["time_start"], d["time_end"], d["days"],
+                d["location"], d["ages"], d["cost"],
+                d["ts"], d["status"], d["enrolled"], d["waitlist"],
+            ])
 
 
 def _dump_index_html(conn) -> None:
@@ -96,7 +104,7 @@ def _dump_index_html(conn) -> None:
     # Anything currently non-Unavailable (i.e. registration open or once was)
     active = conn.execute(
         """
-        SELECT sec.fmid, sec.activity_code, sec.name, sec.location, sec.days,
+        SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.location, sec.days,
                sec.time_start, sec.time_end, sec.ages, sec.cost,
                latest.status, latest.enrolled, latest.waitlist, latest.ts
         FROM sections sec
@@ -185,7 +193,7 @@ def _dump_index_html(conn) -> None:
 def _latest_row_for(conn, fmid: str):
     return conn.execute(
         """
-        SELECT sec.fmid, sec.activity_code, sec.name, sec.location, sec.days,
+        SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.location, sec.days,
                sec.time_start, sec.time_end, sec.ages, sec.cost,
                s.status, s.enrolled, s.waitlist, s.ts
         FROM sections sec
@@ -201,7 +209,7 @@ def _latest_row_for(conn, fmid: str):
 def _render_table(rows, *, include_actions: bool) -> str:
     head = (
         "<table><thead><tr>"
-        "<th>Status</th><th>Class</th><th>Activity</th><th>When</th>"
+        "<th>Status</th><th>Type</th><th>Class</th><th>Activity</th><th>When</th>"
         "<th>Location</th><th>Ages</th><th>Enrolled</th><th>Waitlist</th>"
         "<th>Last seen</th>"
     )
@@ -212,6 +220,7 @@ def _render_table(rows, *, include_actions: bool) -> str:
     for r in rows:
         time_label = f"{r['days'] or ''} {r['time_start'] or ''}-{r['time_end'] or ''}".strip()
         status = r["status"] or "?"
+        type_label = config.TYPE_LABELS.get(r["type_code"] or "", r["type_code"] or "")
         link = (
             f"<a href='https://vaarlingtonweb.myvscloud.com/webtrac/web/iteminfo.html?"
             f"Module=AR&FMID={html.escape(r['fmid'])}' target='_blank'>open</a>"
@@ -219,6 +228,7 @@ def _render_table(rows, *, include_actions: bool) -> str:
         body.append(
             f"<tr>"
             f"<td><span class='pill pill--{_pill_class(status)}'>{html.escape(status)}</span></td>"
+            f"<td>{html.escape(type_label)}</td>"
             f"<td>{html.escape(r['name'] or '')}</td>"
             f"<td>{html.escape(r['activity_code'] or '')}</td>"
             f"<td>{html.escape(time_label)}</td>"

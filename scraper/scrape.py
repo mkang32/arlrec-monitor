@@ -3,6 +3,8 @@
 Modes:
     --mode watchlist     poll only WATCH_FMIDs (fast; used during hot windows)
     --mode catalog       enumerate full catalog via type filters (used routinely)
+    --mode types         like catalog, but ONLY updates section metadata
+                         (esp. type_code) — no status snapshots, no alerts
     --mode event EVENT   poll one registrationevent (e.g. ENJOYSUMMER1)
 
 Each run writes one snapshot per section to data/snapshots.sqlite and sends
@@ -99,16 +101,33 @@ def scrape_one_query(client: WebTracClient, conn, *, ts: str,
                      type_code: str | None = None,
                      reg_event: str | None = None,
                      fetch_counts: bool = True,
-                     fetch_counts_for_unavailable: bool = False) -> int:
+                     fetch_counts_for_unavailable: bool = False,
+                     metadata_only: bool = False) -> int:
     """Run one search query, store all returned sections. Returns row count.
 
     fetch_counts=False skips all enrollment-count lookups (fastest path; used
     during hot windows where status transitions are the time-series of interest
     and counts can be filled in by the routine cron afterwards).
+
+    metadata_only=True upserts only the section row (name, type_code, schedule)
+    and skips snapshot inserts + alerts. Used by `--mode types` to backfill
+    type_code on sections that were discovered via event-based scrapes.
     """
     rows = client.search(type_code=type_code, registrationevent=reg_event)
     log.info("query (type=%s event=%s) -> %d rows", type_code, reg_event, len(rows))
+    # If we searched by event and the event has a known single-category fallback,
+    # tag matched sections with that type when no explicit type was used.
+    effective_type = type_code or (config.EVENT_TYPE_FALLBACK.get(reg_event or "") if reg_event else None)
     for row in rows:
+        if metadata_only:
+            db.upsert_section(
+                conn, fmid=row.fmid, activity_code=row.activity_code, name=row.name,
+                type_code=effective_type, reg_event=reg_event,
+                date_start=row.date_start, date_end=row.date_end,
+                time_start=row.time_start, time_end=row.time_end, days=row.days,
+                location=row.location, ages=row.ages, cost=row.cost, ts=ts,
+            )
+            continue
         counts: EnrollmentCounts | None = None
         if fetch_counts and (row.status != "Unavailable" or fetch_counts_for_unavailable):
             try:
@@ -116,7 +135,7 @@ def scrape_one_query(client: WebTracClient, conn, *, ts: str,
             except Exception:
                 log.warning("enrollment fetch failed for %s:\n%s",
                             row.fmid, traceback.format_exc())
-        prev = _record(conn, ts, row, counts, type_code=type_code, reg_event=reg_event)
+        prev = _record(conn, ts, row, counts, type_code=effective_type, reg_event=reg_event)
         _maybe_alert(conn, row=row, prev_status=prev, counts=counts, ts=ts)
     return len(rows)
 
@@ -171,14 +190,27 @@ def _watchlist_status_row(client: WebTracClient, fmid: str) -> SectionRow | None
     )
 
 
-def scrape_catalog(client: WebTracClient, conn, *, ts: str, fetch_counts: bool = True) -> int:
+def scrape_catalog(client: WebTracClient, conn, *, ts: str,
+                   fetch_counts: bool = True, metadata_only: bool = False) -> int:
     total = 0
     for type_code in config.KID_TYPES:
         try:
             total += scrape_one_query(client, conn, ts=ts, type_code=type_code,
-                                       fetch_counts=fetch_counts)
+                                       fetch_counts=fetch_counts,
+                                       metadata_only=metadata_only)
         except Exception:
             log.warning("catalog query failed for type=%s", type_code, exc_info=True)
+    # If we're in metadata-only mode, also sweep each single-category registration
+    # event so we tag sections that haven't been assigned a WebTrac type yet
+    # (common for new-season shadow sections before registration opens).
+    if metadata_only:
+        for reg_event in config.EVENT_TYPE_FALLBACK:
+            try:
+                total += scrape_one_query(client, conn, ts=ts, reg_event=reg_event,
+                                           metadata_only=True)
+            except Exception:
+                log.warning("event-fallback query failed for event=%s",
+                            reg_event, exc_info=True)
     return total
 
 
@@ -189,7 +221,7 @@ def main() -> int:
         datefmt="%Y-%m-%dT%H:%M:%S",
     )
     p = argparse.ArgumentParser()
-    p.add_argument("--mode", required=True, choices=["watchlist", "catalog", "event"])
+    p.add_argument("--mode", required=True, choices=["watchlist", "catalog", "types", "event"])
     p.add_argument("--event", help="registrationevent code (for --mode event)")
     p.add_argument("--db", default=config.DB_PATH)
     p.add_argument("--skip-counts", action="store_true",
@@ -207,6 +239,8 @@ def main() -> int:
             n = scrape_watchlist(client, conn, ts=ts)
         elif args.mode == "catalog":
             n = scrape_catalog(client, conn, ts=ts, fetch_counts=fetch_counts)
+        elif args.mode == "types":
+            n = scrape_catalog(client, conn, ts=ts, metadata_only=True)
         elif args.mode == "event":
             if not args.event:
                 p.error("--event is required when --mode event")
