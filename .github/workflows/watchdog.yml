@@ -1,0 +1,98 @@
+name: watchdog
+# Sanity check that hot-window has actually started on each registration day.
+# Fires at 15:45 UTC (= 11:45 ET) and again at 15:55 UTC. If no hot-window run
+# exists for today, send email + ntfy + webhook with the manual-trigger command.
+#
+# Background: on 2026-05-12 GitHub Actions silently dropped the hot-window
+# schedule. The watchdog itself uses cron and *could* also drop, so we have two
+# fire times. If both drop, manual triggering is the last resort.
+
+on:
+  schedule:
+    - cron: "45 15 12 5 *"
+    - cron: "55 15 12 5 *"
+    - cron: "45 15 13 5 *"
+    - cron: "55 15 13 5 *"
+    - cron: "45 15 14 5 *"
+    - cron: "55 15 14 5 *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: watchdog
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Determine today's registration event
+        id: pick
+        run: |
+          DATE=$(date -u +%m%d)
+          case "$DATE" in
+            0512) echo "event=ENJOYSUMMER1" >> "$GITHUB_OUTPUT"; echo "label=Gymnastics" >> "$GITHUB_OUTPUT" ;;
+            0513) echo "event=ENJOYSUMMER2" >> "$GITHUB_OUTPUT"; echo "label=Aquatics"   >> "$GITHUB_OUTPUT" ;;
+            0514) echo "event=ENJOYSUMMER"  >> "$GITHUB_OUTPUT"; echo "label=Other"      >> "$GITHUB_OUTPUT" ;;
+            *)
+              echo "Not a registration day ($DATE) — exiting."
+              echo "event=" >> "$GITHUB_OUTPUT"
+              ;;
+          esac
+
+      - name: Has hot-window run today?
+        id: check
+        if: steps.pick.outputs.event != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          COUNT=$(gh api "repos/${{ github.repository }}/actions/workflows/hotwindow.yml/runs?per_page=20" \
+            --jq "[.workflow_runs[] | select(.created_at | startswith(\"$TODAY\"))] | length")
+          echo "hot-window runs today=$COUNT"
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Install deps for alerting
+        if: steps.check.outputs.count == '0'
+        run: pip install -r requirements.txt
+
+      - name: Send watchdog alert
+        if: steps.check.outputs.count == '0'
+        env:
+          ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
+          ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          ALERT_NTFY_TOPIC: ${{ secrets.ALERT_NTFY_TOPIC }}
+          EVENT: ${{ steps.pick.outputs.event }}
+          LABEL: ${{ steps.pick.outputs.label }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from scraper.notify import send_alert
+          event = os.environ["EVENT"]
+          label = os.environ["LABEL"]
+          repo = os.environ["REPO"]
+          send_alert(
+              subject=f"[ARL-REC] WATCHDOG: hot-window NOT fired ({label})",
+              body=(
+                  f"hot-window for {label} ({event}) has NOT fired yet.\n"
+                  f"Registration opens at 16:00 UTC (12:00 ET).\n\n"
+                  f"Trigger manually NOW from your terminal:\n\n"
+                  f"  gh workflow run hot-window -R {repo} \\\n"
+                  f"    -f event={event} -f skip_wait=true\n"
+              ),
+          )
+          print("watchdog alert sent")
+          PY

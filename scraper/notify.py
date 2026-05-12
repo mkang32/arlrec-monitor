@@ -1,11 +1,14 @@
-"""Alerting via Gmail SMTP and optional Slack/Discord webhook.
+"""Alerting via Gmail SMTP, optional Slack/Discord webhook, and optional ntfy push.
 
 Environment variables read by these helpers:
     ALERT_GMAIL_USER     — full gmail address (sender = recipient)
     ALERT_GMAIL_PASS     — Gmail App Password (16 chars; spaces tolerated)
     ALERT_WEBHOOK_URL    — Slack or Discord incoming-webhook URL (optional)
+    ALERT_NTFY_TOPIC     — ntfy.sh topic name (optional). Push to phone via the
+                            ntfy app subscribed to https://ntfy.sh/<topic>.
 
-`send_alert` fires both channels independently; failures in one don't block the other.
+`send_alert` fires each configured channel independently; one failure doesn't
+block the others.
 """
 from __future__ import annotations
 
@@ -28,13 +31,17 @@ def webhook_configured() -> bool:
     return bool(os.environ.get("ALERT_WEBHOOK_URL"))
 
 
+def ntfy_configured() -> bool:
+    return bool(os.environ.get("ALERT_NTFY_TOPIC"))
+
+
 def alerts_configured() -> bool:
-    return email_configured() or webhook_configured()
+    return email_configured() or webhook_configured() or ntfy_configured()
 
 
 def send_alert(*, subject: str, body: str) -> None:
     """Send alert to all configured channels. Each channel's failure is logged
-    but does not propagate; a webhook outage shouldn't prevent an email."""
+    but does not propagate."""
     if email_configured():
         try:
             _send_email(subject=subject, body=body)
@@ -45,6 +52,11 @@ def send_alert(*, subject: str, body: str) -> None:
             _send_webhook(subject=subject, body=body)
         except Exception:
             log.exception("webhook alert failed")
+    if ntfy_configured():
+        try:
+            _send_ntfy(subject=subject, body=body)
+        except Exception:
+            log.exception("ntfy alert failed")
 
 
 def _send_email(*, subject: str, body: str) -> None:
@@ -74,3 +86,25 @@ def _send_webhook(*, subject: str, body: str) -> None:
     with urllib.request.urlopen(req, timeout=15) as resp:
         if resp.status >= 300:
             raise RuntimeError(f"webhook HTTP {resp.status}: {resp.read()[:200]!r}")
+
+
+def _send_ntfy(*, subject: str, body: str) -> None:
+    """Push to ntfy.sh. Topic is the secret; anyone who knows it can read/write,
+    so use a long random string. Default priority is 'high' so iOS/Android
+    actually delivers the push immediately.
+    """
+    topic = os.environ["ALERT_NTFY_TOPIC"]
+    req = urllib.request.Request(
+        f"https://ntfy.sh/{topic}",
+        data=body.encode("utf-8"),
+        headers={
+            "Title": subject,
+            "Priority": "high",
+            "Tags": "warning",
+            "Content-Type": "text/plain; charset=utf-8",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        if resp.status >= 300:
+            raise RuntimeError(f"ntfy HTTP {resp.status}: {resp.read()[:200]!r}")
