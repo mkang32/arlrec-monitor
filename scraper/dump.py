@@ -1,7 +1,7 @@
 """Render the SQLite snapshots into committed-to-the-repo artifacts:
     data/latest.csv      — one row per section: current status + most recent counts
     data/snapshots.csv   — every snapshot row (history)
-    data/index.html      — readable HTML page focused on the watchlist + active sections
+    index.html           — readable HTML page (lives at repo root for GH Pages)
 
 Generates everything from data/snapshots.sqlite. Idempotent — safe to re-run.
 """
@@ -12,14 +12,16 @@ import datetime as dt
 import html
 import sqlite3
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from . import config
+
+ET = ZoneInfo("America/New_York")
 
 DATA_DIR = Path("data")
 DB_PATH = DATA_DIR / "snapshots.sqlite"
 LATEST_CSV = DATA_DIR / "latest.csv"
 SNAPSHOTS_CSV = DATA_DIR / "snapshots.csv"
-# index.html lives at the repo root so GitHub Pages serves it as the site root.
 INDEX_HTML = Path("index.html")
 
 
@@ -38,6 +40,8 @@ def main() -> int:
         conn.close()
     return 0
 
+
+# ----- CSV dumps -----------------------------------------------------------
 
 def _dump_snapshots_csv(conn) -> None:
     rows = conn.execute(
@@ -61,9 +65,8 @@ def _dump_latest_csv(conn) -> None:
         LEFT JOIN (
             SELECT s.fmid, s.ts, s.status, s.enrolled, s.waitlist
             FROM snapshots s
-            JOIN (
-                SELECT fmid, MAX(ts) AS max_ts FROM snapshots GROUP BY fmid
-            ) m ON m.fmid = s.fmid AND m.max_ts = s.ts
+            JOIN (SELECT fmid, MAX(ts) AS max_ts FROM snapshots GROUP BY fmid) m
+              ON m.fmid = s.fmid AND m.max_ts = s.ts
         ) latest ON latest.fmid = sec.fmid
         ORDER BY sec.name, sec.activity_code
         """
@@ -88,20 +91,17 @@ def _dump_latest_csv(conn) -> None:
             ])
 
 
-def _dump_index_html(conn) -> None:
-    now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+# ----- HTML page -----------------------------------------------------------
 
-    section_count, snapshot_count = conn.execute(
-        "SELECT (SELECT COUNT(*) FROM sections), (SELECT COUNT(*) FROM snapshots)"
-    ).fetchone()
+def _dump_index_html(conn) -> None:
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    now_et_str = _fmt_et(now_utc.isoformat(timespec="seconds"))
 
     # Watchlist
-    watch_rows = [
-        _latest_row_for(conn, fmid) for fmid in config.WATCH_FMIDS
-    ]
+    watch_rows = [_latest_row_for(conn, fmid) for fmid in config.WATCH_FMIDS]
     watch_rows = [r for r in watch_rows if r is not None]
 
-    # Anything currently non-Unavailable (i.e. registration open or once was)
+    # Anything currently non-Unavailable
     active = conn.execute(
         """
         SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.location, sec.days,
@@ -122,61 +122,30 @@ def _dump_index_html(conn) -> None:
         """
     ).fetchall()
 
-    # Recent interesting transitions across all sections
-    transitions = conn.execute(
-        """
-        WITH ranked AS (
-            SELECT s.fmid, s.ts, s.status,
-                   LAG(s.status) OVER (PARTITION BY s.fmid ORDER BY s.ts) AS prev_status
-            FROM snapshots s
-        )
-        SELECT r.fmid, sec.name, sec.activity_code, r.ts, r.prev_status, r.status
-        FROM ranked r
-        JOIN sections sec USING (fmid)
-        WHERE r.prev_status IS NOT NULL
-          AND r.prev_status != r.status
-        ORDER BY r.ts DESC
-        LIMIT 40
-        """
-    ).fetchall()
+    sellout = _sellout_rows(conn)
 
     parts: list[str] = []
-    parts.append(_HTML_HEAD.format(now=html.escape(now)))
-    parts.append(
-        f"<p class='meta'>{section_count} sections tracked &middot; "
-        f"{snapshot_count} snapshots &middot; last update "
-        f"<time datetime='{html.escape(now)}'>{html.escape(now)}</time></p>"
-    )
+    parts.append(_HTML_HEAD.format(now=html.escape(now_et_str)))
 
     parts.append("<h2>Watchlist</h2>")
     if not watch_rows:
         parts.append("<p class='dim'>No watchlist sections seen yet.</p>")
     else:
-        parts.append(_render_table(watch_rows, include_actions=True))
+        parts.append("<div class='scroll-box'>" + _render_table(watch_rows, include_actions=True) + "</div>")
+
+    parts.append("<h2>Sell-out speed</h2>")
+    parts.append("<p class='dim'>How fast each section transitioned from open (Unavailable/Available) "
+                 "to scarce (Waitlist/Full). Shortest first.</p>")
+    if not sellout:
+        parts.append("<p class='dim'>No sections have sold out yet.</p>")
+    else:
+        parts.append("<div class='scroll-box'>" + _render_sellout_table(sellout) + "</div>")
 
     parts.append("<h2>Currently open (Available, Waitlist, or Full)</h2>")
     if not active:
         parts.append("<p class='dim'>Nothing is open yet. Registration hasn't started.</p>")
     else:
         parts.append(_render_filterable_table(active, table_id="active", include_actions=True))
-
-    parts.append("<h2>Recent status changes</h2>")
-    if not transitions:
-        parts.append("<p class='dim'>No transitions observed yet.</p>")
-    else:
-        parts.append("<table><thead><tr><th>When (UTC)</th><th>Class</th>"
-                     "<th>Activity</th><th>From</th><th>To</th></tr></thead><tbody>")
-        for t in transitions:
-            parts.append(
-                f"<tr><td><time datetime='{html.escape(t['ts'])}'>{html.escape(t['ts'])}</time></td>"
-                f"<td>{html.escape(t['name'] or '')}</td>"
-                f"<td>{html.escape(t['activity_code'] or '')}</td>"
-                f"<td><span class='pill pill--{_pill_class(t['prev_status'])}'>"
-                f"{html.escape(t['prev_status'] or '')}</span></td>"
-                f"<td><span class='pill pill--{_pill_class(t['status'])}'>"
-                f"{html.escape(t['status'])}</span></td></tr>"
-            )
-        parts.append("</tbody></table>")
 
     parts.append("<h2>Downloads</h2>")
     parts.append(
@@ -189,6 +158,8 @@ def _dump_index_html(conn) -> None:
     parts.append(_HTML_FOOT)
     INDEX_HTML.write_text("".join(parts))
 
+
+# ----- Data helpers --------------------------------------------------------
 
 def _latest_row_for(conn, fmid: str):
     return conn.execute(
@@ -206,13 +177,128 @@ def _latest_row_for(conn, fmid: str):
     ).fetchone()
 
 
+def _sellout_rows(conn) -> list[dict]:
+    """For each section that has ever been observed as Waitlist or Full, compute
+    the upper bound on sell-out duration:
+
+        start_ts  = REG_OPENS_AT_UTC[reg_event] if known,
+                    else last observed Available/Unavailable snapshot before scarce
+        scarce_ts = first observed Waitlist or Full snapshot
+        duration  = scarce_ts - start_ts (clamped to >= 0)
+    """
+    raw = conn.execute(
+        """
+        WITH first_scarce AS (
+            SELECT fmid, MIN(ts) AS scarce_ts
+            FROM snapshots
+            WHERE status IN ('Waitlist','Full')
+            GROUP BY fmid
+        ),
+        last_open AS (
+            SELECT s.fmid, MAX(s.ts) AS open_ts
+            FROM snapshots s
+            JOIN first_scarce fs ON fs.fmid = s.fmid
+            WHERE s.status IN ('Available','Unavailable')
+              AND s.ts < fs.scarce_ts
+            GROUP BY s.fmid
+        )
+        SELECT
+            fs.fmid,
+            sec.name, sec.activity_code, sec.type_code, sec.reg_event,
+            sec.days, sec.time_start, sec.time_end, sec.location, sec.ages,
+            lo.open_ts,
+            fs.scarce_ts,
+            (SELECT status FROM snapshots WHERE fmid=fs.fmid AND ts=fs.scarce_ts
+             ORDER BY ts LIMIT 1) AS scarce_status,
+            (SELECT status FROM snapshots WHERE fmid=fs.fmid
+             ORDER BY ts DESC LIMIT 1) AS current_status
+        FROM first_scarce fs
+        LEFT JOIN last_open lo ON lo.fmid = fs.fmid
+        JOIN sections sec ON sec.fmid = fs.fmid
+        """
+    ).fetchall()
+
+    out: list[dict] = []
+    for r in raw:
+        d = dict(r)
+        scarce_dt = dt.datetime.fromisoformat(d["scarce_ts"])
+        # Choose the start: known registration open time wins when available
+        reg_open_iso = config.REG_OPENS_AT_UTC.get(d["reg_event"] or "")
+        if reg_open_iso:
+            start_dt = dt.datetime.fromisoformat(reg_open_iso)
+            start_source = "reg-open"
+        elif d["open_ts"]:
+            start_dt = dt.datetime.fromisoformat(d["open_ts"])
+            start_source = "last-poll"
+        else:
+            # First observation already scarce, no known reg-open → can't compute
+            continue
+        duration_s = max(0, int((scarce_dt - start_dt).total_seconds()))
+        d["start_ts_utc"] = start_dt.isoformat()
+        d["start_source"] = start_source
+        d["duration_s"] = duration_s
+        out.append(d)
+    out.sort(key=lambda x: x["duration_s"])
+    return out
+
+
+# ----- Formatting helpers --------------------------------------------------
+
+def _fmt_et(ts_utc_iso: str | None) -> str:
+    """'2026-05-12T16:14:47+00:00' → 'May 12, 12:14 PM ET'"""
+    if not ts_utc_iso:
+        return ""
+    try:
+        u = dt.datetime.fromisoformat(ts_utc_iso)
+    except ValueError:
+        return ts_utc_iso
+    e = u.astimezone(ET)
+    return e.strftime("%b %d, %-I:%M:%S %p ET")
+
+
+def _fmt_et_short(ts_utc_iso: str | None) -> str:
+    """Same as _fmt_et but without seconds (for compact cells)."""
+    if not ts_utc_iso:
+        return ""
+    try:
+        u = dt.datetime.fromisoformat(ts_utc_iso)
+    except ValueError:
+        return ts_utc_iso
+    e = u.astimezone(ET)
+    return e.strftime("%b %d, %-I:%M %p ET")
+
+
+def _fmt_duration(secs: int) -> str:
+    if secs < 60:
+        return f"{secs}s"
+    m, s = divmod(secs, 60)
+    if m < 60:
+        return f"{m}m {s}s" if s else f"{m}m"
+    h, m = divmod(m, 60)
+    if h < 24:
+        return f"{h}h {m}m" if m else f"{h}h"
+    d, h = divmod(h, 24)
+    return f"{d}d {h}h" if h else f"{d}d"
+
+
+def _pill_class(status: str | None) -> str:
+    return {
+        "Available": "open",
+        "Waitlist":  "wait",
+        "Full":      "full",
+        "Unavailable": "off",
+    }.get(status or "", "off")
+
+
+# ----- Table renderers -----------------------------------------------------
+
 def _render_table(rows, *, include_actions: bool, table_id: str | None = None) -> str:
     table_attrs = f" id='{table_id}'" if table_id else ""
     head = (
         f"<table{table_attrs}><thead><tr>"
         "<th>Status</th><th>Type</th><th>Class</th><th>Activity</th><th>When</th>"
         "<th>Location</th><th>Ages</th><th>Enrolled</th><th>Waitlist</th>"
-        "<th>Last seen</th>"
+        "<th>Last seen (ET)</th>"
     )
     if include_actions:
         head += "<th>Link</th>"
@@ -227,11 +313,11 @@ def _render_table(rows, *, include_actions: bool, table_id: str | None = None) -
             f"<a href='https://vaarlingtonweb.myvscloud.com/webtrac/web/iteminfo.html?"
             f"Module=AR&FMID={html.escape(r['fmid'])}' target='_blank'>open</a>"
         ) if include_actions else ""
-        # Searchable blob for client-side text filter
         search_blob = " ".join(filter(None, [
             r["name"], r["activity_code"], r["location"], time_label,
             r["ages"], type_label, r["fmid"],
         ])).lower()
+        ts_iso = r["ts"] or ""
         body.append(
             f"<tr"
             f" data-status='{html.escape(status)}'"
@@ -247,7 +333,7 @@ def _render_table(rows, *, include_actions: bool, table_id: str | None = None) -
             f"<td>{html.escape(r['ages'] or '')}</td>"
             f"<td>{'' if r['enrolled'] is None else r['enrolled']}</td>"
             f"<td>{'' if r['waitlist'] is None else r['waitlist']}</td>"
-            f"<td><time datetime='{html.escape(r['ts'] or '')}'>{html.escape(r['ts'] or '')}</time></td>"
+            f"<td><time datetime='{html.escape(ts_iso)}'>{html.escape(_fmt_et_short(ts_iso))}</time></td>"
             f"{('<td>' + link + '</td>') if include_actions else ''}"
             f"</tr>"
         )
@@ -256,8 +342,6 @@ def _render_table(rows, *, include_actions: bool, table_id: str | None = None) -
 
 
 def _render_filterable_table(rows, *, table_id: str, include_actions: bool) -> str:
-    """Wrap _render_table with a filter bar (search + status + type) and the
-    tiny vanilla-JS that wires them up. No external libraries."""
     if not rows:
         return ""
     statuses = sorted({r["status"] for r in rows if r["status"]})
@@ -277,7 +361,9 @@ def _render_filterable_table(rows, *, table_id: str, include_actions: bool) -> s
         f"<span class='count'>Showing <b id='{table_id}-shown'>{len(rows)}</b> of {len(rows)}</span>"
         f"</div>"
     )
-    table = _render_table(rows, include_actions=include_actions, table_id=table_id)
+    table = "<div class='scroll-box'>" + _render_table(
+        rows, include_actions=include_actions, table_id=table_id
+    ) + "</div>"
     script = (
         "<script>(function(){"
         f"var id={table_id!r};"
@@ -302,13 +388,46 @@ def _render_filterable_table(rows, *, table_id: str, include_actions: bool) -> s
     return filters + table + script
 
 
-def _pill_class(status: str | None) -> str:
-    return {
-        "Available": "open",
-        "Waitlist":  "wait",
-        "Full":      "full",
-        "Unavailable": "off",
-    }.get(status or "", "off")
+def _render_sellout_table(rows) -> str:
+    head = (
+        "<table><thead><tr>"
+        "<th>Sold out within</th>"
+        "<th>Final status</th>"
+        "<th>Type</th><th>Class</th><th>Activity</th><th>When</th>"
+        "<th>Location</th><th>Ages</th>"
+        "<th>Registration opened (ET)</th>"
+        "<th>First scarce (ET)</th>"
+        "<th>Link</th>"
+        "</tr></thead><tbody>"
+    )
+    body = [head]
+    for r in rows:
+        time_label = f"{r['days'] or ''} {r['time_start'] or ''}-{r['time_end'] or ''}".strip()
+        type_label = config.TYPE_LABELS.get(r["type_code"] or "", r["type_code"] or "")
+        status = r["current_status"] or r["scarce_status"] or "?"
+        # The displayed "registration opened" timestamp: from REG_OPENS_AT_UTC if
+        # known (start_source='reg-open'), otherwise from the last-observed
+        # pre-scarcity poll. The cell title surfaces which it is, since the
+        # latter is only an upper bound.
+        start_title = "registration window" if r["start_source"] == "reg-open" else "last poll before sell-out (upper bound)"
+        body.append(
+            f"<tr>"
+            f"<td><b>≤ {_fmt_duration(r['duration_s'])}</b></td>"
+            f"<td><span class='pill pill--{_pill_class(status)}'>{html.escape(status)}</span></td>"
+            f"<td>{html.escape(type_label)}</td>"
+            f"<td>{html.escape(r['name'] or '')}</td>"
+            f"<td>{html.escape(r['activity_code'] or '')}</td>"
+            f"<td>{html.escape(time_label)}</td>"
+            f"<td>{html.escape(r['location'] or '')}</td>"
+            f"<td>{html.escape(r['ages'] or '')}</td>"
+            f"<td title='{html.escape(start_title)}'>{html.escape(_fmt_et_short(r['start_ts_utc']))}</td>"
+            f"<td>{html.escape(_fmt_et_short(r['scarce_ts']))}</td>"
+            f"<td><a href='https://vaarlingtonweb.myvscloud.com/webtrac/web/iteminfo.html?"
+            f"Module=AR&FMID={html.escape(r['fmid'])}' target='_blank'>open</a></td>"
+            f"</tr>"
+        )
+    body.append("</tbody></table>")
+    return "".join(body)
 
 
 _HTML_HEAD = """<!doctype html>
@@ -325,10 +444,17 @@ _HTML_HEAD = """<!doctype html>
   h1 {{ margin-bottom: .2em; }}
   h2 {{ margin-top: 2em; border-bottom: 1px solid var(--line); padding-bottom: .2em; }}
   .meta, .dim {{ color: var(--dim); }}
+  .lede {{ color: var(--fg); max-width: 70ch; }}
+  .lede p {{ margin: .4em 0; }}
+  /* Scrollable table container — default size ≈ 20 rows.
+     A row is ~26px (line-height 1.45 × 14px font + 4px padding × 2 ≈ 28px including border).
+     20 × 28 + 32 (sticky header) ≈ 592px. */
+  .scroll-box {{ max-height: 592px; overflow: auto;
+                 border: 1px solid var(--line); border-radius: 4px; }}
   table {{ border-collapse: collapse; width: 100%; font-size: 13px; }}
   th, td {{ text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line);
-           vertical-align: top; }}
-  th {{ font-weight: 600; background: #f0f0f0; position: sticky; top: 0; }}
+           vertical-align: top; white-space: nowrap; }}
+  th {{ font-weight: 600; background: #f0f0f0; position: sticky; top: 0; z-index: 1; }}
   .pill {{ display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 11px;
           font-weight: 600; color: white; }}
   .pill--open {{ background: var(--open); }}
@@ -346,8 +472,17 @@ _HTML_HEAD = """<!doctype html>
 </style>
 </head><body>
 <h1>Arlington Park &amp; Rec — registration monitor</h1>
-<p class='meta'>Source: <a href='https://vaarlingtonweb.myvscloud.com/webtrac/web/search.html?interfaceparameter=WebTrac'>WebTrac</a>.
-Updated by GitHub Actions.</p>
+<div class='lede'>
+  <p>This page tracks how quickly Arlington VA Park &amp; Rec classes fill up
+     during their registration windows. A scheduled GitHub Actions job polls
+     the public <a href='https://vaarlingtonweb.myvscloud.com/webtrac/web/search.html?interfaceparameter=WebTrac'>WebTrac</a>
+     catalog and records each section's status (Available / Waitlist / Full /
+     Unavailable) over time into the SQLite database below.</p>
+  <p>The <b>Sell-out speed</b> table shows the upper-bound time it took for each
+     section to transition from open to scarce — shortest first. Use the filters
+     on the <b>Currently open</b> table to narrow by status or activity type.</p>
+  <p class='meta'>Last update: {now}</p>
+</div>
 """
 
 _HTML_FOOT = "</body></html>"

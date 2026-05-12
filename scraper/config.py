@@ -80,4 +80,14 @@ EVENT_TYPE_FALLBACK: dict[str, str] = {
     "CAMP1":        "CAMP",
 }
 
+# When each registration event opened (UTC ISO). Used by the viz to compute
+# sell-out duration as "scarce_ts - reg_opens_at" rather than the looser
+# "scarce_ts - last_open_observation_ts".
+REG_OPENS_AT_UTC: dict[str, str] = {
+    "ENJOYSUMMER1": "2026-05-12T16:00:00+00:00",
+    "ENJOYSUMMER2": "2026-05-13T16:00:00+00:00",
+    "ENJOYSUMMER":  "2026-05-14T16:00:00+00:00",
+    # CAMP / CAMP1 opened earlier in the year — exact moment unknown; left unset.
+}
+
 DB_PATH = "data/snapshots.sqlite"
