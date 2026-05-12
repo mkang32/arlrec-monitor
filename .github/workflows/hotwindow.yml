@@ -6,10 +6,12 @@ name: hot-window
 
 on:
   schedule:
-    # 15:07 UTC = 11:07 ET on the trigger day (giving ~48 min of buffer)
-    - cron: "7 15 12 5 *"
-    - cron: "7 15 13 5 *"
-    - cron: "7 15 14 5 *"
+    # 15:40 UTC = 11:40 ET — fires ~10 min before we want to start polling (11:50 ET).
+    # GH Actions cron drifts by minutes (occasionally more, esp. top-of-hour);
+    # 10 min is enough buffer for typical drift while keeping the runner idle short.
+    - cron: "40 15 12 5 *"
+    - cron: "40 15 13 5 *"
+    - cron: "40 15 14 5 *"
   workflow_dispatch:
     inputs:
       event:
@@ -77,12 +79,11 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "github-actions"
 
-          # Wait until 15:55 UTC (5 min before registration noon ET) — unless manually overridden
+          # Wait until 15:50 UTC = 11:50 ET (10 min before registration opens) — unless manually overridden
           if [[ "$SKIP_WAIT" != "true" ]]; then
             while :; do
               HM=$(date -u +%H%M)
-              # Numeric comparison: 1555 = 15:55 UTC
-              if [[ "$HM" -ge 1555 ]]; then break; fi
+              if [[ "$HM" -ge 1550 ]]; then break; fi
               sleep 15
             done
           fi
