@@ -71,12 +71,36 @@ jobs:
             echo "skip_wait=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Notify hot-window started
+        if: steps.pick.outputs.event != ''
+        env:
+          ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
+          ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          ALERT_NTFY_TOPIC: ${{ secrets.ALERT_NTFY_TOPIC }}
+          EVENT: ${{ steps.pick.outputs.event }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from scraper.notify import send_alert
+          event = os.environ["EVENT"]
+          send_alert(
+              subject=f"[ARL-REC] hot-window fired for {event}",
+              body=(
+                  f"The hot-window cron fired for {event}. "
+                  f"The workflow will idle until 15:50 UTC (11:50 ET), then "
+                  f"begin minute-by-minute polling.\n"
+              ),
+          )
+          PY
+
       - name: Poll loop
         if: steps.pick.outputs.event != ''
         env:
           ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
           ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          ALERT_NTFY_TOPIC: ${{ secrets.ALERT_NTFY_TOPIC }}
           EVENT: ${{ steps.pick.outputs.event }}
           SKIP_WAIT: ${{ steps.pick.outputs.skip_wait }}
         run: |

@@ -1,0 +1,78 @@
+name: alert-watcher
+# Fires when any of our other workflows finishes. Pushes a notification
+# (email + ntfy + webhook) for:
+#   - any failure / cancellation / timeout, OR
+#   - successful completion of hot-window (so the user knows the dense polling
+#     finished cleanly).
+# Successful completions of ambient/tail/smoke are silent — they happen often.
+
+on:
+  workflow_run:
+    workflows:
+      - ambient-snapshot
+      - tail-snapshot
+      - hot-window
+      - watchdog
+      - smoke-test
+    types: [completed]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: alert-watcher-${{ github.event.workflow_run.id }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: |
+      github.event.workflow_run.conclusion == 'failure'
+      || github.event.workflow_run.conclusion == 'cancelled'
+      || github.event.workflow_run.conclusion == 'timed_out'
+      || (github.event.workflow_run.conclusion == 'success'
+          && github.event.workflow_run.name == 'hot-window')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Send alert
+        env:
+          ALERT_GMAIL_USER:  ${{ secrets.ALERT_GMAIL_USER }}
+          ALERT_GMAIL_PASS:  ${{ secrets.ALERT_GMAIL_PASS }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          ALERT_NTFY_TOPIC:  ${{ secrets.ALERT_NTFY_TOPIC }}
+          WF_NAME:   ${{ github.event.workflow_run.name }}
+          CONC:      ${{ github.event.workflow_run.conclusion }}
+          WF_EVENT:  ${{ github.event.workflow_run.event }}
+          URL:       ${{ github.event.workflow_run.html_url }}
+          STARTED:   ${{ github.event.workflow_run.run_started_at }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from scraper.notify import send_alert
+          name = os.environ["WF_NAME"]
+          conc = os.environ["CONC"]
+          ev   = os.environ["WF_EVENT"]
+          url  = os.environ["URL"]
+          started = os.environ.get("STARTED", "")
+          tag = "DONE" if conc == "success" else conc.upper()
+          send_alert(
+              subject=f"[ARL-REC] {name}: {tag}",
+              body=(
+                  f"Workflow:  {name}\n"
+                  f"Result:    {conc}\n"
+                  f"Triggered: {ev}\n"
+                  f"Started:   {started}\n"
+                  f"Logs:      {url}\n"
+              ),
+          )
+          print("alert sent")
+          PY
