@@ -52,13 +52,23 @@ jobs:
 
       - name: Commit snapshot + dumps
         run: |
+          set -e
           git config user.email "actions@github.com"
           git config user.name "github-actions"
-          git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
-          if git diff --staged --quiet; then
-            echo "no change"
-          else
-            git pull --rebase --autostash
+          # See ambient.yml for the rationale: preserve sqlite, discard locally-
+          # generated dumps, pull to get any newer dump.py, regenerate, commit.
+          attempt_commit() {
+            cp data/snapshots.sqlite /tmp/local-snapshots.sqlite
+            git checkout -- data/latest.csv data/snapshots.csv index.html 2>/dev/null || true
+            git checkout -- data/snapshots.sqlite 2>/dev/null || true
+            git pull --rebase --no-stat -q
+            cp /tmp/local-snapshots.sqlite data/snapshots.sqlite
+            python -m scraper.dump
+            git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
+            if git diff --staged --quiet; then
+              echo "no change"; return 0
+            fi
             git commit -m "tail $(date -u +%FT%TZ)"
-            git push
-          fi
+            git push -q
+          }
+          attempt_commit || attempt_commit || (echo "commit retries exhausted"; exit 1)

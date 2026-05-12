@@ -55,13 +55,28 @@ jobs:
 
       - name: Commit snapshot + dumps
         run: |
+          set -e
           git config user.email "actions@github.com"
           git config user.name "github-actions"
-          git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
-          if git diff --staged --quiet; then
-            echo "no change"
-          else
-            git pull --rebase --autostash
+          # Robust commit pattern:
+          # 1. Stash our scraped sqlite + freshly-generated dumps.
+          # 2. Pull latest (gets newer dump.py if any).
+          # 3. Restore our scraped sqlite (the only thing we MUST preserve;
+          #    CSV+HTML can be regenerated from it).
+          # 4. Regenerate dumps with the now-current dump.py.
+          # 5. Commit + push, with one pull-and-regen retry on conflict.
+          attempt_commit() {
+            cp data/snapshots.sqlite /tmp/local-snapshots.sqlite
+            git checkout -- data/latest.csv data/snapshots.csv index.html 2>/dev/null || true
+            git checkout -- data/snapshots.sqlite 2>/dev/null || true
+            git pull --rebase --no-stat -q
+            cp /tmp/local-snapshots.sqlite data/snapshots.sqlite
+            python -m scraper.dump
+            git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
+            if git diff --staged --quiet; then
+              echo "no change"; return 0
+            fi
             git commit -m "ambient $(date -u +%FT%TZ)"
-            git push
-          fi
+            git push -q
+          }
+          attempt_commit || attempt_commit || (echo "commit retries exhausted"; exit 1)
