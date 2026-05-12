@@ -32,7 +32,7 @@ LANDING_PARAMS = {"interfaceparameter": "WebTrac"}
 # Try these in order. First one that doesn't 403 wins for the rest of the run.
 # Keep at least 3 here — if Cloudflare flips two of them in a single day we
 # still have a fallback.
-IMPERSONATE_CHAIN = ["safari15_5", "safari18_0", "firefox133", "safari17_0"]
+IMPERSONATE_CHAIN = ["safari18_0", "firefox133", "safari15_5", "safari17_0"]
 
 # Status pill values that appear in the results table
 STATUS_VALUES = {"Available", "Waitlist", "Full", "Unavailable"}
