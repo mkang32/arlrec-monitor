@@ -6,12 +6,17 @@ name: hot-window
 
 on:
   schedule:
-    # 15:40 UTC = 11:40 ET — fires ~10 min before we want to start polling (11:50 ET).
-    # GH Actions cron drifts by minutes (occasionally more, esp. top-of-hour);
-    # 10 min is enough buffer for typical drift while keeping the runner idle short.
+    # Primary fire: 15:40 UTC = 11:40 ET (~10 min before noon-ET polling starts).
+    # GH Actions sometimes silently drops scheduled events (happened May 12 2026).
+    # The :48 entries are belt-and-suspenders backups; if both fire, the second
+    # will queue behind the first via the scrape-write concurrency group and run
+    # afterwards (extra polling, no harm).
     - cron: "40 15 12 5 *"
+    - cron: "48 15 12 5 *"
     - cron: "40 15 13 5 *"
+    - cron: "48 15 13 5 *"
     - cron: "40 15 14 5 *"
+    - cron: "48 15 14 5 *"
   workflow_dispatch:
     inputs:
       event:
