@@ -1,0 +1,22 @@
+name: probe-now
+on: { workflow_dispatch: {} }
+permissions: {}
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install curl_cffi
+      - run: |
+          python3 -c "
+          from curl_cffi import requests
+          url='https://vaarlingtonweb.myvscloud.com/webtrac/web/search.html?interfaceparameter=WebTrac'
+          for p in ['safari17_0','safari15_5','firefox133','chrome131','chrome124','safari18_0']:
+              try:
+                  r = requests.get(url, impersonate=p, timeout=15)
+                  ok = 'Activity Search' in r.text
+                  print(f'{p:14} HTTP {r.status_code}  {len(r.text):>6}B  {\"OK\" if ok else \"BLOCKED\"}')
+              except Exception as e:
+                  print(f'{p:14} ERROR {e}')
+          "
