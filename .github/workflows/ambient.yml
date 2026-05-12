@@ -10,7 +10,6 @@ name: ambient-snapshot
 on:
   schedule:
     - cron: "0 * 11-15 5 *"           # hourly, May 11-15
-    - cron: "*/10 * 11-14 5 *"        # every 10 min, May 11-14 (registration crunch)
   workflow_dispatch: {}
 
 permissions:
@@ -34,8 +33,11 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Refresh per-section type_code (metadata-only catalog pass)
-        run: python -m scraper.scrape --mode types
+      # NOTE: --mode types is intentionally NOT run here — it adds ~30 type
+      # searches (~360 page fetches) per invocation. Combined with the */10 cron
+      # during reg days that's ~60k HTTP requests/day, which gets the runner IP
+      # 403'd by Cloudflare. tail.yml runs --mode types once a day instead,
+      # which is plenty since section taxonomy is stable.
 
       - name: Scrape all three registration events
         env:

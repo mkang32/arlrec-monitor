@@ -2,11 +2,18 @@
 
 Cloudflare in front of the site blocks plain requests/urllib/curl — we MUST use
 curl_cffi with a real browser TLS fingerprint. From GitHub Actions runner IPs,
-Chrome fingerprints (chrome120/124/131) return 403; Safari and Firefox profiles
-return 200. We default to Safari (safari17_0).
+Cloudflare's bot detection adapts over time: any given fingerprint can flip
+from "OK" to "403 Blocked" without warning. We therefore try a list of known-good
+fingerprints in priority order, and on a 403 we swap to the next one and rebuild
+the session. The first working fingerprint is sticky for the rest of the run.
+
+History:
+  2026-05-11: chrome* blocked, safari17_0/safari15_5/firefox133 worked.
+  2026-05-12: safari17_0 also blocked; safari15_5/safari18_0/firefox133 still work.
 """
 from __future__ import annotations
 
+import logging
 import re
 import time
 from dataclasses import dataclass
@@ -15,11 +22,17 @@ from typing import Iterator
 from bs4 import BeautifulSoup
 from curl_cffi import requests as cffi_requests
 
+log = logging.getLogger(__name__)
+
 BASE = "https://vaarlingtonweb.myvscloud.com/webtrac/web"
 SEARCH_URL = f"{BASE}/search.html"
 ITEMINFO_URL = f"{BASE}/iteminfo.html"
 LANDING_PARAMS = {"interfaceparameter": "WebTrac"}
-IMPERSONATE = "safari17_0"
+
+# Try these in order. First one that doesn't 403 wins for the rest of the run.
+# Keep at least 3 here — if Cloudflare flips two of them in a single day we
+# still have a fallback.
+IMPERSONATE_CHAIN = ["safari15_5", "safari18_0", "firefox133", "safari17_0"]
 
 # Status pill values that appear in the results table
 STATUS_VALUES = {"Available", "Waitlist", "Full", "Unavailable"}
@@ -48,16 +61,40 @@ class EnrollmentCounts:
 
 
 class WebTracClient:
-    """Stateful session: holds Cloudflare cookies + CSRF token across requests."""
+    """Stateful session: holds Cloudflare cookies + CSRF token across requests.
 
-    def __init__(self, polite_delay_s: float = 0.5):
-        self.session = cffi_requests.Session(impersonate=IMPERSONATE)
+    On a 403, swap to the next fingerprint in IMPERSONATE_CHAIN and rebuild the
+    session (cookies + CSRF). One swap per failed request, then propagate.
+    """
+
+    def __init__(self, polite_delay_s: float = 0.5,
+                 impersonate_chain: list[str] | None = None):
+        self._chain = list(impersonate_chain or IMPERSONATE_CHAIN)
+        self._chain_idx = 0
+        self.session = self._new_session()
         self._csrf: str | None = None
         self._polite_delay_s = polite_delay_s
         self._last_request_at = 0.0
 
+    @property
+    def current_fingerprint(self) -> str:
+        return self._chain[self._chain_idx]
+
+    def _new_session(self):
+        return cffi_requests.Session(impersonate=self.current_fingerprint)
+
+    def _rotate_fingerprint(self) -> bool:
+        """Move to next fingerprint, rebuild session, drop CSRF. Returns False
+        if no more profiles to try."""
+        if self._chain_idx + 1 >= len(self._chain):
+            return False
+        self._chain_idx += 1
+        log.warning("rotating fingerprint to %s after 403", self.current_fingerprint)
+        self.session = self._new_session()
+        self._csrf = None
+        return True
+
     def _throttle(self):
-        # be polite — no more than ~2 req/s
         elapsed = time.time() - self._last_request_at
         if elapsed < self._polite_delay_s:
             time.sleep(self._polite_delay_s - elapsed)
@@ -66,16 +103,33 @@ class WebTracClient:
     def _get(self, url: str, params: dict | None = None, timeout: int = 30) -> str:
         self._throttle()
         r = self.session.get(url, params=params, timeout=timeout)
+        if r.status_code == 403:
+            if self._rotate_fingerprint():
+                # CSRF likely invalid for the new session — caller should warm_up again.
+                # For warm_up itself, just retry once with the new fingerprint.
+                self._throttle()
+                r = self.session.get(url, params=params, timeout=timeout)
         r.raise_for_status()
         return r.text
 
     def warm_up(self) -> None:
-        """Hit the search landing page to acquire cookies + CSRF token."""
-        html = self._get(SEARCH_URL, LANDING_PARAMS)
-        m = re.search(r'name="_csrf_token"[^>]*value="([^"]+)"', html)
-        if not m:
-            raise RuntimeError("Could not extract CSRF token from search landing page")
-        self._csrf = m.group(1)
+        """Hit the search landing page to acquire cookies + CSRF token. Rotates
+        fingerprints on 403 until one works or the chain is exhausted."""
+        last_exc: Exception | None = None
+        for attempt in range(len(self._chain) + 1):
+            try:
+                html = self._get(SEARCH_URL, LANDING_PARAMS)
+                m = re.search(r'name="_csrf_token"[^>]*value="([^"]+)"', html)
+                if not m:
+                    raise RuntimeError("Could not extract CSRF token from search landing page")
+                self._csrf = m.group(1)
+                log.info("warm-up OK with fingerprint=%s", self.current_fingerprint)
+                return
+            except Exception as e:
+                last_exc = e
+                if not self._rotate_fingerprint():
+                    break
+        raise RuntimeError(f"warm-up failed across all fingerprints: {last_exc}")
 
     def _ensure_csrf(self) -> str:
         if not self._csrf:

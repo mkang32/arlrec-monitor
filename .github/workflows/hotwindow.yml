@@ -32,7 +32,8 @@ concurrency:
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    # 30 min × 60s + 30 min × 5min + 2 h × 10min = ~3h + setup + buffer
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
 
@@ -118,6 +119,15 @@ jobs:
             poll_and_commit
             elapsed=$(( $(date +%s) - start ))
             sleep_for=$(( 300 - elapsed ))
+            if [[ $sleep_for -gt 0 ]]; then sleep $sleep_for; fi
+          done
+
+          # Phase 3: 2 hours of ~10-min polling
+          for i in $(seq 1 12); do
+            start=$(date +%s)
+            poll_and_commit
+            elapsed=$(( $(date +%s) - start ))
+            sleep_for=$(( 600 - elapsed ))
             if [[ $sleep_for -gt 0 ]]; then sleep $sleep_for; fi
           done
 
