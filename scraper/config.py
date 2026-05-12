@@ -12,10 +12,14 @@ WATCH_FMIDS: list[str] = [
 # We alert on anything going scarcer, but not the reverse (cancellations).
 ALERT_TRANSITIONS: list[tuple[str | None, str]] = [
     (None, "Available"),          # first time we see it open
+    (None, "Waitlist"),            # first observation already on waitlist
+    (None, "Full"),                 # first observation already full (rare but possible)
     ("Unavailable", "Available"), # registration just opened
+    ("Unavailable", "Waitlist"),  # filled to waitlist between our polls
+    ("Unavailable", "Full"),      # filled completely between our polls
     ("Available", "Waitlist"),
+    ("Available", "Full"),         # filled so fast we never saw Waitlist
     ("Waitlist", "Full"),
-    ("Available", "Full"),        # filled so fast we never saw Waitlist
 ]
 
 # Type-code → human label. Order is meaningful: matches the WebTrac type dropdown.
