@@ -229,7 +229,7 @@ def _sellout_rows(conn) -> list[dict]:
         SELECT
             fs.fmid,
             sec.name, sec.activity_code, sec.type_code, sec.reg_event,
-            sec.days, sec.time_start, sec.time_end, sec.location, sec.ages,
+            sec.days, sec.time_start, sec.time_end, sec.location, sec.ages, sec.cost,
             lo.open_ts,
             fs.scarce_ts,
             (SELECT status FROM snapshots WHERE fmid=fs.fmid AND ts=fs.scarce_ts
@@ -401,6 +401,15 @@ def _opt_int(r, key):
 
 _AGE_RE = re.compile(r"\s*(\d+(?:\.\d+)?)\s*-\s*(\d+(?:\.\d+)?)\s*")
 _TIME_RE = re.compile(r"\s*(\d{1,2}):(\d{2})\s*(am|pm)\s*", re.I)
+_DOLLAR_RE = re.compile(r"\$\s*(\d+(?:\.\d+)?)")
+
+
+def _parse_first_dollar(s: str | None) -> float | None:
+    """'$70.00/$90.00' → 70.0 (resident price, the lower of the two)."""
+    if not s:
+        return None
+    m = _DOLLAR_RE.search(s)
+    return float(m.group(1)) if m else None
 
 
 def _parse_age_range(s: str | None) -> tuple[float, float] | None:
@@ -482,6 +491,24 @@ _COLUMN_AGES    = Column(
     range_value=lambda r: _parse_age_range(r.get("ages")),
     contains_placeholder="age (e.g. 4)",
 )
+
+_COST_PRESETS = (
+    ("Free",      "0,0"),
+    ("≤ $50",     ",50"),
+    ("≤ $100",    ",100"),
+    ("≤ $200",    ",200"),
+    ("≤ $500",    ",500"),
+    ("> $500",          "500.01,"),
+)
+
+_COLUMN_COST = Column(
+    "Cost",
+    lambda r: html.escape(r.get("cost") or ""),
+    "preset",
+    lambda r: r.get("cost") or "",
+    numeric_value=lambda r: _parse_first_dollar(r.get("cost")),
+    presets=_COST_PRESETS,
+)
 _COLUMN_ENROLL  = Column(
     "Enrolled",
     lambda r: "" if r.get("enrolled") is None else str(r["enrolled"]),
@@ -536,13 +563,15 @@ _COLUMNS_WATCHLIST: list[Column] = [
     Column(c.label, c.render, None, c.filter_value)  # strip filter_kind
     for c in [_COLUMN_STATUS, _COLUMN_TYPE, _COLUMN_CLASS, _COLUMN_ACT,
               _COLUMN_DAY, _COLUMN_TIME,
-              _COLUMN_LOC, _COLUMN_AGES, _COLUMN_ENROLL, _COLUMN_WAIT_N, _COLUMN_LASTSEEN, _COLUMN_LINK]
+              _COLUMN_LOC, _COLUMN_AGES, _COLUMN_COST,
+              _COLUMN_ENROLL, _COLUMN_WAIT_N, _COLUMN_LASTSEEN, _COLUMN_LINK]
 ]
 
 _COLUMNS_OPEN: list[Column] = [
     _COLUMN_STATUS, _COLUMN_TYPE, _COLUMN_CLASS, _COLUMN_ACT,
     _COLUMN_DAY, _COLUMN_TIME,
-    _COLUMN_LOC, _COLUMN_AGES, _COLUMN_ENROLL, _COLUMN_WAIT_N, _COLUMN_LINK,
+    _COLUMN_LOC, _COLUMN_AGES, _COLUMN_COST,
+    _COLUMN_ENROLL, _COLUMN_WAIT_N, _COLUMN_LINK,
 ]
 
 _COLUMNS_SELLOUT: list[Column] = [
@@ -559,6 +588,7 @@ _COLUMNS_SELLOUT: list[Column] = [
     _COLUMN_TIME,
     _COLUMN_LOC,
     _COLUMN_AGES,
+    _COLUMN_COST,
     Column(
         "Enrolled", _enrolled_now, "preset", _enrolled_now,
         numeric_value=lambda r: _opt_int(r, "current_enrolled"),
