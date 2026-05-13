@@ -58,19 +58,31 @@ def _dump_snapshots_csv(conn) -> None:
 
 
 def _dump_latest_csv(conn) -> None:
+    # status/ts from the most recent snapshot;
+    # enrolled/waitlist from the most recent snapshot with non-null counts.
     rows = conn.execute(
         """
-        SELECT sec.fmid, sec.activity_code, sec.name, sec.reg_event, sec.type_code,
-               sec.date_start, sec.date_end, sec.time_start, sec.time_end, sec.days,
-               sec.location, sec.ages, sec.cost,
-               latest.ts, latest.status, latest.enrolled, latest.waitlist
-        FROM sections sec
-        LEFT JOIN (
-            SELECT s.fmid, s.ts, s.status, s.enrolled, s.waitlist
+        WITH latest_status AS (
+            SELECT s.fmid, s.ts, s.status
             FROM snapshots s
             JOIN (SELECT fmid, MAX(ts) AS max_ts FROM snapshots GROUP BY fmid) m
               ON m.fmid = s.fmid AND m.max_ts = s.ts
-        ) latest ON latest.fmid = sec.fmid
+        ),
+        latest_counts AS (
+            SELECT s.fmid, s.enrolled, s.waitlist
+            FROM snapshots s
+            JOIN (
+              SELECT fmid, MAX(ts) AS max_ts FROM snapshots
+              WHERE enrolled IS NOT NULL GROUP BY fmid
+            ) m ON m.fmid = s.fmid AND m.max_ts = s.ts
+        )
+        SELECT sec.fmid, sec.activity_code, sec.name, sec.reg_event, sec.type_code,
+               sec.date_start, sec.date_end, sec.time_start, sec.time_end, sec.days,
+               sec.location, sec.ages, sec.cost,
+               ls.ts, ls.status, lc.enrolled, lc.waitlist
+        FROM sections sec
+        LEFT JOIN latest_status ls ON ls.fmid = sec.fmid
+        LEFT JOIN latest_counts lc ON lc.fmid = sec.fmid
         ORDER BY sec.name, sec.activity_code
         """
     ).fetchall()
@@ -108,23 +120,39 @@ def _dump_index_html(conn) -> None:
     watch_rows = [_latest_row_for(conn, fmid) for fmid in config.WATCH_FMIDS]
     watch_rows = [dict(r) for r in watch_rows if r is not None]
 
-    # Sections that are currently non-Unavailable
+    # Sections that are currently non-Unavailable.
+    # Latest status comes from the most recent snapshot; counts come from the
+    # most recent snapshot with non-null enrolled (status polls run with
+    # --skip-counts so the very latest row often lacks counts).
     active = [dict(r) for r in conn.execute(
         """
-        SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.location, sec.days,
-               sec.time_start, sec.time_end, sec.ages, sec.cost,
-               latest.status, latest.enrolled, latest.waitlist, latest.ts
-        FROM sections sec
-        JOIN (
-            SELECT s.fmid, s.ts, s.status, s.enrolled, s.waitlist
+        WITH latest_status AS (
+            SELECT s.fmid, s.ts, s.status
             FROM snapshots s
             JOIN (SELECT fmid, MAX(ts) AS max_ts FROM snapshots GROUP BY fmid) m
               ON m.fmid = s.fmid AND m.max_ts = s.ts
-        ) latest ON latest.fmid = sec.fmid
-        WHERE latest.status != 'Unavailable'
+        ),
+        latest_counts AS (
+            SELECT s.fmid, s.enrolled, s.waitlist
+            FROM snapshots s
+            JOIN (
+              SELECT fmid, MAX(ts) AS max_ts
+              FROM snapshots
+              WHERE enrolled IS NOT NULL
+              GROUP BY fmid
+            ) m ON m.fmid = s.fmid AND m.max_ts = s.ts
+        )
+        SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.location, sec.days,
+               sec.time_start, sec.time_end, sec.ages, sec.cost,
+               ls.status, ls.ts,
+               lc.enrolled, lc.waitlist
+        FROM sections sec
+        JOIN latest_status ls ON ls.fmid = sec.fmid
+        LEFT JOIN latest_counts lc ON lc.fmid = sec.fmid
+        WHERE ls.status != 'Unavailable'
         ORDER BY
-          CASE latest.status WHEN 'Full' THEN 0 WHEN 'Waitlist' THEN 1
-                              WHEN 'Available' THEN 2 ELSE 3 END,
+          CASE ls.status WHEN 'Full' THEN 0 WHEN 'Waitlist' THEN 1
+                          WHEN 'Available' THEN 2 ELSE 3 END,
           sec.name, sec.activity_code
         """
     ).fetchall()]
@@ -180,18 +208,21 @@ def _dump_index_html(conn) -> None:
 # ----- Data helpers --------------------------------------------------------
 
 def _latest_row_for(conn, fmid: str):
+    """status + ts from the most recent snapshot.
+       enrolled + waitlist from the most recent snapshot with non-null counts
+       (hot-window polls run `--skip-counts` and leave those columns null)."""
     return conn.execute(
         """
         SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.location, sec.days,
                sec.time_start, sec.time_end, sec.ages, sec.cost,
-               s.status, s.enrolled, s.waitlist, s.ts
+               (SELECT status FROM snapshots WHERE fmid = sec.fmid ORDER BY ts DESC LIMIT 1) AS status,
+               (SELECT ts     FROM snapshots WHERE fmid = sec.fmid ORDER BY ts DESC LIMIT 1) AS ts,
+               (SELECT enrolled FROM snapshots WHERE fmid = sec.fmid AND enrolled IS NOT NULL ORDER BY ts DESC LIMIT 1) AS enrolled,
+               (SELECT waitlist FROM snapshots WHERE fmid = sec.fmid AND waitlist IS NOT NULL ORDER BY ts DESC LIMIT 1) AS waitlist
         FROM sections sec
-        LEFT JOIN (
-            SELECT * FROM snapshots WHERE fmid = ? ORDER BY ts DESC LIMIT 1
-        ) s ON s.fmid = sec.fmid
         WHERE sec.fmid = ?
         """,
-        (fmid, fmid),
+        (fmid,),
     ).fetchone()
 
 
@@ -220,11 +251,21 @@ def _sellout_rows(conn) -> list[dict]:
               AND s.ts < fs.scarce_ts
             GROUP BY s.fmid
         ),
-        latest AS (
-            SELECT s.fmid, s.ts, s.status, s.enrolled, s.waitlist
+        latest_status AS (
+            SELECT s.fmid, s.ts, s.status
             FROM snapshots s
             JOIN (SELECT fmid, MAX(ts) AS max_ts FROM snapshots GROUP BY fmid) m
               ON m.fmid = s.fmid AND m.max_ts = s.ts
+        ),
+        latest_counts AS (
+            SELECT s.fmid, s.enrolled, s.waitlist
+            FROM snapshots s
+            JOIN (
+              SELECT fmid, MAX(ts) AS max_ts
+              FROM snapshots
+              WHERE enrolled IS NOT NULL
+              GROUP BY fmid
+            ) m ON m.fmid = s.fmid AND m.max_ts = s.ts
         )
         SELECT
             fs.fmid,
@@ -234,13 +275,14 @@ def _sellout_rows(conn) -> list[dict]:
             fs.scarce_ts,
             (SELECT status FROM snapshots WHERE fmid=fs.fmid AND ts=fs.scarce_ts
              ORDER BY ts LIMIT 1) AS scarce_status,
-            latest.status   AS current_status,
-            latest.enrolled AS current_enrolled,
-            latest.waitlist AS current_waitlist
+            ls.status   AS current_status,
+            lc.enrolled AS current_enrolled,
+            lc.waitlist AS current_waitlist
         FROM first_scarce fs
         LEFT JOIN last_open lo ON lo.fmid = fs.fmid
         JOIN sections sec ON sec.fmid = fs.fmid
-        LEFT JOIN latest  ON latest.fmid = fs.fmid
+        LEFT JOIN latest_status ls ON ls.fmid = fs.fmid
+        LEFT JOIN latest_counts lc ON lc.fmid = fs.fmid
         """
     ).fetchall()
 
