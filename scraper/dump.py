@@ -825,9 +825,12 @@ _HTML_HEAD = """<!doctype html>
 </div>
 <div class='schedule schedule--polling'>
   <b>Polling schedule:</b><br>
-  <b>Registration days</b> (May 12, 13, 14) starting at noon ET:
-    every <b>60 s</b> for 30 min, then every <b>5 min</b> for 30 min,
-    then every <b>10 min</b> for 2 hr.<br>
+  <b>Registration days</b> (May 12, 13, 14):
+    every <b>60 s</b> from 11:50&nbsp;ET (pre-open baseline),
+    every <b>15 s</b> for the first 5 min after noon ET (the explosive open moment),
+    every <b>60 s</b> until 12:30 ET,
+    every <b>5 min</b> until 1:00 PM ET,
+    then every <b>10 min</b> until 3:00 PM ET.<br>
   <b>May 11&ndash;15</b>: hourly background polling.<br>
   <b>May 16&ndash;Jul 10</b>: once daily (08:00 ET).<br>
   <b>After Jul 10</b>: monitoring stops &mdash; all summer classes have started by then.

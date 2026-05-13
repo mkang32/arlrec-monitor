@@ -1,7 +1,14 @@
 name: hot-window
-# Dense polling during the moment a registration window opens.
-# Fires ~50 min before noon ET on May 12/13/14 2026, then sleeps until 15:55 UTC
-# and polls every ~60s for 30 min, then every ~5 min for another 30 min.
+# Dense polling around the moment a registration window opens.
+# Fires ~20 min before noon ET on May 12/13/14 2026, sleeps until 11:50 ET (15:50 UTC),
+# then drives through phases pinned to absolute UTC wall-clock times:
+#   pre-open  every  60s  until 16:00 UTC (11:50 ET → noon ET)        — baseline
+#   phase 0   every  15s  until 16:05 UTC (first 5 min after open)    — explosive moment
+#   phase 1   every  60s  until 16:30 UTC                              — fast settling
+#   phase 2   every 5min  until 17:00 UTC                              — slow settling
+#   phase 3   every 10min until 19:00 UTC                              — long tail
+# All iterations use --skip-counts (status only); a final enrollment-counts pass
+# runs once at the end via `if: always()`. Ambient cron then catches counts hourly.
 # (GitHub Actions cron is often delayed; firing early + sleeping is the safe pattern.)
 
 on:
@@ -145,33 +152,33 @@ jobs:
             fi
           }
 
-          # Phase 1: 30 minutes of ~60s polling
-          for i in $(seq 1 30); do
-            start=$(date +%s)
-            poll_and_commit
-            elapsed=$(( $(date +%s) - start ))
-            # aim for 60s cadence
-            sleep_for=$(( 60 - elapsed ))
-            if [[ $sleep_for -gt 0 ]]; then sleep $sleep_for; fi
-          done
+          # All phases drive off the UTC wall clock so they fire at fixed
+          # moments regardless of cron drift / where we are in the workflow:
+          #
+          #   pre-open   : 60s polling until 16:00 UTC (registration opens)
+          #   phase 0    : 15s polling for 5 min     (16:00 → 16:05 UTC)
+          #   phase 1    : 60s polling for 25 min    (16:05 → 16:30 UTC)
+          #   phase 2    : 5min polling for 30 min   (16:30 → 17:00 UTC)
+          #   phase 3    : 10min polling for 2 hours (17:00 → 19:00 UTC)
+          #
+          # Comparison via [[ ]] with string < is lexicographic on the 4-digit
+          # HHMM, which matches chronological order within a UTC day.
+          run_until() {
+            local end_hhmm="$1" cadence_s="$2" phase="$3"
+            echo "Phase $phase: until $end_hhmm UTC at ${cadence_s}s cadence"
+            while [[ "$(date -u +%H%M)" < "$end_hhmm" ]]; do
+              local s=$(date +%s)
+              poll_and_commit
+              local sleep_for=$(( cadence_s - ($(date +%s) - s) ))
+              [[ $sleep_for -gt 0 ]] && sleep $sleep_for
+            done
+          }
 
-          # Phase 2: 30 minutes of ~5-min polling
-          for i in $(seq 1 6); do
-            start=$(date +%s)
-            poll_and_commit
-            elapsed=$(( $(date +%s) - start ))
-            sleep_for=$(( 300 - elapsed ))
-            if [[ $sleep_for -gt 0 ]]; then sleep $sleep_for; fi
-          done
-
-          # Phase 3: 2 hours of ~10-min polling
-          for i in $(seq 1 12); do
-            start=$(date +%s)
-            poll_and_commit
-            elapsed=$(( $(date +%s) - start ))
-            sleep_for=$(( 600 - elapsed ))
-            if [[ $sleep_for -gt 0 ]]; then sleep $sleep_for; fi
-          done
+          run_until "1600" 60  "pre-open"
+          run_until "1605" 15  "0 (15s, first 5 min after open)"
+          run_until "1630" 60  "1 (60s)"
+          run_until "1700" 300 "2 (5 min)"
+          run_until "1900" 600 "3 (10 min)"
 
           echo "Hot window polling done at $(date -u +%FT%TZ)"
 
