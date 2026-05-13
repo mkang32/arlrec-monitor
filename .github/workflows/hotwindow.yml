@@ -136,8 +136,12 @@ jobs:
             # 1. Sync with remote first (cheap; avoids autostash conflicts on
             #    dump-generated files like index.html when UI code changes upstream).
             git pull --rebase --no-stat -q || git rebase --abort 2>/dev/null || true
-            # 2. Scrape into the freshly-merged DB.
-            python -m scraper.scrape --mode event --event "$EVENT" --skip-counts
+            # 2. Scrape into the freshly-merged DB. Soft-skip if Queue-it gates us:
+            #    we're in a virtual waiting room, no data yet, just try again next iter.
+            if ! python -m scraper.scrape --mode event --event "$EVENT" --skip-counts; then
+              echo "scrape failed this iteration (possibly Queue-it queue); continuing"
+              return 0
+            fi
             # 3. Regenerate dumps using the just-pulled (possibly newer) dump.py code.
             python -m scraper.dump
             git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
@@ -158,7 +162,10 @@ jobs:
           count_pass() {
             echo "Hourly enrollment-counts pass at $(date -u +%FT%TZ)"
             git pull --rebase --no-stat -q || git rebase --abort 2>/dev/null || true
-            python -m scraper.scrape --mode event --event "$EVENT"
+            if ! python -m scraper.scrape --mode event --event "$EVENT"; then
+              echo "count_pass scrape failed (possibly Queue-it queue); will retry next phase"
+              return 0
+            fi
             python -m scraper.dump
             git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
             git diff --staged --quiet && return 0

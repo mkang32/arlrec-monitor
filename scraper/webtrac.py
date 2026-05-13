@@ -24,6 +24,14 @@ from curl_cffi import requests as cffi_requests
 
 log = logging.getLogger(__name__)
 
+
+class QueuedError(RuntimeError):
+    """The Vermont Systems site put us in a Queue-it waiting room.
+    Not a bug, not a block — load management around registration opening.
+    Callers should back off and retry later rather than treating this as fatal.
+    """
+
+
 BASE = "https://vaarlingtonweb.myvscloud.com/webtrac/web"
 SEARCH_URL = f"{BASE}/search.html"
 ITEMINFO_URL = f"{BASE}/iteminfo.html"
@@ -114,17 +122,26 @@ class WebTracClient:
 
     def warm_up(self) -> None:
         """Hit the search landing page to acquire cookies + CSRF token. Rotates
-        fingerprints on 403 until one works or the chain is exhausted."""
+        fingerprints on 403 until one works or the chain is exhausted.
+        Raises QueuedError if the response is a Queue-it waiting room."""
         last_exc: Exception | None = None
         for attempt in range(len(self._chain) + 1):
             try:
                 html = self._get(SEARCH_URL, LANDING_PARAMS)
+                # Queue-it puts a waiting room in front of the site near
+                # registration windows. The page has <title>Queue-it</title>
+                # and no CSRF token. Treat this as a known transient condition.
+                if "<title>Queue-it</title>" in html or "queue-it.net" in html:
+                    raise QueuedError("Vermont Systems is in Queue-it waiting room")
                 m = re.search(r'name="_csrf_token"[^>]*value="([^"]+)"', html)
                 if not m:
                     raise RuntimeError("Could not extract CSRF token from search landing page")
                 self._csrf = m.group(1)
                 log.info("warm-up OK with fingerprint=%s", self.current_fingerprint)
                 return
+            except QueuedError:
+                # Don't rotate fingerprint — Queue-it is per-IP/session not per-TLS
+                raise
             except Exception as e:
                 last_exc = e
                 if not self._rotate_fingerprint():
