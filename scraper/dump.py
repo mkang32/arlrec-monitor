@@ -992,9 +992,21 @@ _HTML_HEAD = """<!doctype html>
   }}
   body {{ font: 14px/1.45 -apple-system, system-ui, sans-serif; margin: 2em auto; max-width: 1200px;
          padding: 0 1em; color: var(--fg); background: var(--bg); }}
-  h1 {{ margin-bottom: .2em; }}
+  h1 {{ font-size: 28px; margin: 4px 0 6px; letter-spacing: -0.01em; }}
   h2 {{ margin-top: 2em; border-bottom: 1px solid var(--line); padding-bottom: .2em; }}
   .meta, .dim, .footnote {{ color: var(--dim); }}
+  .breadcrumb {{ font-size: 13px; color: var(--dim); margin: 0 0 14px; }}
+  .breadcrumb a {{ color: #1a64c8; text-decoration: none; }}
+  .breadcrumb a:hover {{ text-decoration: underline; }}
+  .context {{ font-size: 12px; font-weight: 600; color: var(--dim);
+              text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 4px; }}
+  .header-actions {{ margin: 6px 0 18px; }}
+  .header-actions a {{
+    display: inline-block; padding: 8px 14px;
+    background: #1a1a1a; color: #fff; border-radius: 6px;
+    font-size: 14px; font-weight: 500; text-decoration: none;
+  }}
+  .header-actions a:hover {{ background: #333; }}
   .footnote {{ font-size: 12px; margin: 4px 0 0; }}
   .lede {{ color: var(--fg); max-width: 70ch; }}
   .lede p {{ margin: .4em 0; }}
@@ -1024,7 +1036,10 @@ _HTML_HEAD = """<!doctype html>
   a {{ color: #1a64c8; }}
 </style>
 </head><body>
-<h1>Arlington Park &amp; Rec — registration monitor</h1>
+<p class='breadcrumb'><a href='../../../'>Sellout Watcher</a> &nbsp;·&nbsp; <a href='../../'>Arlington County, VA</a> &nbsp;·&nbsp; <a href='../'>Summer 2026 analysis</a></p>
+<p class='context'>Arlington County, VA &nbsp;·&nbsp; Summer 2026</p>
+<h1>Live dashboard</h1>
+<p class='header-actions'><a href='../'>&larr; Back to analysis page</a></p>
 <div class='lede'>
   <p><b>Why this exists:</b> Arlington's most popular kids' classes can sell out
      within seconds of registration opening. This page surfaces each section's

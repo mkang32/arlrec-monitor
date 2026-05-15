@@ -40,9 +40,21 @@
     margin-left: auto;
     margin-right: auto;
   }
-  h1 { font-size: 24px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h1 { font-size: 28px; font-weight: 600; margin: 4px 0 6px; letter-spacing: -0.01em; }
   h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; letter-spacing: -0.01em; }
-  .sub { color: #6b6b66; font-size: 14px; margin: 0 0 4px; }
+  .breadcrumb { font-size: 13px; color: #888880; margin: 0 0 14px; }
+  .breadcrumb a { color: #1a64c8; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .context { font-size: 12px; font-weight: 600; color: #888880;
+             text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 4px; }
+  .sub { color: #6b6b66; font-size: 14px; margin: 0 0 12px; }
+  .header-actions { margin: 0 0 18px; }
+  .header-actions a {
+    display: inline-block; padding: 8px 14px;
+    background: #1a1a1a; color: #fff; border-radius: 6px;
+    font-size: 14px; font-weight: 500; text-decoration: none;
+  }
+  .header-actions a:hover { background: #333; }
   .meta { color: #888880; font-size: 12px; margin: 0 0 24px; }
   .stat-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -77,8 +89,11 @@
 </head>
 <body>
 
-<h1>Arlington class registration &mdash; sellout patterns &amp; planning</h1>
+<p class="breadcrumb"><a href="../../">Sellout Watcher</a> &nbsp;·&nbsp; <a href="../">Arlington County, VA</a></p>
+<p class="context">Arlington County, VA &nbsp;·&nbsp; Summer 2026</p>
+<h1>Class registration sell-out patterns</h1>
 <p class="sub">Which classes need a noon-on-the-dot fingertip, which you can grab next week, and where the real competition is.</p>
+<p class="header-actions"><a href="dashboard/">View live dashboard &rarr;</a></p>
 <p class="meta" id="meta">&nbsp;</p>
 
 <div class="stat-grid" id="stats">
@@ -94,7 +109,7 @@
 </div>
 
 <h2>How fast did each category sell out?</h2>
-<p class="legend-line">Each bar shows how the sold-out sections in that category split across speed bins. <b>Instant (under 20&nbsp;min)</b> almost certainly went faster than that &mdash; the scraper polls every ~15&ndash;20&nbsp;min, so anything in the first cycle is "gone before we could measure." The interesting differentiator is the rest of the bar: gymnastics has a long tail of next-day and multi-day sellouts, while tennis and adult fitness are almost entirely instant-or-not.</p>
+<p class="legend-line">Each bar shows how the sold-out sections in that category split across speed bins. <b>Instant (under 20&nbsp;min)</b> almost certainly went faster than that &mdash; the scraper polls every ~15&ndash;20&nbsp;min, so anything in the first cycle is "gone before we could measure." The interesting differentiator is the rest of the bar: gymnastics has a long tail of 6&ndash;24-hour and multi-day sellouts, while tennis and adult fitness are almost entirely instant-or-not.</p>
 <div class="card"><div class="chart-wrap"><canvas id="chart-category" role="img" aria-label="Stacked horizontal bar chart of sellout speed bins by class category"></canvas></div></div>
 
 <div class="filter-bar">
@@ -104,7 +119,7 @@
 </div>
 
 <h2>By day of week</h2>
-<p class="legend-line">Each bar's total height is the % of sections that sold out that day. Segments show how those sellouts split across speed bins (Instant&nbsp;&lt;20m, Under 1h, Same day, Next day, Multi-day). A tall red-dominated bar = highly competitive; a tall blue-dominated bar = still gone, but you had hours-to-days.</p>
+<p class="legend-line">Each bar's total height is the % of sections that sold out that day. Segments show how those sellouts split across speed bins (Instant&nbsp;&lt;20m, Under 1h, 1&ndash;6 hours, 6&ndash;24 hours, Multi-day). A tall red-dominated bar = highly competitive; a tall blue-dominated bar = still gone, but you had hours-to-days.</p>
 <div class="card"><div class="chart-wrap"><canvas id="chart-day" role="img" aria-label="Stacked sellout-speed distribution by day of week"></canvas></div></div>
 
 <h2>By time of day &mdash; weekday vs. weekend</h2>
@@ -155,8 +170,8 @@
   const BIN_DEFS = [
     { key: 'instant',  label: 'Instant (<20 min)',  max: 1200,    color: '#b03a2e' },
     { key: 'under1h',  label: 'Under 1 hour',       max: 3600,    color: '#d9853b' },
-    { key: 'sameday',  label: 'Same day (1–6 h)',   max: 21600,   color: '#e8b237' },
-    { key: 'nextday',  label: 'Next day (6–24 h)',  max: 86400,   color: '#7aa3d4' },
+    { key: 'sameday',  label: '1–6 hours',      max: 21600,   color: '#e8b237' },
+    { key: 'nextday',  label: '6–24 hours',     max: 86400,   color: '#7aa3d4' },
     { key: 'multiday', label: 'Multi-day (1d+)',    max: Infinity,color: '#3e6ea8' },
   ];
 
