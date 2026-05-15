@@ -29,7 +29,9 @@ SNAPSHOTS_CSV = DATA_DIR / "snapshots.csv"
 # duration. Materialized as a table named `currently_open` inside snapshots.sqlite
 # and mirrored to data/currently_open.csv.
 CURRENTLY_OPEN_CSV = DATA_DIR / "currently_open.csv"
-INDEX_HTML = Path("index.html")
+# Dashboard (live filterable tables) lives under its county/season directory.
+# Future seasons get sibling directories (arlington-va/2026-fall/dashboard/ etc.)
+INDEX_HTML = Path("arlington-va/2026-summer/dashboard/index.html")
 
 
 def main() -> int:
@@ -144,6 +146,25 @@ _ANALYSIS_COLS: tuple[tuple[str, str], ...] = (
 )
 
 
+def _opens_at_before(scarce_dt: dt.datetime) -> tuple[dt.datetime, str] | tuple[None, None]:
+    """Return (opens_at, event_code) for the latest known registration window
+    that opened at or before `scarce_dt`. Robust to WebTrac re-tagging:
+    Arlington admins use ENJOYSUMMER1/ENJOYSUMMER2 on their respective opening
+    days then later collapse everything under ENJOYSUMMER — but the section's
+    actual registration moment is determined by *when* it was first observed
+    scarce, not by what the row currently says.
+    """
+    best: tuple[dt.datetime, str] | None = None
+    for event_code, iso in config.REG_OPENS_AT_UTC.items():
+        try:
+            opens_dt = dt.datetime.fromisoformat(iso)
+        except (TypeError, ValueError):
+            continue
+        if opens_dt <= scarce_dt and (best is None or opens_dt > best[0]):
+            best = (opens_dt, event_code)
+    return best if best is not None else (None, None)
+
+
 def _dump_analysis(conn) -> None:
     """Build the 'currently_open' analysis table — same rows as the
     Currently-open UI table, plus sell-out duration when applicable. The table
@@ -202,21 +223,28 @@ def _dump_analysis(conn) -> None:
     for r in rows:
         d = dict(r)
         d["type_label"] = config.TYPE_LABELS.get(d.get("type_code") or "", "")
-        d["reg_opens_at"] = config.REG_OPENS_AT_UTC.get(d.get("reg_event") or "")
         secs = None
         src = None
+        reg_opens_at_iso = None
         if d.get("first_scarce_ts"):
             scarce_dt = dt.datetime.fromisoformat(d["first_scarce_ts"])
-            if d["reg_opens_at"]:
-                start = dt.datetime.fromisoformat(d["reg_opens_at"])
+            # Find the latest registration window that opened at or before
+            # the section was observed scarce. Self-correcting against
+            # WebTrac admins re-tagging `reg_event` later in the cycle.
+            opens_dt, _event = _opens_at_before(scarce_dt)
+            start = None
+            if opens_dt is not None:
+                start = opens_dt
                 src = "reg-open"
+                reg_opens_at_iso = opens_dt.isoformat()
             elif d.get("last_open_ts"):
-                start = dt.datetime.fromisoformat(d["last_open_ts"])
-                src = "last-poll"
-            else:
-                start = None
+                last_dt = dt.datetime.fromisoformat(d["last_open_ts"])
+                if last_dt <= scarce_dt:
+                    start = last_dt
+                    src = "last-poll"
             if start is not None:
-                secs = max(0, int((scarce_dt - start).total_seconds()))
+                secs = int((scarce_dt - start).total_seconds())
+        d["reg_opens_at"] = reg_opens_at_iso
         d["sold_out_within_seconds"] = secs
         d["sold_out_within_human"] = _fmt_duration(secs) if secs is not None else None
         d["sold_out_start_source"] = src
@@ -341,9 +369,11 @@ def _dump_index_html(conn) -> None:
     parts.append("<h2>Downloads</h2>")
     parts.append(
         "<ul>"
-        "<li><a href='data/latest.csv'>latest.csv</a> — one row per section, current state</li>"
-        "<li><a href='data/snapshots.csv'>snapshots.csv</a> — full status history</li>"
-        "<li><a href='data/snapshots.sqlite'>snapshots.sqlite</a> — raw SQLite database</li>"
+        # Dashboard lives at /arlington-va/2026-summer/dashboard/, data files at /data/.
+        # `../../../` walks up 3 dirs to repo root, then into data/.
+        "<li><a href='../../../data/latest.csv'>latest.csv</a> — one row per section, current state</li>"
+        "<li><a href='../../../data/snapshots.csv'>snapshots.csv</a> — full status history</li>"
+        "<li><a href='../../../data/snapshots.sqlite'>snapshots.sqlite</a> — raw SQLite database</li>"
         "</ul>"
     )
     parts.append(_HTML_FOOT)
@@ -435,27 +465,33 @@ def _sellout_rows(conn) -> list[dict]:
     for r in raw:
         d = dict(r)
         scarce_dt = dt.datetime.fromisoformat(d["scarce_ts"])
-        reg_open_iso = config.REG_OPENS_AT_UTC.get(d["reg_event"] or "")
-        if reg_open_iso:
-            start_dt = dt.datetime.fromisoformat(reg_open_iso)
+        # Find the latest registration window that opened at or before
+        # the section was observed scarce. Robust to WebTrac re-tagging.
+        opens_dt, _event = _opens_at_before(scarce_dt)
+        start_dt = None
+        start_source = None
+        if opens_dt is not None:
+            start_dt = opens_dt
             start_source = "reg-open"
         elif d["open_ts"]:
-            start_dt = dt.datetime.fromisoformat(d["open_ts"])
-            start_source = "last-poll"
-        else:
+            od = dt.datetime.fromisoformat(d["open_ts"])
+            if od <= scarce_dt:
+                start_dt = od
+                start_source = "last-poll"
+        if start_dt is None:
             continue
-        duration_s = max(0, int((scarce_dt - start_dt).total_seconds()))
+        duration_s = int((scarce_dt - start_dt).total_seconds())
         d["start_ts_utc"] = start_dt.isoformat()
         d["start_source"] = start_source
         d["duration_s"] = duration_s
 
         # Uncertainty: was the first post-open observation already scarce?
         d["uncertain"] = False
-        if reg_open_iso:
+        if start_source == "reg-open" and opens_dt is not None:
             first_after = conn.execute(
                 "SELECT status FROM snapshots WHERE fmid=? AND ts>=? "
                 "ORDER BY ts ASC LIMIT 1",
-                (d["fmid"], reg_open_iso),
+                (d["fmid"], opens_dt.isoformat()),
             ).fetchone()
             if first_after and first_after["status"] in ("Waitlist", "Full"):
                 d["uncertain"] = True

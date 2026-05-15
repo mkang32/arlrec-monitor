@@ -69,16 +69,16 @@ def build_snapshot(db_path):
     conn = sqlite3.connect(db_path)
 
     # ---- universal metadata + headline stats ----
+    # We intentionally don't expose "fastest" or "all_times" (for a median).
+    # Polling cadence puts a measurement floor on individual durations, so
+    # those numbers would be misleading. The "Fast sellouts (<20 min)" bucket
+    # is captured by instant_rows below — UI derives count + ratio from it.
     overall = fetch(conn, (
         "SELECT COUNT(*) AS total, "
         "SUM(CASE WHEN sold_out_within_seconds IS NOT NULL THEN 1 ELSE 0 END) AS sold_out, "
-        "MIN(sold_out_within_seconds) AS fastest, "
         "MAX(reg_opens_at) AS latest_reg "
         "FROM currently_open"
     ))[0]
-    all_times = fetch(
-        conn, "SELECT sold_out_within_seconds AS s FROM currently_open WHERE sold_out_within_seconds IS NOT NULL"
-    )
 
     # ---- category chart (bin distribution per category) ----
     cat_rows_raw = fetch(conn, (
@@ -145,7 +145,6 @@ def build_snapshot(db_path):
     snapshot = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "overall": overall,
-        "all_times": [r["s"] for r in all_times],
         "category_rows": cat_rows_raw,
         "totals_by_cat": totals_by_cat,
         "filter_cats": filter_cats,

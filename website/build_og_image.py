@@ -22,7 +22,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from build_snapshot import build_snapshot
 
-OUTPUT = Path(__file__).parent / "og-preview.png"
+OUTPUT = Path(__file__).resolve().parent.parent / "arlington-va" / "2026-summer" / "og-preview.png"
 WIDTH, HEIGHT = 1200, 630
 
 # Palette aligned with template.html
@@ -65,7 +65,10 @@ def text_width(draw, text, font):
 
 
 def main():
-    db_path = sys.argv[1] if len(sys.argv) > 1 else "../data/snapshots.sqlite"
+    here = Path(__file__).resolve().parent
+    default_db = here.parent / "data" / "snapshots.sqlite"
+    db_path = sys.argv[1] if len(sys.argv) > 1 else str(default_db)
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     snapshot = build_snapshot(db_path)
 
     instant_count = len(snapshot.get("instant_rows", []))

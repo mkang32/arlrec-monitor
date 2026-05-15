@@ -73,6 +73,13 @@ def upsert_section(conn, *, fmid, activity_code, name, type_code, reg_event,
             activity_code = COALESCE(excluded.activity_code, sections.activity_code),
             name          = COALESCE(excluded.name,          sections.name),
             type_code     = COALESCE(excluded.type_code,     sections.type_code),
+            -- reg_event tracks WebTrac's CURRENT tag. Arlington admins use
+            -- staged tags (ENJOYSUMMER1/ENJOYSUMMER2) on their respective
+            -- registration days, then re-tag everything under a unified
+            -- ENJOYSUMMER label once all events are open. We let the field
+            -- follow that change — analysis uses observed scarcity time, not
+            -- this field, to determine which registration day a section
+            -- actually opened on. See dump.py `_opens_at_before(scarce_ts)`.
             reg_event     = COALESCE(excluded.reg_event,     sections.reg_event),
             date_start    = COALESCE(excluded.date_start,    sections.date_start),
             date_end      = COALESCE(excluded.date_end,      sections.date_end),

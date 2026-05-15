@@ -12,8 +12,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="How Fast Arlington Park &amp; Rec Classes Sell Out" />
 <meta property="og:description" content="Sell-out patterns from Arlington County's class registration windows. See which classes fill in seconds vs. days — and plan your registration day strategy." />
-<meta property="og:url" content="__SITE_URL__/" />
-<meta property="og:image" content="__SITE_URL__/og-preview.png" />
+<meta property="og:url" content="__SITE_URL__/arlington-va/2026-summer/" />
+<meta property="og:image" content="__SITE_URL__/arlington-va/2026-summer/og-preview.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Stacked bar chart of Arlington Park &amp; Rec class sell-out times by category" />
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="How Fast Arlington Park &amp; Rec Classes Sell Out" />
 <meta name="twitter:description" content="Sell-out patterns from Arlington County's class registration — by category, location, age, and time of day." />
-<meta name="twitter:image" content="__SITE_URL__/og-preview.png" />
+<meta name="twitter:image" content="__SITE_URL__/arlington-va/2026-summer/og-preview.png" />
 <meta name="twitter:image:alt" content="Stacked bar chart of Arlington Park &amp; Rec class sell-out times by category" />
 <style>
   :root { color-scheme: light; }
@@ -84,8 +84,7 @@
 <div class="stat-grid" id="stats">
   <div class="stat"><p class="label">Classes tracked</p><p class="value" id="s-total">&mdash;</p></div>
   <div class="stat"><p class="label">Sold out</p><p class="value" id="s-soldout">&mdash;</p></div>
-  <div class="stat"><p class="label">Fastest sellout</p><p class="value" id="s-fastest">&mdash;</p></div>
-  <div class="stat"><p class="label">Median sellout</p><p class="value" id="s-median">&mdash;</p></div>
+  <div class="stat"><p class="label">Fast sellouts (&lt;20 min)</p><p class="value" id="s-fast">&mdash;</p></div>
 </div>
 
 <h2>The headline</h2>
@@ -141,7 +140,7 @@
 <h2>About this data</h2>
 <p class="note">Source: an automated monitor that polls Arlington County's registration system roughly every 15&ndash;20&nbsp;minutes and records when a class transitions to <i>waitlist</i> or <i>full</i>. Because of the polling cadence, sellouts shorter than one poll cycle all show a similar timestamp (the "Instant (&lt;20&nbsp;min)" bin is a floor, not a measurement).</p>
 
-<script>window.__SNAPSHOT__ = /*__SNAPSHOT_JSON__*/{"generated_at":"","overall":{},"all_times":[],"category_rows":[],"totals_by_cat":[],"filter_cats":[],"instant_rows":[],"per_filter":{"__all__":{"days":[],"time":[],"age":[],"location":[]}}};</script>
+<script>window.__SNAPSHOT__ = /*__SNAPSHOT_JSON__*/{"generated_at":"","overall":{},"category_rows":[],"totals_by_cat":[],"filter_cats":[],"instant_rows":[],"per_filter":{"__all__":{"days":[],"time":[],"age":[],"location":[]}}};</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js" integrity="sha384-/XXDzxe4FsGiAe50i/u9pY/Vy/uX654MHB1xoc1BJNnH1WXHhqHga9g3q5tF4gj7" crossorigin="anonymous"></script>
 <script>
@@ -165,20 +164,6 @@
   Chart.defaults.font.size = 12;
   Chart.defaults.color = PALETTE.muted;
 
-  function fmtMin(s) {
-    if (s == null) return '—';
-    const m = s / 60;
-    if (m < 60) return m.toFixed(0) + ' min';
-    const h = m / 60;
-    if (h < 24) return h.toFixed(1) + ' h';
-    return (h / 24).toFixed(1) + ' d';
-  }
-  function median(xs) {
-    const s = xs.filter(x => x != null).slice().sort((a,b)=>a-b);
-    if (!s.length) return null;
-    const mid = Math.floor(s.length / 2);
-    return s.length % 2 ? s[mid] : (s[mid-1] + s[mid]) / 2;
-  }
   function binOf(secs) {
     for (const b of BIN_DEFS) if (secs < b.max) return b.key;
     return 'multiday';
@@ -238,14 +223,19 @@
   }
 
   // ---- Headline stats ----
+  // We intentionally don't show "Fastest" or "Median" sellout times — the
+  // polling cadence puts a measurement floor on individual durations, so
+  // exact numbers can be misleading. The "Fast sellouts (<20 min)" bucket is
+  // a more honest summary that respects the resolution limit.
   function renderStats() {
     const o = SNAPSHOT.overall || {};
     document.getElementById('s-total').textContent = (o.total ?? '—').toLocaleString();
     const so = o.sold_out ?? 0;
     const pct = o.total ? Math.round(so * 100 / o.total) : 0;
     document.getElementById('s-soldout').innerHTML = so + ' <span style="font-size:13px;color:#6b6b66;font-weight:400">(' + pct + '%)</span>';
-    document.getElementById('s-fastest').textContent = fmtMin(o.fastest);
-    document.getElementById('s-median').textContent = fmtMin(median(SNAPSHOT.all_times || []));
+    const fastCount = (SNAPSHOT.instant_rows || []).length;
+    const fastPct = o.total ? Math.round(fastCount * 100 / o.total) : 0;
+    document.getElementById('s-fast').innerHTML = fastCount + ' <span style="font-size:13px;color:#6b6b66;font-weight:400">(' + fastPct + '%)</span>';
     const generated = SNAPSHOT.generated_at ? new Date(SNAPSHOT.generated_at).toLocaleString() : 'unknown';
     const latest = o.latest_reg || 'unknown';
     document.getElementById('meta').textContent = 'Latest registration tracked: ' + latest + ' · data snapshot generated ' + generated;

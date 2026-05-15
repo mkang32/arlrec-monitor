@@ -154,13 +154,13 @@ jobs:
             fi
             # 3. Regenerate dumps using the just-pulled (possibly newer) dump.py code.
             python -m scraper.dump
-            git add data/ index.html
+            git add data/ arlington-va/2026-summer/dashboard/index.html
             git diff --staged --quiet && return 0
             git commit -m "$kind $(date -u +%FT%TZ) $EVENT"
             if ! git push -q 2>/dev/null; then
               git pull --rebase --no-stat -q || git rebase --abort 2>/dev/null || true
               python -m scraper.dump
-              git add data/ index.html
+              git add data/ arlington-va/2026-summer/dashboard/index.html
               git diff --staged --quiet || git commit --amend --no-edit
               git push -q || echo "push still failing after one retry; will catch up next iteration"
             fi
@@ -222,7 +222,7 @@ jobs:
           git pull --rebase --no-stat -q
           python -m scraper.scrape --mode event --event "$EVENT"
           python -m scraper.dump
-          git add data/ index.html
+          git add data/ arlington-va/2026-summer/dashboard/index.html
           if git diff --staged --quiet; then
             echo "no change"
           else

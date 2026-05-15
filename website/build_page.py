@@ -31,9 +31,18 @@ SITE_URL_DEFAULT = "https://example.com"  # social previews break with this; set
 
 
 def main():
-    db_path = sys.argv[1] if len(sys.argv) > 1 else "data/snapshots.sqlite"
-    template_path = Path(sys.argv[2] if len(sys.argv) > 2 else "template.html")
-    output_path = Path(sys.argv[3] if len(sys.argv) > 3 else "arlington-class-registration.html")
+    # Default paths assume running from repo root (e.g. `python3 website/build_page.py`)
+    # or from inside website/ — both supported via the path checks below.
+    here = Path(__file__).resolve().parent
+    repo_root = here.parent
+    default_db = repo_root / "data" / "snapshots.sqlite"
+    default_template = here / "template.html"
+    default_output = repo_root / "arlington-va" / "2026-summer" / "index.html"
+
+    db_path = sys.argv[1] if len(sys.argv) > 1 else str(default_db)
+    template_path = Path(sys.argv[2] if len(sys.argv) > 2 else default_template)
+    output_path = Path(sys.argv[3] if len(sys.argv) > 3 else default_output)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     site_url = os.environ.get("SITE_URL", SITE_URL_DEFAULT).rstrip("/")
     if site_url == SITE_URL_DEFAULT:

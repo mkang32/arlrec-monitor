@@ -63,7 +63,7 @@ jobs:
             git pull --rebase --no-stat -q
             cp /tmp/local-snapshots.sqlite data/snapshots.sqlite
             python -m scraper.dump
-            git add data/ index.html
+            git add data/ arlington-va/2026-summer/dashboard/index.html
             if git diff --staged --quiet; then
               echo "no change"; return 0
             fi
