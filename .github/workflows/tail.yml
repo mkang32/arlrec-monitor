@@ -59,12 +59,11 @@ jobs:
           # generated dumps, pull to get any newer dump.py, regenerate, commit.
           attempt_commit() {
             cp data/snapshots.sqlite /tmp/local-snapshots.sqlite
-            git checkout -- data/latest.csv data/snapshots.csv index.html 2>/dev/null || true
-            git checkout -- data/snapshots.sqlite 2>/dev/null || true
+            git checkout -- data/ index.html 2>/dev/null || true
             git pull --rebase --no-stat -q
             cp /tmp/local-snapshots.sqlite data/snapshots.sqlite
             python -m scraper.dump
-            git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
+            git add data/ index.html
             if git diff --staged --quiet; then
               echo "no change"; return 0
             fi

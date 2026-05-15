@@ -25,6 +25,10 @@ DATA_DIR = Path("data")
 DB_PATH = DATA_DIR / "snapshots.sqlite"
 LATEST_CSV = DATA_DIR / "latest.csv"
 SNAPSHOTS_CSV = DATA_DIR / "snapshots.csv"
+# Analysis-friendly export: one row per currently-open section, with sell-out
+# duration. Materialized as a table named `currently_open` inside snapshots.sqlite
+# and mirrored to data/currently_open.csv.
+CURRENTLY_OPEN_CSV = DATA_DIR / "currently_open.csv"
 INDEX_HTML = Path("index.html")
 
 
@@ -38,6 +42,7 @@ def main() -> int:
     try:
         _dump_snapshots_csv(conn)
         _dump_latest_csv(conn)
+        _dump_analysis(conn)
         _dump_index_html(conn)
     finally:
         conn.close()
@@ -104,6 +109,146 @@ def _dump_latest_csv(conn) -> None:
                 d["location"], d["ages"], d["cost"],
                 d["ts"], d["status"], d["enrolled"], d["waitlist"],
             ])
+
+
+# ----- Analysis export (CSV + dedicated SQLite) ----------------------------
+
+# Order here = order in CSV and SQLite. Add new fields at the end to keep
+# downstream readers happy.
+_ANALYSIS_COLS: tuple[tuple[str, str], ...] = (
+    ("fmid",                       "TEXT PRIMARY KEY"),
+    ("activity_code",              "TEXT"),
+    ("name",                       "TEXT"),
+    ("type_code",                  "TEXT"),
+    ("type_label",                 "TEXT"),
+    ("reg_event",                  "TEXT"),
+    ("reg_opens_at",               "TEXT"),
+    ("date_start",                 "TEXT"),
+    ("date_end",                   "TEXT"),
+    ("days",                       "TEXT"),
+    ("time_start",                 "TEXT"),
+    ("time_end",                   "TEXT"),
+    ("location",                   "TEXT"),
+    ("ages",                       "TEXT"),
+    ("cost",                       "TEXT"),
+    ("status",                     "TEXT"),
+    ("last_seen_ts",               "TEXT"),
+    ("enrolled",                   "INTEGER"),
+    ("waitlist",                   "INTEGER"),
+    ("counts_ts",                  "TEXT"),
+    ("first_scarce_ts",            "TEXT"),
+    ("last_open_ts",               "TEXT"),
+    ("sold_out_within_seconds",    "INTEGER"),
+    ("sold_out_within_human",      "TEXT"),
+    ("sold_out_start_source",      "TEXT"),  # 'reg-open' (preferred) or 'last-poll'
+)
+
+
+def _dump_analysis(conn) -> None:
+    """Build the 'currently_open' analysis table — same rows as the
+    Currently-open UI table, plus sell-out duration when applicable. The table
+    is materialized inside the main snapshots.sqlite (DROP + CREATE on each
+    run, so it's always in sync with the latest snapshots) and mirrored to
+    data/currently_open.csv for non-SQL consumers.
+    """
+    rows = conn.execute(
+        """
+        WITH latest_status AS (
+            SELECT s.fmid, s.ts, s.status
+            FROM snapshots s
+            JOIN (SELECT fmid, MAX(ts) AS max_ts FROM snapshots GROUP BY fmid) m
+              ON m.fmid = s.fmid AND m.max_ts = s.ts
+        ),
+        latest_counts AS (
+            SELECT s.fmid, s.ts AS counts_ts, s.enrolled, s.waitlist
+            FROM snapshots s
+            JOIN (
+              SELECT fmid, MAX(ts) AS max_ts FROM snapshots
+              WHERE enrolled IS NOT NULL GROUP BY fmid
+            ) m ON m.fmid = s.fmid AND m.max_ts = s.ts
+        ),
+        first_scarce AS (
+            SELECT fmid, MIN(ts) AS scarce_ts
+            FROM snapshots
+            WHERE status IN ('Waitlist','Full')
+            GROUP BY fmid
+        ),
+        last_open AS (
+            SELECT s.fmid, MAX(s.ts) AS open_ts
+            FROM snapshots s
+            JOIN first_scarce fs ON fs.fmid = s.fmid
+            WHERE s.status IN ('Available','Unavailable')
+              AND s.ts < fs.scarce_ts
+            GROUP BY s.fmid
+        )
+        SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.reg_event,
+               sec.date_start, sec.date_end, sec.days, sec.time_start, sec.time_end,
+               sec.location, sec.ages, sec.cost,
+               ls.status, ls.ts AS last_seen_ts,
+               lc.enrolled, lc.waitlist, lc.counts_ts,
+               fs.scarce_ts AS first_scarce_ts,
+               lo.open_ts AS last_open_ts
+        FROM sections sec
+        JOIN latest_status ls ON ls.fmid = sec.fmid
+        LEFT JOIN latest_counts lc ON lc.fmid = sec.fmid
+        LEFT JOIN first_scarce fs ON fs.fmid = sec.fmid
+        LEFT JOIN last_open lo ON lo.fmid = sec.fmid
+        WHERE ls.status != 'Unavailable'
+        ORDER BY sec.type_code, sec.name, sec.activity_code
+        """
+    ).fetchall()
+
+    augmented: list[dict] = []
+    for r in rows:
+        d = dict(r)
+        d["type_label"] = config.TYPE_LABELS.get(d.get("type_code") or "", "")
+        d["reg_opens_at"] = config.REG_OPENS_AT_UTC.get(d.get("reg_event") or "")
+        secs = None
+        src = None
+        if d.get("first_scarce_ts"):
+            scarce_dt = dt.datetime.fromisoformat(d["first_scarce_ts"])
+            if d["reg_opens_at"]:
+                start = dt.datetime.fromisoformat(d["reg_opens_at"])
+                src = "reg-open"
+            elif d.get("last_open_ts"):
+                start = dt.datetime.fromisoformat(d["last_open_ts"])
+                src = "last-poll"
+            else:
+                start = None
+            if start is not None:
+                secs = max(0, int((scarce_dt - start).total_seconds()))
+        d["sold_out_within_seconds"] = secs
+        d["sold_out_within_human"] = _fmt_duration(secs) if secs is not None else None
+        d["sold_out_start_source"] = src
+        augmented.append(d)
+
+    # CSV
+    with CURRENTLY_OPEN_CSV.open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow([c for c, _ in _ANALYSIS_COLS])
+        for d in augmented:
+            w.writerow([d.get(c) for c, _ in _ANALYSIS_COLS])
+
+    # Materialized table inside snapshots.sqlite — drop & recreate each run to
+    # keep schema migrations trivial and the table fresh against the latest
+    # snapshot data.
+    conn.execute("DROP TABLE IF EXISTS currently_open")
+    cols_sql = ", ".join(f"{name} {sqltype}" for name, sqltype in _ANALYSIS_COLS)
+    conn.execute(f"CREATE TABLE currently_open ({cols_sql})")
+    placeholders = ", ".join("?" * len(_ANALYSIS_COLS))
+    conn.executemany(
+        f"INSERT INTO currently_open VALUES ({placeholders})",
+        [[d.get(c) for c, _ in _ANALYSIS_COLS] for d in augmented],
+    )
+    conn.execute(
+        "CREATE INDEX idx_currently_open_duration "
+        "ON currently_open(sold_out_within_seconds)"
+    )
+    conn.execute(
+        "CREATE INDEX idx_currently_open_type "
+        "ON currently_open(type_code, status)"
+    )
+    conn.commit()
 
 
 # ----- HTML page -----------------------------------------------------------

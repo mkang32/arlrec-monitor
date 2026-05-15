@@ -67,12 +67,15 @@ jobs:
           # 5. Commit + push, with one pull-and-regen retry on conflict.
           attempt_commit() {
             cp data/snapshots.sqlite /tmp/local-snapshots.sqlite
-            git checkout -- data/latest.csv data/snapshots.csv index.html 2>/dev/null || true
-            git checkout -- data/snapshots.sqlite 2>/dev/null || true
+            # Reset everything that dump.py regenerates (and the raw sqlite,
+            # which we restore from /tmp below). Wildcard so newly-added
+            # generated files (currently_open.csv, analysis.sqlite, etc.)
+            # are reset too without having to update this list each time.
+            git checkout -- data/ index.html 2>/dev/null || true
             git pull --rebase --no-stat -q
             cp /tmp/local-snapshots.sqlite data/snapshots.sqlite
             python -m scraper.dump
-            git add data/snapshots.sqlite data/latest.csv data/snapshots.csv index.html
+            git add data/ index.html
             if git diff --staged --quiet; then
               echo "no change"; return 0
             fi
