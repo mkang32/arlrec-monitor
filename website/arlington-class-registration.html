@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arlington class registration — sellout patterns & planning</title>
+
+<!-- SEO -->
+<meta name="description" content="See how quickly Arlington VA Park &amp; Rec classes sell out. Plan your registration day strategy with sell-out data by category, location, age, and time of day." />
+
+<!-- Open Graph (LinkedIn, Facebook, Slack, iMessage, etc.) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="How Fast Arlington Park &amp; Rec Classes Sell Out" />
+<meta property="og:description" content="Sell-out patterns from Arlington County's class registration windows. See which classes fill in seconds vs. days — and plan your registration day strategy." />
+<meta property="og:url" content="https://example.com/" />
+<meta property="og:image" content="https://example.com/og-preview.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Stacked bar chart of Arlington Park &amp; Rec class sell-out times by category" />
+<meta property="og:site_name" content="Arlington Class Registration Tracker" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="How Fast Arlington Park &amp; Rec Classes Sell Out" />
+<meta name="twitter:description" content="Sell-out patterns from Arlington County's class registration — by category, location, age, and time of day." />
+<meta name="twitter:image" content="https://example.com/og-preview.png" />
+<meta name="twitter:image:alt" content="Stacked bar chart of Arlington Park &amp; Rec class sell-out times by category" />
+<style>
+  :root { color-scheme: light; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #fafaf7;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 24px 28px 48px;
+    line-height: 1.55;
+    font-size: 15px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 { font-size: 24px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; letter-spacing: -0.01em; }
+  .sub { color: #6b6b66; font-size: 14px; margin: 0 0 4px; }
+  .meta { color: #888880; font-size: 12px; margin: 0 0 24px; }
+  .stat-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; margin: 18px 0 8px;
+  }
+  .stat { background: #fff; border: 1px solid #e8e6df; border-radius: 10px; padding: 14px 16px; }
+  .stat .label { font-size: 12px; color: #6b6b66; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 6px; }
+  .stat .value { font-size: 22px; font-weight: 600; margin: 0; line-height: 1.2; }
+  .card { background: #fff; border: 1px solid #e8e6df; border-radius: 10px; padding: 16px 18px; margin: 12px 0; }
+  .chart-wrap { position: relative; width: 100%; height: 320px; }
+  .chart-wrap.tall { height: 380px; }
+  .tip { background: #fff8e8; border-left: 3px solid #d9a417; border-radius: 4px; padding: 10px 14px; margin: 8px 0; font-size: 14px; }
+  .tip b { color: #6b4d0a; }
+  #table-wrap .gridjs-wrapper { box-shadow: none; border: 1px solid #e8e6df; border-radius: 8px; }
+  #table-wrap .gridjs-table { font-size: 13px; }
+  .note { color: #6b6b66; font-size: 12px; margin: 6px 0 0; font-style: italic; }
+  .legend-line { font-size: 12px; color: #6b6b66; margin: 0 0 8px; }
+  .filter-bar {
+    background: #fff; border: 1px solid #e8e6df; border-radius: 10px;
+    padding: 12px 16px; margin: 12px 0 0;
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    position: sticky; top: 0; z-index: 10;
+  }
+  .filter-bar label { font-size: 13px; color: #4a4a45; font-weight: 600; }
+  .filter-bar select {
+    font: inherit; font-size: 14px; padding: 6px 10px; border: 1px solid #c8c6bf;
+    border-radius: 6px; background: #fff; color: #1a1a1a; min-width: 240px;
+  }
+  .filter-bar .summary { font-size: 12px; color: #6b6b66; font-style: italic; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-jZvDSsmGB9oGGT/4l9bHXGoAv1OxvG/cFmSo0dZaSqmBgvQTKDBFAMftlXTmMbNW" crossorigin="anonymous" />
+</head>
+<body>
+
+<h1>Arlington class registration &mdash; sellout patterns &amp; planning</h1>
+<p class="sub">Which classes need a noon-on-the-dot fingertip, which you can grab next week, and where the real competition is.</p>
+<p class="meta" id="meta">&nbsp;</p>
+
+<div class="stat-grid" id="stats">
+  <div class="stat"><p class="label">Classes tracked</p><p class="value" id="s-total">&mdash;</p></div>
+  <div class="stat"><p class="label">Sold out</p><p class="value" id="s-soldout">&mdash;</p></div>
+  <div class="stat"><p class="label">Fastest sellout</p><p class="value" id="s-fastest">&mdash;</p></div>
+  <div class="stat"><p class="label">Median sellout</p><p class="value" id="s-median">&mdash;</p></div>
+</div>
+
+<h2>The headline</h2>
+<div class="card">
+  <p style="margin:0 0 8px"><b>Gymnastics is the hardest ticket in Arlington.</b> Roughly 7 in 10 gymnastics sections sold out, and many were gone within minutes of registration opening. Aquatics is the next most competitive &mdash; about 4 in 10 swim sections sold out. Everything else (martial arts, music, sports leagues, ceramics, science) had near-zero sellouts in this window.</p>
+  <p style="margin:0">If you're after <b>Gymnasticats</b>, <b>Family Gymnastics</b>, <b>Girls Level 1</b>, <b>Tumbling for 3's</b>, or popular adult fitness slots like <b>Body Sculpting</b> at Langston Brown &mdash; you need to be on the page and ready before noon ET on registration day. Pottery, science, most sports leagues, and martial arts can be registered for the next morning.</p>
+</div>
+
+<h2>How fast did each category sell out?</h2>
+<p class="legend-line">Each bar shows how the sold-out sections in that category split across speed bins. <b>Instant (under 20&nbsp;min)</b> almost certainly went faster than that &mdash; the scraper polls every ~15&ndash;20&nbsp;min, so anything in the first cycle is "gone before we could measure." The interesting differentiator is the rest of the bar: gymnastics has a long tail of next-day and multi-day sellouts, while tennis and adult fitness are almost entirely instant-or-not.</p>
+<div class="card"><div class="chart-wrap"><canvas id="chart-category" role="img" aria-label="Stacked horizontal bar chart of sellout speed bins by class category"></canvas></div></div>
+
+<div class="filter-bar">
+  <label for="cat-filter">Filter the four charts below by class category:</label>
+  <select id="cat-filter"><option value="">All categories</option></select>
+  <span class="summary" id="filter-summary"></span>
+</div>
+
+<h2>By day of week</h2>
+<p class="legend-line">Each bar's total height is the % of sections that sold out that day. Segments show how those sellouts split across speed bins (Instant&nbsp;&lt;20m, Under 1h, Same day, Next day, Multi-day). A tall red-dominated bar = highly competitive; a tall blue-dominated bar = still gone, but you had hours-to-days.</p>
+<div class="card"><div class="chart-wrap"><canvas id="chart-day" role="img" aria-label="Stacked sellout-speed distribution by day of week"></canvas></div></div>
+
+<h2>By time of day &mdash; weekday vs. weekend</h2>
+<p class="legend-line">At each time slot, the left stack is weekday (Mon&ndash;Fri) and the right stack is weekend (Sat/Sun). Stack height = % of sections sold out; segments = speed bins. <b>Solid fill</b> = weekday, <b>diagonal stripes</b> = weekend.</p>
+<div class="card">
+  <div id="daytype-key" style="display:flex; gap:18px; align-items:center; font-size:12px; color:#4a4a45; margin:0 0 8px;">
+    <span style="display:inline-flex; align-items:center; gap:6px;"><span id="swatch-wkdy" style="display:inline-block; width:18px; height:12px; background:#888; border:1px solid #6b6b66; border-radius:2px;"></span>Weekday (Mon&ndash;Fri)</span>
+    <span style="display:inline-flex; align-items:center; gap:6px;"><span id="swatch-wknd" style="display:inline-block; width:18px; height:12px; border:1px solid #6b6b66; border-radius:2px;"></span>Weekend (Sat/Sun)</span>
+  </div>
+  <div class="chart-wrap"><canvas id="chart-time" role="img" aria-label="Stacked sellout-speed distribution by time of day, weekday solid vs weekend striped"></canvas></div>
+</div>
+
+<h2>By age group</h2>
+<p class="legend-line">Bar length = % sold out per age bucket. Segments show the speed distribution.</p>
+<div class="card"><div class="chart-wrap"><canvas id="chart-age" role="img" aria-label="Stacked sellout-speed distribution by age bucket"></canvas></div></div>
+
+<h2>By location</h2>
+<p class="legend-line">Top 12 facilities by sellout rate (minimum 3 classes offered). Bar length = % sold out; segments = speed bins.</p>
+<div class="card"><div class="chart-wrap tall"><canvas id="chart-location" role="img" aria-label="Stacked sellout-speed distribution by location"></canvas></div></div>
+
+<h2>Every section that sold out instantly</h2>
+<p class="legend-line">Every section that was already gone by the first scan after registration opened &mdash; meaning the true sellout time is somewhere between 0 and ~20&nbsp;minutes (the scraper's polling interval). The "20 min" upper bound is a measurement ceiling, not a real number. Sortable; click any header.</p>
+<div class="card"><div id="table-wrap"></div></div>
+
+<h2>Practical tips</h2>
+<div class="tip"><b>Be on the registration page well before noon ET &mdash; not at noon.</b> Arlington uses a virtual queue: at the moment registration opens, the system hands every person watching a waitlist number and only lets you proceed when your number is called. Depending on traffic that can take seconds or several minutes. The competitive sections (red segments in the charts above) sell out inside the first 20 minutes, so a slow draw means you can be admitted only to find your target already full. Have the activity code copied so you can jump straight to it the moment you're in.</div>
+<div class="tip"><b>Gymnastics at Barcroft = hardest target.</b> Sections for ages 3 to 6 (Tumbling for 3's, Gymnasticats, Family Gymnastics, Girls Level 1) are the most contested. If you're after one of these, treat the queue tip above as non-optional.</div>
+<div class="tip"><b>Long Bridge swim Levels 1&ndash;4</b> are very competitive but spots open across many time slots. If your first-choice time fills, pivot fast &mdash; sister sessions at less-popular times (mid-afternoon weekdays) often still have room hours later.</div>
+<div class="tip"><b>Weekend morning slots</b> (Saturday 8:30&ndash;11:30am) are the single most competitive time-and-day combo. If a weekday afternoon slot works for you, you'll face dramatically less competition.</div>
+<div class="tip"><b>You probably don't need to rush for</b>: ceramics, martial arts, music, science &amp; discovery, sports leagues, arts &amp; crafts, woodworking (with rare exceptions like "Intro to Woodshop"). These had near-zero sellouts in this window.</div>
+<div class="tip"><b>Adult fitness has a few sleeper hits.</b> Body Sculpting, Cardio Body Sculpting, and Barre at Langston Brown sold out in the first poll cycle. If you want a specific instructor or time, register on day one.</div>
+
+<h2>About this data</h2>
+<p class="note">Source: an automated monitor that polls Arlington County's registration system roughly every 15&ndash;20&nbsp;minutes and records when a class transitions to <i>waitlist</i> or <i>full</i>. Because of the polling cadence, sellouts shorter than one poll cycle all show a similar timestamp (the "Instant (&lt;20&nbsp;min)" bin is a floor, not a measurement).</p>
+
+<script>window.__SNAPSHOT__ = {"generated_at":"2026-05-15T17:36:51.702065+00:00","overall":{"total":597,"sold_out":187,"fastest":557,"latest_reg":"2026-05-14T16:00:00+00:00"},"all_times":[557,557,557,557,557,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,822,857,857,857,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,970,1097,1331,1331,1331,1331,1331,1331,1331,1331,1331,1331,1631,1631,1631,1631,1631,1631,1631,1637,1637,1690,1690,1690,1697,2417,2710,2710,2710,3011,3612,3941,3941,4075,4075,4075,4075,4075,4075,4541,4541,4541,4541,4817,5141,5141,5740,5740,5786,6340,6340,6941,7541,7541,7541,9062,9062,9086,9987,13618,16294,16294,16294,16294,22153,22153,22153,22153,25037,25037,28559,28559,28840,28840,39017,39294,39294,97584,97584,97584,97627,97627,97627,97627,97627,97627,97627,97627,97627,97627,108559,125314,125314,125444,125444,138148,138148,165675,183917,183917,183917,183917,183917,183917,201286,251971],"category_rows":[{"category":"Adult fitness (uncategorized)","secs":1637},{"category":"Adult fitness (uncategorized)","secs":557},{"category":"Adult fitness (uncategorized)","secs":557},{"category":"Adult fitness (uncategorized)","secs":4817},{"category":"Aquatics","secs":5740},{"category":"Aquatics","secs":165675},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":3612},{"category":"Aquatics","secs":3941},{"category":"Aquatics","secs":3011},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":1631},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":6340},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":28559},{"category":"Aquatics","secs":6941},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":108559},{"category":"Aquatics","secs":2710},{"category":"Aquatics","secs":2710},{"category":"Aquatics","secs":3941},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":5141},{"category":"Aquatics","secs":1631},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":5141},{"category":"Aquatics","secs":39017},{"category":"Aquatics","secs":2710},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":4541},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":16294},{"category":"Aquatics","secs":16294},{"category":"Aquatics","secs":22153},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":7541},{"category":"Aquatics","secs":7541},{"category":"Aquatics","secs":125444},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":16294},{"category":"Aquatics","secs":1631},{"category":"Aquatics","secs":5740},{"category":"Aquatics","secs":16294},{"category":"Aquatics","secs":22153},{"category":"Aquatics","secs":125444},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":1631},{"category":"Aquatics","secs":28559},{"category":"Aquatics","secs":4541},{"category":"Aquatics","secs":6340},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":9062},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":9062},{"category":"Aquatics","secs":4541},{"category":"Aquatics","secs":22153},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":1690},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":1631},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":1631},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":1631},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":7541},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":1690},{"category":"Aquatics","secs":97627},{"category":"Aquatics","secs":970},{"category":"Aquatics","secs":22153},{"category":"Aquatics","secs":1331},{"category":"Aquatics","secs":1690},{"category":"Aquatics","secs":4541},{"category":"Dance","secs":28840},{"category":"Dance","secs":1097},{"category":"Sewing & Fiber Arts","secs":857},{"category":"Sewing & Fiber Arts","secs":39294},{"category":"Gymnastics","secs":4075},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":97584},{"category":"Gymnastics","secs":138148},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":25037},{"category":"Gymnastics","secs":4075},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":5786},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":183917},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":183917},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":4075},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":97584},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":9086},{"category":"Gymnastics","secs":201286},{"category":"Gymnastics","secs":13618},{"category":"Gymnastics","secs":183917},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":9987},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":97584},{"category":"Gymnastics","secs":125314},{"category":"Gymnastics","secs":251971},{"category":"Gymnastics","secs":4075},{"category":"Gymnastics","secs":183917},{"category":"Gymnastics","secs":125314},{"category":"Gymnastics","secs":25037},{"category":"Gymnastics","secs":4075},{"category":"Gymnastics","secs":183917},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":183917},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":4075},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":822},{"category":"Gymnastics","secs":138148},{"category":"Tennis","secs":857},{"category":"Tennis","secs":28840},{"category":"Tennis","secs":857},{"category":"Tennis","secs":39294},{"category":"Tennis","secs":1637},{"category":"Tennis","secs":2417},{"category":"Tennis","secs":557},{"category":"Tennis","secs":557},{"category":"Tennis","secs":1697},{"category":"Woodworking","secs":557}],"totals_by_cat":[{"category":"Adult fitness (uncategorized)","classes":26,"sold_out":4},{"category":"Aquatics","classes":251,"sold_out":101},{"category":"Arts & Crafts","classes":9,"sold_out":0},{"category":"Ceramics","classes":3,"sold_out":0},{"category":"Cooking","classes":3,"sold_out":0},{"category":"Dance","classes":30,"sold_out":2},{"category":"Gymnastics","classes":96,"sold_out":68},{"category":"Jewelry","classes":3,"sold_out":0},{"category":"Martial Arts","classes":22,"sold_out":0},{"category":"Movement","classes":10,"sold_out":0},{"category":"Music","classes":11,"sold_out":0},{"category":"Science & Discovery","classes":10,"sold_out":0},{"category":"Sewing & Fiber Arts","classes":2,"sold_out":2},{"category":"Sports","classes":52,"sold_out":0},{"category":"Tennis","classes":67,"sold_out":9},{"category":"Woodworking","classes":1,"sold_out":1},{"category":"Yoga","classes":1,"sold_out":0}],"filter_cats":[{"cat":"Aquatics","sold_out":101,"classes":251},{"cat":"Gymnastics","sold_out":68,"classes":96},{"cat":"Tennis","sold_out":9,"classes":67},{"cat":"__none__","sold_out":4,"classes":26},{"cat":"Sewing & Fiber Arts","sold_out":2,"classes":2},{"cat":"Dance","sold_out":2,"classes":30},{"cat":"Woodworking","sold_out":1,"classes":1}],"instant_rows":[{"name":"Body Sculpting","category":"(Adult fitness)","location":"Langston Brown","days":"M","time_start":"6:00 pm","ages":"18-99.99"},{"name":"Cardio Body Sculpting","category":"(Adult fitness)","location":"Langston Brown","days":"W","time_start":"7:00 pm","ages":"18-99.99"},{"name":"Fin 1","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"F","time_start":"6:15 pm","ages":"3.25-5.99"},{"name":"Fin 1","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"11:50 am","ages":"3.25-5.99"},{"name":"Fin 1","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"8:30 am","ages":"3.25-5.99"},{"name":"Fin 1","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"8:55 am","ages":"3.25-5.99"},{"name":"Fin 1","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"10:35 am","ages":"3.25-5.99"},{"name":"Fin 1","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"9:30 am","ages":"3.25-5.99"},{"name":"Fin 1","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Tu","time_start":"4:00 pm","ages":"3.25-5.99"},{"name":"Fin 1","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Tu","time_start":"6:45 pm","ages":"3.25-5.99"},{"name":"Fin 2","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"10:40 am","ages":"3.25-5.99"},{"name":"Fin 2","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"9:05 am","ages":"3.25-5.99"},{"name":"Fin 2","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"9:55 am","ages":"3.25-5.99"},{"name":"Fin 2","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"11:10 am","ages":"3.25-5.99"},{"name":"Fin 2","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"9:50 am","ages":"3.25-5.99"},{"name":"Fin 2","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Tu","time_start":"4:00 pm","ages":"3.25-5.99"},{"name":"Fin 3","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"9:50 am","ages":"4-5.99"},{"name":"Fin 3","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"9:50 am","ages":"4-5.99"},{"name":"Fin 3","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Th","time_start":"4:35 pm","ages":"4-5.99"},{"name":"Fin 3","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Tu","time_start":"4:35 pm","ages":"4-5.99"},{"name":"Fin 3","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Tu","time_start":"6:10 pm","ages":"4-5.99"},{"name":"Fin 4","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"11:15 am","ages":"4.5-6.99"},{"name":"Fin 4","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"11:15 am","ages":"4.5-6.99"},{"name":"Level 2: Youth Swim","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"10:25 am","ages":"6-12.99"},{"name":"Level 3: Youth Swim","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"10:00 am","ages":"6-12.99"},{"name":"Level 3: Youth Swim","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"10:25 am","ages":"6-12.99"},{"name":"Level 4: Youth Swim","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"9:15 am","ages":"6-12.99"},{"name":"Level 5: Youth Swim","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"11:00 am","ages":"6-12.99"},{"name":"Pre-Fin","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"10:15 am","ages":"3-3.99"},{"name":"Pre-Fin","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"8:30 am","ages":"3-3.99"},{"name":"Pre-Fin","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"9:30 am","ages":"3-3.99"},{"name":"Pre-Fin","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"10:05 am","ages":"3-3.99"},{"name":"Pre-Fin","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"11:45 am","ages":"3-3.99"},{"name":"Pre-Fin & Me","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Su","time_start":"9:40 am","ages":"2.5-3.99"},{"name":"Water Tots","category":"Aquatics","location":"Long Bridge Aquatics Center","days":"Sa","time_start":"10:15 am","ages":"1.5-2.5"},{"name":"Pre-Ballet & Movement I","category":"Dance","location":"Lubber Run","days":"Sa","time_start":"11:10 am","ages":"3-5.99"},{"name":"Adapted Level 1 (Age: 8-12)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Su","time_start":"8:30 am","ages":"8-12.99"},{"name":"Adult Advanced","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Th","time_start":"7:15 pm","ages":"18-99.99"},{"name":"Boys Level 1 (Age: 5-7)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Su","time_start":"2:15 pm","ages":"5-7.99"},{"name":"Boys Level 1 (Age: 5-7)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Th","time_start":"4:15 pm","ages":"5-7.99"},{"name":"Boys Level 1 (Age: 5-7)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"W","time_start":"4:15 pm","ages":"5-7.99"},{"name":"Family Gymnastics (Age: 1.5-5)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"F","time_start":"1:00 pm","ages":"1.5-5.99"},{"name":"Family Gymnastics (Age: 1.5-5)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"8:30 am","ages":"1.5-5.99"},{"name":"Family Gymnastics (Age: 1.5-5)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Th","time_start":"11:30 am","ages":"1.5-5.99"},{"name":"Family Gymnastics (Age: 1.5-5)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Tu","time_start":"11:30 am","ages":"1.5-5.99"},{"name":"Girls 3+ (Age: 7-13)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"2:45 pm","ages":"7-13.99"},{"name":"Girls 3+ (Age: 7-13)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"W","time_start":"5:45 pm","ages":"7-13.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"F","time_start":"4:15 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"M","time_start":"4:15 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"12:15 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Su","time_start":"2:15 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Su","time_start":"3:30 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Th","time_start":"4:15 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Tu","time_start":"5:45 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"W","time_start":"4:15 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 5-6)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"W","time_start":"5:30 pm","ages":"5-6.99"},{"name":"Girls Level 1 (Age 7-8)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"M","time_start":"5:30 pm","ages":"7-8.99"},{"name":"Girls Level 1 (Age 7-8)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"1:30 pm","ages":"7-8.99"},{"name":"Girls Level 2 (Age: 6-8)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"12:15 pm","ages":"6-8.99"},{"name":"Girls Level 2 (Age: 6-8)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Th","time_start":"5:30 pm","ages":"6-8.99"},{"name":"Girls Level 2 (Age: 9-12)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"F","time_start":"5:30 pm","ages":"9-12.99"},{"name":"Girls Level 2 (Age: 9-12)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Tu","time_start":"5:45 pm","ages":"9-12.99"},{"name":"Gymnasticats (Age: 4)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"F","time_start":"2:00 pm","ages":"4-4.99"},{"name":"Gymnasticats (Age: 4)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"10:30 am","ages":"4-4.99"},{"name":"Gymnasticats (Age: 4)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"9:30 am","ages":"4-4.99"},{"name":"Gymnasticats (Age: 4)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Su","time_start":"1:00 pm","ages":"4-4.99"},{"name":"Gymnasticats (Age: 4)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Th","time_start":"3:00 pm","ages":"4-4.99"},{"name":"Tumbling for 3's (Age: 3)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"F","time_start":"11:30 am","ages":"3-3.99"},{"name":"Tumbling for 3's (Age: 3)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"M","time_start":"2:00 pm","ages":"3-3.99"},{"name":"Tumbling for 3's (Age: 3)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"10:30 am","ages":"3-3.99"},{"name":"Tumbling for 3's (Age: 3)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"9:30 am","ages":"3-3.99"},{"name":"Tumbling for 3's (Age: 3)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Su","time_start":"1:00 pm","ages":"3-3.99"},{"name":"Tumbling for 3's (Age: 3)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Tu","time_start":"3:00 pm","ages":"3-3.99"},{"name":"Tumbling for 3's (Age: 3)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"W","time_start":"11:30 am","ages":"3-3.99"},{"name":"Tumbling for Toddlers (Age: 1.5-2)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Sa","time_start":"8:30 am","ages":"1.5-2.99"},{"name":"Tumbling for Toddlers (Age: 1.5-2)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Su","time_start":"12:00 pm","ages":"1.5-2.99"},{"name":"Tumbling for Toddlers (Age: 1.5-2)","category":"Gymnastics","location":"Barcroft Fitness Center","days":"Tu","time_start":"11:30 am","ages":"1.5-2.99"},{"name":"Intro to Sewing","category":"Sewing & Fiber Arts","location":"Arlington Mill","days":"Su","time_start":"1:30 pm","ages":"18-99.99"},{"name":"Little Shots (Age 5-6)","category":"Tennis","location":"Quincy Park","days":"Sa","time_start":"9:00 am","ages":"5-6.99"},{"name":"Tennis 1 & 2 (Age 7-9)","category":"Tennis","location":"Barcroft Park","days":"Th","time_start":"5:30 pm","ages":"7-9.99"},{"name":"Tennis 3","category":"Tennis","location":"Jennie Dean Park","days":"W","time_start":"8:50 pm","ages":"15-99.99"},{"name":"Tennis 3","category":"Tennis","location":"Langston Brown","days":"Th","time_start":"7:30 pm","ages":"15-99.99"},{"name":"Intro to Woodshop","category":"Woodworking","location":"Thomas Jefferson Center","days":"Tu","time_start":"6:00 pm","ages":"18-99.99"}],"per_filter":{"__all__":{"days":[{"days":"F","classes":42,"b_instant":6,"b_under1h":3,"b_sameday":4,"b_nextday":3,"b_multiday":3,"sold_out":19,"avg_secs":27831.0},{"days":"M","classes":90,"b_instant":4,"b_under1h":3,"b_sameday":4,"b_nextday":2,"b_multiday":6,"sold_out":19,"avg_secs":45192.0},{"days":"Sa","classes":118,"b_instant":25,"b_under1h":8,"b_sameday":5,"b_nextday":1,"b_multiday":6,"sold_out":45,"avg_secs":15565.0},{"days":"Su","classes":84,"b_instant":21,"b_under1h":6,"b_sameday":5,"b_nextday":2,"b_multiday":0,"sold_out":34,"avg_secs":4351.0},{"days":"Th","classes":74,"b_instant":9,"b_under1h":1,"b_sameday":3,"b_nextday":2,"b_multiday":4,"sold_out":19,"avg_secs":33363.0},{"days":"Tu","classes":92,"b_instant":11,"b_under1h":5,"b_sameday":6,"b_nextday":0,"b_multiday":6,"sold_out":28,"avg_secs":32301.0},{"days":"W","classes":86,"b_instant":7,"b_under1h":2,"b_sameday":7,"b_nextday":3,"b_multiday":4,"sold_out":23,"avg_secs":36523.0}],"time":[{"daytype":"Weekday","slot":"After-school","classes":155,"b_instant":18,"b_under1h":8,"b_sameday":15,"b_nextday":5,"b_multiday":5,"sold_out":51,"avg_secs":17606.0},{"daytype":"Weekday","slot":"Evening","classes":150,"b_instant":9,"b_under1h":5,"b_sameday":4,"b_nextday":3,"b_multiday":7,"sold_out":28,"avg_secs":36494.0},{"daytype":"Weekday","slot":"Midday","classes":26,"b_instant":5,"b_under1h":0,"b_sameday":2,"b_nextday":1,"b_multiday":8,"sold_out":16,"avg_secs":88357.0},{"daytype":"Weekday","slot":"Morning","classes":53,"b_instant":5,"b_under1h":1,"b_sameday":3,"b_nextday":1,"b_multiday":3,"sold_out":13,"avg_secs":33253.0},{"daytype":"Weekend","slot":"After-school","classes":10,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":1,"avg_secs":39294.0},{"daytype":"Weekend","slot":"Evening","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekend","slot":"Midday","classes":39,"b_instant":11,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":12,"avg_secs":1096.0},{"daytype":"Weekend","slot":"Morning","classes":152,"b_instant":35,"b_under1h":14,"b_sameday":9,"b_nextday":2,"b_multiday":6,"sold_out":66,"avg_secs":12059.0}],"age":[{"bucket":"Adult (15+)","classes":78,"b_instant":7,"b_under1h":4,"b_sameday":1,"b_nextday":2,"b_multiday":2,"sold_out":16,"avg_secs":20687.0},{"bucket":"Babies & toddlers (0-2)","classes":54,"b_instant":8,"b_under1h":4,"b_sameday":2,"b_nextday":1,"b_multiday":4,"sold_out":19,"avg_secs":34218.0},{"bucket":"Other / mixed","classes":75,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":14849.0},{"bucket":"Pre-K & K (4-6)","classes":96,"b_instant":22,"b_under1h":2,"b_sameday":6,"b_nextday":2,"b_multiday":8,"sold_out":40,"avg_secs":30031.0},{"bucket":"Preschool (3-4)","classes":145,"b_instant":28,"b_under1h":14,"b_sameday":8,"b_nextday":3,"b_multiday":8,"sold_out":61,"avg_secs":20039.0},{"bucket":"School-age (5-12)","classes":139,"b_instant":17,"b_under1h":4,"b_sameday":17,"b_nextday":4,"b_multiday":7,"sold_out":49,"avg_secs":24075.0},{"bucket":"Teen (13-17)","classes":10,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null}],"location":[{"location":"Jennie Dean Park","classes":3,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":19926.0},{"location":"Barcroft Fitness Center","classes":110,"b_instant":41,"b_under1h":0,"b_sameday":10,"b_nextday":2,"b_multiday":15,"sold_out":68,"avg_secs":37105.0},{"location":"Long Bridge Aquatics Center","classes":279,"b_instant":33,"b_under1h":24,"b_sameday":23,"b_nextday":7,"b_multiday":14,"sold_out":101,"avg_secs":19169.0},{"location":"Lyon Village Park","classes":14,"b_instant":0,"b_under1h":3,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":4,"avg_secs":8648.0},{"location":"Langston Brown","classes":16,"b_instant":3,"b_under1h":1,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":4,"avg_secs":827.0},{"location":"Quincy Park","classes":6,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0},{"location":"Thomas Jefferson Center","classes":8,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":557.0},{"location":"Walter Reed Center","classes":8,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":1,"avg_secs":28840.0},{"location":"Arlington Mill","classes":18,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":20076.0},{"location":"Barcroft Park","classes":10,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0},{"location":"Lubber Run","classes":37,"b_instant":1,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":2,"avg_secs":2957.0}]},"Aquatics":{"days":[{"days":"F","classes":26,"b_instant":1,"b_under1h":3,"b_sameday":1,"b_nextday":1,"b_multiday":2,"sold_out":8,"avg_secs":32186.0},{"days":"M","classes":40,"b_instant":0,"b_under1h":2,"b_sameday":4,"b_nextday":1,"b_multiday":1,"sold_out":8,"avg_secs":27895.0},{"days":"Sa","classes":45,"b_instant":13,"b_under1h":8,"b_sameday":4,"b_nextday":1,"b_multiday":6,"sold_out":32,"avg_secs":21443.0},{"days":"Su","classes":40,"b_instant":13,"b_under1h":6,"b_sameday":4,"b_nextday":1,"b_multiday":0,"sold_out":24,"avg_secs":4081.0},{"days":"Th","classes":31,"b_instant":1,"b_under1h":1,"b_sameday":1,"b_nextday":1,"b_multiday":2,"sold_out":6,"avg_secs":37755.0},{"days":"Tu","classes":39,"b_instant":5,"b_under1h":3,"b_sameday":3,"b_nextday":0,"b_multiday":3,"sold_out":14,"avg_secs":25319.0},{"days":"W","classes":30,"b_instant":0,"b_under1h":1,"b_sameday":6,"b_nextday":2,"b_multiday":0,"sold_out":9,"avg_secs":10032.0}],"time":[{"daytype":"Weekday","slot":"After-school","classes":90,"b_instant":4,"b_under1h":8,"b_sameday":11,"b_nextday":4,"b_multiday":3,"sold_out":30,"avg_secs":18243.0},{"daytype":"Weekday","slot":"Evening","classes":58,"b_instant":3,"b_under1h":1,"b_sameday":4,"b_nextday":1,"b_multiday":4,"sold_out":13,"avg_secs":38899.0},{"daytype":"Weekday","slot":"Morning","classes":18,"b_instant":0,"b_under1h":1,"b_sameday":0,"b_nextday":0,"b_multiday":1,"sold_out":2,"avg_secs":49479.0},{"daytype":"Weekend","slot":"After-school","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekend","slot":"Midday","classes":4,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekend","slot":"Morning","classes":80,"b_instant":26,"b_under1h":14,"b_sameday":8,"b_nextday":2,"b_multiday":6,"sold_out":56,"avg_secs":14002.0}],"age":[{"bucket":"Babies & toddlers (0-2)","classes":23,"b_instant":1,"b_under1h":4,"b_sameday":1,"b_nextday":1,"b_multiday":1,"sold_out":8,"avg_secs":16792.0},{"bucket":"Other / mixed","classes":11,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"bucket":"Pre-K & K (4-6)","classes":33,"b_instant":7,"b_under1h":2,"b_sameday":3,"b_nextday":1,"b_multiday":3,"sold_out":16,"avg_secs":22601.0},{"bucket":"Preschool (3-4)","classes":87,"b_instant":20,"b_under1h":14,"b_sameday":8,"b_nextday":2,"b_multiday":6,"sold_out":50,"avg_secs":16377.0},{"bucket":"School-age (5-12)","classes":97,"b_instant":5,"b_under1h":4,"b_sameday":11,"b_nextday":3,"b_multiday":4,"sold_out":27,"avg_secs":23010.0}],"location":[{"location":"Long Bridge Aquatics Center","classes":251,"b_instant":33,"b_under1h":24,"b_sameday":23,"b_nextday":7,"b_multiday":14,"sold_out":101,"avg_secs":19169.0}]},"Gymnastics":{"days":[{"days":"F","classes":11,"b_instant":5,"b_under1h":0,"b_sameday":3,"b_nextday":1,"b_multiday":1,"sold_out":10,"avg_secs":24246.0},{"days":"M","classes":11,"b_instant":3,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":5,"sold_out":8,"avg_secs":75556.0},{"days":"Sa","classes":14,"b_instant":10,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":11,"avg_secs":1118.0},{"days":"Su","classes":12,"b_instant":7,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":8,"avg_secs":1229.0},{"days":"Th","classes":15,"b_instant":6,"b_under1h":0,"b_sameday":2,"b_nextday":1,"b_multiday":2,"sold_out":11,"avg_secs":36905.0},{"days":"Tu","classes":14,"b_instant":5,"b_under1h":0,"b_sameday":2,"b_nextday":0,"b_multiday":3,"sold_out":10,"avg_secs":54053.0},{"days":"W","classes":19,"b_instant":5,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":4,"sold_out":10,"avg_secs":70763.0}],"time":[{"daytype":"Weekday","slot":"After-school","classes":23,"b_instant":13,"b_under1h":0,"b_sameday":4,"b_nextday":1,"b_multiday":2,"sold_out":20,"avg_secs":17489.0},{"daytype":"Weekday","slot":"Evening","classes":12,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":3,"sold_out":4,"avg_secs":109460.0},{"daytype":"Weekday","slot":"Midday","classes":26,"b_instant":5,"b_under1h":0,"b_sameday":2,"b_nextday":1,"b_multiday":8,"sold_out":16,"avg_secs":88357.0},{"daytype":"Weekday","slot":"Morning","classes":9,"b_instant":5,"b_under1h":0,"b_sameday":2,"b_nextday":0,"b_multiday":2,"sold_out":9,"avg_secs":33297.0},{"daytype":"Weekend","slot":"After-school","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekend","slot":"Midday","classes":14,"b_instant":10,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":11,"avg_secs":1118.0},{"daytype":"Weekend","slot":"Morning","classes":11,"b_instant":7,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":8,"avg_secs":1229.0}],"age":[{"bucket":"Adult (15+)","classes":10,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":2,"sold_out":3,"avg_secs":78851.0},{"bucket":"Babies & toddlers (0-2)","classes":17,"b_instant":7,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":3,"sold_out":11,"avg_secs":46892.0},{"bucket":"Other / mixed","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"bucket":"Pre-K & K (4-6)","classes":26,"b_instant":14,"b_under1h":0,"b_sameday":3,"b_nextday":1,"b_multiday":5,"sold_out":23,"avg_secs":36469.0},{"bucket":"Preschool (3-4)","classes":12,"b_instant":7,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":2,"sold_out":9,"avg_secs":41510.0},{"bucket":"School-age (5-12)","classes":29,"b_instant":12,"b_under1h":0,"b_sameday":6,"b_nextday":1,"b_multiday":3,"sold_out":22,"avg_secs":25382.0},{"bucket":"Teen (13-17)","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null}],"location":[{"location":"Barcroft Fitness Center","classes":96,"b_instant":41,"b_under1h":0,"b_sameday":10,"b_nextday":2,"b_multiday":15,"sold_out":68,"avg_secs":37105.0}]},"Tennis":{"days":[{"days":"M","classes":15,"b_instant":0,"b_under1h":1,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":15239.0},{"days":"Sa","classes":6,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0},{"days":"Su","classes":3,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"days":"Th","classes":14,"b_instant":2,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":2,"avg_secs":707.0},{"days":"Tu","classes":16,"b_instant":0,"b_under1h":1,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":2417.0},{"days":"W","classes":13,"b_instant":1,"b_under1h":1,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":3,"avg_secs":13849.0}],"time":[{"daytype":"Weekday","slot":"After-school","classes":19,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0},{"daytype":"Weekday","slot":"Evening","classes":39,"b_instant":2,"b_under1h":3,"b_sameday":0,"b_nextday":2,"b_multiday":0,"sold_out":7,"avg_secs":10714.0},{"daytype":"Weekend","slot":"Morning","classes":9,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0}],"age":[{"bucket":"Adult (15+)","classes":33,"b_instant":2,"b_under1h":3,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":6,"avg_secs":7693.0},{"bucket":"Other / mixed","classes":17,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":14849.0},{"bucket":"Pre-K & K (4-6)","classes":15,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0},{"bucket":"Teen (13-17)","classes":2,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null}],"location":[{"location":"Jennie Dean Park","classes":3,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":19926.0},{"location":"Lyon Village Park","classes":14,"b_instant":0,"b_under1h":3,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":4,"avg_secs":8648.0},{"location":"Quincy Park","classes":6,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0},{"location":"Langston Brown","classes":7,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":557.0},{"location":"Barcroft Park","classes":10,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0}]},"__none__":{"days":[{"days":"M","classes":2,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":557.0},{"days":"Sa","classes":3,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"days":"Su","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"days":"Th","classes":5,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"days":"Tu","classes":7,"b_instant":0,"b_under1h":1,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":2,"avg_secs":3227.0},{"days":"W","classes":8,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":557.0}],"time":[{"daytype":"Weekday","slot":"After-school","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekday","slot":"Evening","classes":15,"b_instant":2,"b_under1h":1,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":3,"avg_secs":917.0},{"daytype":"Weekday","slot":"Morning","classes":6,"b_instant":0,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":4817.0},{"daytype":"Weekend","slot":"Morning","classes":4,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null}],"age":[{"bucket":"Adult (15+)","classes":23,"b_instant":2,"b_under1h":1,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":4,"avg_secs":1892.0},{"bucket":"Other / mixed","classes":2,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"bucket":"Preschool (3-4)","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null}],"location":[{"location":"Langston Brown","classes":5,"b_instant":2,"b_under1h":1,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":3,"avg_secs":917.0},{"location":"Lubber Run","classes":5,"b_instant":0,"b_under1h":0,"b_sameday":1,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":4817.0}]},"Sewing & Fiber Arts":{"days":[{"days":"Su","classes":2,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":20076.0}],"time":[{"daytype":"Weekend","slot":"After-school","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":1,"avg_secs":39294.0},{"daytype":"Weekend","slot":"Midday","classes":1,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":857.0}],"age":[{"bucket":"Adult (15+)","classes":2,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":20076.0}],"location":[]},"Dance":{"days":[{"days":"F","classes":3,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":1,"avg_secs":28840.0},{"days":"M","classes":4,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"days":"Sa","classes":6,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":1097.0},{"days":"Su","classes":3,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"days":"Th","classes":3,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"days":"Tu","classes":5,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"days":"W","classes":6,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null}],"time":[{"daytype":"Weekday","slot":"After-school","classes":13,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekday","slot":"Evening","classes":4,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekday","slot":"Morning","classes":4,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":1,"avg_secs":28840.0},{"daytype":"Weekend","slot":"After-school","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekend","slot":"Midday","classes":1,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"daytype":"Weekend","slot":"Morning","classes":7,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":1097.0}],"age":[{"bucket":"Other / mixed","classes":6,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"bucket":"Pre-K & K (4-6)","classes":6,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null},{"bucket":"Preschool (3-4)","classes":14,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":2,"avg_secs":14969.0},{"bucket":"School-age (5-12)","classes":4,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":0,"avg_secs":null}],"location":[{"location":"Walter Reed Center","classes":4,"b_instant":0,"b_under1h":0,"b_sameday":0,"b_nextday":1,"b_multiday":0,"sold_out":1,"avg_secs":28840.0},{"location":"Lubber Run","classes":10,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":1097.0}]},"Woodworking":{"days":[{"days":"Tu","classes":1,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":557.0}],"time":[{"daytype":"Weekday","slot":"Evening","classes":1,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":557.0}],"age":[{"bucket":"Adult (15+)","classes":1,"b_instant":1,"b_under1h":0,"b_sameday":0,"b_nextday":0,"b_multiday":0,"sold_out":1,"avg_secs":557.0}],"location":[]}}};</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js" integrity="sha384-/XXDzxe4FsGiAe50i/u9pY/Vy/uX654MHB1xoc1BJNnH1WXHhqHga9g3q5tF4gj7" crossorigin="anonymous"></script>
+<script>
+(function() {
+  const SNAPSHOT = window.__SNAPSHOT__;
+
+  const PALETTE = {
+    bar: '#3e6ea8',
+    accent: '#d9532b',
+    muted: '#6b6b66',
+  };
+  const BIN_DEFS = [
+    { key: 'instant',  label: 'Instant (<20 min)',  max: 1200,    color: '#b03a2e' },
+    { key: 'under1h',  label: 'Under 1 hour',       max: 3600,    color: '#d9853b' },
+    { key: 'sameday',  label: 'Same day (1–6 h)',   max: 21600,   color: '#e8b237' },
+    { key: 'nextday',  label: 'Next day (6–24 h)',  max: 86400,   color: '#7aa3d4' },
+    { key: 'multiday', label: 'Multi-day (1d+)',    max: Infinity,color: '#3e6ea8' },
+  ];
+
+  Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+  Chart.defaults.font.size = 12;
+  Chart.defaults.color = PALETTE.muted;
+
+  function fmtMin(s) {
+    if (s == null) return '—';
+    const m = s / 60;
+    if (m < 60) return m.toFixed(0) + ' min';
+    const h = m / 60;
+    if (h < 24) return h.toFixed(1) + ' h';
+    return (h / 24).toFixed(1) + ' d';
+  }
+  function median(xs) {
+    const s = xs.filter(x => x != null).slice().sort((a,b)=>a-b);
+    if (!s.length) return null;
+    const mid = Math.floor(s.length / 2);
+    return s.length % 2 ? s[mid] : (s[mid-1] + s[mid]) / 2;
+  }
+  function binOf(secs) {
+    for (const b of BIN_DEFS) if (secs < b.max) return b.key;
+    return 'multiday';
+  }
+  function pctOf(row) {
+    if (!row || !row.classes) return null;
+    return +(row.sold_out * 100 / row.classes).toFixed(1);
+  }
+  function binPct(row, binKey) {
+    if (!row || !row.classes) return 0;
+    return +(((row['b_' + binKey] || 0) * 100) / row.classes).toFixed(2);
+  }
+  function binCount(row, binKey) {
+    return row ? (row['b_' + binKey] || 0) : 0;
+  }
+  function binDatasets(bucketKeys, lookup, stackName) {
+    return BIN_DEFS.map(b => ({
+      label: b.label,
+      data: bucketKeys.map(k => binPct(lookup(k), b.key)),
+      backgroundColor: b.color,
+      borderWidth: 0,
+      stack: stackName || 'bins',
+    }));
+  }
+
+  const _patternCache = {};
+  function makeStripePattern(color) {
+    if (_patternCache[color]) return _patternCache[color];
+    const c = document.createElement('canvas');
+    const S = 8;
+    c.width = c.height = S;
+    const cx = c.getContext('2d');
+    cx.fillStyle = color; cx.fillRect(0, 0, S, S);
+    cx.strokeStyle = 'rgba(255,255,255,0.55)';
+    cx.lineWidth = 1.8;
+    cx.beginPath();
+    cx.moveTo(-2, S + 2); cx.lineTo(S + 2, -2);
+    cx.moveTo(-2 + S/2, S + 2 + S/2); cx.lineTo(S + 2 + S/2, -2 + S/2);
+    cx.stroke();
+    const pattern = cx.createPattern(c, 'repeat');
+    _patternCache[color] = pattern;
+    return pattern;
+  }
+
+  const chartInstances = {};
+  function setChart(canvasId, config) {
+    if (chartInstances[canvasId]) chartInstances[canvasId].destroy();
+    chartInstances[canvasId] = new Chart(document.getElementById(canvasId), config);
+  }
+
+  let currentFilter = '';
+  function filterKey() { return currentFilter || '__all__'; }
+  function filterLabel() {
+    if (currentFilter === '') return 'showing all categories';
+    if (currentFilter === '__none__') return 'showing only Adult fitness (uncategorized)';
+    return 'showing only ' + currentFilter;
+  }
+
+  // ---- Headline stats ----
+  function renderStats() {
+    const o = SNAPSHOT.overall || {};
+    document.getElementById('s-total').textContent = (o.total ?? '—').toLocaleString();
+    const so = o.sold_out ?? 0;
+    const pct = o.total ? Math.round(so * 100 / o.total) : 0;
+    document.getElementById('s-soldout').innerHTML = so + ' <span style="font-size:13px;color:#6b6b66;font-weight:400">(' + pct + '%)</span>';
+    document.getElementById('s-fastest').textContent = fmtMin(o.fastest);
+    document.getElementById('s-median').textContent = fmtMin(median(SNAPSHOT.all_times || []));
+    const generated = SNAPSHOT.generated_at ? new Date(SNAPSHOT.generated_at).toLocaleString() : 'unknown';
+    const latest = o.latest_reg || 'unknown';
+    document.getElementById('meta').textContent = 'Latest registration tracked: ' + latest + ' · data snapshot generated ' + generated;
+  }
+
+  // ---- Category bin chart ----
+  function renderCategoryChart() {
+    const catRows = SNAPSHOT.category_rows || [];
+    const totalsByCat = SNAPSHOT.totals_by_cat || [];
+    const totalsMap = Object.fromEntries(totalsByCat.map(r => [r.category, r]));
+    const catBins = {};
+    for (const r of catRows) {
+      const c = r.category;
+      if (!catBins[c]) { catBins[c] = {}; BIN_DEFS.forEach(b => catBins[c][b.key] = 0); }
+      catBins[c][binOf(r.secs)] += 1;
+    }
+    const catList = Object.keys(catBins).sort((a, b) => {
+      const sa = totalsMap[a]?.sold_out || 0; const sb = totalsMap[b]?.sold_out || 0;
+      return sb - sa;
+    });
+    setChart('chart-category', {
+      type: 'bar',
+      data: {
+        labels: catList.map(c => {
+          const t = totalsMap[c] || {}; return c + ' (' + (t.sold_out||0) + '/' + (t.classes||0) + ')';
+        }),
+        datasets: BIN_DEFS.map(b => ({
+          label: b.label,
+          data: catList.map(c => catBins[c][b.key] || 0),
+          backgroundColor: b.color, borderWidth: 0,
+        })),
+      },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 10 } },
+          tooltip: { callbacks: { label: (ctx) => {
+            const c = catList[ctx.dataIndex];
+            const bin = BIN_DEFS[ctx.datasetIndex];
+            const v = ctx.parsed.x;
+            const t = totalsMap[c]?.sold_out || 0;
+            const pct = t ? Math.round(v * 100 / t) : 0;
+            return bin.label + ': ' + v + ' sections (' + pct + '% of category sellouts)';
+          } } }
+        },
+        scales: {
+          x: { stacked: true, title: { display: true, text: 'Sections sold out' }, beginAtZero: true },
+          y: { stacked: true, ticks: { autoSkip: false } }
+        }
+      }
+    });
+  }
+
+  // ---- Filterable charts ----
+  function renderDayChart() {
+    const dayOrder = ['M','Tu','W','Th','F','Sa','Su'];
+    const dayLabels = { M:'Mon', Tu:'Tue', W:'Wed', Th:'Thu', F:'Fri', Sa:'Sat', Su:'Sun' };
+    const rows = SNAPSHOT.per_filter[filterKey()]?.days || [];
+    const by = Object.fromEntries(rows.map(r => [r.days, r]));
+    setChart('chart-day', {
+      type: 'bar',
+      data: { labels: dayOrder.map(d => dayLabels[d]), datasets: binDatasets(dayOrder, k => by[k]) },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 8 } },
+          tooltip: { callbacks: {
+            title: (items) => items[0]?.label || '',
+            label: (ctx) => {
+              const d = dayOrder[ctx.dataIndex]; const r = by[d];
+              const bin = BIN_DEFS[ctx.datasetIndex];
+              return bin.label + ': ' + binCount(r, bin.key) + ' (' + binPct(r, bin.key) + '%)';
+            },
+            footer: (items) => {
+              const d = dayOrder[items[0].dataIndex]; const r = by[d];
+              if (!r) return '';
+              return 'Total: ' + (r.sold_out || 0) + ' of ' + r.classes + ' sold out (' + (pctOf(r) ?? 0) + '%)';
+            }
+          } }
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, title: { display: true, text: '% of sections sold out' }, beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } },
+        }
+      }
+    });
+  }
+
+  function renderTimeChart() {
+    const slotOrder = ['Morning','Midday','After-school','Evening'];
+    const slotLabels = { Morning:'Morning\n(before noon)', Midday:'Midday\n(12–4pm)', 'After-school':'After-school\n(4–6pm)', Evening:'Evening\n(6pm+)' };
+    const rows = SNAPSHOT.per_filter[filterKey()]?.time || [];
+    const by = {};
+    slotOrder.forEach(s => { by[s] = { Weekday: null, Weekend: null }; });
+    for (const r of rows) { if (by[r.slot]) by[r.slot][r.daytype] = r; }
+
+    const wdSets = BIN_DEFS.map(b => ({
+      label: b.label,
+      data: slotOrder.map(s => binPct(by[s].Weekday, b.key)),
+      backgroundColor: b.color, stack: 'weekday', borderWidth: 0,
+      _meta: { daytype: 'Weekday', bin: b }
+    }));
+    const weSets = BIN_DEFS.map(b => ({
+      label: b.label + ' ',
+      data: slotOrder.map(s => binPct(by[s].Weekend, b.key)),
+      backgroundColor: makeStripePattern(b.color),
+      borderColor: b.color, borderWidth: 1, stack: 'weekend',
+      _meta: { daytype: 'Weekend', bin: b }
+    }));
+
+    // Daytype key swatches
+    const keyWknd = document.getElementById('swatch-wknd');
+    if (keyWknd && !keyWknd.dataset.painted) {
+      const c = document.createElement('canvas');
+      c.width = 18; c.height = 12;
+      const cx = c.getContext('2d');
+      cx.fillStyle = '#888'; cx.fillRect(0,0,18,12);
+      cx.strokeStyle = 'rgba(255,255,255,0.55)'; cx.lineWidth = 1.6;
+      cx.beginPath();
+      for (let off = -12; off < 30; off += 4) { cx.moveTo(off, 14); cx.lineTo(off + 14, 0); }
+      cx.stroke();
+      cx.strokeStyle = '#6b6b66'; cx.lineWidth = 1; cx.strokeRect(0.5, 0.5, 17, 11);
+      keyWknd.style.background = 'url("' + c.toDataURL() + '")';
+      keyWknd.style.border = 'none';
+      keyWknd.dataset.painted = '1';
+    }
+
+    setChart('chart-time', {
+      type: 'bar',
+      data: { labels: slotOrder.map(s => slotLabels[s]), datasets: [...wdSets, ...weSets] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 8, filter: (item) => !item.text.endsWith(' ') } },
+          tooltip: { callbacks: {
+            title: (items) => {
+              const dt = items[0].dataset._meta?.daytype || '';
+              return (items[0]?.label || '').replace('\n', ' ') + ' — ' + dt;
+            },
+            label: (ctx) => {
+              const s = slotOrder[ctx.dataIndex];
+              const dt = ctx.dataset._meta?.daytype || 'Weekday';
+              const r = by[s][dt];
+              const bin = ctx.dataset._meta?.bin;
+              if (!r || !bin) return '';
+              return bin.label + ': ' + binCount(r, bin.key) + ' (' + binPct(r, bin.key) + '%)';
+            },
+            footer: (items) => {
+              const s = slotOrder[items[0].dataIndex];
+              const dt = items[0].dataset._meta?.daytype || 'Weekday';
+              const r = by[s][dt];
+              if (!r || !r.classes) return '';
+              return 'Total: ' + (r.sold_out || 0) + ' of ' + r.classes + ' sold out (' + (pctOf(r) ?? 0) + '%)';
+            }
+          } }
+        },
+        scales: {
+          x: { stacked: true, ticks: { callback: function(v) { const lbl = this.getLabelForValue(v); return lbl.split('\n'); } } },
+          y: { stacked: true, title: { display: true, text: '% of sections sold out' }, beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } }
+        }
+      }
+    });
+  }
+
+  function renderAgeChart() {
+    const ageOrder = ['Babies & toddlers (0-2)','Preschool (3-4)','Pre-K & K (4-6)','School-age (5-12)','Teen (13-17)','Adult (15+)','Other / mixed'];
+    const rows = SNAPSHOT.per_filter[filterKey()]?.age || [];
+    const by = Object.fromEntries(rows.map(r => [r.bucket, r]));
+    setChart('chart-age', {
+      type: 'bar',
+      data: {
+        labels: ageOrder.map(a => a + ' (' + (by[a]?.sold_out ?? 0) + '/' + (by[a]?.classes ?? 0) + ')'),
+        datasets: binDatasets(ageOrder, k => by[k]),
+      },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 8 } },
+          tooltip: { callbacks: {
+            title: (items) => items[0]?.label || '',
+            label: (ctx) => {
+              const a = ageOrder[ctx.dataIndex]; const r = by[a];
+              const bin = BIN_DEFS[ctx.datasetIndex];
+              return bin.label + ': ' + binCount(r, bin.key) + ' (' + binPct(r, bin.key) + '%)';
+            },
+            footer: (items) => {
+              const a = ageOrder[items[0].dataIndex]; const r = by[a];
+              if (!r || !r.classes) return '';
+              return 'Total: ' + (r.sold_out || 0) + ' of ' + r.classes + ' sold out (' + (pctOf(r) ?? 0) + '%)';
+            }
+          } }
+        },
+        scales: {
+          x: { stacked: true, title: { display: true, text: '% of sections sold out' }, beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } },
+          y: { stacked: true, ticks: { autoSkip: false } }
+        }
+      }
+    });
+  }
+
+  function renderLocationChart() {
+    const rows = SNAPSHOT.per_filter[filterKey()]?.location || [];
+    const locKeys = rows.map(r => r.location);
+    const by = Object.fromEntries(rows.map(r => [r.location, r]));
+    setChart('chart-location', {
+      type: 'bar',
+      data: { labels: locKeys, datasets: binDatasets(locKeys, k => by[k]) },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 8 } },
+          tooltip: { callbacks: {
+            title: (items) => items[0]?.label || '',
+            label: (ctx) => {
+              const l = locKeys[ctx.dataIndex]; const r = by[l];
+              const bin = BIN_DEFS[ctx.datasetIndex];
+              return bin.label + ': ' + binCount(r, bin.key) + ' (' + binPct(r, bin.key) + '%)';
+            },
+            footer: (items) => {
+              const l = locKeys[items[0].dataIndex]; const r = by[l];
+              if (!r || !r.classes) return '';
+              return 'Total: ' + (r.sold_out || 0) + ' of ' + r.classes + ' sold out (' + (pctOf(r) ?? 0) + '%)';
+            }
+          } }
+        },
+        scales: {
+          x: { stacked: true, title: { display: true, text: '% of sections sold out' }, beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } },
+          y: { stacked: true, ticks: { autoSkip: false } }
+        }
+      }
+    });
+  }
+
+  function refreshFilteredCharts() {
+    document.getElementById('filter-summary').textContent = filterLabel();
+    renderDayChart(); renderTimeChart(); renderAgeChart(); renderLocationChart();
+  }
+
+  function renderInstantTable() {
+    const instant = SNAPSHOT.instant_rows || [];
+    const tableWrap = document.getElementById('table-wrap');
+    tableWrap.innerHTML = '';
+    const summary = document.createElement('p');
+    summary.style.cssText = 'margin: 0 0 10px; font-size: 13px; color: #4a4a45;';
+    summary.innerHTML = '<b>' + instant.length + ' sections</b> sold out within the first poll cycle after registration opened.';
+    tableWrap.appendChild(summary);
+    const gridHost = document.createElement('div');
+    tableWrap.appendChild(gridHost);
+    new gridjs.Grid({
+      columns: [
+        { name: 'Class', width: '36%' },
+        { name: 'Category', width: '16%' },
+        { name: 'Location', width: '20%' },
+        { name: 'Day', width: '7%' },
+        { name: 'Time', width: '12%' },
+        { name: 'Ages', width: '9%' },
+      ],
+      data: instant.map(r => [r.name, r.category, r.location, r.days, r.time_start, r.ages]),
+      sort: true, search: true,
+      pagination: { limit: 25, summary: true },
+      resizable: false,
+      style: { th: { 'background-color': '#f5f4ef', 'font-weight': '600' } }
+    }).render(gridHost);
+  }
+
+  function populateFilterDropdown() {
+    const select = document.getElementById('cat-filter');
+    // remove placeholder option text and rebuild
+    select.innerHTML = '';
+    const allOpt = document.createElement('option');
+    allOpt.value = ''; allOpt.textContent = 'All categories';
+    select.appendChild(allOpt);
+    for (const c of (SNAPSHOT.filter_cats || [])) {
+      const opt = document.createElement('option');
+      opt.value = c.cat;
+      const label = c.cat === '__none__' ? 'Adult fitness (uncategorized)' : c.cat;
+      opt.textContent = label + ' — ' + c.sold_out + ' sellouts (of ' + c.classes + ')';
+      select.appendChild(opt);
+    }
+    select.addEventListener('change', (e) => {
+      currentFilter = e.target.value;
+      refreshFilteredCharts();
+    });
+  }
+
+  // ---- Boot ----
+  renderStats();
+  renderCategoryChart();
+  populateFilterDropdown();
+  refreshFilteredCharts();
+  renderInstantTable();
+})();
+</script>
+
+</body>
+</html>
