@@ -82,12 +82,12 @@ def build_snapshot(db_path):
 
     # ---- category chart (bin distribution per category) ----
     cat_rows_raw = fetch(conn, (
-        "SELECT COALESCE(NULLIF(type_label,''), 'Adult fitness (uncategorized)') AS category, "
+        "SELECT COALESCE(NULLIF(type_label,''), 'Other') AS category, "
         "sold_out_within_seconds AS secs "
         "FROM currently_open WHERE sold_out_within_seconds IS NOT NULL"
     ))
     totals_by_cat = fetch(conn, (
-        "SELECT COALESCE(NULLIF(type_label,''), 'Adult fitness (uncategorized)') AS category, "
+        "SELECT COALESCE(NULLIF(type_label,''), 'Other') AS category, "
         "COUNT(*) AS classes, "
         "SUM(CASE WHEN sold_out_within_seconds IS NOT NULL THEN 1 ELSE 0 END) AS sold_out "
         "FROM currently_open GROUP BY category"
@@ -103,7 +103,7 @@ def build_snapshot(db_path):
 
     # ---- instant sellouts table ----
     instant_rows = fetch(conn, (
-        "SELECT name, COALESCE(NULLIF(type_label,''),'(Adult fitness)') AS category, "
+        "SELECT name, COALESCE(NULLIF(type_label,''),'Other') AS category, "
         "location, days, time_start, ages "
         "FROM currently_open WHERE sold_out_within_seconds IS NOT NULL AND sold_out_within_seconds < 1200 "
         "ORDER BY category ASC, name ASC, location ASC, days ASC, time_start ASC"

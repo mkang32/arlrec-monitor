@@ -7,10 +7,54 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343562062,500101-01,3D Creations Art Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Cardinal Elementary School,5.5-12.99,$320.00/$368.00,,,,
 343190112,500102-01,3D Creations Art Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Cardinal Elementary School,3.5-6.99,$220.00/$253.00,,,,
 343190211,500103-01,3D Creations Art Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,12:00 pm,3:00 pm,"M, Tu, W, Th, F",Cardinal Elementary School,5.5-12.99,$220.00/$253.00,,,,
+347285281,913206-06,55+ 'Tour de Friends' Bike Club,,OSAP,55+ Classes,05/26/2026,05/26/2026,10:00 am,12:00 pm,Tu,OffSite-See Description,,$0.00/$0.00,,,,
+365936833,914102-01,55+ Aqua Exercise,,OSAP,55+ Classes,06/08/2026,08/10/2026,11:00 am,12:00 pm,M,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936841,914102-02,55+ Aqua Exercise,,OSAP,55+ Classes,06/09/2026,08/11/2026,11:10 am,12:10 pm,Tu,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936849,914102-03,55+ Aqua Exercise,,OSAP,55+ Classes,06/10/2026,08/12/2026,11:10 am,12:10 pm,W,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936857,914102-04,55+ Aqua Exercise,,OSAP,55+ Classes,06/12/2026,08/14/2026 *,1:00 pm,2:00 pm,F,Long Bridge Aquatics Center,,$40.00/$40.00,,,,
+365936865,914102-05,55+ Aqua Exercise - Deep Water Class,,OSAP,55+ Classes,06/08/2026,08/10/2026,10:00 am,11:00 am,M,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936873,914102-06,55+ Aqua Exercise - Deep Water Class,,OSAP,55+ Classes,06/08/2026,08/10/2026,1:30 pm,2:30 pm,M,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936881,914102-07,55+ Aqua Exercise - Deep Water Class,,OSAP,55+ Classes,06/09/2026,08/11/2026,2:15 pm,3:15 pm,Tu,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936889,914102-08,55+ Aqua Exercise - Deep Water Class,,OSAP,55+ Classes,06/11/2026,08/13/2026,11:15 am,12:15 pm,Th,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936897,914102-09,55+ Aqua Exercise - Deep Water Class,,OSAP,55+ Classes,06/12/2026,08/14/2026 *,10:00 am,11:00 am,F,Long Bridge Aquatics Center,,$40.00/$40.00,,,,
+347284549,913100-21,55+ Group Training,,OSAP,55+ Classes,04/21/2026,05/26/2026,10:00 am,11:00 am,Tu,Thomas Jefferson Center,,$54.00/$54.00,,,,
+347284557,913100-22,55+ Group Training,,OSAP,55+ Classes,04/21/2026,05/26/2026,11:00 am,12:00 pm,Tu,Thomas Jefferson Center,,$54.00/$54.00,,,,
+347284565,913100-23,55+ Group Training,,OSAP,55+ Classes,04/22/2026,05/27/2026,9:30 am,10:30 am,W,Arlington Mill,,$54.00/$54.00,,,,
+347284573,913100-24,55+ Group Training,,OSAP,55+ Classes,04/23/2026,05/28/2026,11:00 am,12:00 pm,Th,Madison Center,,$54.00/$54.00,,,,
+347284581,913100-25,55+ Group Training,,OSAP,55+ Classes,04/24/2026,05/29/2026,9:00 am,10:00 am,F,Thomas Jefferson Center,,$54.00/$54.00,,,,
+347284589,913100-26,55+ Group Training,,OSAP,55+ Classes,04/24/2026,05/29/2026,10:00 am,11:00 am,F,Thomas Jefferson Center,,$54.00/$54.00,,,,
+365936769,914100-07,55+ Group Training,,OSAP,55+ Classes,06/09/2026,08/04/2026 *,10:00 am,11:00 am,Tu,Thomas Jefferson Center,,$72.00/$72.00,,,,
+365936777,914100-08,55+ Group Training,,OSAP,55+ Classes,06/09/2026,08/04/2026,11:00 am,12:00 pm,Tu,Thomas Jefferson Center,,$81.00/$81.00,,,,
+365936785,914100-09,55+ Group Training,,OSAP,55+ Classes,06/10/2026,07/15/2026,9:30 am,10:30 am,W,Arlington Mill,,$54.00/$54.00,,,,
+365936793,914100-10,55+ Group Training,,OSAP,55+ Classes,06/11/2026,08/06/2026 *,11:00 am,12:00 pm,Th,Thomas Jefferson Center,,$72.00/$72.00,,,,
+365936801,914100-11,55+ Group Training,,OSAP,55+ Classes,06/12/2026,07/31/2026 *,9:00 am,10:00 am,F,Thomas Jefferson Center,,$54.00/$54.00,,,,
+365936809,914100-12,55+ Group Training,,OSAP,55+ Classes,06/12/2026,07/31/2026 *,10:00 am,11:00 am,F,Thomas Jefferson Center,,$54.00/$54.00,,,,
+365936817,914100-13,55+ Group Training,,OSAP,55+ Classes,07/22/2026,08/26/2026,9:30 am,10:30 am,W,Arlington Mill,,$54.00/$54.00,,,,
+365937352,914206-01,55+ Tour de Friends Bike Club,,OSAP,55+ Classes,06/09/2026,06/09/2026,10:00 am,12:00 pm,Tu,OffSite-See Description,,$0.00/$0.00,,,,
+365937360,914206-02,55+ Tour de Friends Bike Club,,OSAP,55+ Classes,06/23/2026,06/23/2026,10:00 am,12:00 pm,Tu,OffSite-See Description,,$0.00/$0.00,,,,
+365937368,914206-03,55+ Tour de Friends Bike Club,,OSAP,55+ Classes,07/14/2026,07/14/2026,9:00 am,11:00 am,Tu,OffSite-See Description,,$0.00/$0.00,,,,
+365937376,914206-04,55+ Tour de Friends Bike Club,,OSAP,55+ Classes,07/28/2026,07/28/2026,9:00 am,11:00 am,Tu,OffSite-See Description,,$0.00/$0.00,,,,
+365937384,914206-05,55+ Tour de Friends Bike Club,,OSAP,55+ Classes,08/11/2026,08/11/2026,9:00 am,11:00 am,Tu,OffSite-See Description,,$0.00/$0.00,,,,
+365937392,914206-06,55+ Tour de Friends Bike Club,,OSAP,55+ Classes,08/25/2026,08/25/2026,9:00 am,11:00 am,Tu,OffSite-See Description,,$0.00/$0.00,,,,
+347285023,913106-12,55+ Walks,,OSAP,55+ Classes,05/20/2026,05/20/2026,9:30 am,10:30 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+347285031,913106-13,55+ Walks,,OSAP,55+ Classes,05/27/2026,05/27/2026,9:30 am,10:30 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937134,914106-01,55+ Walks,,OSAP,55+ Classes,06/03/2026,06/03/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937142,914106-02,55+ Walks,,OSAP,55+ Classes,06/10/2026,06/10/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937150,914106-03,55+ Walks,,OSAP,55+ Classes,06/17/2026,06/17/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937158,914106-04,55+ Walks,,OSAP,55+ Classes,06/24/2026,06/24/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937166,914106-05,55+ Walks,,OSAP,55+ Classes,07/01/2026,07/01/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937174,914106-06,55+ Walks,,OSAP,55+ Classes,07/08/2026,07/08/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937182,914106-07,55+ Walks,,OSAP,55+ Classes,07/15/2026,07/15/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937191,914106-08,55+ Walks,,OSAP,55+ Classes,07/22/2026,07/22/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937199,914106-09,55+ Walks,,OSAP,55+ Classes,07/29/2026,07/29/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937207,914106-10,55+ Walks,,OSAP,55+ Classes,08/05/2026,08/05/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937215,914106-11,55+ Walks,,OSAP,55+ Classes,08/12/2026,08/12/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
+365937223,914106-12,55+ Walks,,OSAP,55+ Classes,08/19/2026,08/19/2026,9:00 am,10:00 am,W,OffSite-See Description,,$0.00/$0.00,,,,
 343431464,320306-A,ABC's of Fencing,,MARTS,Martial Arts,04/18/2026,05/30/2026,9:00 am,10:00 am,Sa,NOVA Fencing and Archery Club,4-6.99,$154.00/$174.00,,,,
 348541950,320306-B,ABC's of Fencing,,MARTS,Martial Arts,04/18/2026,05/30/2026,10:00 am,11:00 am,Sa,NOVA Fencing and Archery Club,4-6.99,$154.00/$174.00,,,,
 350225097,420306-A,ABC's of Fencing,ENJOYSUMMER,MARTS,Martial Arts,06/20/2026,08/15/2026 *,9:00 am,9:45 am,Sa,NOVA Fencing and Archery Club,4-6.99,$176.00/$196.00,2026-05-15T14:06:18+00:00,Available,5,0
 350225108,420306-B,ABC's of Fencing,ENJOYSUMMER,MARTS,Martial Arts,06/20/2026,08/15/2026 *,10:00 am,10:45 am,Sa,NOVA Fencing and Archery Club,4-6.99,$176.00/$196.00,2026-05-15T14:06:18+00:00,Available,5,0
+347286506,913500-06,About the Brain,,OSAP,55+ Classes,05/27/2026,05/27/2026,1:15 pm,3:00 pm,W,Lubber Run,,$0.00/$0.00,,,,
 343431143,320104-A,Abrakadoodle Mini Doodlers,,CRART,Arts & Crafts,04/17/2026,06/12/2026 *,11:00 am,11:45 am,F,Fairlington Center,3-6.99,$176.00/$196.00,,,,
 343431157,320104-B,Abrakadoodle Mini Doodlers,,CRART,Arts & Crafts,04/18/2026,06/13/2026 *,10:00 am,10:45 am,Sa,Arlington Mill,3-6.99,$176.00/$196.00,,,,
 350224859,420104-A,Abrakadoodle Mini Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/07/2026,08/11/2026,11:00 am,11:45 am,Tu,Walter Reed Center,3-6.99,$132.00/$152.00,2026-05-15T14:06:18+00:00,Available,5,0
@@ -30,8 +74,18 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350223957,410100-B,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/08/2026,08/12/2026,10:00 am,10:45 am,W,Long Bridge Aquatics Center,1.66-3.99,$132.00/$152.00,2026-05-16T13:46:13+00:00,Available,5,0
 350223985,410100-C,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/13/2026,08/17/2026,9:30 am,10:15 am,M,Madison Manor Park,1.66-3.99,$132.00/$152.00,2026-05-16T13:46:13+00:00,Available,3,0
 350223971,410100-D,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/11/2026,08/15/2026,9:30 am,10:15 am,Sa,Arlington Mill,1.66-3.99,$132.00/$152.00,2026-05-16T13:46:13+00:00,Available,3,0
-350217393,420521-A,Adapted Level 1 (Age: 5-7),ENJOYSUMMER1,GYMNA,Gymnastics,07/12/2026,08/16/2026,9:30 am,10:15 am,Su,Barcroft Fitness Center,5-7.99,$83.00/$103.00,2026-05-15T13:59:31+00:00,Waitlist,5,4
-350217404,420521-B,Adapted Level 1 (Age: 8-12),ENJOYSUMMER1,GYMNA,Gymnastics,07/12/2026,08/16/2026,8:30 am,9:15 am,Su,Barcroft Fitness Center,8-12.99,$83.00/$103.00,2026-05-15T13:59:31+00:00,Waitlist,6,5
+365937473,914301-02,Acoustic Cafe (55+ Pass NOT Required),,OSAP,55+ Classes,06/16/2026,06/16/2026,7:00 pm,8:30 pm,Tu,Walter Reed Center,0-999,$0.00/$0.00,,,,
+347285402,913301-03,Acoustic Cafe (55+ Pass Not Required),,OSAP,55+ Classes,05/19/2026,05/19/2026,7:00 pm,8:30 pm,Tu,Walter Reed Center,0-999,$0.00/$0.00,,,,
+365937465,914301-01,Acoustic Hour in the Park,,OSAP,55+ Classes,06/05/2026,06/05/2026,1:00 pm,2:30 pm,F,Virginia Highlands Park,,$0.00/$0.00,,,,
+343429884,302005-A,Adapted Art,,TRO,Individuals with Disabilities,04/14/2026,06/02/2026,5:30 pm,6:30 pm,Tu,Lubber Run,13-99.99,$85.00/$105.00,,,,
+343429906,304003-B,Adapted Group Fitness w/SPIRIT Club,,TRO,Individuals with Disabilities,05/16/2026,05/16/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$17.00/$37.00,,,,
+343429917,304003-C,Adapted Group Fitness w/SPIRIT Club,,TRO,Individuals with Disabilities,06/06/2026,06/06/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$17.00/$37.00,,,,
+343444109,320521-A,Adapted Level 1 (Age: 5-7),,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,9:30 am,10:15 am,Su,Barcroft Fitness Center,5-7.99,$96.00/$116.00,,,,
+350217393,420521-A,Adapted Level 1 (Age: 5-7),ENJOYSUMMER1,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,9:30 am,10:15 am,Su,Barcroft Fitness Center,5-7.99,$83.00/$103.00,2026-05-15T13:59:31+00:00,Waitlist,5,4
+343444122,320521-B,Adapted Level 1 (Age: 8-12),,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,8:30 am,9:15 am,Su,Barcroft Fitness Center,8-12.99,$96.00/$116.00,,,,
+350217404,420521-B,Adapted Level 1 (Age: 8-12),ENJOYSUMMER1,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,8:30 am,9:15 am,Su,Barcroft Fitness Center,8-12.99,$83.00/$103.00,2026-05-15T13:59:31+00:00,Waitlist,6,5
+343429942,304008-A,Adapted Yoga for Adults,,TRO,Individuals with Disabilities,04/15/2026,06/10/2026 *,5:30 pm,6:20 pm,W,Lubber Run,18-99.99,$120.00/$140.00,,,,
+343429929,304007-A,Adapted Zumba w/Spirit Club,,TRO,Individuals with Disabilities,04/18/2026,06/13/2026 *,11:00 am,12:00 pm,Sa,Langston Brown,13-99.99,$180.00/$200.00,,,,
 343444178,340501-A,Adult Advanced,,GYMNA,Gymnastics,04/16/2026,06/11/2026,7:15 pm,8:45 pm,Th,Barcroft Fitness Center,18-99.99,$198.00/$218.00,,,,
 350217448,440501-A,Adult Advanced,ENJOYSUMMER1,GYMNA,Gymnastics,07/09/2026,08/13/2026,7:15 pm,8:45 pm,Th,Barcroft Fitness Center,18-99.99,$132.00/$152.00,2026-05-15T13:59:31+00:00,Waitlist,10,0
 343444156,340500-A,Adult Beginner,,GYMNA,Gymnastics,04/14/2026,06/09/2026,7:15 pm,8:45 pm,Tu,Barcroft Fitness Center,18-99.99,$198.00/$218.00,,,,
@@ -96,6 +150,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366345871,740404-BF,Adult Private Lesson,,AQUATPVT,Aquatics - Private Lessons,06/25/2026,08/13/2026,7:30 pm,8:00 pm,Th,Long Bridge Aquatics Center,13-99.99,$352.00/$372.00,,,,
 366345884,740404-BG,Adult Private Lesson,,AQUATPVT,Aquatics - Private Lessons,06/25/2026,08/13/2026,8:05 pm,8:35 pm,Th,Long Bridge Aquatics Center,13-99.99,$352.00/$372.00,,,,
 366345896,740404-BH,Adult Private Lesson,,AQUATPVT,Aquatics - Private Lessons,06/25/2026,08/13/2026,8:05 pm,8:35 pm,Th,Long Bridge Aquatics Center,13-99.99,$352.00/$372.00,,,,
+365937069,914103-16,Advanced Traditional Hatha Yoga,,OSAP,55+ Classes,06/09/2026,08/25/2026,10:30 am,11:30 am,Tu,Lubber Run,,$66.00/$66.00,,,,
 343192325,500303-01,Adventure Fishing Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Gunston Center,9-14.99,$620.00/$713.00,,,,
 343192336,500303-02,Adventure Fishing Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,8:30 am,4:30 pm,"M, Tu, W, Th",Gunston Center,9-14.99,$496.00/$570.00,,,,
 343192347,500303-03,Adventure Fishing Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Gunston Center,9-14.99,$620.00/$713.00,,,,
@@ -108,6 +163,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343192424,500303-10,Adventure Fishing Camp,CAMP1,CAMP,Summer Camp,08/24/2026,08/28/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Gunston Center,9-14.99,$620.00/$713.00,,,,
 366020261,642950-L,Afternoon Craft,,NCTR,Nature & History,08/04/2026,08/04/2026,12:15 pm,1:00 pm,Tu,Long Branch Nature Center,3-99.99,$7.00/$8.00,,,,
 366020272,642950-M,Afternoon Craft,,NCTR,Nature & History,08/13/2026,08/13/2026,12:15 pm,1:00 pm,Th,Long Branch Nature Center,3-99.99,$7.00/$8.00,,,,
+365765358,902608-03,Agatha Christies Mousetrap at Riverside,,SAOT,55+ Trips,08/19/2026,08/19/2026,9:30 am,6:15 pm,W,See Program Details,,$112.00/$129.00,,,,
 343430118,310205-A,All that Jazz & Ballet,,DANCE,Dance,04/16/2026,06/11/2026,5:00 pm,5:45 pm,Th,Barcroft Fitness Center,4.5-6.99,$216.00/$236.00,,,,
 350224022,410205-A,All that Jazz & Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:00 am,10:45 am,Sa,Langston Brown,4.5-6.99,$120.00/$140.00,2026-05-16T13:46:13+00:00,Available,2,0
 350224033,410205-B,All that Jazz & Ballet,ENJOYSUMMER,DANCE,Dance,07/16/2026,08/13/2026,6:00 pm,6:45 pm,Th,Barcroft Fitness Center,4.5-6.99,$120.00/$140.00,2026-05-16T13:46:13+00:00,Available,0,0
@@ -121,9 +177,24 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350725230,632850-J,Animal Meet & Greet,,NCTR,Nature & History,05/31/2026,05/31/2026,2:00 pm,3:00 pm,Su,Gulf Branch Nature Center,0-99.99,$0.00/$0.00,,,,
 353226238,420420-A,Aqua Adventure Camp,CAMP,CAMP,Summer Camp,07/06/2026,07/09/2026,9:00 am,3:30 pm,"M, Tu, W, Th",Long Bridge Aquatics Center,7-14.99,$470.00/$540.00,,,,
 353226807,420420-B,Aqua Adventure Camp,CAMP,CAMP,Summer Camp,07/20/2026,07/23/2026,9:00 am,3:30 pm,"M, Tu, W, Th",Long Bridge Aquatics Center,7-14.99,$470.00/$540.00,,,,
+365936913,914102-11,Aqua Bootcamp,,OSAP,55+ Classes,06/10/2026,08/12/2026,10:00 am,11:00 am,W,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936937,914102-14,Aqua Cycle,,OSAP,55+ Classes,06/11/2026,08/13/2026,10:00 am,11:00 am,Th,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936929,914102-13,Aqua Tabata,,OSAP,55+ Classes,06/10/2026,08/12/2026,11:10 am,12:10 pm,W,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365936905,914102-10,Aqua for Arthritis,,OSAP,55+ Classes,06/08/2026,08/10/2026,10:00 am,11:00 am,M,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
 350725577,632920-I,Aquatic Wild Activities for Kids,,NCTR,Nature & History,05/31/2026,05/31/2026,3:30 pm,5:00 pm,Su,Long Branch Nature Center,8-12.99,$9.00/$10.35,,,,
-350202394,410412-A,Aquatics: Adapted Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-16T13:46:13+00:00,Available,5,0
-350202383,410411-A,Aquatics: Adapted Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,2.5-4.99,$70.00/$90.00,2026-05-16T13:46:13+00:00,Available,4,0
+343437525,320414-A,Aquatics: Adapted Open Swim,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,12:20 pm,1:00 pm,Su,Long Bridge Aquatics Center,6-99.99,$96.00/$116.00,,,,
+350203649,420414-A,Aquatics: Adapted Open Swim,,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,12:20 pm,1:00 pm,Su,Long Bridge Aquatics Center,6-99.99,$84.00/$104.00,,,,
+343436530,310412-A,Aquatics: Adapted Pre-Fin,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,,,,
+350202394,410412-A,Aquatics: Adapted Pre-Fin,ENJOYSUMMER,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-16T13:46:13+00:00,Available,5,0
+343436519,310411-A,Aquatics: Adapted Pre-Fin & Me,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,2.5-4.99,$80.00/$100.00,,,,
+350202383,410411-A,Aquatics: Adapted Pre-Fin & Me,ENJOYSUMMER,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,2.5-4.99,$70.00/$90.00,2026-05-16T13:46:13+00:00,Available,4,0
+343438066,340415-A,Aquatics: Adapted Teen/Adult Swim Exploration,,TRO,Individuals with Disabilities,04/14/2026,06/16/2026,9:00 am,9:55 am,Tu,Long Bridge Aquatics Center,13-99.99,$140.00/$160.00,,,,
+343438078,340415-B,Aquatics: Adapted Teen/Adult Swim Exploration,,TRO,Individuals with Disabilities,04/16/2026,06/18/2026,9:00 am,9:55 am,Th,Long Bridge Aquatics Center,13-99.99,$140.00/$160.00,,,,
+343438089,340415-C,Aquatics: Adapted Teen/Adult Swim Exploration,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,2:20 pm,2:50 pm,Su,Long Bridge Aquatics Center,13-99.99,$80.00/$100.00,,,,
+350204180,440415-A,Aquatics: Adapted Teen/Adult Swim Exploration,,TRO,Individuals with Disabilities,06/23/2026,08/11/2026,9:00 am,9:55 am,Tu,Long Bridge Aquatics Center,13-99.99,$112.00/$132.00,,,,
+350204191,440415-B,Aquatics: Adapted Teen/Adult Swim Exploration,,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,2:20 pm,2:50 pm,Su,Long Bridge Aquatics Center,13-99.99,$70.00/$90.00,,,,
+343437514,320411-A,Aquatics: Adapted Youth Splash,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,1:40 pm,2:10 pm,Su,Long Bridge Aquatics Center,6-12.99,$80.00/$100.00,,,,
+350203638,420411-A,Aquatics: Adapted Youth Splash,,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,1:40 pm,2:10 pm,Su,Long Bridge Aquatics Center,6-12.99,$70.00/$90.00,,,,
 343191247,500207-01,Arlington County Gymnastics Camp,CAMP,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Fitness Center,6-9.99,$415.00/$477.00,,,,
 343191258,500207-02,Arlington County Gymnastics Camp,CAMP,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Barcroft Fitness Center,6-9.99,$332.00/$381.00,,,,
 343191269,500207-03,Arlington County Gymnastics Camp,CAMP,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Fitness Center,6-9.99,$415.00/$477.00,,,,
@@ -136,6 +207,9 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 346617678,750146-L,Arlington Soccer Camp -  FULL DAY,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Thomas Jefferson Center,6-14.99,$75.00/$86.00,,,,
 346617547,750146-K,Arlington Soccer Camp -  HALF DAY,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,12:00 pm,Tu,Thomas Jefferson Center,6-14.99,$55.00/$63.00,,,,
 346618902,750146-Z,Arlington Soccer Camp -  HALF DAY,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,12:00 pm,W,Kenmore MS,6-14.99,$55.00/$63.00,,,,
+365938095,914400-24,Arlingtons Urban Forest,,OSAP,55+ Classes,07/16/2026,07/16/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
+365938161,914400-32,Armchair Travel,,OSAP,55+ Classes,06/25/2026,06/25/2026,10:00 am,11:00 am,Th,Virtual,,$0.00/$0.00,,,,
+365938169,914400-33,Armchair Travel,,OSAP,55+ Classes,08/20/2026,08/20/2026,10:00 am,11:00 am,Th,Virtual,,$0.00/$0.00,,,,
 343431213,320128-A,Art 101: Intro to Art,,DWPT,Drawing/Painting,04/18/2026,06/06/2026 *,9:45 am,11:00 am,Sa,Fairlington Center,10-12.99,$160.00/$180.00,,,,
 343431227,320128-B,Art 101: Intro to Art,,DWPT,Drawing/Painting,04/18/2026,06/06/2026 *,11:45 am,1:00 pm,Sa,Fairlington Center,10-12.99,$160.00/$180.00,,,,
 343190101,500101-10,Art Innovators Art Camp,CAMP1,CAMP,Summer Camp,08/24/2026,08/28/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Arlington Mill,5.5-12.99,$320.00/$368.00,,,,
@@ -146,6 +220,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343190079,500101-08,Artosaurus Art Camp,CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,5.5-12.99,$320.00/$368.00,,,,
 343190178,500102-08,Artosaurus Art Camp,CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Abingdon School,3.5-6.99,$220.00/$253.00,,,,
 343190278,500103-08,Artosaurus Art Camp,CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,12:00 pm,3:00 pm,"M, Tu, W, Th, F",Abingdon School,5.5-12.99,$220.00/$253.00,,,,
+347632060,902605-09,Arundel Mills and Maryland Live Casino,,SAOT,55+ Trips,05/29/2026,05/29/2026,10:30 am,6:30 pm,F,See Program Details,,$14.00/$17.00,,,,
 350725060,632820-D,Awesome Amphibians (NSNP),,NCTR,Nature & History,05/27/2026,05/27/2026,11:00 am,12:00 pm,W,Gulf Branch Nature Center,6-12.99,$0.00/$0.00,,,,
 366020250,642950-K,Baby Owl Prowl,,NCTR,Nature & History,06/17/2026,06/17/2026,8:00 pm,9:30 pm,W,Long Branch Nature Center,5-99.99,$9.00/$10.35,,,,
 344699627,320607-A,Ball Hockey,,SPORT,Sports,04/19/2026,06/21/2026 *,10:30 am,11:30 am,Su,Quincy Street Deck,7-9.99,$213.00/$233.00,,,,
@@ -166,8 +241,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 346619069,750146-DD,Baroody: LEGO® WeDo 2.0 Robotics: Space and Aviation Camp,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,3:00 pm,W,Madison Center,5-10.99,$90.00/$104.00,,,,
 346616519,750146-O,Baroody: LEGO® WeDo 2.0: Aquatic Robotics Camp,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,3:00 pm,Tu,Madison Center,7-12.99,$90.00/$104.00,,,,
 346616571,750146-P,Baroody: LEGO® WeDo 2.0: Jurassic Bots Camp,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,3:00 pm,Tu,Madison Center,7-12.99,$90.00/$104.00,,,,
-350225935,440319-A,Barre,ENJOYSUMMER,,,06/23/2026,08/18/2026,6:00 pm,7:00 pm,Tu,Langston Brown,16-99.99,$153.00/$173.00,2026-05-15T14:06:18+00:00,Waitlist,14,0
-350225946,440319-B,Barre,ENJOYSUMMER,,,06/23/2026,08/18/2026,7:10 pm,8:10 pm,Tu,Langston Brown,16-99.99,$153.00/$173.00,2026-05-15T14:06:18+00:00,Available,5,0
+343432877,340319-A,Barre,,FIT,Fitness,04/14/2026,06/16/2026,6:00 pm,7:00 pm,Tu,Langston Brown,18-99.99,$170.00/$190.00,,,,
+343432888,340319-B,Barre,,FIT,Fitness,04/16/2026,06/18/2026,6:00 pm,7:00 pm,Th,Langston Brown,18-99.99,$170.00/$190.00,,,,
+350225935,440319-A,Barre,ENJOYSUMMER,FIT,Fitness,06/23/2026,08/18/2026,6:00 pm,7:00 pm,Tu,Langston Brown,16-99.99,$153.00/$173.00,2026-05-15T14:06:18+00:00,Waitlist,14,0
+350225946,440319-B,Barre,ENJOYSUMMER,FIT,Fitness,06/23/2026,08/18/2026,7:10 pm,8:10 pm,Tu,Langston Brown,16-99.99,$153.00/$173.00,2026-05-15T14:06:18+00:00,Available,5,0
 343193891,500426-04,Basketball Camp (Full Day),CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Jamestown Elem. Sch.,6-14.99,$379.00/$435.00,,,,
 343193902,500426-08,Basketball Camp (Full Day),CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Lubber Run,6-14.99,$379.00/$435.00,,,,
 343193914,500427-04,Basketball Camp (Half Day),CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Virginia Highlands Park,4-14.99,$279.00/$320.00,,,,
@@ -176,16 +253,22 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366281313,642940-C,Beginner Birding,,NCTR,Nature & History,08/20/2026,08/20/2026,10:00 am,11:00 am,Th,Bluemont Park,12-99.99,$7.00/$8.00,,,,
 343433034,340354-A,Beginner Judo for Teens/Adults,,MARTS,Martial Arts,04/16/2026,06/18/2026,8:20 pm,9:20 pm,Th,Dawson Terrace,13-99.99,$100.00/$120.00,,,,
 343431452,320305-A,Beginner Judo for Youth,,MARTS,Martial Arts,04/14/2026,06/16/2026 *,6:00 pm,7:00 pm,Tu,Dawson Terrace,5-13.99,$90.00/$110.00,,,,
+365937118,914105-01,Beginner Tai Chi Chuan,,OSAP,55+ Classes,06/08/2026,08/24/2026 *,2:00 pm,3:00 pm,M,Walter Reed Center,,$66.00/$66.00,,,,
 272789126,730045-A1,Beginners Latin Dance,,TEEN,Teen Programs,10/02/2025,08/27/2026 *,4:00 pm,5:30 pm,Th,Lubber Run,5-99.99,$0.00/$0.00,,,,
 343431308,320215-A,Beginning Ballet,,DANCE,Dance,04/13/2026,06/08/2026 *,5:50 pm,6:35 pm,M,Barcroft Fitness Center,8-11.99,$192.00/$212.00,,,,
 350224973,420215-A,Beginning Ballet,ENJOYSUMMER,DANCE,Dance,07/14/2026,08/11/2026,6:00 pm,7:00 pm,Tu,Walter Reed Center,8-11.99,$160.00/$180.00,2026-05-15T14:06:18+00:00,Available,1,0
 343432367,340124-A,Beginning Wheel,,CERAM,Ceramics,04/13/2026,06/08/2026 *,6:00 pm,8:30 pm,M,Thomas Jefferson Center,18-99.99,$357.00/$377.00,,,,
 343193792,500423-01,Big Fish Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Yorktown High Sch.,10-16.99,$747.00/$859.00,,,,
 343193803,500423-07,Big Fish Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,10-16.99,$747.00/$859.00,,,,
+365937408,914206-08,Bike to the Fair,,OSAP,55+ Classes,08/14/2026,08/14/2026,5:00 pm,7:00 pm,F,Walter Reed Center,,$0.00/$0.00,,,,
 366019881,642840-C,Bioindicator Species,,NCTR,Nature & History,06/25/2026,06/25/2026,6:00 pm,7:00 pm,Th,Virtual,16-99.99,$0.00/$0.00,,,,
-350225981,440334-A,Body Sculpting,ENJOYSUMMER,,,06/22/2026,08/17/2026,6:00 pm,7:00 pm,M,Langston Brown,18-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Waitlist,12,17
-364658017,440334-B,Body Sculpting,ENJOYSUMMER,,,06/24/2026,08/19/2026,10:45 am,11:45 am,W,Langston Brown,18-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Available,10,0
-350225993,440334-C,Body Sculpting,ENJOYSUMMER,,,06/24/2026,08/19/2026,6:00 pm,7:00 pm,W,Walter Reed Center,16-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Available,18,0
+343432921,340334-A,Body Sculpting,,FIT,Fitness,04/15/2026,05/27/2026,6:00 pm,7:00 pm,W,Madison Center,18-99.99,$105.00/$125.00,,,,
+343432932,340334-B,Body Sculpting,,FIT,Fitness,04/16/2026,05/28/2026,9:00 am,10:00 am,Th,Madison Center,18-99.99,$105.00/$125.00,,,,
+343432943,340334-C,Body Sculpting,,FIT,Fitness,04/13/2026,05/18/2026,6:00 pm,7:00 pm,M,Madison Center,18-99.99,$90.00/$110.00,,,,
+350225981,440334-A,Body Sculpting,ENJOYSUMMER,FIT,Fitness,06/22/2026,08/17/2026,6:00 pm,7:00 pm,M,Langston Brown,18-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Waitlist,12,17
+364658017,440334-B,Body Sculpting,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/19/2026,10:45 am,11:45 am,W,Langston Brown,18-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Available,10,0
+350225993,440334-C,Body Sculpting,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/19/2026,6:00 pm,7:00 pm,W,Walter Reed Center,16-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Available,18,0
+365936737,914100-03,Bollywood Dance,,OSAP,55+ Classes,06/12/2026,07/31/2026 *,11:15 am,12:00 pm,F,Thomas Jefferson Center,,$33.00/$33.00,,,,
 343193204,500409-03,Boolean Girl Code Your Own Adventure (Scratch 2 Girls Only) Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Marymount - Ballston Campus,7-11.99,$425.00/$488.00,,,,
 343193215,500409-04,Boolean Girl Code Your Own Adventure (Scratch 2 Girls Only) Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Marymount - Ballston Campus,7-11.99,$425.00/$488.00,,,,
 343193226,500409-06,Boolean Girl Code Your Own Adventure (Scratch 2 Girls Only) Camp,CAMP1,CAMP,Summer Camp,07/27/2026,07/31/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Marymount - Ballston Campus,7-11.99,$425.00/$488.00,,,,
@@ -237,7 +320,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350217366,420511-G,Boys Level 1 (Age: 8-12),ENJOYSUMMER1,GYMNA,Gymnastics,07/12/2026,08/16/2026,3:30 pm,4:30 pm,Su,Barcroft Fitness Center,8-12.99,$119.00/$139.00,2026-05-15T13:59:31+00:00,Available,7,0
 343444076,320513-A,Boys Level 2 (Age: 6-12),,GYMNA,Gymnastics,04/17/2026,06/12/2026 *,7:00 pm,8:30 pm,F,Barcroft Fitness Center,6-12.99,$176.00/$196.00,,,,
 350217379,420513-A,Boys Level 2 (Age: 6-12),ENJOYSUMMER1,GYMNA,Gymnastics,07/10/2026,08/14/2026,5:30 pm,7:00 pm,F,Barcroft Fitness Center,6-12.99,$132.00/$152.00,2026-05-15T13:59:31+00:00,Waitlist,10,0
+365937328,914106-25,Brains and Brawn,,OSAP,55+ Classes,06/05/2026,08/21/2026 *,1:00 pm,2:00 pm,F,Lubber Run,,$0.00/$0.00,,,,
+365937944,914400-06,Budgeting Made Simple,,OSAP,55+ Classes,08/10/2026,08/10/2026,1:00 pm,2:00 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
 343193647,500418-04,Build Her Business Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Abingdon School,7-12.99,$399.00/$458.00,,,,
+365938025,914400-16,Building Safer Spaces,,OSAP,55+ Classes,06/04/2026,06/04/2026,9:15 am,10:15 am,Th,Virtual,,$0.00/$0.00,,,,
 350725987,632950-N,Buzzing Bees,,NCTR,Nature & History,05/16/2026,05/16/2026,5:00 pm,6:00 pm,Sa,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
 366019858,642840-A,Caminata por la Naturaleza,,NCTR,Nature & History,06/12/2026,06/12/2026,5:00 pm,6:00 pm,F,Barcroft Park,18-99.99,$0.00/$0.00,,,,
 366019869,642840-B,Caminata por la Naturaleza,,NCTR,Nature & History,08/28/2026,08/28/2026,5:00 pm,6:00 pm,F,Barcroft Park,18-99.99,$0.00/$0.00,,,,
@@ -258,18 +344,26 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366020150,642950-B,Campfire Skills for Women and Girls,,NCTR,Nature & History,07/18/2026,07/18/2026,8:00 pm,9:00 pm,Sa,Long Branch Nature Center,8-99.99,$7.00/$8.00,,,,
 343192192,500301-03,Capital Ultimate Club MS Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,8:30 am,2:30 pm,"M, Tu, W, Th, F",Wakefield High School,11-14.99,$375.00/$431.00,,,,
 343192203,500301-04,Capital Ultimate Club MS Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,8:30 am,2:30 pm,"M, Tu, W, Th, F",Greenbrier Park,11-14.99,$375.00/$431.00,,,,
-350225869,440306-A,Cardio Body Sculpting,ENJOYSUMMER,,,06/23/2026,08/18/2026 *,6:15 pm,7:15 pm,Tu,Arlington Mill,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,4,0
-350225880,440306-B,Cardio Body Sculpting,ENJOYSUMMER,,,06/24/2026,08/19/2026 *,7:00 pm,8:00 pm,W,Langston Brown,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Waitlist,14,5
+343432822,340306-A,Cardio Body Sculpting,,FIT,Fitness,04/15/2026,05/27/2026,7:15 pm,8:15 pm,W,Madison Center,18-99.99,$105.00/$125.00,,,,
+343432833,340306-B,Cardio Body Sculpting,,FIT,Fitness,04/13/2026,06/01/2026 *,7:00 pm,8:00 pm,M,Langston Brown,18-99.99,$105.00/$125.00,,,,
+350225869,440306-A,Cardio Body Sculpting,ENJOYSUMMER,FIT,Fitness,06/23/2026,08/18/2026 *,6:15 pm,7:15 pm,Tu,Arlington Mill,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,4,0
+350225880,440306-B,Cardio Body Sculpting,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/19/2026 *,7:00 pm,8:00 pm,W,Langston Brown,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Waitlist,14,5
+365936753,914100-05,Cardio Kickboxing,,OSAP,55+ Classes,06/08/2026,08/24/2026 *,7:15 am,8:00 am,M,Lubber Run,,$55.00/$55.00,,,,
 350225744,440156-A,Carving Wax to Make Silver Jewelry,ENJOYSUMMER,JEWEL,Jewelry,06/25/2026,07/30/2026,6:00 pm,8:30 pm,Th,Thomas Jefferson Center,18-99.99,$290.00/$310.00,2026-05-15T14:06:18+00:00,Available,2,0
 343192925,500314-04,Ceramics & Culinary Creations Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
 343192936,500314-05,Ceramics & Culinary Creations Camp,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
 343192947,500314-06,Ceramics & Culinary Creations Camp,CAMP1,CAMP,Summer Camp,07/27/2026,07/31/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
 343192958,500314-07,Ceramics & Culinary Creations Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
+365937017,914103-10,Chair Hatha Yoga,,OSAP,55+ Classes,06/10/2026,08/26/2026 *,12:15 pm,1:15 pm,W,Langston Brown,,$44.00/$44.00,,,,
 343433356,340908-B,Chair Yoga for Every Body,,YOGA,Yoga,05/11/2026,05/11/2026,12:30 pm,1:30 pm,M,Lubber Run,18-99.99,$16.00/$18.00,,,,
 343433367,340908-C,Chair Yoga for Every Body,,YOGA,Yoga,06/01/2026,06/01/2026,12:30 pm,1:30 pm,M,Lubber Run,18-99.99,$16.00/$18.00,,,,
 346617066,750146-I,Chess Camp by Silver Knights Chess,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Madison Center,6-13.99,$89.00/$102.00,,,,
 346618828,750146-X,Chess Camp by Silver Knights Chess,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,4:00 pm,W,Madison Center,6-13.99,$89.00/$102.00,,,,
-350225075,420299-A,Chess Club with Silver Knights,ENJOYSUMMER,,,06/25/2026,08/20/2026,6:00 pm,7:00 pm,Th,Lubber Run,6-13.99,$216.00/$236.00,2026-05-15T14:06:18+00:00,Available,16,0
+343431430,320299-A,Chess Club with Silver Knights,,SS,This-n-That,04/16/2026,05/28/2026 *,6:00 pm,7:00 pm,Th,Madison Center,6-13.99,$173.00/$193.00,,,,
+343431441,320299-B,Chess Club with Silver Knights,,SS,This-n-That,04/17/2026,05/29/2026 *,6:00 pm,7:00 pm,F,Madison Center,6-13.99,$173.00/$193.00,,,,
+350225075,420299-A,Chess Club with Silver Knights,ENJOYSUMMER,SS,This-n-That,06/25/2026,08/20/2026,6:00 pm,7:00 pm,Th,Lubber Run,6-13.99,$216.00/$236.00,2026-05-15T14:06:18+00:00,Available,16,0
+365765245,902606-03,Choptank Crab Feast Cruise,,SAOT,55+ Trips,06/12/2026,06/12/2026,9:00 am,6:00 pm,F,Thomas Jefferson Center,,$116.00/$133.00,,,,
+365937641,914303-05,Christmas in Colored Pencils,,OSAP,55+ Classes,07/13/2026,07/27/2026,1:00 pm,2:30 pm,M,Arlington Mill,,$60.00/$60.00,,,,
 350724646,632750-A,Civil War Cuisine Campfire,,NCTR,Nature & History,05/15/2026,05/15/2026,6:00 pm,7:00 pm,F,Fort CF Smith Park,5-99.99,$7.00/$8.00,,,,
 343191359,500208-04,Civil War Soldier Camp,CAMP,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,12:30 pm,"M, Tu, W, Th, F",Fort CF Smith Park,6-7.99,$230.00/$264.00,,,,
 343191370,500208-05,Civil War Soldier Camp,CAMP,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,2:00 pm,"M, Tu, W, Th, F",Fort CF Smith Park,7-9.99,$325.00/$373.00,,,,
@@ -278,6 +372,13 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343190068,500101-07,Clay Time Art Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,5.5-12.99,$320.00/$368.00,,,,
 343190167,500102-07,Clay Time Art Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Abingdon School,3.5-6.99,$220.00/$253.00,,,,
 343190267,500103-07,Clay Time Art Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,12:00 pm,3:00 pm,"M, Tu, W, Th, F",Abingdon School,5.5-12.99,$220.00/$253.00,,,,
+347285475,913301-12,Cole Porter � Too Darn Hot!,,OSAP,55+ Classes,05/18/2026,05/18/2026,11:30 am,12:30 pm,M,Lubber Run,,$0.00/$0.00,,,,
+347285483,913301-13,Cole Porter � Too Darn Hot!,,OSAP,55+ Classes,05/20/2026,05/20/2026,1:00 pm,2:30 pm,W,Aurora Hills Center,,$0.00/$0.00,,,,
+347285491,913301-14,Cole Porter � Too Darn Hot!,,OSAP,55+ Classes,05/21/2026,05/21/2026,11:00 am,12:00 pm,Th,Langston Brown,,$0.00/$0.00,,,,
+347285499,913301-15,Cole Porter � Too Darn Hot!,,OSAP,55+ Classes,05/22/2026,05/22/2026,11:00 am,12:00 pm,F,Walter Reed Center,,$0.00/$0.00,,,,
+365937886,914310-07,Color and Sip,,OSAP,55+ Classes,07/06/2026,07/06/2026,1:00 pm,2:00 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
+365937633,914303-04,Colored Pencil on a Unique Surface,,OSAP,55+ Classes,06/15/2026,06/29/2026,1:00 pm,2:30 pm,M,Arlington Mill,,$60.00/$60.00,,,,
+365938009,914400-14,Community Ambassador Program,,OSAP,55+ Classes,08/27/2026,08/27/2026,1:15 pm,3:00 pm,Th,Lubber Run,,$0.00/$0.00,,,,
 343432395,340125-A,Continuing Wheel,,CERAM,Ceramics,04/14/2026,06/09/2026,3:00 pm,5:30 pm,Tu,Thomas Jefferson Center,18-99.99,$402.00/$422.00,,,,
 343432409,340125-B,Continuing Wheel,,CERAM,Ceramics,04/14/2026,06/09/2026,6:00 pm,8:30 pm,Tu,Thomas Jefferson Center,18-99.99,$402.00/$422.00,,,,
 343432423,340125-C,Continuing Wheel,,CERAM,Ceramics,04/16/2026,06/11/2026,6:00 pm,8:30 pm,Th,Thomas Jefferson Center,18-99.99,$402.00/$422.00,,,,
@@ -297,6 +398,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343432295,340103-A,Cozy Sweatpants,,FIBER,Sewing & Fiber Arts,04/16/2026,05/14/2026,6:00 pm,8:00 pm,Th,Arlington Mill,18-99.99,$183.00/$203.00,,,,
 343432309,340103-B,Cozy Sweatpants,,FIBER,Sewing & Fiber Arts,05/21/2026,06/18/2026,6:00 pm,8:00 pm,Th,Arlington Mill,18-99.99,$183.00/$203.00,,,,
 343432705,340183-A,Crazy like a Box: Box Joints,,WOOD,Woodworking,05/11/2026,06/22/2026 *,6:00 pm,8:30 pm,M,Thomas Jefferson Center,18-99.99,$347.00/$367.00,,,,
+347286055,913310-14,Create an Origami Swan,,OSAP,55+ Classes,05/07/2026,05/21/2026 *,1:30 pm,3:30 pm,Th,Langston Brown,,$0.00/$0.00,,,,
 343191101,500204-02,Creative Arts Camp (Ages 5-7),CAMP,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Fairlington Center,5-7.99,$240.00/$276.00,,,,
 343191115,500204-03,Creative Arts Camp (Ages 5-7),CAMP,CAMP,Summer Camp,07/06/2026,07/17/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Fairlington Center,5-7.99,$600.00/$690.00,,,,
 343191126,500204-05,Creative Arts Camp (Ages 5-7),CAMP,CAMP,Summer Camp,07/20/2026,07/31/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Fairlington Center,5-7.99,$600.00/$690.00,,,,
@@ -312,10 +414,22 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343191214,500206-06,Creative Arts Camp: Art Explorers,CAMP,CAMP,Summer Camp,07/27/2026,07/31/2026,8:30 am,12:00 pm,"M, Tu, W, Th, F",Arlington Mill,5-8.99,$160.00/$184.00,,,,
 343191225,500206-07,Creative Arts Camp: Art Explorers,CAMP,CAMP,Summer Camp,08/03/2026,08/07/2026,8:30 am,12:00 pm,"M, Tu, W, Th, F",Arlington Mill,5-8.99,$160.00/$184.00,,,,
 343191236,500206-08,Creative Arts Camp: Art Explorers,CAMP,CAMP,Summer Camp,08/10/2026,08/14/2026,8:30 am,12:00 pm,"M, Tu, W, Th, F",Arlington Mill,5-8.99,$160.00/$184.00,,,,
+365937609,914303-01,Creative Commons,,OSAP,55+ Classes,06/01/2026,06/01/2026,1:00 pm,3:00 pm,M,Lubber Run,,$0.00/$0.00,,,,
+365937617,914303-02,Creative Commons,,OSAP,55+ Classes,07/06/2026,07/06/2026,1:00 pm,3:00 pm,M,Lubber Run,,$0.00/$0.00,,,,
+365937625,914303-03,Creative Commons,,OSAP,55+ Classes,08/03/2026,08/03/2026,1:00 pm,3:00 pm,M,Lubber Run,,$0.00/$0.00,,,,
 346567155,340160-A,Creative Jewelry Lab,,JEWEL,Jewelry,05/12/2026,06/09/2026,6:00 pm,8:30 pm,Tu,Thomas Jefferson Center,18-99.99,$227.00/$247.00,,,,
 350225758,440157-A,Creative Jewelry Lab,ENJOYSUMMER,JEWEL,Jewelry,06/23/2026,07/28/2026,6:00 pm,8:30 pm,Tu,Thomas Jefferson Center,18-99.99,$290.00/$310.00,2026-05-15T14:06:18+00:00,Available,5,0
-350225957,440331-A,Cycling,ENJOYSUMMER,,,06/24/2026,08/05/2026,7:15 pm,8:00 pm,W,Thomas Jefferson Center,18-99.99,$77.00/$97.00,2026-05-15T14:06:18+00:00,Available,4,0
-350225968,440331-B,Cycling,ENJOYSUMMER,,,06/28/2026,08/16/2026 *,8:15 am,9:00 am,Su,Long Bridge Aquatics Center,18-99.99,$77.00/$97.00,2026-05-15T14:06:18+00:00,Available,0,0
+365937919,914400-03,Credit Score 101,,OSAP,55+ Classes,06/08/2026,06/08/2026,1:00 pm,2:00 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
+365937927,914400-04,Credit Score 101,,OSAP,55+ Classes,07/13/2026,07/13/2026,10:30 am,12:00 pm,M,Langston Brown,,$0.00/$0.00,,,,
+365936761,914100-06,Crush It!,,OSAP,55+ Classes,06/09/2026,08/25/2026,4:30 pm,5:30 pm,Tu,Walter Reed Center,,$66.00/$66.00,,,,
+224066003,790100-B5,Cycle at Long Bridge,,FIT,Fitness,10/01/2024,05/31/2026 *,8:15 am,9:00 am,Su,Long Bridge Aquatics Center,18-99,$0.00/$0.00,,,,
+173583493,790120-F2,Cycle at TJ,,FIT,Fitness,10/01/2024,05/27/2026 *,7:15 pm,8:00 pm,W,Thomas Jefferson Center,18-99,$0.00/$0.00,,,,
+298535809,790120-F5,Cycle at TJ,,FIT,Fitness,10/01/2024,05/26/2026 *,9:00 am,9:35 am,Tu,Thomas Jefferson Center,18-99,$0.00/$0.00,,,,
+343432899,340331-A,Cycling,,FIT,Fitness,04/15/2026,06/17/2026,7:15 pm,8:00 pm,W,Thomas Jefferson Center,18-99.99,$110.00/$130.00,,,,
+343432910,340331-B,Cycling,,FIT,Fitness,04/19/2026,06/21/2026,8:15 am,9:00 am,Su,Long Bridge Aquatics Center,18-99.99,$110.00/$130.00,,,,
+350225957,440331-A,Cycling,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/05/2026,7:15 pm,8:00 pm,W,Thomas Jefferson Center,18-99.99,$77.00/$97.00,2026-05-15T14:06:18+00:00,Available,4,0
+350225968,440331-B,Cycling,ENJOYSUMMER,FIT,Fitness,06/28/2026,08/16/2026 *,8:15 am,9:00 am,Su,Long Bridge Aquatics Center,18-99.99,$77.00/$97.00,2026-05-15T14:06:18+00:00,Available,0,0
+365938058,914400-20,D-Day Girls & Boys from Bedford,,OSAP,55+ Classes,06/11/2026,06/11/2026,11:00 am,12:00 pm,Th,Langston Brown,,$0.00/$0.00,,,,
 344174150,720226-U,DC Zoo & a Movie!!,,TEEN,Teen Programs,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Thomas Jefferson Center,11-17.99,$15.00/$35.00,,,,
 345169682,710136-E,DPR Break Blast (May 26),,OST,Out of School Time,05/26/2026,05/26/2026,8:00 am,4:00 pm,Tu,Drew Center & Park,5-11.99,$55.00/$63.00,,,,
 345170126,710136-F,DPR Break Blast (May 27),,OST,Out of School Time,05/27/2026,05/27/2026,8:00 am,4:00 pm,W,Drew Center & Park,5-11.99,$55.00/$63.00,,,,
@@ -330,23 +444,41 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 351070164,410204-C,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,10:00 am,10:30 am,W,Langston Brown,2-3.99,$100.00/$120.00,2026-05-16T13:46:13+00:00,Available,4,0
 351073176,410204-D,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/17/2026,08/14/2026,10:00 am,10:30 am,F,Long Bridge Aquatics Center,2-3.99,$100.00/$120.00,2026-05-16T13:46:13+00:00,Available,2,0
 343193670,500420-04,Deal Me In! Card Game Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Abingdon School,9-14.99,$399.00/$458.00,,,,
+365765309,902607-04,Dear America Exhibit at National Gallery of Art,,SAOT,55+ Trips,07/20/2026,07/20/2026,9:30 am,3:30 pm,M,See Program Details,,$12.00/$14.00,,,,
 343193658,500419-04,Design to Build! Architect Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Abingdon School,7-13.99,$399.00/$458.00,,,,
+365937894,914310-08,Diamond Painting,,OSAP,55+ Classes,08/13/2026,08/13/2026,1:30 pm,2:30 pm,Th,Langston Brown,,$0.00/$0.00,,,,
+365938075,914400-22,Discovering the Fairfax Resolves,,OSAP,55+ Classes,07/09/2026,07/09/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
+347632036,902605-06,Don Quixote at Manassas Ballet Theatre,,SAOT,55+ Trips,05/17/2026,05/17/2026,12:30 pm,6:45 pm,Su,See Program Details,,$87.00/$100.00,,,,
 343432719,340185-A,Don't (Plant) Stand too Close to Me,,WOOD,Woodworking,04/18/2026,05/16/2026,10:00 am,12:30 pm,Sa,Thomas Jefferson Center,18-99.99,$347.00/$367.00,,,,
 343445527,340610-A,Doubles Tennis Tournament (Levels 2-3),,TENIS,Tennis,06/12/2026,06/12/2026,5:00 pm,8:00 pm,F,Thomas Jefferson Center,15-99.99,$45.00/$65.00,,,,
 343445538,340611-A,Doubles Tennis Tournament (Levels 3-4),,TENIS,Tennis,05/15/2026,05/15/2026,5:00 pm,8:00 pm,F,Thomas Jefferson Center,15-99.99,$45.00/$65.00,,,,
 343434452,320335-A,Dungeons & Dragons: Create an Adventure,,SCDI,Science & Discovery,04/19/2026,06/14/2026 *,11:30 am,12:30 pm,Su,Long Bridge Aquatics Center,9-12.99,$206.00/$226.00,,,,
+365765301,902607-03,Dutch Village Farmers Market,,SAOT,55+ Trips,07/17/2026,07/17/2026,8:30 am,2:15 pm,F,See Program Details,,$12.00/$14.00,,,,
+365765350,902608-02,Eastern Market,,SAOT,55+ Trips,08/14/2026,08/14/2026,8:30 am,12:30 pm,F,Barcroft Fitness Center,,$11.00/$13.00,,,,
+365937993,914400-12,Elder Law Services,,OSAP,55+ Classes,06/25/2026,06/25/2026,6:00 pm,7:00 pm,Th,Lubber Run,,$0.00/$0.00,,,,
+365937481,914301-03,Elton John: The 70s,,OSAP,55+ Classes,07/17/2026,07/17/2026,1:00 pm,2:30 pm,F,Aurora Hills Center,,$0.00/$0.00,,,,
+365937489,914301-04,Elton John: The 70s,,OSAP,55+ Classes,07/20/2026,07/20/2026,11:00 am,12:00 pm,M,Walter Reed Center,,$0.00/$0.00,,,,
+365937497,914301-05,Elton John: The 70s,,OSAP,55+ Classes,07/21/2026,07/21/2026,11:00 am,12:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365937505,914301-06,Elton John: The 70s,,OSAP,55+ Classes,07/23/2026,07/23/2026,11:00 am,12:00 pm,Th,Langston Brown,,$0.00/$0.00,,,,
 343433455,340918-A,Energizing Yoga,,YOGA,Yoga,04/15/2026,06/17/2026 *,7:00 pm,8:30 pm,W,Barcroft Fitness Center,16-99.99,$208.00/$228.00,,,,
 350226315,440918-A,Energizing Yoga,,YOGA,Yoga,07/08/2026,08/26/2026,7:00 pm,8:30 pm,W,Barcroft Fitness Center,16-99.99,$185.00/$205.00,,,,
-350225814,440303-A,Essentrics,ENJOYSUMMER,,,06/23/2026,08/25/2026 *,8:00 am,9:00 am,Tu,Lubber Run,18-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Waitlist,15,1
-350225825,440303-B,Essentrics,ENJOYSUMMER,,,06/24/2026,08/26/2026 *,8:00 am,9:00 am,W,Lubber Run,18-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Available,12,0
-350225836,440303-C,Essentrics,ENJOYSUMMER,,,06/25/2026,08/27/2026 *,7:15 pm,8:15 pm,Th,Barcroft Fitness Center,18-99.99,$105.00/$125.00,2026-05-15T14:06:18+00:00,Available,11,0
-350225891,440307-A,EverStrong,ENJOYSUMMER,,,06/27/2026,08/15/2026 *,10:30 am,11:30 am,Sa,Long Bridge Aquatics Center,18-99.99,$105.00/$125.00,2026-05-15T14:06:18+00:00,Available,9,0
-367658325,440309-A,EverStrong Demo,ENJOYSUMMER,,,05/23/2026,05/23/2026,10:30 am,11:00 am,Sa,Long Bridge Aquatics Center,18-99.99,$0.00/$0.00,2026-05-15T14:06:18+00:00,Available,3,0
+365938017,914400-15,Equality in Action,,OSAP,55+ Classes,06/11/2026,06/11/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
+343432755,340303-A,Essentrics,,FIT,Fitness,04/14/2026,06/16/2026,8:00 am,9:00 am,Tu,Lubber Run,18-99.99,$150.00/$170.00,,,,
+343432767,340303-B,Essentrics,,FIT,Fitness,04/15/2026,06/17/2026,8:00 am,9:00 am,W,Lubber Run,18-99.99,$150.00/$170.00,,,,
+343432778,340303-C,Essentrics,,FIT,Fitness,04/16/2026,06/18/2026,7:15 pm,8:15 pm,Th,Barcroft Fitness Center,18-99.99,$150.00/$170.00,,,,
+350225814,440303-A,Essentrics,ENJOYSUMMER,FIT,Fitness,06/23/2026,08/25/2026 *,8:00 am,9:00 am,Tu,Lubber Run,18-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Waitlist,15,1
+350225825,440303-B,Essentrics,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/26/2026 *,8:00 am,9:00 am,W,Lubber Run,18-99.99,$135.00/$155.00,2026-05-15T14:06:18+00:00,Available,12,0
+350225836,440303-C,Essentrics,ENJOYSUMMER,FIT,Fitness,06/25/2026,08/27/2026 *,7:15 pm,8:15 pm,Th,Barcroft Fitness Center,18-99.99,$105.00/$125.00,2026-05-15T14:06:18+00:00,Available,11,0
+347286746,913600-16,Euchre,,OSAP,55+ Classes,05/19/2026,05/19/2026,5:00 pm,7:00 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+350225891,440307-A,EverStrong,ENJOYSUMMER,FIT,Fitness,06/27/2026,08/15/2026 *,10:30 am,11:30 am,Sa,Long Bridge Aquatics Center,18-99.99,$105.00/$125.00,2026-05-15T14:06:18+00:00,Available,9,0
+367658325,440309-A,EverStrong Demo,ENJOYSUMMER,FIT,Fitness,05/23/2026,05/23/2026,10:30 am,11:00 am,Sa,Long Bridge Aquatics Center,18-99.99,$0.00/$0.00,2026-05-15T14:06:18+00:00,Available,3,0
 350724712,632750-G,Exercise...with Bayonets!,,NCTR,Nature & History,05/23/2026,05/23/2026,11:00 am,12:00 pm,Sa,Fort CF Smith Park,8-99.99,$7.00/$8.00,,,,
 343431696,320312-A,Explore Archery,,SPORT,Sports,04/13/2026,05/18/2026,5:00 pm,6:00 pm,M,NOVA Fencing and Archery Club,8-99.99,$132.00/$152.00,,,,
 343431707,320312-B,Explore Archery,,SPORT,Sports,04/15/2026,05/20/2026,5:00 pm,6:00 pm,W,NOVA Fencing and Archery Club,8-99.99,$132.00/$152.00,,,,
 350225329,420312-A,Explore Archery,ENJOYSUMMER,SPORT,Sports,06/22/2026,07/27/2026 *,5:00 pm,6:00 pm,M,NOVA Fencing and Archery Club,8-99.99,$110.00/$130.00,2026-05-15T14:06:18+00:00,Available,4,0
 350225341,420312-B,Explore Archery,ENJOYSUMMER,SPORT,Sports,06/24/2026,07/29/2026 *,5:00 pm,6:00 pm,W,NOVA Fencing and Archery Club,8-99.99,$110.00/$130.00,2026-05-15T14:06:18+00:00,Available,5,0
+347286015,913310-09,Exploring Book Arts,,OSAP,55+ Classes,05/19/2026,05/19/2026,3:00 pm,4:30 pm,Tu,Arlington Mill,,$20.00/$20.00,,,,
+365937977,914400-10,Facing Debt Collection,,OSAP,55+ Classes,08/28/2026,08/28/2026,10:00 am,11:00 am,F,Lubber Run,,$0.00/$0.00,,,,
 343442848,310501-A,Family Gymnastics (Age: 1.5-5),,GYMNA,Gymnastics,04/14/2026,06/09/2026,11:30 am,12:15 pm,Tu,Barcroft Fitness Center,1.5-5.99,$124.00/$144.00,,,,
 343442859,310501-B,Family Gymnastics (Age: 1.5-5),,GYMNA,Gymnastics,04/14/2026,06/09/2026,1:00 pm,1:45 pm,Tu,Barcroft Fitness Center,1.5-5.99,$124.00/$144.00,,,,
 343442870,310501-C,Family Gymnastics (Age: 1.5-5),,GYMNA,Gymnastics,04/15/2026,06/10/2026,10:30 am,11:15 am,W,Barcroft Fitness Center,1.5-5.99,$124.00/$144.00,,,,
@@ -535,11 +667,13 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350202347,410407-N,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:15 am,11:45 am,Sa,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-16T13:46:13+00:00,Waitlist,6,3
 350202361,410407-O,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:15 am,11:45 am,Su,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-16T13:46:13+00:00,Waitlist,6,0
 350202372,410407-P,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:50 am,12:20 pm,Su,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-16T13:46:13+00:00,Available,4,0
+365938362,914403-10,Finding Local News Online,,OSAP,55+ Classes,08/18/2026,08/18/2026,10:30 am,11:30 am,Tu,Langston Brown,,$0.00/$0.00,,,,
 343192870,500313-02,Fine Arts Exploration Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:00 pm,"M, Tu, W, Th",Discovery Elementary,6-11.99,$320.00/$368.00,,,,
 343192881,500313-03,Fine Arts Exploration Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
 343192892,500313-05,Fine Arts Exploration Camp,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
 343192903,500313-07,Fine Arts Exploration Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
 343192914,500313-09,Fine Arts Exploration Camp,CAMP1,CAMP,Summer Camp,08/17/2026,08/21/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Fairlington Center,6-11.99,$399.00/$458.00,,,,
+365938111,914400-26,Fireflies of Virginia,,OSAP,55+ Classes,06/18/2026,06/18/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
 366019655,642750-A,Firefly Festival,,NCTR,Nature & History,06/21/2026,06/21/2026,7:00 pm,9:00 pm,Su,Fort CF Smith Park,3-99.99,$0.00/$0.00,,,,
 343432098,320610-A,First Down Flag Football,,SPORT,Sports,04/18/2026,06/20/2026 *,1:05 pm,1:50 pm,Sa,Barrett Elem. School,5-8.99,$163.00/$183.00,,,,
 343432109,320610-B,First Down Flag Football,,SPORT,Sports,04/18/2026,06/20/2026 *,2:05 pm,3:05 pm,Sa,Fairlington Center,5-9.99,$213.00/$233.00,,,,
@@ -547,7 +681,9 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350225584,420610-A,First Down Flag Football,ENJOYSUMMER,SPORT,Sports,06/24/2026,08/26/2026,6:20 pm,7:05 pm,W,Rocky Run Park,5-8.99,$204.00/$224.00,2026-05-15T14:06:18+00:00,Available,6,0
 350225607,420610-B,First Down Flag Football,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,12:05 pm,1:05 pm,Su,Rocky Run Park,5-7.99,$213.00/$233.00,2026-05-15T14:06:18+00:00,Available,6,0
 350225596,420610-D,First Down Flag Football,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,1:00 pm,2:00 pm,Sa,Fairlington Center,5-8.99,$213.00/$233.00,2026-05-15T14:06:18+00:00,Available,2,0
+365936825,914100-14,Fitness Equipment Orientation,,OSAP,55+ Classes,07/10/2026,07/10/2026,2:00 pm,3:00 pm,F,Langston Brown,,$0.00/$0.00,,,,
 343432578,340158-A,Flush Setting Faceted Stones,,JEWEL,Jewelry,05/30/2026,05/30/2026,10:00 am,12:30 pm,Sa,Thomas Jefferson Center,18-99.99,$112.00/$132.00,,,,
+347285225,913106-37,Fort C.F. Smith Nature Walk,,OSAP,55+ Classes,05/19/2026,05/19/2026,2:30 pm,3:30 pm,Tu,Fort CF Smith Park,,$0.00/$0.00,,,,
 350724679,632750-D,Fort C.F. Smith Walking Tour,,NCTR,Nature & History,06/06/2026,06/06/2026,11:00 am,12:00 pm,Sa,Fort CF Smith Park,5-99.99,$0.00/$0.00,,,,
 343192815,500312-01,Foundations of Pottery Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
 343192826,500312-04,Foundations of Pottery Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
@@ -565,6 +701,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343431840,320319-E,Frets & Fun! Beginner Guitar,,MUSIC,Music,04/18/2026,06/13/2026 *,11:00 am,12:00 pm,Sa,Arlington Mill,13-99.99,$226.00/$246.00,,,,
 350225387,420319-A,Frets & Fun! Beginner Guitar,ENJOYSUMMER,MUSIC,Music,07/06/2026,08/10/2026,7:30 pm,8:30 pm,M,Long Bridge Aquatics Center,13-99.99,$175.00/$195.00,2026-05-15T14:06:18+00:00,Available,1,0
 350225401,420319-B,Frets & Fun! Beginner Guitar,ENJOYSUMMER,MUSIC,Music,07/11/2026,08/15/2026,11:00 am,12:00 pm,Sa,Arlington Mill,13-99.99,$175.00/$195.00,2026-05-15T14:06:18+00:00,Available,0,0
+365937231,914106-13,Friendly Fitness Walk,,OSAP,55+ Classes,06/03/2026,08/26/2026 *,5:30 pm,7:00 pm,W,Arlington Mill,,$0.00/$0.00,,,,
 343191932,500230-02,Fun & Fitness Camp,CAMP,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:00 pm,"M, Tu, W, Th",Thomas Jefferson Center,11-14.99,$244.00/$280.00,,,,
 343191945,500230-03,Fun & Fitness Camp,CAMP,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,11-14.99,$305.00/$350.00,,,,
 343191959,500230-04,Fun & Fitness Camp,CAMP,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,11-14.99,$305.00/$350.00,,,,
@@ -588,10 +725,25 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343432086,320609-B,Game Time Hoops,,SPORT,Sports,04/15/2026,06/17/2026,6:50 pm,7:50 pm,W,Fairlington Center,10-13.99,$237.00/$257.00,,,,
 350225562,420609-A,Game Time Hoops,ENJOYSUMMER,SPORT,Sports,06/24/2026,08/26/2026,6:15 pm,7:15 pm,W,Fairlington Center,7-9.99,$237.00/$257.00,2026-05-15T14:06:18+00:00,Available,4,0
 350225573,420609-B,Game Time Hoops,ENJOYSUMMER,SPORT,Sports,06/24/2026,08/26/2026,7:20 pm,8:20 pm,W,Fairlington Center,10-13.99,$237.00/$257.00,2026-05-15T14:06:18+00:00,Available,2,0
+365938330,914403-06,GenAI Smartphone Skills,,OSAP,55+ Classes,07/28/2026,07/28/2026,1:30 pm,3:00 pm,Tu,Arlington Mill,,$0.00/$0.00,,,,
+365938338,914403-07,GenAI Smartphone Skills,,OSAP,55+ Classes,07/30/2026,07/30/2026,1:30 pm,3:00 pm,Th,Arlington Mill,,$0.00/$0.00,,,,
+365938346,914403-08,GenAI Smartphone Skills,,OSAP,55+ Classes,08/04/2026,08/04/2026,1:30 pm,3:00 pm,Tu,Arlington Mill,,$0.00/$0.00,,,,
+365938354,914403-09,GenAI Smartphone Skills,,OSAP,55+ Classes,08/06/2026,08/06/2026,1:30 pm,3:00 pm,Th,Arlington Mill,,$0.00/$0.00,,,,
+365938217,914402-01,Genealogy 101,,OSAP,55+ Classes,06/09/2026,06/09/2026,11:30 am,1:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365938225,914402-02,Genealogy 101,,OSAP,55+ Classes,07/14/2026,07/14/2026,11:30 am,1:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365938233,914402-03,Genealogy 101,,OSAP,55+ Classes,08/11/2026,08/11/2026,11:30 am,1:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+347286418,913403-13,Generative AI for Healthy Eating,,OSAP,55+ Classes,05/22/2026,05/22/2026,1:00 pm,2:00 pm,F,Arlington Mill,,$0.00/$0.00,,,,
+365936993,914103-07,Gentle Hatha Yoga,,OSAP,55+ Classes,06/08/2026,08/10/2026,10:00 am,11:00 am,M,Long Bridge Aquatics Center,,$55.00/$55.00,,,,
+365937001,914103-08,Gentle Hatha Yoga,,OSAP,55+ Classes,06/09/2026,08/25/2026,11:00 am,12:00 pm,Tu,Aurora Hills Center,,$66.00/$66.00,,,,
+365937009,914103-09,Gentle Hatha Yoga,,OSAP,55+ Classes,06/09/2026,08/25/2026,11:45 am,12:45 pm,Tu,Lubber Run,,$66.00/$66.00,,,,
 343433201,340902-A,Gentle Yoga,,YOGA,Yoga,04/15/2026,05/27/2026,10:00 am,11:15 am,W,Madison Center,18-99.99,$108.00/$128.00,,,,
 343433212,340902-B,Gentle Yoga,,YOGA,Yoga,04/19/2026,06/21/2026 *,5:40 pm,6:50 pm,Su,Lubber Run,16-99.99,$123.00/$143.00,,,,
 350226182,440902-A,Gentle Yoga,,YOGA,Yoga,06/24/2026,08/26/2026,10:00 am,11:15 am,W,Fairlington Center,18-99.99,$192.00/$212.00,,,,
 350226193,440902-B,Gentle Yoga,,YOGA,Yoga,06/28/2026,08/30/2026,5:30 pm,6:45 pm,Su,Lubber Run,16-99.99,$192.00/$212.00,,,,
+365936969,914103-04,Gentle and Meditative Yoga,,OSAP,55+ Classes,06/10/2026,08/26/2026 *,1:30 pm,3:00 pm,W,Langston Brown,,$66.00/$66.00,,,,
+365936977,914103-05,Gentle and Meditative Yoga,,OSAP,55+ Classes,06/10/2026,08/26/2026,2:00 pm,3:15 pm,W,Lubber Run,,$84.00/$84.00,,,,
+347286858,913650-11,German Conversation,,OSAP,55+ Classes,05/22/2026,05/22/2026,10:00 am,12:00 pm,F,Virtual,,$0.00/$0.00,,,,
+347286866,913650-12,German Conversation,,OSAP,55+ Classes,05/29/2026,05/29/2026,10:00 am,12:00 pm,F,Virtual,,$0.00/$0.00,,,,
 343443922,320504-A,Girls 3+ (Age: 7-13),,GYMNA,Gymnastics,04/16/2026,06/11/2026,5:30 pm,7:30 pm,Th,Barcroft Fitness Center,7-13.99,$267.00/$287.00,,,,
 350217262,420504-A,Girls 3+ (Age: 7-13),ENJOYSUMMER1,GYMNA,Gymnastics,07/11/2026,08/15/2026,2:45 pm,4:45 pm,Sa,Barcroft Fitness Center,7-13.99,$178.00/$198.00,2026-05-15T13:59:31+00:00,Waitlist,9,2
 350217273,420504-B,Girls 3+ (Age: 7-13),ENJOYSUMMER1,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,5:45 pm,7:45 pm,W,Barcroft Fitness Center,7-13.99,$149.00/$169.00,2026-05-15T13:59:31+00:00,Waitlist,10,7
@@ -665,6 +817,9 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343431019,310618-B,Grand Slam T-ball & Me,,SPORT,Sports,04/18/2026,06/20/2026 *,9:00 am,9:45 am,Sa,Barrett Elem. School,2-3.99,$163.00/$183.00,,,,
 350224760,410618-A,Grand Slam T-ball & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,9:00 am,9:45 am,Sa,Barrett Elem. School,2-3.99,$183.00/$203.00,2026-05-15T14:06:18+00:00,Available,5,0
 350224771,410618-B,Grand Slam T-ball & Me,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,10:00 am,10:45 am,Su,Barrett Elem. School,2-3.99,$183.00/$203.00,2026-05-15T14:06:18+00:00,Available,7,0
+347284613,913100-29,Group Training Level 2,,OSAP,55+ Classes,04/20/2026,05/18/2026,6:30 pm,7:30 pm,M,Thomas Jefferson Center,,$45.00/$45.00,,,,
+347284621,913100-30,Group Training Level 2,,OSAP,55+ Classes,04/22/2026,05/27/2026,6:30 pm,7:30 pm,W,Thomas Jefferson Center,,$54.00/$54.00,,,,
+365765269,902606-06,Guys and Dolls at Riverside Center for Performing Arts,,SAOT,55+ Trips,06/24/2026,06/24/2026,10:00 am,5:45 pm,W,Thomas Jefferson Center,,$112.00/$129.00,,,,
 343443305,310505-A,Gymnasticats (Age: 4),,GYMNA,Gymnastics,04/14/2026,06/09/2026,10:30 am,11:15 am,Tu,Barcroft Fitness Center,4-4.99,$124.00/$144.00,,,,
 343443316,310505-B,Gymnasticats (Age: 4),,GYMNA,Gymnastics,04/14/2026,06/09/2026,1:00 pm,1:45 pm,Tu,Barcroft Fitness Center,4-4.99,$124.00/$144.00,,,,
 343443327,310505-C,Gymnasticats (Age: 4),,GYMNA,Gymnastics,04/14/2026,06/09/2026,2:00 pm,2:45 pm,Tu,Barcroft Fitness Center,4-4.99,$124.00/$144.00,,,,
@@ -702,8 +857,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350741533,440503-B,Gymnastics:  Open Gym:  Adults,ENJOYSUMMER1,GYMNA,Gymnastics,08/20/2026,08/20/2026,6:30 pm,8:30 pm,Th,Barcroft Fitness Center,18-99.99,$30.00/$35.00,2026-05-15T13:59:31+00:00,Available,0,0
 350741599,440503-C,Gymnastics:  Open Gym:  Adults,ENJOYSUMMER1,GYMNA,Gymnastics,08/22/2026,08/22/2026,12:30 pm,2:30 pm,Sa,Barcroft Fitness Center,18-99.99,$30.00/$35.00,2026-05-15T13:59:31+00:00,Available,3,0
 350740400,420523-A,Gymnastics:  Open Gym: Kids & Teens,ENJOYSUMMER1,GYMNA,Gymnastics,08/18/2026,08/18/2026,6:00 pm,7:30 pm,Tu,Barcroft Fitness Center,7-17.99,$22.00/$25.00,2026-05-15T13:59:31+00:00,Available,0,0
-350216895,410520-A,Gymnastics: Adapted Parent/Tot,ENJOYSUMMER,GYMNA,Gymnastics,07/12/2026,08/16/2026,9:30 am,10:15 am,Su,Barcroft Fitness Center,3-5.99,$83.00/$103.00,2026-05-16T13:46:13+00:00,Available,9,0
-350217415,430503-A,Gymnastics: Adapted Teen/Adult (Age 13-Adult),ENJOYSUMMER1,GYMNA,Gymnastics,07/12/2026,08/16/2026,10:30 am,11:30 am,Su,Barcroft Fitness Center,13-99.99,$119.00/$139.00,2026-05-15T13:59:31+00:00,Available,5,0
+343443536,310520-A,Gymnastics: Adapted Parent/Tot,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,9:30 am,10:15 am,Su,Barcroft Fitness Center,3-5.99,$96.00/$116.00,,,,
+350216895,410520-A,Gymnastics: Adapted Parent/Tot,ENJOYSUMMER,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,9:30 am,10:15 am,Su,Barcroft Fitness Center,3-5.99,$83.00/$103.00,2026-05-16T13:46:13+00:00,Available,9,0
+350217415,430503-A,Gymnastics: Adapted Teen/Adult (Age 13-Adult),ENJOYSUMMER1,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,10:30 am,11:30 am,Su,Barcroft Fitness Center,13-99.99,$119.00/$139.00,2026-05-15T13:59:31+00:00,Available,5,0
+343444145,330503-A,Gymnastics: Adapted Teen/Adult (Age: 13-99),,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,10:30 am,11:30 am,Su,Barcroft Fitness Center,13-99.99,$138.00/$158.00,,,,
 343444087,320515-A,Gymnastics: Home School,,GYMNA,Gymnastics,04/13/2026,06/08/2026 *,1:00 pm,1:45 pm,M,Barcroft Fitness Center,5-7.99,$110.00/$130.00,,,,
 343444098,320515-B,Gymnastics: Home School,,GYMNA,Gymnastics,04/17/2026,06/12/2026 *,1:00 pm,1:45 pm,F,Barcroft Fitness Center,8-12.99,$110.00/$130.00,,,,
 350739304,410525-A,Gymnastics: Open Gym:  Preschool,ENJOYSUMMER,GYMNA,Gymnastics,08/22/2026,08/22/2026,10:00 am,11:00 am,Sa,Barcroft Fitness Center,1.5-6.99,$20.00/$23.00,2026-05-16T13:46:13+00:00,Available,34,0
@@ -711,6 +868,20 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343191415,500209-03,Habitat Explorers Camp,CAMP,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,2:00 pm,"M, Tu, W, Th, F",Gulf Branch Nature Center,8-9.99,$325.00/$373.00,,,,
 343432733,340231-A,Hawaiian Dance: Beginners,,DANCE,Dance,04/13/2026,06/08/2026 *,6:30 pm,7:30 pm,M,Lubber Run,18-99.99,$94.00/$114.00,,,,
 343432744,340232-A,Hawaiian Dance: Intermediate/Advanced,,DANCE,Dance,04/13/2026,06/08/2026 *,7:45 pm,8:45 pm,M,Lubber Run,18-99.99,$94.00/$114.00,,,,
+347285127,913106-25,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,05/21/2026,05/21/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+347285135,913106-26,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,05/28/2026,05/28/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937239,914106-14,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,06/04/2026,06/04/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937247,914106-15,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,06/11/2026,06/11/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937255,914106-16,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,06/18/2026,06/18/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937263,914106-17,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,07/09/2026,07/09/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937271,914106-18,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,07/16/2026,07/16/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937279,914106-19,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,07/23/2026,07/23/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937287,914106-20,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,07/30/2026,07/30/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937295,914106-21,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,08/06/2026,08/06/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937304,914106-22,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,08/13/2026,08/13/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937312,914106-23,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,08/20/2026,08/20/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365937320,914106-24,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,08/27/2026,08/27/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
+365938066,914400-21,Her Badge Her Story,,OSAP,55+ Classes,06/18/2026,06/18/2026,1:00 pm,2:00 pm,Th,Arlington Mill,,$0.00/$0.00,,,,
 350725096,632830-B,Hike to the Potomac (NSNP),,NCTR,Nature & History,05/26/2026,05/26/2026,2:00 pm,3:30 pm,Tu,Gulf Branch Nature Center,12-17.99,$0.00/$0.00,,,,
 343431274,320212-A,Hip Hop,,DANCE,Dance,04/19/2026,06/14/2026 *,12:30 pm,1:15 pm,Su,Long Bridge Aquatics Center,8-11.99,$192.00/$212.00,,,,
 350224951,420212-A,Hip Hop,ENJOYSUMMER,DANCE,Dance,07/12/2026,08/09/2026,11:30 am,12:15 pm,Su,Long Bridge Aquatics Center,8-11.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,0,0
@@ -719,12 +890,36 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343431263,320200-C,Hip Hop & Jazz,,DANCE,Dance,04/15/2026,06/10/2026,6:00 pm,6:45 pm,W,Langston Brown,5-8.99,$216.00/$236.00,,,,
 350224929,420200-A,Hip Hop & Jazz,ENJOYSUMMER,DANCE,Dance,07/13/2026,08/10/2026,6:00 pm,6:45 pm,M,Fairlington Center,6-8.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,3,0
 350224940,420200-B,Hip Hop & Jazz,ENJOYSUMMER,DANCE,Dance,07/14/2026,08/11/2026,4:15 pm,5:00 pm,Tu,Lubber Run,6-8.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,5,0
+365765237,902606-02,Historic Kenmore and Ferry Farm Tour,,SAOT,55+ Trips,06/09/2026,06/09/2026,8:50 am,5:00 pm,Tu,Thomas Jefferson Center,,$41.00/$47.00,,,,
+365938257,914402-06,History Discussion Group,,OSAP,55+ Classes,08/06/2026,08/06/2026,1:00 pm,2:30 pm,Th,Virtual,,$0.00/$0.00,,,,
+365938265,914402-07,History Discussion Group,,OSAP,55+ Classes,08/13/2026,08/13/2026,1:00 pm,2:30 pm,Th,Virtual,,$0.00/$0.00,,,,
+365938273,914402-08,History Discussion Group,,OSAP,55+ Classes,08/20/2026,08/20/2026,1:00 pm,2:30 pm,Th,Virtual,,$0.00/$0.00,,,,
+365938281,914402-09,History Discussion Group,,OSAP,55+ Classes,08/27/2026,08/27/2026,1:00 pm,2:30 pm,Th,Virtual,,$0.00/$0.00,,,,
 350724723,632750-H,History Hike: The 1775 Emancipation Proclamation,,NCTR,Nature & History,05/30/2026,05/30/2026,2:00 pm,3:30 pm,Sa,Arlington Mill,8-99.99,$9.00/$10.35,,,,
+365938241,914402-04,History Roundtable,,OSAP,55+ Classes,06/10/2026,06/10/2026,11:15 am,12:30 pm,W,Virtual,,$0.00/$0.00,,,,
+365938249,914402-05,History Roundtable,,OSAP,55+ Classes,07/08/2026,07/08/2026,11:15 am,12:30 pm,W,Virtual,,$0.00/$0.00,,,,
+365937935,914400-05,How to Read a Credit Report,,OSAP,55+ Classes,07/13/2026,07/13/2026,1:00 pm,2:00 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
+365938306,914403-03,How to Spot a Fake,,OSAP,55+ Classes,06/25/2026,06/25/2026,1:00 pm,2:00 pm,Th,Walter Reed Center,,$0.00/$0.00,,,,
 350725786,632940-Q,How-to Draw Naturally: Remarkable Reptiles,,NCTR,Nature & History,06/07/2026,06/07/2026,11:00 am,12:30 pm,Su,Long Branch Nature Center,12-99.99,$9.00/$10.35,,,,
 343190200,500102-10,I Can Draw Art Camp,CAMP1,CAMP,Summer Camp,08/24/2026,08/28/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Arlington Mill,3.5-6.99,$220.00/$253.00,,,,
 343193525,500415-06,INSPIRE Girls Soccer Camp,CAMP1,CAMP,Summer Camp,07/27/2026,07/31/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Gunston Center,5-14.99,$410.00/$471.00,,,,
+365765277,902606-07,In Pursuit of Life Liberty & Happiness Exhibit at National Museum of American History,,SAOT,55+ Trips,06/26/2026,06/26/2026,9:15 am,3:30 pm,F,See Program Details,,$12.00/$14.00,,,,
+365765334,902607-07,Indias Great Mughals: Art Power and Opulence Exhibit at VMFA,,SAOT,55+ Trips,07/29/2026,07/29/2026,7:30 am,5:30 pm,W,Barcroft Fitness Center,,$31.00/$35.00,,,,
 366019836,642820-B,Insect Safari,,NCTR,Nature & History,07/10/2026,07/10/2026,5:00 pm,6:00 pm,F,Gulf Branch Nature Center,6-9.99,$7.00/$8.00,,,,
 366019847,642820-C,Insect Safari,,NCTR,Nature & History,08/12/2026,08/12/2026,10:00 am,11:00 am,W,Gulf Branch Nature Center,6-9.99,$7.00/$8.00,,,,
+365937862,914310-04,Intergenerational Painting Party,,OSAP,55+ Classes,06/15/2026,06/15/2026,10:00 am,10:30 am,M,Lubber Run,,$0.00/$0.00,,,,
+347286039,913310-12,Intergenerational Rock Painting (55+ Pass Not Required),,OSAP,55+ Classes,05/26/2026,05/26/2026,2:00 pm,3:00 pm,Tu,Lubber Run,0-999,$0.00/$0.00,,,,
+365937513,914301-07,Intergenerational Storytime (55+ Pass NOT Required),,OSAP,55+ Classes,06/05/2026,06/05/2026,11:00 am,11:30 am,F,Aurora Hills Center,0-999,$0.00/$0.00,,,,
+365937521,914301-08,Intergenerational Storytime (55+ Pass NOT Required),,OSAP,55+ Classes,07/10/2026,07/10/2026,11:00 am,11:30 am,F,Aurora Hills Center,0-999,$0.00/$0.00,,,,
+365937529,914301-09,Intergenerational Storytime (55+ Pass NOT Required),,OSAP,55+ Classes,08/07/2026,08/07/2026,11:00 am,11:30 am,F,Aurora Hills Center,0-999,$0.00/$0.00,,,,
+365936745,914100-04,Intermediate Qigong,,OSAP,55+ Classes,06/08/2026,08/24/2026,10:00 am,11:00 am,M,Walter Reed Center,,$72.00/$72.00,,,,
+347285843,913304-12,Intermediate Ukulele,,OSAP,55+ Classes,05/19/2026,05/19/2026,4:30 pm,5:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937709,914304-07,Intermediate Ukulele,,OSAP,55+ Classes,06/02/2026,06/02/2026,4:30 pm,5:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937717,914304-08,Intermediate Ukulele,,OSAP,55+ Classes,06/16/2026,06/16/2026,4:30 pm,5:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937725,914304-09,Intermediate Ukulele,,OSAP,55+ Classes,07/07/2026,07/07/2026,4:30 pm,5:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937733,914304-10,Intermediate Ukulele,,OSAP,55+ Classes,07/21/2026,07/21/2026,4:30 pm,5:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937741,914304-11,Intermediate Ukulele,,OSAP,55+ Classes,08/04/2026,08/04/2026,4:30 pm,5:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937749,914304-12,Intermediate Ukulele,,OSAP,55+ Classes,08/18/2026,08/18/2026,4:30 pm,5:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
 343432466,340140-A,Intro to Acrylics,,DWPT,Drawing/Painting,04/14/2026,06/02/2026,6:00 pm,8:00 pm,Tu,Fairlington Center,18-99.99,$234.00/$254.00,,,,
 343432480,340150-A,Intro to Enameling,,JEWEL,Jewelry,06/03/2026,06/17/2026,6:00 pm,8:30 pm,W,Thomas Jefferson Center,18-99.99,$153.00/$173.00,,,,
 343432494,340151-A,Intro to Jewelry I,,JEWEL,Jewelry,04/13/2026,06/08/2026 *,6:00 pm,8:30 pm,M,Thomas Jefferson Center,18-99.99,$339.00/$359.00,,,,
@@ -751,6 +946,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350225285,420310-F,Introduction to Olympic Fencing,ENJOYSUMMER,MARTS,Martial Arts,07/21/2026,08/13/2026,6:00 pm,7:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$176.00/$196.00,2026-05-15T14:06:18+00:00,Available,1,0
 350225296,420310-G,Introduction to Olympic Fencing,ENJOYSUMMER,MARTS,Martial Arts,06/23/2026,07/16/2026 *,7:00 pm,8:00 pm,"Tu, Th",NOVA Fencing and Archery Club,13-99.99,$132.00/$152.00,2026-05-15T14:06:18+00:00,Available,1,0
 350225307,420310-H,Introduction to Olympic Fencing,ENJOYSUMMER,MARTS,Martial Arts,07/21/2026,08/13/2026,7:00 pm,8:00 pm,"Tu, Th",NOVA Fencing and Archery Club,13-99.99,$176.00/$196.00,2026-05-15T14:06:18+00:00,Available,0,0
+347285795,913304-06,Introduction to Ukulele,,OSAP,55+ Classes,05/19/2026,05/19/2026,4:00 pm,4:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937660,914304-01,Introduction to Ukulele,,OSAP,55+ Classes,06/02/2026,06/02/2026,4:00 pm,4:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937668,914304-02,Introduction to Ukulele,,OSAP,55+ Classes,06/16/2026,06/16/2026,4:00 pm,4:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937676,914304-03,Introduction to Ukulele,,OSAP,55+ Classes,07/07/2026,07/07/2026,4:00 pm,4:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937684,914304-04,Introduction to Ukulele,,OSAP,55+ Classes,07/21/2026,07/21/2026,4:00 pm,4:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937692,914304-05,Introduction to Ukulele,,OSAP,55+ Classes,08/04/2026,08/04/2026,4:00 pm,4:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937700,914304-06,Introduction to Ukulele,,OSAP,55+ Classes,08/18/2026,08/18/2026,4:00 pm,4:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365938085,914400-23,It Happened Here,,OSAP,55+ Classes,08/18/2026,08/18/2026,1:00 pm,2:00 pm,Tu,Arlington Mill,,$0.00/$0.00,,,,
 366019914,642850-C,Journey of the Eels Campfire,,NCTR,Nature & History,08/22/2026,08/22/2026,6:00 pm,7:00 pm,Sa,Gulf Branch Nature Center,3-99.99,$7.00/$8.00,,,,
 343431563,320309-A,Judo Advanced Workout,,MARTS,Martial Arts,04/13/2026,06/15/2026 *,7:00 pm,8:00 pm,M,Dawson Terrace,5-13.99,$80.00/$100.00,,,,
 343431574,320309-B,Judo Advanced Workout,,MARTS,Martial Arts,04/13/2026,06/15/2026 *,8:10 pm,9:10 pm,M,Dawson Terrace,13-99.99,$80.00/$100.00,,,,
@@ -770,6 +973,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 353226134,420419-B,Junior Lifeguard Camp,CAMP,CAMP,Summer Camp,07/13/2026,07/16/2026,9:00 am,3:30 pm,"M, Tu, W, Th",Long Bridge Aquatics Center,7-14.99,$470.00/$540.00,,,,
 353226177,420419-C,Junior Lifeguard Camp,CAMP,CAMP,Summer Camp,07/27/2026,07/30/2026,9:00 am,3:30 pm,"M, Tu, W, Th",Long Bridge Aquatics Center,7-14.99,$470.00/$540.00,,,,
 343432437,340129-A,Just Claying Around,,CERAM,Ceramics,04/23/2026,06/11/2026,7:00 pm,8:30 pm,Th,Walter Reed Center,18-99.99,$242.00/$262.00,,,,
+347286103,913400-06,Just Say No to Scams,,OSAP,55+ Classes,05/22/2026,05/22/2026,11:00 am,12:00 pm,F,Aurora Hills Center,,$0.00/$0.00,,,,
+343433078,340733-A,K-9 Nose Work Level 1,,DOG,Dog Obedience,04/15/2026,05/27/2026,7:30 pm,8:20 pm,W,Quincy Street Deck,14-99.99,$115.00/$135.00,,,,
+350226081,440733-A,K-9 Nose Work Level 1,,DOG,Dog Obedience,07/08/2026,08/19/2026,6:30 pm,7:25 pm,W,Quincy Street Deck,14-99.99,$115.00/$135.00,,,,
+365937765,914304-14,Karaoke,,OSAP,55+ Classes,06/09/2026,06/09/2026,2:00 pm,3:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365937773,914304-15,Karaoke,,OSAP,55+ Classes,06/29/2026,06/29/2026,1:30 pm,2:30 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
+365937781,914304-16,Karaoke,,OSAP,55+ Classes,08/11/2026,08/11/2026,2:00 pm,3:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365937789,914304-17,Karaoke,,OSAP,55+ Classes,08/27/2026,08/27/2026,6:00 pm,7:00 pm,Th,Lubber Run,,$0.00/$0.00,,,,
+365937960,914400-08,Keep the Best and Get Rid of the Rest,,OSAP,55+ Classes,08/26/2026,08/26/2026,10:00 am,11:00 am,W,Langston Brown,,$0.00/$0.00,,,,
 343431854,320320-A,Keys to Fun! Beginner Piano,,MUSIC,Music,04/16/2026,06/18/2026,5:15 pm,6:15 pm,Th,Lubber Run,5-12.99,$278.00/$298.00,,,,
 343431868,320320-B,Keys to Fun! Beginner Piano,,MUSIC,Music,04/13/2026,06/15/2026 *,5:00 pm,6:00 pm,M,Long Bridge Aquatics Center,5-12.99,$252.00/$272.00,,,,
 343431882,320320-C,Keys to Fun! Beginner Piano,,MUSIC,Music,04/17/2026,06/12/2026 *,5:00 pm,6:00 pm,F,Long Bridge Aquatics Center,5-12.99,$226.00/$246.00,,,,
@@ -824,6 +1035,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366020127,642940-F,Late roses and wildflowers of Bon Air,,NCTR,Nature & History,08/27/2026,08/27/2026,10:00 am,11:00 am,Th,Bon Air Park,16-99.99,$7.00/$8.00,,,,
 346616066,750146-H,Learn Now Music Group: The Ultimate Music Camp,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Fairlington Center,5-12.99,$105.00/$121.00,,,,
 346616278,750146-W,Learn Now Music Group: The Ultimate Music Camp,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,4:00 pm,W,Fairlington Center,5-12.99,$105.00/$121.00,,,,
+365937400,914206-07,Learn to Ride a Bike,,OSAP,55+ Classes,06/02/2026,06/02/2026,8:00 am,11:00 am,Tu,Walter Reed Center,,$0.00/$0.00,,,,
 343432266,340100-B,Leathercraft Essentials: From Tools to Technique,,CRART,Arts & Crafts,05/20/2026,05/20/2026,6:00 pm,8:30 pm,W,Fairlington Center,18-99.99,$50.00/$70.00,,,,
 343432280,340100-C,Leathercraft Essentials: From Tools to Technique,,CRART,Arts & Crafts,06/03/2026,06/03/2026,6:00 pm,8:30 pm,W,Fairlington Center,18-99.99,$50.00/$70.00,,,,
 350225518,420341-A,Lego Spike Amazing Amusement Park,ENJOYSUMMER,SCDI,Science & Discovery,07/11/2026,08/15/2026,3:00 pm,4:00 pm,Sa,Long Bridge Aquatics Center,5-7.99,$155.00/$175.00,2026-05-15T14:06:18+00:00,Available,3,0
@@ -840,6 +1052,11 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350224055,410207-B,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/16/2026,08/13/2026,5:15 pm,5:45 pm,Th,Barcroft Fitness Center,2-3.99,$100.00/$120.00,2026-05-16T13:46:13+00:00,Available,2,0
 350224066,410207-C,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:30 am,11:00 am,Sa,Lubber Run,2-3.99,$100.00/$120.00,2026-05-16T13:46:13+00:00,Available,4,0
 350224077,410207-D,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/17/2026,08/14/2026,10:00 am,10:30 am,F,Walter Reed Center,2-3.99,$100.00/$120.00,2026-05-16T13:46:13+00:00,Waitlist,12,0
+365937903,914400-01,Lets Go Over the Guide!,,OSAP,55+ Classes,08/14/2026,08/14/2026,1:00 pm,2:00 pm,F,Lubber Run,,$0.00/$0.00,,,,
+365937757,914304-13,Lets Play Easy Piano Duets,,OSAP,55+ Classes,06/01/2026,08/31/2026,4:00 pm,5:00 pm,M,Walter Reed Center,,$0.00/$0.00,,,,
+365937085,914103-18,Level 1 Mat Pilates,,OSAP,55+ Classes,06/15/2026,08/24/2026,3:45 pm,4:45 pm,M,Walter Reed Center,,$66.00/$66.00,,,,
+365937094,914103-19,Level 1 Mat Pilates,,OSAP,55+ Classes,06/16/2026,08/11/2026,10:00 am,11:00 am,Tu,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
+365937102,914103-20,Level 1 Mat Pilates,,OSAP,55+ Classes,06/18/2026,08/27/2026,10:15 am,11:15 am,Th,Walter Reed Center,,$66.00/$66.00,,,,
 343436541,320400-A,Level 1: Youth Swim,,AQUAT,Aquatics,04/14/2026,06/16/2026,4:45 pm,5:25 pm,Tu,Long Bridge Aquatics Center,6-12.99,$120.00/$140.00,,,,
 343436552,320400-B,Level 1: Youth Swim,,AQUAT,Aquatics,04/14/2026,06/16/2026,6:35 pm,7:15 pm,Tu,Long Bridge Aquatics Center,6-12.99,$120.00/$140.00,,,,
 343436563,320400-C,Level 1: Youth Swim,,AQUAT,Aquatics,04/15/2026,06/17/2026,4:35 pm,5:15 pm,W,Long Bridge Aquatics Center,6-12.99,$120.00/$140.00,,,,
@@ -874,6 +1091,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350202573,420400-P,Level 1: Youth Swim,ENJOYSUMMER2,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:05 am,9:45 am,Su,Long Bridge Aquatics Center,6-12.99,$84.00/$104.00,2026-05-15T14:01:15+00:00,Available,3,0
 350202584,420400-Q,Level 1: Youth Swim,ENJOYSUMMER2,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:00 am,10:40 am,Su,Long Bridge Aquatics Center,6-12.99,$84.00/$104.00,2026-05-15T14:01:15+00:00,Available,4,0
 350202595,420400-R,Level 1: Youth Swim,ENJOYSUMMER2,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:25 am,12:05 pm,Su,Long Bridge Aquatics Center,6-12.99,$84.00/$104.00,2026-05-15T14:01:15+00:00,Available,3,0
+365937110,914103-21,Level 2 Mat Pilates,,OSAP,55+ Classes,06/16/2026,08/11/2026,8:45 am,9:45 am,Tu,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
 343436717,320401-A,Level 2: Youth Swim,,AQUAT,Aquatics,04/14/2026,06/16/2026,5:30 pm,6:10 pm,Tu,Long Bridge Aquatics Center,6-12.99,$120.00/$140.00,,,,
 343436728,320401-B,Level 2: Youth Swim,,AQUAT,Aquatics,04/14/2026,06/16/2026,6:55 pm,7:35 pm,Tu,Long Bridge Aquatics Center,6-12.99,$120.00/$140.00,,,,
 343436739,320401-C,Level 2: Youth Swim,,AQUAT,Aquatics,04/15/2026,06/17/2026,5:20 pm,6:00 pm,W,Long Bridge Aquatics Center,6-12.99,$120.00/$140.00,,,,
@@ -1015,6 +1233,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350203360,420404-I,Level 5: Youth Swim,ENJOYSUMMER2,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:50 am,12:30 pm,Sa,Long Bridge Aquatics Center,6-12.99,$84.00/$104.00,2026-05-15T14:01:15+00:00,Available,3,0
 350203371,420404-J,Level 5: Youth Swim,ENJOYSUMMER2,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:30 am,10:10 am,Su,Long Bridge Aquatics Center,6-12.99,$84.00/$104.00,2026-05-15T14:01:15+00:00,Available,4,0
 350203383,420404-K,Level 5: Youth Swim,ENJOYSUMMER2,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:00 am,11:40 am,Su,Long Bridge Aquatics Center,6-12.99,$84.00/$104.00,2026-05-15T14:01:15+00:00,Waitlist,8,0
+351866663,913400-30,Level Up at the Library,,OSAP,55+ Classes,05/28/2026,05/28/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
 343193369,500412-05,Lights On Camp!,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,6-10.99,$275.00/$316.00,,,,
 343193303,500411-05,Lights On! Camp,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,6-10.99,$275.00/$316.00,,,,
 343430964,310616-A,Little Athletes,,SPORT,Sports,04/18/2026,06/20/2026 *,10:00 am,10:45 am,Sa,Fairlington Center,4-6.99,$183.00/$203.00,,,,
@@ -1083,6 +1302,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350288792,410602-M,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,4:30 pm,5:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-16T13:46:13+00:00,Available,1,0
 350288804,410602-N,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,5:30 pm,6:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-16T13:46:13+00:00,Available,2,0
 350288815,410602-O,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,6:30 pm,7:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-16T13:46:13+00:00,Available,1,0
+348241660,913402-14,Local History Discussion,,OSAP,55+ Classes,05/27/2026,05/27/2026,1:30 pm,2:45 pm,W,Lubber Run,,$0.00/$0.00,,,,
 346619315,750146-II,Love the Ball Schools Out Soccer Camp- Full Day,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,4:00 pm,W,Gunston Center,6-14.99,$79.00/$91.00,,,,
 346618684,750146-T,Love the Ball Schools Out Soccer Camp- Full Day,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Gunston Center,6-14.99,$79.00/$91.00,,,,
 346619272,750146-HH,Love the Ball Schools Out Soccer Camp- Half Day,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,12:00 pm,W,Gunston Center,6-14.99,$59.00/$68.00,,,,
@@ -1090,7 +1310,15 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 346615955,750146-V,M3 BASKETBALL MINI-CAMP,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,3:00 pm,W,Williamsburg MS,8-13.99,$85.00/$98.00,,,,
 346615675,750146-G,M3 BASKETBALL and FLAG FOOTBALL MINI-CAMP,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,3:00 pm,Tu,Williamsburg MS,8-13.99,$85.00/$98.00,,,,
 346618751,750146-U,M3 FLAG FOOTBALL MINI-CAMP,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,3:00 pm,W,Williamsburg MS,8-13.99,$85.00/$98.00,,,,
+347287350,913900-35,Mac iPhone iPad,,OSAP,55+ Classes,05/20/2026,05/20/2026,10:00 am,10:45 am,W,Aurora Hills Center,,$0.00/$0.00,,,,
+347287358,913900-36,Mac iPhone iPad,,OSAP,55+ Classes,05/20/2026,05/20/2026,10:45 am,11:30 am,W,Aurora Hills Center,,$0.00/$0.00,,,,
+347287366,913900-37,Mac iPhone iPad,,OSAP,55+ Classes,05/20/2026,05/20/2026,11:30 am,12:15 pm,W,Aurora Hills Center,,$0.00/$0.00,,,,
 366019936,642850-E,Magnificent Monarchs,,NCTR,Nature & History,08/19/2026,08/19/2026,10:30 am,11:30 am,W,Gulf Branch Nature Center,4-99.99,$0.00/$0.00,,,,
+365765382,902608-06,Maryland State Fair,,SAOT,55+ Trips,08/28/2026,08/28/2026,7:50 am,4:30 pm,F,See Program Details,,$28.00/$32.00,,,,
+347286587,913501-10,Med not Meds,,OSAP,55+ Classes,05/26/2026,05/26/2026,10:00 am,11:00 am,Tu,Lubber Run,,$0.00/$0.00,,,,
+365938145,914400-30,Mediterranean Cruise,,OSAP,55+ Classes,06/11/2026,06/11/2026,1:30 pm,2:30 pm,Th,Langston Brown,,$0.00/$0.00,,,,
+347482868,832600-M1,Men's Doubles 3.0-3.49 Division,,PICKLE,Pickleball,06/20/2026,06/20/2026,8:30 am,12:30 pm,Sa,Thomas Jefferson Center,,$60.00/$69.00,,,,
+347482908,832600-M3,Men's Doubles 3.5-3.99 Division,,PICKLE,Pickleball,06/20/2026,06/20/2026,12:30 pm,4:40 pm,Sa,Thomas Jefferson Center,,$60.00/$69.00,,,,
 343190366,500105-01,Minecraft Creative Adventures Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,5-12.99,$375.00/$431.00,,,,
 343190377,500105-02,Minecraft Creative Adventures Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Barcroft Elem. Sch.,5-12.99,$300.00/$345.00,,,,
 343190388,500105-03,Minecraft Creative Adventures Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,5-12.99,$375.00/$431.00,,,,
@@ -1106,6 +1334,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343432142,320611-B,Momentum3 Varsity Skills: Basketball,,SPORT,Sports,04/15/2026,05/20/2026,5:55 pm,6:55 pm,W,Lubber Run,8-11.99,$154.00/$174.00,,,,
 343432153,320611-C,Momentum3 Varsity Skills: Basketball,,SPORT,Sports,04/13/2026,05/18/2026,4:45 pm,5:45 pm,M,Lubber Run,12-14.99,$154.00/$174.00,,,,
 343432164,320611-D,Momentum3 Varsity Skills: Basketball,,SPORT,Sports,04/15/2026,05/20/2026,4:45 pm,5:45 pm,W,Lubber Run,12-14.99,$154.00/$174.00,,,,
+365937601,914302-02,Monets Visionary Water Lilies,,OSAP,55+ Classes,07/08/2026,07/08/2026,1:00 pm,2:30 pm,W,Virtual,,$0.00/$0.00,,,,
+365765261,902606-05,Moulin Rouge! The Musical at Kennedy Center,,SAOT,55+ Trips,06/20/2026,06/20/2026,12:00 pm,4:45 pm,Sa,Barcroft Fitness Center,,$141.00/$162.00,,,,
 343192435,500304-02,Mountain Biking Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,8:30 am,4:30 pm,"M, Tu, W, Th",Gunston Center,9-14.99,$496.00/$570.00,,,,
 343192446,500304-03,Mountain Biking Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Gunston Center,9-14.99,$620.00/$713.00,,,,
 343192457,500304-04,Mountain Biking Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Gunston Center,9-14.99,$620.00/$713.00,,,,
@@ -1137,6 +1367,11 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350224172,410208-I,Music Together,ENJOYSUMMER,MOVE,Movement,06/30/2026,08/18/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$227.00/$247.00,2026-05-16T13:46:13+00:00,Available,9,0
 350224214,410209-A,Music Together Babies Only,ENJOYSUMMER,MOVE,Movement,06/29/2026,08/17/2026,11:30 am,12:15 pm,M,Lubber Run,0-0.83,$227.00/$247.00,2026-05-16T13:46:13+00:00,Available,4,0
 348542216,310209-A,Music Together:  Babies Only,,MOVE,Movement,04/13/2026,06/08/2026 *,11:30 am,12:15 pm,M,Lubber Run,0-0.83,$207.00/$227.00,,,,
+365938185,914400-35,Musician of the Month,,OSAP,55+ Classes,06/02/2026,06/02/2026,1:00 pm,2:30 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365938193,914400-36,Musician of the Month,,OSAP,55+ Classes,07/07/2026,07/07/2026,1:00 pm,2:30 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365938201,914400-37,Musician of the Month,,OSAP,55+ Classes,08/04/2026,08/04/2026,1:00 pm,2:30 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+347632028,902605-05,Nationals vs Orioles,,SAOT,55+ Trips,05/16/2026,05/16/2026,1:30 pm,7:35 pm,Sa,Barcroft Fitness Center,,$91.00/$105.00,,,,
+365765285,902607-01,Nationals vs Yankees,,SAOT,55+ Trips,07/11/2026,07/11/2026,2:15 pm,7:35 pm,Sa,Barcroft Fitness Center,,$91.00/$105.00,,,,
 366020139,642950-A,Native American Folklore Campfire,,NCTR,Nature & History,06/20/2026,06/20/2026,8:00 pm,9:00 pm,Sa,Long Branch Nature Center,3-99.99,$7.00/$8.00,,,,
 343193858,500425-01,Native Animal Explorers Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Kenmore MS,7-11.99,$550.00/$632.00,,,,
 343193869,500425-03,Native Animal Explorers Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Barcroft Fitness Center,7-11.99,$550.00/$632.00,,,,
@@ -1159,9 +1394,17 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350725636,632940-E,Northern Virginia Bird Club Walk,,NCTR,Nature & History,06/03/2026,06/03/2026,8:30 am,11:00 am,W,Long Branch Nature Center,18-99.99,$0.00/$0.00,,,,
 366020104,642940-D,Northern Virginia Bird Club Walk,,NCTR,Nature & History,07/01/2026,07/01/2026,8:30 am,11:00 am,W,Long Branch Nature Center,18-99.99,$0.00/$0.00,,,,
 366281324,642940-E,Northern Virginia Bird Club Walk,,NCTR,Nature & History,08/05/2026,08/05/2026,8:30 am,11:00 am,W,Long Branch Nature Center,18-99.99,$0.00/$0.00,,,,
+365765229,902606-01,Occoquan Riverfest & Craft Show,,SAOT,55+ Trips,06/07/2026,06/07/2026,9:15 am,3:30 pm,Su,See Program Details,,$12.00/$14.00,,,,
 343193314,500411-06,Ocean Rescue Camp!,CAMP1,CAMP,Summer Camp,07/27/2026,07/31/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,6-10.99,$275.00/$316.00,,,,
 343193380,500412-06,Ocean Rescue Camp!,CAMP1,CAMP,Summer Camp,07/27/2026,07/31/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,6-10.99,$275.00/$316.00,,,,
 350280422,440159-A,Old Scrap to New Beginnings - Recycle your Silver!,ENJOYSUMMER,JEWEL,Jewelry,06/24/2026,07/08/2026,6:00 pm,8:30 pm,W,Thomas Jefferson Center,18-99.99,$190.00/$210.00,2026-05-15T14:06:18+00:00,Available,0,0
+347285329,913300-06,Opera Appreciation,,OSAP,55+ Classes,05/20/2026,05/20/2026,1:30 pm,3:30 pm,W,Lubber Run,,$0.00/$0.00,,,,
+365937416,914300-01,Opera Appreciation,,OSAP,55+ Classes,06/03/2026,06/03/2026,1:30 pm,3:30 pm,W,Lubber Run,,$0.00/$0.00,,,,
+365937424,914300-02,Opera Appreciation,,OSAP,55+ Classes,06/17/2026,06/17/2026,1:30 pm,3:30 pm,W,Lubber Run,,$0.00/$0.00,,,,
+365937432,914300-03,Opera Appreciation,,OSAP,55+ Classes,07/01/2026,07/01/2026,1:30 pm,3:30 pm,W,Lubber Run,,$0.00/$0.00,,,,
+365937440,914300-04,Opera Appreciation,,OSAP,55+ Classes,07/15/2026,07/15/2026,1:30 pm,3:30 pm,W,Lubber Run,,$0.00/$0.00,,,,
+365937449,914300-05,Opera Appreciation,,OSAP,55+ Classes,08/05/2026,08/05/2026,1:30 pm,3:30 pm,W,Lubber Run,,$0.00/$0.00,,,,
+365937457,914300-06,Opera Appreciation,,OSAP,55+ Classes,08/19/2026,08/19/2026,1:30 pm,3:30 pm,W,Lubber Run,,$0.00/$0.00,,,,
 343192074,500300-01,Outdoor Adventure Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Gunston Center,10-14.99,$620.00/$713.00,,,,
 343192085,500300-02,Outdoor Adventure Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,8:30 am,4:30 pm,"M, Tu, W, Th",Gunston Center,10-14.99,$496.00/$570.00,,,,
 343192097,500300-03,Outdoor Adventure Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Gunston Center,10-14.99,$620.00/$713.00,,,,
@@ -1176,12 +1419,135 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 346619149,750146-FF,P.S. KARMA: Mini Makers: Magical Clay Lab Camp,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,4:00 pm,W,Madison Center,5-11.99,$125.00/$144.00,,,,
 344178338,720226-V,PEV's Paint Ball,,TEEN,Teen Programs,05/27/2026,05/27/2026,10:00 am,4:00 pm,W,Thomas Jefferson Center,11-17.99,$15.00/$35.00,,,,
 366019925,642850-D,Paper Making,,NCTR,Nature & History,08/14/2026,08/14/2026,2:00 pm,3:00 pm,F,Gulf Branch Nature Center,5-99.99,$7.00/$8.00,,,,
+365937838,914310-01,Paper Quilling,,OSAP,55+ Classes,06/11/2026,06/11/2026,1:30 pm,3:00 pm,Th,Lubber Run,,$20.00/$20.00,,,,
+365937846,914310-02,Paper Quilling,,OSAP,55+ Classes,07/09/2026,07/09/2026,1:30 pm,3:00 pm,Th,Lubber Run,,$20.00/$20.00,,,,
+365937854,914310-03,Paper Quilling,,OSAP,55+ Classes,08/13/2026,08/13/2026,1:30 pm,3:00 pm,Th,Lubber Run,,$20.00/$20.00,,,,
+365938119,914400-27,Parasitic and Epiphytic Plants,,OSAP,55+ Classes,06/25/2026,06/25/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
 328611115,720126-R,Parent's Night Out (PNO) (WRCC),,FAMLY,Family Programs,05/15/2026,05/15/2026,6:00 pm,10:00 pm,F,Walter Reed Center,5-10.99,$40.00/$60.00,,,,
+365937870,914310-05,Patriotic Rock Painting,,OSAP,55+ Classes,06/22/2026,06/22/2026,1:00 pm,2:30 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
+347285907,913304-20,Piano Lounge and Sing-Along,,OSAP,55+ Classes,05/27/2026,05/27/2026,1:00 pm,2:30 pm,W,Aurora Hills Center,,$0.00/$0.00,,,,
+347285933,913304-23,Piano Lounge and Sing-Along,,OSAP,55+ Classes,05/19/2026,05/19/2026,2:30 pm,4:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365937797,914304-18,Piano Lounge and Sing-Along,,OSAP,55+ Classes,06/16/2026,06/16/2026,2:30 pm,4:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365937805,914304-19,Piano Lounge and Sing-Along,,OSAP,55+ Classes,06/17/2026,06/17/2026,1:00 pm,2:30 pm,W,Aurora Hills Center,,$0.00/$0.00,,,,
+365937813,914304-20,Piano Lounge and Sing-Along,,OSAP,55+ Classes,07/21/2026,07/21/2026,2:30 pm,4:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+365937821,914304-21,Piano Lounge and Sing-Along,,OSAP,55+ Classes,08/12/2026,08/12/2026,1:00 pm,2:30 pm,W,Aurora Hills Center,,$0.00/$0.00,,,,
+365937829,914304-22,Piano Lounge and Sing-Along,,OSAP,55+ Classes,08/18/2026,08/18/2026,2:30 pm,4:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+343445835,340615-A,Pickleball 1 (Age 10-14),,PICKLE,Pickleball,04/15/2026,06/10/2026,5:30 pm,6:20 pm,W,Marcey Road Park,10-14.99,$272.00/$292.00,,,,
+350289743,440615-B,Pickleball 1 (Age 10-14),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,6:30 pm,7:20 pm,W,Hayes Park,10-14.99,$272.00/$292.00,,,,
+343445846,340615-B,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,5:30 pm,6:20 pm,W,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343445857,340615-C,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,7:30 pm,8:20 pm,W,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343445868,340615-D,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,8:30 pm,9:20 pm,W,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343445879,340615-E,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,10:30 am,11:20 am,Th,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343445891,340615-F,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,5:30 pm,6:20 pm,Th,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343445902,340615-G,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,11:30 am,12:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+343445913,340615-H,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,5:30 pm,6:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+343445924,340615-I,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,6:30 pm,7:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+343445935,340615-J,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,7:30 pm,8:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+343445946,340615-K,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/14/2026,06/09/2026,9:30 am,10:20 am,Tu,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+343445969,340615-M,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,11:30 am,12:20 pm,Th,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+343445991,340615-O,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,6:30 pm,7:20 pm,Th,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350289754,440615-C,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,5:30 pm,6:20 pm,W,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350289767,440615-D,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/25/2026,08/27/2026 *,5:30 pm,6:20 pm,Th,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350289782,440615-E,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/23/2026,08/25/2026 *,5:30 pm,6:20 pm,Tu,Arlington Mill,15-99.99,$272.00/$292.00,,,,
+350289793,440615-F,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/25/2026,08/27/2026 *,5:30 pm,6:20 pm,Th,Arlington Mill,15-99.99,$272.00/$292.00,,,,
+350289804,440615-G,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/23/2026,08/25/2026 *,10:30 am,11:20 am,Tu,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350289815,440615-H,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,8:30 am,9:20 am,W,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350289826,440615-I,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/25/2026,08/27/2026 *,9:30 am,10:20 am,Th,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350289837,440615-J,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,9:30 am,10:20 am,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350289848,440615-K,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,10:30 am,11:20 am,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350289859,440615-L,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,5:30 pm,6:20 pm,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350289873,440615-M,Pickleball 1 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,6:30 pm,7:20 pm,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350289732,440615-A,Pickleball 1 (Age 7-10),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,5:30 pm,6:20 pm,W,Hayes Park,7-10.99,$272.00/$292.00,,,,
+350289887,440616-A,Pickleball 2 (Age 10-14),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,5:30 pm,6:20 pm,M,Marcey Road Park,10-14.99,$303.00/$323.00,,,,
+343446002,340616-A,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/14/2026,06/09/2026,11:30 am,12:20 pm,Tu,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+343446013,340616-B,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,9:30 am,10:20 am,W,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+343446024,340616-C,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,9:30 am,10:20 am,Th,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+343446035,340616-D,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,5:30 pm,6:20 pm,Th,Hayes Park,15-99.99,$272.00/$292.00,,,,
+343446046,340616-E,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,6:30 pm,7:20 pm,Th,Hayes Park,15-99.99,$272.00/$292.00,,,,
+343446058,340616-F,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,6:30 pm,7:20 pm,W,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343446069,340616-G,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,7:30 pm,8:20 pm,W,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343446080,340616-H,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,8:30 pm,9:20 pm,W,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343446102,340616-J,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,9:30 am,10:20 am,Th,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343446113,340616-K,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,9:30 am,10:20 am,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+343446146,340616-M,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,6:30 pm,7:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+343446157,340616-N,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,7:30 pm,8:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+350289898,440616-B,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,9:30 am,10:20 am,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350289909,440616-C,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,10:30 am,11:20 am,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350289920,440616-D,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,6:30 pm,7:20 pm,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350289932,440616-E,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,7:30 pm,8:20 pm,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350289943,440616-F,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/23/2026,08/25/2026 *,6:30 pm,7:20 pm,Tu,Arlington Mill,15-99.99,$272.00/$292.00,,,,
+350289954,440616-G,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/25/2026,08/27/2026 *,6:30 pm,7:20 pm,Th,Arlington Mill,15-99.99,$272.00/$292.00,,,,
+350289965,440616-H,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/23/2026,08/25/2026 *,8:30 am,9:20 am,Tu,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350289976,440616-I,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,9:30 am,10:20 am,W,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350289989,440616-J,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/25/2026,08/27/2026,8:30 am,9:20 am,Th,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350290001,440616-K,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,5:30 pm,6:20 pm,W,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350290012,440616-L,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,6:30 pm,7:20 pm,W,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350290023,440616-M,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/25/2026,08/27/2026 *,6:30 pm,7:20 pm,Th,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350290034,440616-N,Pickleball 2 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,7:30 pm,8:20 pm,W,Hayes Park,15-99.99,$272.00/$292.00,,,,
+343447554,340622-A,Pickleball 3 & 4 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,6:30 pm,7:20 pm,W,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343447565,340622-B,Pickleball 3 & 4 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,6:30 pm,7:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+350296354,440622-A,Pickleball 3 & 4 (Age 15-Adult),,PICKLE,Pickleball,06/25/2026,08/27/2026 *,7:30 pm,8:20 pm,Th,Arlington Mill,15-99.99,$272.00/$292.00,,,,
+343446168,340617-A,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/14/2026,06/09/2026,10:30 am,11:20 am,Tu,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+343446179,340617-B,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,11:30 am,12:20 pm,W,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+343446190,340617-C,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,10:30 am,11:20 am,Th,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+343446201,340617-D,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,5:30 pm,6:20 pm,Th,Hayes Park,15-99.99,$272.00/$292.00,,,,
+343446212,340617-E,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,7:30 pm,8:20 pm,Th,Hayes Park,15-99.99,$272.00/$292.00,,,,
+343446223,340617-F,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/15/2026,06/10/2026,5:30 pm,6:20 pm,W,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343446256,340617-I,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,6:30 pm,7:20 pm,Th,Marcey Road Park,15-99.99,$272.00/$292.00,,,,
+343446267,340617-J,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,10:30 am,11:20 am,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+343446278,340617-K,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,5:30 pm,6:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+343446289,340617-L,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,04/13/2026,06/08/2026 *,7:30 pm,8:20 pm,M,Marcey Road Park,15-99.99,$242.00/$262.00,,,,
+350290045,440617-A,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,06/23/2026,08/25/2026 *,7:30 pm,8:20 pm,Tu,Arlington Mill,15-99.99,$272.00/$292.00,,,,
+350290056,440617-B,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,06/23/2026,08/25/2026 *,9:30 am,10:20 am,Tu,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350290067,440617-C,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,10:30 am,11:20 am,W,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350290078,440617-D,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,06/25/2026,08/27/2026 *,10:30 am,11:20 am,Th,Fort Scott Park,15-99.99,$272.00/$292.00,,,,
+350290089,440617-E,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,6:30 pm,7:20 pm,W,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350290100,440617-F,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,7:30 pm,8:20 pm,W,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350290111,440617-G,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,8:30 am,9:20 am,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+350290122,440617-H,Pickleball 3 (Age 15-Adult),,PICKLE,Pickleball,06/22/2026,08/31/2026 *,7:30 pm,8:20 pm,M,Marcey Road Park,15-99.99,$303.00/$323.00,,,,
+343447519,340619-A,Pickleball 4 (Age 15-Adult),,PICKLE,Pickleball,04/16/2026,06/11/2026,7:30 pm,8:20 pm,Th,Hayes Park,15-99.99,$272.00/$292.00,,,,
+350296165,440619-A,Pickleball 4 (Age 15-Adult),,PICKLE,Pickleball,06/24/2026,08/26/2026 *,7:30 pm,8:20 pm,W,Hayes Park,15-99.99,$272.00/$292.00,,,,
+343447530,340620-A,Pickleball Coached Play Levels 2-3,,PICKLE,Pickleball,04/16/2026,06/11/2026,7:30 pm,8:50 pm,Th,Marcey Road Park,15-99.99,$225.00/$245.00,,,,
+343447543,340620-B,Pickleball Coached Play Levels 2-3,,PICKLE,Pickleball,04/16/2026,06/11/2026,7:30 pm,8:50 pm,Th,Marcey Road Park,15-99.99,$225.00/$245.00,,,,
+350296260,440620-A,Pickleball Coached Play Levels 2-3,,PICKLE,Pickleball,06/25/2026,08/27/2026 *,7:30 pm,8:50 pm,Th,Hayes Park,15-99.99,$180.00/$200.00,,,,
 343193770,500422-04,Pickleball Fun & Fundamentals Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Yorktown High Sch.,9-13.99,$399.00/$458.00,,,,
 343193781,500422-05,Pickleball Fun & Fundamentals Camp,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Yorktown High Sch.,9-13.99,$399.00/$458.00,,,,
+343445747,340614-A,Pickleball Try It Clinic,,PICKLE,Pickleball,05/16/2026,05/16/2026,9:00 am,10:15 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+343445758,340614-B,Pickleball Try It Clinic,,PICKLE,Pickleball,05/16/2026,05/16/2026,9:00 am,10:15 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+343445769,340614-C,Pickleball Try It Clinic,,PICKLE,Pickleball,05/16/2026,05/16/2026,10:30 am,11:45 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+343445780,340614-D,Pickleball Try It Clinic,,PICKLE,Pickleball,05/16/2026,05/16/2026,10:30 am,11:45 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+343445791,340614-E,Pickleball Try It Clinic,,PICKLE,Pickleball,06/06/2026,06/06/2026,9:00 am,10:15 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+343445802,340614-F,Pickleball Try It Clinic,,PICKLE,Pickleball,06/06/2026,06/06/2026,9:00 am,10:15 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+343445813,340614-G,Pickleball Try It Clinic,,PICKLE,Pickleball,06/06/2026,06/06/2026,10:30 am,11:45 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+343445824,340614-H,Pickleball Try It Clinic,,PICKLE,Pickleball,06/06/2026,06/06/2026,10:30 am,11:45 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+350289665,440614-A,Pickleball Try It Clinic,,PICKLE,Pickleball,07/25/2026,07/25/2026,9:00 am,10:15 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+350289676,440614-B,Pickleball Try It Clinic,,PICKLE,Pickleball,07/25/2026,07/25/2026,10:30 am,11:45 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+350289687,440614-C,Pickleball Try It Clinic,,PICKLE,Pickleball,08/29/2026,08/29/2026,9:00 am,10:15 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+350289698,440614-D,Pickleball Try It Clinic,,PICKLE,Pickleball,08/29/2026,08/29/2026,9:00 am,10:15 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+350289710,440614-E,Pickleball Try It Clinic,,PICKLE,Pickleball,08/29/2026,08/29/2026,10:30 am,11:45 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+350289721,440614-F,Pickleball Try It Clinic,,PICKLE,Pickleball,08/29/2026,08/29/2026,10:30 am,11:45 am,Sa,Hayes Park,15-99.99,$40.00/$60.00,,,,
+343433122,340860-A,Pilates 1,,PILAT,Pilates,04/13/2026,05/18/2026,7:10 pm,8:10 pm,M,Madison Center,18-99.99,$104.00/$124.00,,,,
+343433134,340860-B,Pilates 1,,PILAT,Pilates,04/13/2026,06/08/2026 *,9:30 am,10:30 am,M,Lubber Run,18-99.99,$138.00/$158.00,,,,
+343433145,340860-C,Pilates 1,,PILAT,Pilates,04/13/2026,06/08/2026 *,12:00 pm,12:45 pm,M,Lubber Run,18-99.99,$138.00/$158.00,,,,
+343433156,340860-D,Pilates 1,,PILAT,Pilates,04/16/2026,05/28/2026,10:00 am,11:00 am,Th,Lubber Run,18-99.99,$121.00/$141.00,,,,
+348127105,340860-E,Pilates 1,,PILAT,Pilates,04/15/2026,05/27/2026 *,10:45 am,11:45 am,W,Lubber Run,18-99.99,$104.00/$124.00,,,,
+343433167,340860-F,Pilates 1,,PILAT,Pilates,04/14/2026,05/26/2026,10:00 am,11:00 am,Tu,Madison Center,18-99.99,$121.00/$141.00,,,,
+350226092,440860-A,Pilates 1,,PILAT,Pilates,06/22/2026,08/17/2026,7:10 pm,8:10 pm,M,Langston Brown,16-99.99,$156.00/$176.00,,,,
+350226103,440860-B,Pilates 1,,PILAT,Pilates,06/23/2026,08/11/2026,10:00 am,11:00 am,Tu,Langston Brown,18-99.99,$138.00/$158.00,,,,
+350226114,440860-C,Pilates 1,,PILAT,Pilates,06/24/2026,08/12/2026,10:45 am,11:45 am,W,Lubber Run,18-99.99,$138.00/$158.00,,,,
+350226125,440860-D,Pilates 1,,PILAT,Pilates,06/25/2026,08/13/2026,10:00 am,11:00 am,Th,Lubber Run,18-99.99,$138.00/$158.00,,,,
+350226136,440860-E,Pilates 1,,PILAT,Pilates,07/13/2026,08/10/2026,12:00 pm,12:45 pm,M,Lubber Run,18-99.99,$87.00/$107.00,,,,
+350226147,440860-F,Pilates 1,,PILAT,Pilates,07/13/2026,08/10/2026 *,9:30 am,10:30 am,M,Lubber Run,18-99.99,$69.00/$89.00,,,,
+343433179,340862-A,Pilates 2,,PILAT,Pilates,04/14/2026,05/26/2026,11:15 am,12:15 pm,Tu,Madison Center,18-99.99,$121.00/$141.00,,,,
+350226158,440862-A,Pilates 2,,PILAT,Pilates,06/23/2026,08/11/2026,11:15 am,12:15 pm,Tu,Langston Brown,18-99.99,$138.00/$158.00,,,,
+343433190,340864-A,Pilates Mat Basics,,PILAT,Pilates,04/16/2026,05/28/2026 *,11:15 am,12:15 pm,Th,Lubber Run,18-99.99,$104.00/$124.00,,,,
+350226169,440864-A,Pilates Mat Basics,,PILAT,Pilates,06/25/2026,08/13/2026 *,11:15 am,12:15 pm,Th,Lubber Run,18-99.99,$121.00/$141.00,,,,
+347632044,902605-07,Pippin at Signature Theatre,,SAOT,55+ Trips,05/23/2026,05/23/2026,12:15 pm,5:50 pm,Sa,See Program Details,,$124.00/$143.00,,,,
+365937344,914106-27,Pond Creatures of Arlington,,OSAP,55+ Classes,06/17/2026,06/17/2026,10:30 am,11:30 am,W,Long Branch Nature Center,,$0.00/$0.00,,,,
 366020298,642950-O,Pond Prowl,,NCTR,Nature & History,08/20/2026,08/20/2026,3:00 pm,4:00 pm,Th,Long Branch Nature Center,4-99.99,$7.00/$8.00,,,,
 343430530,310302-A,Postpartum Yoga with Baby,,YOGA,Yoga,04/13/2026,06/08/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$123.00/$143.00,,,,
 350224361,410302-A,Postpartum Yoga with Baby,ENJOYSUMMER,YOGA,Yoga,07/13/2026,08/10/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$62.00/$82.00,2026-05-16T13:46:13+00:00,Available,4,0
+365765293,902607-02,Potomac Mills Premium Outlets,,SAOT,55+ Trips,07/14/2026,07/14/2026,9:50 am,4:30 pm,Tu,See Program Details,,$12.00/$14.00,,,,
 343192749,500310-02,Pottery Around the World Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:00 pm,"M, Tu, W, Th",Discovery Elementary,6-11.99,$320.00/$368.00,,,,
 343192760,500310-03,Pottery Around the World Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
 343192771,500310-07,Pottery Around the World Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
@@ -1379,6 +1745,17 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343191744,500223-06,Project FIVE Camp,CAMP,CAMP,Summer Camp,07/27/2026,07/31/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Dorothy Hamm MS,17-21.99,$390.00/$448.00,,,,
 343191755,500223-07,Project FIVE Camp,CAMP,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Dorothy Hamm MS,17-21.99,$390.00/$448.00,,,,
 343191766,500223-08,Project FIVE Camp,CAMP,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Dorothy Hamm MS,17-21.99,$390.00/$448.00,,,,
+365940658,914205-01,Q-Ball Corner: Learn to Play Pool,,OSAP,55+ Classes,07/27/2026,07/27/2026,10:00 am,12:00 pm,M,Walter Reed Center,,$0.00/$0.00,,,,
+347285523,913301-18,Reader's Theater - Radio Plays,,OSAP,55+ Classes,05/26/2026,05/26/2026,5:30 pm,6:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937537,914301-10,Readers Theater - Radio Plays,,OSAP,55+ Classes,06/09/2026,06/09/2026,5:30 pm,6:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937545,914301-11,Readers Theater - Radio Plays,,OSAP,55+ Classes,07/14/2026,07/14/2026,5:30 pm,6:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+365937553,914301-12,Readers Theater - Radio Plays,,OSAP,55+ Classes,08/11/2026,08/11/2026,5:30 pm,6:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
+347285563,913301-23,Reading Buddies,,OSAP,55+ Classes,05/18/2026,05/18/2026,10:00 am,10:30 am,M,Lubber Run,,$0.00/$0.00,,,,
+347285571,913301-24,Reading Buddies,,OSAP,55+ Classes,05/19/2026,05/19/2026,10:00 am,10:30 am,Tu,Lubber Run,,$0.00/$0.00,,,,
+365937561,914301-13,Reading Buddies,,OSAP,55+ Classes,06/16/2026,06/16/2026,10:00 am,10:30 am,Tu,Lubber Run,,$0.00/$0.00,,,,
+365937569,914301-14,Reading Buddies,,OSAP,55+ Classes,07/13/2026,07/13/2026,10:00 am,10:30 am,M,Lubber Run,,$0.00/$0.00,,,,
+365937577,914301-15,Reading Buddies,,OSAP,55+ Classes,08/10/2026,08/10/2026,10:00 am,10:30 am,M,Lubber Run,,$0.00/$0.00,,,,
+365937585,914301-16,Reading Buddies,,OSAP,55+ Classes,08/11/2026,08/11/2026,10:00 am,10:30 am,Tu,Lubber Run,,$0.00/$0.00,,,,
 350725521,632920-D,Reading is Wild!,,NCTR,Nature & History,05/17/2026,05/17/2026,1:00 pm,2:00 pm,Su,Long Branch Nature Center,5-9.99,$0.00/$0.00,,,,
 343190870,500201-02,RecPlay Camp @ ATS,CAMP,CAMP,Summer Camp,06/29/2026,07/02/2026,8:00 am,4:00 pm,"M, Tu, W, Th",Arlington Traditional School,5-10.99,$180.00/$207.00,,,,
 343190881,500201-03,RecPlay Camp @ ATS,CAMP,CAMP,Summer Camp,07/06/2026,07/10/2026,8:00 am,4:00 pm,"M, Tu, W, Th, F",Arlington Traditional School,5-10.99,$225.00/$258.00,,,,
@@ -1405,9 +1782,12 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350280176,420605-A,Red Ball Tennis,ENJOYSUMMER,TENIS,Tennis,06/28/2026,08/30/2026 *,9:00 am,10:00 am,Su,Quincy Street Deck,5-9.99,$272.00/$292.00,2026-05-15T14:06:18+00:00,Available,4,0
 330653260,720116-I,Red Cross Babysitting Class,,TEEN,Teen Programs,05/30/2026,05/30/2026,9:00 am,4:00 pm,Sa,Arlington Mill,11-17.99,$85.00/$105.00,,,,
 330653483,720116-J,Red Cross Babysitting Class,,TEEN,Teen Programs,06/13/2026,06/13/2026,9:00 am,4:00 pm,Sa,Arlington Mill,11-17.99,$85.00/$105.00,,,,
+365937911,914400-02,Registration Help & Tips,,OSAP,55+ Classes,07/30/2026,07/30/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
 343433411,340911-A,Restorative Yoga,,YOGA,Yoga,04/15/2026,06/17/2026 *,5:45 pm,6:45 pm,W,Barcroft Fitness Center,16-99.99,$139.00/$159.00,,,,
 350226271,440911-A,Restorative Yoga,,YOGA,Yoga,07/08/2026,08/26/2026,5:45 pm,6:45 pm,W,Barcroft Fitness Center,16-99.99,$123.00/$143.00,,,,
+347286442,913404-03,Retire Well Live Well (55+ Pass Not Required),,OSAP,55+ Classes,05/18/2026,05/18/2026,1:00 pm,2:00 pm,M,Aurora Hills Center,0-999,$0.00/$0.00,,,,
 343431995,320323-A,Rhythm Rockers! Beginner Drumming,,MUSIC,Music,04/17/2026,06/12/2026 *,7:20 pm,8:20 pm,F,Long Bridge Aquatics Center,5-12.99,$226.00/$246.00,,,,
+365765326,902607-06,Rock the Block! Summer Concert with The U.S. Army Band Downrange,,SAOT,55+ Trips,07/24/2026,07/24/2026,5:00 pm,8:30 pm,F,Thomas Jefferson Center,,$11.00/$13.00,,,,
 343431041,310619-A,Run Shoot Basketball,,SPORT,Sports,04/13/2026,06/15/2026 *,4:30 pm,5:15 pm,M,Fairlington Center,3-4.99,$183.00/$203.00,,,,
 343431052,310619-B,Run Shoot Basketball,,SPORT,Sports,04/13/2026,06/15/2026 *,5:20 pm,6:20 pm,M,Fairlington Center,4-6.99,$213.00/$233.00,,,,
 343431063,310619-C,Run Shoot Basketball,,SPORT,Sports,04/18/2026,06/20/2026 *,1:05 pm,2:05 pm,Sa,Fairlington Center,4-6.99,$213.00/$233.00,,,,
@@ -1433,11 +1813,13 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343190697,500111-07,STEM Adventures Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Taylor Elem. School,5-12.99,$375.00/$431.00,,,,
 343190708,500111-08,STEM Adventures Camp,CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,5-12.99,$375.00/$431.00,,,,
 343190723,500111-09,STEM Adventures Camp,CAMP1,CAMP,Summer Camp,08/17/2026,08/21/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Fairlington Center,5-12.99,$375.00/$431.00,,,,
+365937985,914400-11,Safety in the Neighborhood,,OSAP,55+ Classes,06/23/2026,06/23/2026,11:00 am,12:00 pm,Tu,Langston Brown,,$0.00/$0.00,,,,
 343433278,340906-A,Sculpting Yoga,,YOGA,Yoga,04/13/2026,06/15/2026 *,7:00 pm,8:00 pm,M,Barcroft Fitness Center,18-99.99,$139.00/$159.00,,,,
 343433289,340906-B,Sculpting Yoga,,YOGA,Yoga,04/16/2026,06/18/2026,7:15 pm,8:15 pm,Th,Lubber Run,18-99.99,$154.00/$174.00,,,,
 343433301,340906-C,Sculpting Yoga,,YOGA,Yoga,04/14/2026,05/26/2026 *,6:00 pm,7:00 pm,Tu,Madison Center,18-99.99,$92.00/$112.00,,,,
 350226249,440906-A,Sculpting Yoga,,YOGA,Yoga,06/22/2026,08/17/2026,6:00 pm,7:00 pm,M,Lubber Run,18-99.99,$139.00/$159.00,,,,
 350226260,440906-B,Sculpting Yoga,,YOGA,Yoga,06/25/2026,08/20/2026,7:15 pm,8:15 pm,Th,Lubber Run,18-99.99,$139.00/$159.00,,,,
+365938050,914400-19,Segregated Soldiers,,OSAP,55+ Classes,06/05/2026,06/05/2026,1:00 pm,2:00 pm,F,Arlington Mill,,$0.00/$0.00,,,,
 343433023,340353-A,Senior Judo,,MARTS,Martial Arts,04/14/2026,06/18/2026 *,8:20 pm,9:20 pm,"Tu, Th",Dawson Terrace,13-99.99,$190.00/$210.00,,,,
 350226070,440353-A,Senior Judo,ENJOYSUMMER,MARTS,Martial Arts,06/23/2026,08/27/2026,8:20 pm,9:20 pm,"Tu, Th",Dawson Terrace,13-99.99,$200.00/$220.00,2026-05-15T14:06:18+00:00,Available,2,0
 350725898,632950-F,Serpent Showcase,,NCTR,Nature & History,05/19/2026,05/19/2026,3:30 pm,4:15 pm,Tu,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
@@ -1452,6 +1834,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343190344,500104-04,Slime Time Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,5-10.99,$375.00/$431.00,,,,
 343190355,500104-05,Slime Time Camp,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Taylor Elem. School,5-10.99,$375.00/$431.00,,,,
 350725071,632820-E,Slithering Snakes (NSNP),,NCTR,Nature & History,06/03/2026,06/03/2026,2:30 pm,3:30 pm,W,Gulf Branch Nature Center,6-12.99,$0.00/$0.00,,,,
+365938289,914403-01,SmartphonePhotography,,OSAP,55+ Classes,06/11/2026,06/11/2026,10:00 am,11:30 am,Th,Virtual,,$0.00/$0.00,,,,
 366019825,642820-A,Snake Feeding Time,,NCTR,Nature & History,06/24/2026,06/24/2026,3:00 pm,4:00 pm,W,Gulf Branch Nature Center,7-10.99,$0.00/$0.00,,,,
 343193536,500416-01,Soccer for ADP and Travel Level Players Camp (Full Day),CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Dorothy Hamm MS,9-15.99,$410.00/$471.00,,,,
 343193547,500416-03,Soccer for ADP and Travel Level Players Camp (Full Day),CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Gunston Center,9-15.99,$410.00/$471.00,,,,
@@ -1479,6 +1862,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343190255,500103-06,Space Art Camp,CAMP1,CAMP,Summer Camp,07/27/2026,07/31/2026,12:00 pm,3:00 pm,"M, Tu, W, Th, F",Abingdon School,5.5-12.99,$220.00/$253.00,,,,
 350725565,632920-H,Spellbinders Story Fest,,NCTR,Nature & History,06/07/2026,06/07/2026,1:00 pm,1:30 pm,Su,Long Branch Nature Center,4-12.99,$0.00/$0.00,,,,
 366020093,642920-B,Spellbinders Story Fest,,NCTR,Nature & History,08/23/2026,08/23/2026,2:00 pm,2:30 pm,Su,Long Branch Nature Center,4-12.99,$0.00/$0.00,,,,
+347286530,913501-03,Spice Up Your Life,,OSAP,55+ Classes,05/18/2026,05/18/2026,11:00 am,12:00 pm,M,Langston Brown,,$0.00/$0.00,,,,
 350858726,777130-A38,Spring 2026 Advanced Thursday Pick-Up Soccer,,SPCDI,Sports Clinics/Drop In,04/30/2026,07/23/2026 *,8:00 pm,9:30 pm,Th,Long Bridge Park,18-99,$100.00/$130.00,,,,
 350852121,777130-A37,Spring 2026 Advanced Tuesday Pick-Up Soccer,,SPCDI,Sports Clinics/Drop In,04/14/2026,07/07/2026 *,9:30 pm,11:00 pm,Tu,Long Bridge Park,18-99,$100.00/$130.00,,,,
 350859266,777130-A39,Spring 2026 High-Intermediate Thursday Pick-Up Soccer,,SPCDI,Sports Clinics/Drop In,04/30/2026,07/23/2026 *,8:00 pm,9:30 pm,Th,Long Bridge Park,18-99,$100.00/$130.00,,,,
@@ -1508,14 +1892,21 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 344762472,710836-14,Stay and Play at Madison (THURS),,PREK,Preschool/Playgroups,03/12/2026,05/21/2026 *,9:30 am,11:00 am,Th,Madison Center,1-2.99,$83.00/$103.00,,,,
 344760586,710836-12,Stay and Play at Madison (TUES),,PREK,Preschool/Playgroups,03/10/2026,05/19/2026 *,9:30 am,11:00 am,Tu,Madison Center,1-2.99,$83.00/$103.00,,,,
 344761137,710836-13,Stay and Play at Madison (WED),,PREK,Preschool/Playgroups,03/11/2026,05/20/2026 *,9:30 am,11:00 am,W,Madison Center,1-2.99,$83.00/$103.00,,,,
+365938042,914400-18,Stonewall Monument Ranger Talk,,OSAP,55+ Classes,06/12/2026,06/12/2026,1:00 pm,2:00 pm,F,Virtual,,$0.00/$0.00,,,,
 350725808,632940-S,Stories Written in Bark Hike,,NCTR,Nature & History,05/30/2026,05/30/2026,11:30 am,12:30 pm,Sa,Long Branch Nature Center,16-99.99,$7.00/$8.00,,,,
 350725049,632820-C,Stream Explorationn (NSNP),,NCTR,Nature & History,05/26/2026,05/26/2026,10:30 am,12:00 pm,Tu,Gulf Branch Nature Center,6-10.99,$0.00/$0.00,,,,
-350225902,440308-A,Strength & Sculpt,ENJOYSUMMER,,,06/25/2026,08/13/2026,10:15 am,11:15 am,Th,Barcroft Fitness Center,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,6,0
-350225847,440304-A,Strong Camp 1,ENJOYSUMMER,,,06/23/2026,08/11/2026,7:00 pm,8:00 pm,Tu,Long Bridge Aquatics Center,15-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,8,0
-350225858,440304-B,Strong Camp 1,ENJOYSUMMER,,,06/27/2026,08/15/2026 *,9:15 am,10:15 am,Sa,Long Bridge Aquatics Center,15-99.99,$105.00/$125.00,2026-05-15T14:06:18+00:00,Available,11,0
+365937336,914106-26,Streamside Hike to the Potomac,,OSAP,55+ Classes,06/10/2026,06/10/2026,10:00 am,11:00 am,W,Gulf Branch Nature Center,,$0.00/$0.00,,,,
+343432844,340308-A,Strength & Sculpt,,FIT,Fitness,04/23/2026,06/18/2026,10:15 am,11:15 am,Th,Barcroft Fitness Center,18-99.99,$135.00/$155.00,,,,
+350225902,440308-A,Strength & Sculpt,ENJOYSUMMER,FIT,Fitness,06/25/2026,08/13/2026,10:15 am,11:15 am,Th,Barcroft Fitness Center,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,6,0
+343432789,340304-A,Strong Camp 1,,FIT,Fitness,04/14/2026,06/16/2026,7:00 pm,8:00 pm,Tu,Long Bridge Aquatics Center,15-99.99,$150.00/$170.00,,,,
+343432800,340304-B,Strong Camp 1,,FIT,Fitness,04/18/2026,06/20/2026 *,9:15 am,10:15 am,Sa,Long Bridge Aquatics Center,15-99.99,$120.00/$140.00,,,,
+350225847,440304-A,Strong Camp 1,ENJOYSUMMER,FIT,Fitness,06/23/2026,08/11/2026,7:00 pm,8:00 pm,Tu,Long Bridge Aquatics Center,15-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,8,0
+350225858,440304-B,Strong Camp 1,ENJOYSUMMER,FIT,Fitness,06/27/2026,08/15/2026 *,9:15 am,10:15 am,Sa,Long Bridge Aquatics Center,15-99.99,$105.00/$125.00,2026-05-15T14:06:18+00:00,Available,11,0
+343432811,340305-A,Strong Camp 2,,FIT,Fitness,04/18/2026,06/20/2026 *,10:30 am,11:30 am,Sa,Long Bridge Aquatics Center,15-99.99,$120.00/$140.00,,,,
 343431981,320322-A,Strum & Smile! Beginner Ukulele,,MUSIC,Music,04/13/2026,06/15/2026 *,6:15 pm,7:15 pm,M,Long Bridge Aquatics Center,5-12.99,$252.00/$272.00,,,,
 350225471,420322-A,Strum & Smile! Beginner Ukulele,ENJOYSUMMER,MUSIC,Music,07/06/2026,08/10/2026,6:15 pm,7:15 pm,M,Long Bridge Aquatics Center,5-12.99,$175.00/$195.00,2026-05-15T14:06:18+00:00,Available,1,0
 344837708,592026-V,Summer Camp Volunteer Program - 2026,CAMP,CAMP,Summer Camp,06/22/2026,08/28/2026 *,12:00 am,12:00 am,"M, Tu, W, Th, F",See Program Details,13-16.99,$0.00/$0.00,,,,
+365938137,914400-29,Summer Plants for Pollinators,,OSAP,55+ Classes,07/27/2026,07/27/2026,1:00 pm,2:30 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
 366020309,642950-P,Summer Scavengers,,NCTR,Nature & History,08/27/2026,08/27/2026,2:00 pm,3:00 pm,Th,Long Branch Nature Center,4-99.99,$7.00/$8.00,,,,
 343192003,500231-02,Summertime Thrills Camp,CAMP,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:00 pm,"M, Tu, W, Th",Yorktown High Sch.,12-15.99,$320.00/$368.00,,,,
 343192014,500231-03,Summertime Thrills Camp,CAMP,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Yorktown High Sch.,12-15.99,$400.00/$460.00,,,,
@@ -1536,6 +1927,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343437536,320415-A,Swim Prep 1,,AQUAT,Aquatics,04/18/2026,06/13/2026 *,12:35 pm,1:15 pm,Sa,Long Bridge Aquatics Center,6-12.99,$96.00/$116.00,,,,
 343442728,320416-A,Swim Prep 2,,AQUAT,Aquatics,04/18/2026,06/13/2026 *,1:20 pm,2:00 pm,Sa,Long Bridge Aquatics Center,6-12.99,$96.00/$116.00,,,,
 343433045,340356-A,Tai Chi,,MARTS,Martial Arts,04/21/2026,06/23/2026 *,7:10 pm,8:10 pm,"Tu, Th",Barcroft Fitness Center,16-99.99,$297.00/$317.00,,,,
+365937126,914105-02,Tai Chi Chuan,,OSAP,55+ Classes,06/12/2026,08/28/2026 *,2:30 pm,3:30 pm,F,Walter Reed Center,,$54.00/$54.00,,,,
 343193325,500411-07,Take the Show on the Road Camp!,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,6-10.99,$275.00/$316.00,,,,
 343193391,500412-07,Take the Show on the Road Camp!,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,6-10.99,$275.00/$316.00,,,,
 343430474,310213-A,Tap n' Ballet,,DANCE,Dance,04/14/2026,06/09/2026,5:15 pm,6:00 pm,Tu,Lubber Run,4-6.99,$216.00/$236.00,,,,
@@ -1543,6 +1935,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343430497,310213-C,Tap n' Ballet,,DANCE,Dance,04/19/2026,06/14/2026 *,10:15 am,11:00 am,Su,Long Bridge Aquatics Center,4-6.99,$192.00/$212.00,,,,
 350224317,410213-A,Tap n' Ballet,ENJOYSUMMER,DANCE,Dance,07/12/2026,08/09/2026,4:30 pm,5:15 pm,Su,Lubber Run,4-6.99,$120.00/$140.00,2026-05-16T13:46:13+00:00,Available,5,0
 350224328,410213-B,Tap n' Ballet,ENJOYSUMMER,DANCE,Dance,07/14/2026,08/11/2026,5:15 pm,6:00 pm,Tu,Barcroft Fitness Center,4-6.99,$120.00/$140.00,2026-05-16T13:46:13+00:00,Available,2,0
+347287035,913804-09,Tea and a Movie,,OSAP,55+ Classes,05/22/2026,05/22/2026,12:30 pm,2:30 pm,F,Aurora Hills Center,,$0.00/$0.00,,,,
 343191887,500226-04,Teen Art: Jewelry Bootcamp,CAMP,CAMP,Summer Camp,07/13/2026,07/17/2026,9:30 am,12:30 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,12-16.99,$190.00/$218.00,,,,
 343191899,500226-06,Teen Art: Jewelry Bootcamp,CAMP,CAMP,Summer Camp,07/27/2026,07/31/2026,9:30 am,12:30 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,12-16.99,$190.00/$218.00,,,,
 343191910,500227-02,Teen Art: Pottery Bootcamp,CAMP,CAMP,Summer Camp,06/29/2026,07/17/2026 *,1:00 pm,4:00 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,12-16.99,$525.00/$603.00,,,,
@@ -1554,6 +1947,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343444134,330500-A,Teen Gymnastics (Age: 13-17),,GYMNA,Gymnastics,04/15/2026,06/10/2026,7:15 pm,8:45 pm,W,Barcroft Fitness Center,13-17.99,$186.00/$206.00,,,,
 343437679,330401-A,Teen Intermediate,,AQUAT,Aquatics,04/16/2026,06/18/2026,7:00 pm,7:40 pm,Th,Long Bridge Aquatics Center,13-18.99,$120.00/$140.00,,,,
 343437547,330401-B,Teen Intermediate,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,11:05 am,11:45 am,Su,Long Bridge Aquatics Center,13-18.99,$96.00/$116.00,,,,
+365937969,914400-09,Tenant Rights,,OSAP,55+ Classes,07/27/2026,07/27/2026,1:00 pm,2:00 pm,M,Lubber Run,,$0.00/$0.00,,,,
 343444777,340601-A,Tennis 1,,TENIS,Tennis,04/14/2026,06/09/2026,7:30 pm,8:40 pm,Tu,Barcroft Park,15-99.99,$371.00/$391.00,,,,
 343444788,340601-B,Tennis 1,,TENIS,Tennis,04/15/2026,06/10/2026,7:30 pm,8:40 pm,W,Barcroft Park,15-99.99,$371.00/$391.00,,,,
 343444799,340601-C,Tennis 1,,TENIS,Tennis,04/14/2026,06/09/2026,9:45 am,10:55 am,Tu,Bon Air Park,15-99.99,$371.00/$391.00,,,,
@@ -1727,10 +2121,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350289566,440611-B,Tennis Tournament (Levels 3-4),,TENIS,Tennis,07/31/2026,07/31/2026,6:00 pm,9:00 pm,F,Thomas Jefferson Center,15-99.99,$45.00/$65.00,,,,
 343193336,500412-02,The Great Race Camp!,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Barcroft Elem. Sch.,6-10.99,$220.00/$253.00,,,,
 343193270,500411-02,The Great Race! Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Abingdon School,6-10.99,$220.00/$253.00,,,,
+365938153,914400-31,The Land of the Pharaohs,,OSAP,55+ Classes,06/18/2026,06/18/2026,11:00 am,12:00 pm,Th,Virtual,,$0.00/$0.00,,,,
+365938033,914400-17,The Legacy of Pride,,OSAP,55+ Classes,06/23/2026,06/23/2026,2:00 pm,3:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
+347632052,902605-08,The Presidents Own U.S. Marine Band at Wolf Trap,,SAOT,55+ Trips,05/24/2026,05/24/2026,5:10 pm,11:20 pm,Su,See Program Details,,$12.00/$14.00,,,,
 367949369,720427-A,The REC @ Arlington Mill Teen After School Program,,TEEN,Teen Programs,09/08/2026,06/11/2027,2:30 pm,7:00 pm,"M, Tu, W, Th, F",Arlington Mill,11-17.99,$0.00/$0.00,,,,
 367951967,720427-B,The REC @ Gunston Teen After School Program,,TEEN,Teen Programs,09/08/2026,06/04/2027,2:30 pm,6:00 pm,"M, Tu, W, Th, F",Gunston Center,11-17.99,$0.00/$0.00,,,,
 367957371,720427-C,The REC @ Kenmore Teen After School Program,,TEEN,Teen Programs,09/09/2026,06/04/2027,2:30 pm,6:00 pm,"M, W, F",Kenmore MS,11-17.99,$0.00/$0.00,,,,
 367965114,720427-D,The REC @ TJ Teen After School Program,,TEEN,Teen Programs,09/08/2026,06/04/2027,2:30 pm,6:00 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,11-17.99,$0.00/$0.00,,,,
+365765318,902607-05,The Rose Gaming Resort,,SAOT,55+ Trips,07/22/2026,07/22/2026,8:30 am,3:30 pm,W,See Program Details,,$13.00/$15.00,,,,
 343431374,320279-A,The Science Seed,,SCDI,Science & Discovery,04/13/2026,05/18/2026 *,3:00 pm,3:45 pm,M,Lubber Run,3-6.99,$141.00/$161.00,,,,
 343431396,320279-B,The Science Seed,,SCDI,Science & Discovery,04/18/2026,06/06/2026 *,9:00 am,9:45 am,Sa,Lubber Run,3-6.99,$141.00/$161.00,,,,
 343431407,320279-C,The Science Seed,,SCDI,Science & Discovery,04/18/2026,06/06/2026 *,10:00 am,10:45 am,Sa,Lubber Run,3-6.99,$141.00/$161.00,,,,
@@ -1739,8 +2137,11 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350225041,420279-A,The Science Seed,ENJOYSUMMER,SCDI,Science & Discovery,07/11/2026,08/15/2026,9:00 am,9:45 am,Sa,Lubber Run,3-6.99,$141.00/$161.00,2026-05-15T14:06:18+00:00,Available,7,0
 350225053,420279-B,The Science Seed,ENJOYSUMMER,SCDI,Science & Discovery,07/11/2026,08/15/2026,10:00 am,10:45 am,Sa,Lubber Run,3-6.99,$141.00/$161.00,2026-05-15T14:06:18+00:00,Available,11,0
 350225064,420279-C,The Science Seed,ENJOYSUMMER,SCDI,Science & Discovery,07/11/2026,08/15/2026,11:00 am,11:45 am,Sa,Lubber Run,5-8.99,$141.00/$161.00,2026-05-15T14:06:18+00:00,Available,8,0
+365765366,902608-04,The Tea Cart,,SAOT,55+ Trips,08/22/2026,08/22/2026,11:30 am,6:00 pm,Sa,See Program Details,,$99.00/$114.00,,,,
 366020285,642950-N,The Virginia State Insect Photo Walk,,NCTR,Nature & History,08/09/2026,08/09/2026,4:00 pm,5:30 pm,Su,Long Branch Nature Center,8-99.99,$9.00/$10.35,,,,
 350725998,632950-O,The Wonders of Woodpeckers,,NCTR,Nature & History,05/22/2026,05/22/2026,5:00 pm,6:00 pm,F,Long Branch Nature Center,3-99.99,$7.00/$8.00,,,,
+365937952,914400-07,Thrifting Tips and Tricks,,OSAP,55+ Classes,08/17/2026,08/17/2026,1:00 pm,2:00 pm,M,Walter Reed Center,,$0.00/$0.00,,,,
+347286713,913600-12,Ticket to Ride,,OSAP,55+ Classes,05/21/2026,05/21/2026,9:30 am,12:00 pm,Th,Walter Reed Center,,$0.00/$0.00,,,,
 343442837,310500-A,Tiny Time (Age: 1),,GYMNA,Gymnastics,04/15/2026,06/10/2026,9:30 am,10:15 am,W,Barcroft Fitness Center,1-1.99,$124.00/$144.00,,,,
 350725286,632910-D,Tiny Tot: Butterflies,,NCTR,Nature & History,05/19/2026,05/19/2026,10:00 am,10:45 am,Tu,Long Branch Nature Center,1.5-2.99,$7.00/$8.00,,,,
 350725297,632910-E,Tiny Tot: Butterflies,,NCTR,Nature & History,05/21/2026,05/21/2026,10:00 am,10:45 am,Th,Long Branch Nature Center,1.5-2.99,$7.00/$8.00,,,,
@@ -1840,6 +2241,11 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 347516623,740301-AU,Tot Semi-Private Lesson,,AQUATPVT,Aquatics - Private Lessons,04/17/2026,06/12/2026,3:25 pm,3:55 pm,F,Long Bridge Aquatics Center,3.5-4.99,$288.00/$308.00,,,,
 347516634,740301-AV,Tot Semi-Private Lesson,,AQUATPVT,Aquatics - Private Lessons,04/17/2026,06/12/2026,3:25 pm,3:55 pm,F,Long Bridge Aquatics Center,3.5-4.99,$288.00/$308.00,,,,
 351576047,740301-AW,Tot Semi-Private Lesson,,AQUATPVT,Aquatics - Private Lessons,04/14/2026,06/16/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,3.5-4.99,$320.00/$340.00,,,,
+365937042,914103-13,Traditional Hatha Yoga,,OSAP,55+ Classes,06/08/2026,08/24/2026,1:00 pm,2:30 pm,M,Lubber Run,,$99.00/$99.00,,,,
+365937050,914103-14,Traditional Hatha Yoga,,OSAP,55+ Classes,06/10/2026,08/26/2026,11:00 am,12:00 pm,W,Aurora Hills Center,,$66.00/$66.00,,,,
+365937058,914103-15,Traditional Hatha Yoga,,OSAP,55+ Classes,06/10/2026,08/26/2026 *,4:00 pm,5:15 pm,W,Lubber Run,,$56.00/$56.00,,,,
+365937025,914103-11,Traditional Hatha Yoga Level 1,,OSAP,55+ Classes,06/11/2026,08/27/2026,1:00 pm,2:15 pm,Th,Walter Reed Center,,$84.00/$84.00,,,,
+365937033,914103-12,Traditional Hatha Yoga Level 2,,OSAP,55+ Classes,06/10/2026,08/26/2026,12:15 pm,1:45 pm,W,Lubber Run,,$99.00/$99.00,,,,
 343433000,340351-A,Traditional Japanese Karate Adult,,MARTS,Martial Arts,04/17/2026,06/12/2026,6:15 pm,7:15 pm,F,Arlington Mill,18-99.99,$149.00/$169.00,,,,
 343433011,340351-B,Traditional Japanese Karate Adult,,MARTS,Martial Arts,04/18/2026,06/20/2026 *,1:00 pm,1:50 pm,Sa,Lubber Run,18-99.99,$133.00/$153.00,,,,
 350226048,440351-A,Traditional Japanese Karate Adult,ENJOYSUMMER,MARTS,Martial Arts,06/26/2026,08/28/2026 *,6:15 pm,7:15 pm,F,Arlington Mill,18-99.99,$149.00/$169.00,2026-05-15T14:06:18+00:00,Available,1,0
@@ -1848,6 +2254,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343431729,320313-B,Traditional Japanese Karate Youth/Teen,,MARTS,Martial Arts,04/18/2026,06/20/2026 *,2:00 pm,2:50 pm,Sa,Lubber Run,6-17.99,$133.00/$153.00,,,,
 350225352,420313-A,Traditional Japanese Karate Youth/Teen,ENJOYSUMMER,MARTS,Martial Arts,06/26/2026,08/28/2026 *,5:00 pm,6:00 pm,F,Arlington Mill,6-17.99,$149.00/$169.00,2026-05-15T14:06:18+00:00,Available,4,0
 350225363,420313-B,Traditional Japanese Karate Youth/Teen,ENJOYSUMMER,MARTS,Martial Arts,06/27/2026,08/29/2026 *,2:00 pm,2:50 pm,Sa,Lubber Run,6-17.99,$149.00/$169.00,2026-05-15T14:06:18+00:00,Available,10,0
+365938001,914400-13,Transportation for Seniors,,OSAP,55+ Classes,08/28/2026,08/28/2026,1:00 pm,2:00 pm,F,Virtual,,$0.00/$0.00,,,,
+365938177,914400-34,Travel Gurus: Ireland,,OSAP,55+ Classes,07/07/2026,07/07/2026,12:30 pm,1:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
 343432175,320613-A,Triple Threat Basketball,,SPORT,Sports,04/13/2026,06/15/2026 *,6:30 pm,7:30 pm,M,Fairlington Center,7-9.99,$213.00/$233.00,,,,
 343432186,320613-B,Triple Threat Basketball,,SPORT,Sports,04/13/2026,06/15/2026 *,7:40 pm,8:40 pm,M,Fairlington Center,10-13.99,$213.00/$233.00,,,,
 343432197,320613-C,Triple Threat Basketball,,SPORT,Sports,04/19/2026,06/21/2026 *,1:00 pm,2:00 pm,Su,Lubber Run,7-9.99,$213.00/$233.00,,,,
@@ -1905,6 +2313,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366020173,642950-D,Turtle Time,,NCTR,Nature & History,06/09/2026,06/09/2026,3:30 pm,4:15 pm,Tu,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
 366020184,642950-E,Turtle Time,,NCTR,Nature & History,06/25/2026,06/25/2026,4:00 pm,4:45 pm,Th,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
 366020195,642950-F,Turtle Time,,NCTR,Nature & History,07/14/2026,07/14/2026,4:00 pm,4:45 pm,Tu,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
+365765253,902606-04,U.S. Capitol Tour and Visitor Center,,SAOT,55+ Trips,06/18/2026,06/18/2026,9:00 am,4:00 pm,Th,See Program Details,,$14.00/$17.00,,,,
+365765342,902608-01,Udvar-Hazy Air & Space Museum,,SAOT,55+ Trips,08/12/2026,08/12/2026,9:15 am,3:30 pm,W,See Program Details,,$12.00/$14.00,,,,
 343192638,500309-01,Ultimate Music Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Jamestown Elem. Sch.,5-12.99,$500.00/$575.00,,,,
 343192649,500309-02,Ultimate Music Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:00 pm,"M, Tu, W, Th",Jamestown Elem. Sch.,5-12.99,$400.00/$460.00,,,,
 343192660,500309-03,Ultimate Music Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Jamestown Elem. Sch.,5-12.99,$500.00/$575.00,,,,
@@ -1915,10 +2325,20 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343192716,500309-08,Ultimate Music Camp,CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Jamestown Elem. Sch.,5-12.99,$500.00/$575.00,,,,
 343192727,500309-09,Ultimate Music Camp,CAMP1,CAMP,Summer Camp,08/17/2026,08/21/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Arlington Mill,5-12.99,$500.00/$575.00,,,,
 343192738,500309-10,Ultimate Music Camp,CAMP1,CAMP,Summer Camp,08/24/2026,08/28/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Fairlington Center,5-12.99,$500.00/$575.00,,,,
+351865445,913400-29,Unlock to Power of Your Arlington Public Library Card,,OSAP,55+ Classes,05/21/2026,05/21/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
+365937650,914303-06,Urban En Plein Air Painting,,OSAP,55+ Classes,08/06/2026,08/20/2026,10:00 am,12:00 pm,Th,Langston Brown,,$0.00/$0.00,,,,
+347286410,913403-12,Using Google Translate for Travel,,OSAP,55+ Classes,05/18/2026,05/18/2026,11:00 am,12:00 pm,M,Walter Reed Center,,$0.00/$0.00,,,,
+365938322,914403-05,Using Google Translate for Travel,,OSAP,55+ Classes,07/16/2026,07/16/2026,1:30 pm,2:30 pm,Th,Langston Brown,,$0.00/$0.00,,,,
+365765374,902608-05,Van Goghs Sunflowers Exhibit at Philadelphia Museum of Art,,SAOT,55+ Trips,08/24/2026,08/24/2026,7:00 am,7:30 pm,M,Thomas Jefferson Center,,$117.00/$134.00,,,,
+365938314,914403-04,Video Games 101,,OSAP,55+ Classes,06/26/2026,08/28/2026 *,3:00 pm,5:30 pm,F,Arlington Mill,,$0.00/$0.00,,,,
+365938298,914403-02,Vigilance Against Cybercrime,,OSAP,55+ Classes,06/25/2026,06/25/2026,11:00 am,12:00 pm,Th,Langston Brown,,$0.00/$0.00,,,,
 343190509,500108-01,Volleyball Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Jamestown Elem. Sch.,7-11.99,$225.00/$258.00,,,,
 343190520,500109-01,Volleyball Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,1:00 pm,4:00 pm,"M, Tu, W, Th, F",Jamestown Elem. Sch.,7-11.99,$225.00/$258.00,,,,
-350225913,440312-A,WERQ,ENJOYSUMMER,,,06/25/2026,08/27/2026,7:00 pm,8:00 pm,Th,Walter Reed Center,18-99.99,$150.00/$170.00,2026-05-15T14:06:18+00:00,Available,17,0
-350225924,440312-B,WERQ,ENJOYSUMMER,,,06/24/2026,08/12/2026,6:30 pm,7:30 pm,W,Long Bridge Aquatics Center,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,9,0
+343432855,340312-A,WERQ,,FIT,Fitness,04/15/2026,06/17/2026,6:30 pm,7:30 pm,W,Long Bridge Aquatics Center,18-99.99,$150.00/$170.00,,,,
+343432866,340312-B,WERQ,,FIT,Fitness,04/16/2026,06/18/2026,7:00 pm,8:00 pm,Th,Walter Reed Center,18-99.99,$150.00/$170.00,,,,
+350225913,440312-A,WERQ,ENJOYSUMMER,FIT,Fitness,06/25/2026,08/27/2026,7:00 pm,8:00 pm,Th,Walter Reed Center,18-99.99,$150.00/$170.00,2026-05-15T14:06:18+00:00,Available,17,0
+350225924,440312-B,WERQ,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/12/2026,6:30 pm,7:30 pm,W,Long Bridge Aquatics Center,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,9,0
+365938103,914400-25,Walter Reeds Bioindicator Garden,,OSAP,55+ Classes,07/24/2026,07/24/2026,10:00 am,11:00 am,F,Walter Reed Center,,$0.00/$0.00,,,,
 343434975,310400-A,Water Babies,,AQUAT,Aquatics,04/14/2026,06/16/2026,10:00 am,10:30 am,Tu,Long Bridge Aquatics Center,0.5-1.5,$100.00/$120.00,,,,
 343434986,310400-B,Water Babies,,AQUAT,Aquatics,04/14/2026,06/16/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,0.5-1.5,$100.00/$120.00,,,,
 343434997,310400-C,Water Babies,,AQUAT,Aquatics,04/15/2026,06/17/2026,4:00 pm,4:30 pm,W,Long Bridge Aquatics Center,0.5-1.5,$100.00/$120.00,,,,
@@ -1943,6 +2363,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350200880,410400-H,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:20 am,11:50 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-16T13:46:13+00:00,Waitlist,12,4
 350200891,410400-I,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,9:00 am,Su,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-16T13:46:13+00:00,Waitlist,12,0
 350200902,410400-J,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:15 am,10:45 am,Su,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-16T13:46:13+00:00,Available,11,0
+365936921,914102-12,Water Fit and Tone,,OSAP,55+ Classes,06/10/2026,08/12/2026,10:00 am,11:00 am,W,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
 343435107,310401-A,Water Tots,,AQUAT,Aquatics,04/14/2026,06/16/2026,10:35 am,11:05 am,Tu,Long Bridge Aquatics Center,1.5-2.5,$100.00/$120.00,,,,
 343435118,310401-B,Water Tots,,AQUAT,Aquatics,04/14/2026,06/16/2026,4:35 pm,5:05 pm,Tu,Long Bridge Aquatics Center,1.5-2.5,$100.00/$120.00,,,,
 343435129,310401-C,Water Tots,,AQUAT,Aquatics,04/15/2026,06/17/2026,4:35 pm,5:05 pm,W,Long Bridge Aquatics Center,1.5-2.5,$100.00/$120.00,,,,
@@ -1970,7 +2391,13 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350201023,410401-K,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:50 am,11:20 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-16T13:46:13+00:00,Waitlist,12,0
 350201034,410401-L,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:05 am,9:35 am,Su,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-16T13:46:13+00:00,Waitlist,11,4
 350201045,410401-M,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:25 am,11:55 am,Su,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-16T13:46:13+00:00,Waitlist,12,1
+365937878,914310-06,Whimsical Teapot Planters,,OSAP,55+ Classes,06/25/2026,06/25/2026,10:00 am,12:00 pm,Th,Walter Reed Center,,$0.00/$0.00,,,,
 350726009,632950-P,Wiggling Worms,,NCTR,Nature & History,06/06/2026,06/06/2026,5:00 pm,6:00 pm,Sa,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
+365938127,914400-28,Wildlife SOS: When and How to Help,,OSAP,55+ Classes,07/23/2026,07/23/2026,1:00 pm,2:30 pm,Th,Walter Reed Center,,$0.00/$0.00,,,,
+365937593,914302-01,Women Artists of the 20th Century,,OSAP,55+ Classes,06/01/2026,06/01/2026,1:00 pm,2:30 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
+365938209,914400-38,Women of Jazz,,OSAP,55+ Classes,08/27/2026,08/27/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
+347482884,832600-W1,Women's Doubles 3.0-3.49 Division,,PICKLE,Pickleball,06/20/2026,06/20/2026,8:30 am,12:30 pm,Sa,Thomas Jefferson Center,,$60.00/$69.00,,,,
+347482900,832600-W3,Women's Doubles 3.5-3.99 Division,,PICKLE,Pickleball,06/20/2026,06/20/2026,12:30 pm,4:30 pm,Sa,Thomas Jefferson Center,,$60.00/$69.00,,,,
 343190090,500101-09,World Creations Art Camp,CAMP1,CAMP,Summer Camp,08/17/2026,08/21/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Fairlington Center,5.5-12.99,$320.00/$368.00,,,,
 343190189,500102-09,World Creations Art Camp,CAMP1,CAMP,Summer Camp,08/17/2026,08/21/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Fairlington Center,3.5-6.99,$220.00/$253.00,,,,
 343190289,500103-09,World Creations Art Camp,CAMP1,CAMP,Summer Camp,08/17/2026,08/21/2026,12:00 pm,3:00 pm,"M, Tu, W, Th, F",Fairlington Center,5.5-12.99,$220.00/$253.00,,,,
@@ -1995,13 +2422,18 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343190244,500103-05,World Travel in 3D Camp,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,12:00 pm,3:00 pm,"M, Tu, W, Th, F",Cardinal Elementary School,5.5-12.99,$220.00/$253.00,,,,
 343433433,340913-A,Yin Yoga,,YOGA,Yoga,04/14/2026,06/16/2026,6:30 pm,7:45 pm,Tu,Lubber Run,16-99.99,$193.00/$213.00,,,,
 350226293,440913-A,Yin Yoga,,YOGA,Yoga,06/23/2026,08/25/2026,6:30 pm,7:45 pm,Tu,Lubber Run,16-99.99,$192.00/$212.00,,,,
+365936985,914103-06,Yin and Restorative Yoga,,OSAP,55+ Classes,06/11/2026,08/27/2026,3:00 pm,4:15 pm,Th,Walter Reed Center,,$84.00/$84.00,,,,
 343433234,340904-A,Yoga 1,,YOGA,Yoga,04/17/2026,05/29/2026,8:15 am,9:15 am,F,Madison Center,18-99.99,$108.00/$128.00,,,,
 343433245,340904-B,Yoga 1,,YOGA,Yoga,04/14/2026,05/26/2026 *,7:15 pm,8:15 pm,Tu,Madison Center,18-99.99,$92.00/$112.00,,,,
 351114970,340904-C,Yoga 1,,YOGA,Yoga,06/05/2026,06/19/2026 *,8:15 am,9:15 am,F,Lubber Run,18-99.99,$46.00/$66.00,,,,
 350226227,440904-A,Yoga 1,,YOGA,Yoga,06/26/2026,08/21/2026 *,8:15 am,9:15 am,F,Lubber Run,18-99.99,$123.00/$143.00,,,,
+365937077,914103-17,Yoga Sculpt,,OSAP,55+ Classes,06/08/2026,08/10/2026,11:30 am,12:30 pm,M,Long Bridge Aquatics Center,,$55.00/$55.00,,,,
 343433267,340905-A,Yoga for Balance,,YOGA,Yoga,04/17/2026,05/29/2026,9:30 am,10:30 am,F,Madison Center,18-99.99,$108.00/$128.00,,,,
 343433256,340905-B,Yoga for Balance,,YOGA,Yoga,04/14/2026,05/26/2026 *,9:30 am,10:30 am,Tu,Madison Center,18-99.99,$92.00/$112.00,,,,
 350226238,440905-A,Yoga for Balance,,YOGA,Yoga,06/16/2026,08/04/2026,9:30 am,10:30 am,Tu,Dawson Terrace,18-99.99,$123.00/$143.00,,,,
+365936945,914103-01,Yoga for Daily Living,,OSAP,55+ Classes,06/08/2026,08/24/2026,5:00 pm,6:15 pm,M,Arlington Mill,,$84.00/$84.00,,,,
+365936953,914103-02,Yoga for Daily Living,,OSAP,55+ Classes,06/09/2026,08/25/2026,9:00 am,10:15 am,Tu,Walter Reed Center,,$84.00/$84.00,,,,
+365936961,914103-03,Yoga for Daily Living,,OSAP,55+ Classes,06/11/2026,08/27/2026,3:30 pm,4:45 pm,Th,Walter Reed Center,,$84.00/$84.00,,,,
 343433312,340907-A,Yoga for Every Body,,YOGA,Yoga,04/14/2026,06/09/2026 *,10:00 am,11:00 am,Tu,Barcroft Fitness Center,18-99.99,$123.00/$143.00,,,,
 343433323,340907-B,Yoga for Every Body,,YOGA,Yoga,04/14/2026,06/09/2026,7:15 pm,8:15 pm,Tu,Walter Reed Center,18-99.99,$139.00/$159.00,,,,
 343433334,340907-C,Yoga for Every Body,,YOGA,Yoga,04/16/2026,06/11/2026 *,10:00 am,11:00 am,Th,Virtual,18-99.99,$123.00/$143.00,,,,
@@ -2216,9 +2648,15 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366345508,740402-DC,Youth Private Lesson,,AQUATPVT,Aquatics - Private Lessons,06/26/2026,08/14/2026 *,6:55 pm,7:25 pm,F,Long Bridge Aquatics Center,5-17.99,$308.00/$328.00,,,,
 347516700,740302-AF,Youth Semi-Private Lesson,,AQUATPVT,Aquatics - Private Lessons,04/13/2026,06/15/2026 *,5:45 pm,6:15 pm,M,Long Bridge Aquatics Center,5-17.99,$288.00/$308.00,,,,
 347516998,740302-BJ,Youth Semi-Private Lesson,,AQUATPVT,Aquatics - Private Lessons,04/16/2026,06/18/2026,4:35 pm,5:05 pm,Th,Long Bridge Aquatics Center,5-17.99,$320.00/$340.00,,,,
-350226004,440344-A,Zumba,ENJOYSUMMER,,,06/24/2026,08/26/2026,7:00 pm,8:00 pm,W,Lubber Run,16-99.99,$150.00/$170.00,2026-05-15T14:06:18+00:00,Available,12,0
-350226015,440344-B,Zumba,ENJOYSUMMER,,,06/22/2026,08/10/2026,7:00 pm,8:00 pm,M,Long Bridge Aquatics Center,16-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,2,0
-350226026,440344-C,Zumba,ENJOYSUMMER,,,06/24/2026,08/12/2026,9:30 am,10:30 am,W,Lubber Run,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,17,0
-350226037,440344-D,Zumba,ENJOYSUMMER,,,06/25/2026,08/13/2026,11:20 am,12:20 pm,Th,Barcroft Fitness Center,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,2,0
-350224339,410300-A,Zumba Adult/Tot,ENJOYSUMMER,,,06/30/2026,08/11/2026,5:00 pm,5:45 pm,Tu,Long Bridge Aquatics Center,3-5.99,$154.00/$174.00,2026-05-16T13:46:13+00:00,Available,2,0
-350224350,410301-A,Zumba Kids,ENJOYSUMMER,,,06/30/2026,08/11/2026,6:00 pm,6:45 pm,Tu,Long Bridge Aquatics Center,5-8.99,$154.00/$174.00,2026-05-16T13:46:13+00:00,Available,3,0
+343432955,340344-A,Zumba,,FIT,Fitness,04/15/2026,06/17/2026,7:00 pm,8:00 pm,W,Lubber Run,16-99.99,$150.00/$170.00,,,,
+343432966,340344-B,Zumba,,FIT,Fitness,04/15/2026,06/10/2026,9:30 am,10:30 am,W,Lubber Run,18-99.99,$135.00/$155.00,,,,
+343432978,340344-C,Zumba,,FIT,Fitness,04/13/2026,06/15/2026 *,7:00 pm,8:00 pm,M,Long Bridge Aquatics Center,16-99.99,$135.00/$155.00,,,,
+343432989,340344-D,Zumba,,FIT,Fitness,04/23/2026,06/18/2026,11:20 am,12:20 pm,Th,Barcroft Fitness Center,18-99.99,$135.00/$155.00,,,,
+350226004,440344-A,Zumba,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/26/2026,7:00 pm,8:00 pm,W,Lubber Run,16-99.99,$150.00/$170.00,2026-05-15T14:06:18+00:00,Available,12,0
+350226015,440344-B,Zumba,ENJOYSUMMER,FIT,Fitness,06/22/2026,08/10/2026,7:00 pm,8:00 pm,M,Long Bridge Aquatics Center,16-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,2,0
+350226026,440344-C,Zumba,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/12/2026,9:30 am,10:30 am,W,Lubber Run,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,17,0
+350226037,440344-D,Zumba,ENJOYSUMMER,FIT,Fitness,06/25/2026,08/13/2026,11:20 am,12:20 pm,Th,Barcroft Fitness Center,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,2,0
+365936721,914100-01,Zumba,,OSAP,55+ Classes,06/09/2026,08/25/2026,2:15 pm,3:15 pm,Tu,Lubber Run,,$66.00/$66.00,,,,
+365936729,914100-02,Zumba,,OSAP,55+ Classes,06/10/2026,08/26/2026 *,6:00 pm,7:00 pm,W,Langston Brown,,$61.00/$61.00,,,,
+350224339,410300-A,Zumba Adult/Tot,ENJOYSUMMER,FIT,Fitness,06/30/2026,08/11/2026,5:00 pm,5:45 pm,Tu,Long Bridge Aquatics Center,3-5.99,$154.00/$174.00,2026-05-16T13:46:13+00:00,Available,2,0
+350224350,410301-A,Zumba Kids,ENJOYSUMMER,FIT,Fitness,06/30/2026,08/11/2026,6:00 pm,6:45 pm,Tu,Long Bridge Aquatics Center,5-8.99,$154.00/$174.00,2026-05-16T13:46:13+00:00,Available,3,0

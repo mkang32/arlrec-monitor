@@ -193,7 +193,7 @@ def _watchlist_status_row(client: WebTracClient, fmid: str) -> SectionRow | None
 def scrape_catalog(client: WebTracClient, conn, *, ts: str,
                    fetch_counts: bool = True, metadata_only: bool = False) -> int:
     total = 0
-    for type_code in config.KID_TYPES:
+    for type_code in config.ALL_TYPES:
         try:
             total += scrape_one_query(client, conn, ts=ts, type_code=type_code,
                                        fetch_counts=fetch_counts,

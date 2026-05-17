@@ -233,7 +233,7 @@
   function filterKey() { return currentFilter || '__all__'; }
   function filterLabel() {
     if (currentFilter === '') return 'showing all categories';
-    if (currentFilter === '__none__') return 'showing only Adult fitness (uncategorized)';
+    if (currentFilter === '__none__') return 'showing only Other (uncategorized)';
     return 'showing only ' + currentFilter;
   }
 
@@ -572,7 +572,7 @@
     for (const c of (SNAPSHOT.filter_cats || [])) {
       const opt = document.createElement('option');
       opt.value = c.cat;
-      const label = c.cat === '__none__' ? 'Adult fitness (uncategorized)' : c.cat;
+      const label = c.cat === '__none__' ? 'Other (uncategorized)' : c.cat;
       opt.textContent = label + ' — ' + c.sold_out + ' sellouts (of ' + c.classes + ')';
       select.appendChild(opt);
     }

@@ -103,7 +103,7 @@ def _dump_latest_csv(conn) -> None:
         ])
         for r in rows:
             d = dict(r)
-            d["type_label"] = config.TYPE_LABELS.get(d.get("type_code") or "", "")
+            d["type_label"] = _type_label_for(d.get("type_code"))
             w.writerow([
                 d["fmid"], d["activity_code"], d["name"], d["reg_event"],
                 d["type_code"], d["type_label"],
@@ -222,7 +222,7 @@ def _dump_analysis(conn) -> None:
     augmented: list[dict] = []
     for r in rows:
         d = dict(r)
-        d["type_label"] = config.TYPE_LABELS.get(d.get("type_code") or "", "")
+        d["type_label"] = _type_label_for(d.get("type_code"))
         secs = None
         src = None
         reg_opens_at_iso = None
@@ -585,12 +585,26 @@ def _status_pill(status_key="status"):
     return f
 
 
+_UNTYPED_LABEL = "Other"
+
+
+def _type_label_for(type_code):
+    """Map a WebTrac type_code to its human label. Untagged sections
+    (no type_code, or one not in TYPE_LABELS) become the literal "Other"
+    so they show up consistently across UI tables, filters, and CSVs
+    instead of disappearing into a blank cell or being silently dropped
+    from the type-filter dropdown."""
+    if not type_code:
+        return _UNTYPED_LABEL
+    return config.TYPE_LABELS.get(type_code, type_code)
+
+
 def _type_label_render(r):
-    return html.escape(config.TYPE_LABELS.get(r.get("type_code") or "", r.get("type_code") or ""))
+    return html.escape(_type_label_for(r.get("type_code")))
 
 
 def _type_label_value(r):
-    return config.TYPE_LABELS.get(r.get("type_code") or "", r.get("type_code") or "")
+    return _type_label_for(r.get("type_code"))
 
 
 _ENROLLED_PRESETS = (

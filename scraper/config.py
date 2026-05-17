@@ -25,18 +25,29 @@ ALERT_TRANSITIONS: list[tuple[str | None, str]] = [
     ("Waitlist", "Full"),
 ]
 
-# Type-code → human label. Order is meaningful: matches the WebTrac type dropdown.
-# Used to enumerate the catalog and to render filterable labels in the viz.
+# Type-code → human label. Order matches the WebTrac type dropdown.
+# Mirrors the full WebTrac taxonomy — used to enumerate the catalog (via
+# `--mode types`) and to render filterable labels in the UI. The initial
+# version excluded "adult-only" types (FIT, PILAT, etc.) when this project
+# was scoped to kid classes; that scope expanded to ALL classes, and the
+# missing types meant some clearly-kid sections (e.g. "Zumba Kids", which
+# WebTrac files under FIT) ended up uncategorized. Now includes all 39
+# types WebTrac currently exposes.
 TYPE_LABELS: dict[str, str] = {
+    "OSAP":      "55+ Classes",
+    "SAOT":      "55+ Trips",
     "AQUAT":     "Aquatics",
     "AQUATPVT":  "Aquatics - Private Lessons",
     "CRART":     "Arts & Crafts",
     "CERAM":     "Ceramics",
     "COOKI":     "Cooking",
     "DANCE":     "Dance",
+    "DOG":       "Dog Obedience",
     "DWPT":      "Drawing/Painting",
     "FAMLY":     "Family Programs",
+    "FIT":       "Fitness",
     "GYMNA":     "Gymnastics",
+    "TRO":       "Individuals with Disabilities",
     "JEWEL":     "Jewelry",
     "LANGU":     "Language",
     "MARTS":     "Martial Arts",
@@ -44,7 +55,10 @@ TYPE_LABELS: dict[str, str] = {
     "MUSIC":     "Music",
     "NCTR":      "Nature & History",
     "OST":       "Out of School Time",
+    "PART":      "Party Reservations",
     "PHOTO":     "Photography",
+    "PICKLE":    "Pickleball",
+    "PILAT":     "Pilates",
     "PREK":      "Preschool/Playgroups",
     "SCDI":      "Science & Discovery",
     "FIBER":     "Sewing & Fiber Arts",
@@ -55,12 +69,13 @@ TYPE_LABELS: dict[str, str] = {
     "TEEN":      "Teen Programs",
     "TENIS":     "Tennis",
     "THEAT":     "Theater",
+    "SS":        "This-n-That",
     "WELLN":     "Wellness",
     "WOOD":      "Woodworking",
     "YOGA":      "Yoga",
 }
 
-KID_TYPES: list[str] = list(TYPE_LABELS.keys())
+ALL_TYPES: list[str] = list(TYPE_LABELS.keys())
 
 # Registration-event filters for narrow hot-window polling.
 # These match the actual events in the registrationevent dropdown.
