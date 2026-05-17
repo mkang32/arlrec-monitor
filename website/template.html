@@ -104,12 +104,12 @@
 
 <h2>The headline</h2>
 <div class="card">
-  <p style="margin:0 0 8px"><b>Gymnastics is the hardest ticket in Arlington.</b> Roughly 7 in 10 gymnastics sections sold out, and many were gone within minutes of registration opening. Aquatics is the next most competitive &mdash; about 4 in 10 swim sections sold out. Everything else (martial arts, music, sports leagues, ceramics, science) had near-zero sellouts in this window.</p>
+  <p style="margin:0 0 8px" id="headline-body"><i>Loading&hellip;</i></p>
   <p style="margin:0">If you're after <b>Gymnasticats</b>, <b>Family Gymnastics</b>, <b>Girls Level 1</b>, <b>Tumbling for 3's</b>, or popular adult fitness slots like <b>Body Sculpting</b> at Langston Brown &mdash; you need to be on the page and ready before noon ET on registration day. Pottery, science, most sports leagues, and martial arts can be registered for the next morning.</p>
 </div>
 
 <h2>How fast did each category sell out?</h2>
-<p class="legend-line">Each bar shows how the sold-out sections in that category split across speed bins. <b>Instant (under 20&nbsp;min)</b> almost certainly went faster than that &mdash; the scraper polls every ~15&ndash;20&nbsp;min, so anything in the first cycle is "gone before we could measure." The interesting differentiator is the rest of the bar: gymnastics has a long tail of 6&ndash;24-hour and multi-day sellouts, while tennis and adult fitness are almost entirely instant-or-not.</p>
+<p class="legend-line">Each bar's total height is the % of that category's sections that sold out. Segments show how those sellouts split across speed bins. <b>Instant (under 20&nbsp;min)</b> almost certainly went faster than that &mdash; the scraper polls every ~15&ndash;20&nbsp;min, so anything in the first cycle is "gone before we could measure." The interesting differentiator is the rest of the bar: gymnastics has a long tail of 6&ndash;24-hour and multi-day sellouts, while tennis and adult fitness are almost entirely instant-or-not.</p>
 <div class="card"><div class="chart-wrap"><canvas id="chart-category" role="img" aria-label="Stacked horizontal bar chart of sellout speed bins by class category"></canvas></div></div>
 
 <div class="filter-bar">
@@ -256,7 +256,39 @@
     document.getElementById('meta').textContent = 'Latest registration tracked: ' + latest + ' · data snapshot generated ' + generated;
   }
 
-  // ---- Category bin chart ----
+  // ---- Headline narrative (data-driven, regenerated on each build) ----
+  // Picks the two categories with the highest sell-out rate among categories
+  // with at least HEADLINE_MIN_SECTIONS sections (small categories like Sewing
+  // 2-of-2 = 100% would otherwise dominate). The "Everything else" list is
+  // hardcoded editorial — those are categories with zero observed sellouts in
+  // every cycle we've tracked so far.
+  const HEADLINE_MIN_SECTIONS = 10;
+  function renderHeadline() {
+    const totals = SNAPSHOT.totals_by_cat || [];
+    const ranked = totals
+      .filter(t => t.classes >= HEADLINE_MIN_SECTIONS && t.sold_out > 0)
+      .map(t => Object.assign({}, t, { rate: t.sold_out / t.classes }))
+      .sort((a, b) => b.rate - a.rate);
+    if (!ranked.length) return;
+    const fmt = (t) => Math.round(t.rate * 100) + '% of ' + t.category.toLowerCase()
+      + ' sections (' + t.sold_out + ' of ' + t.classes + ')';
+    const top1 = ranked[0];
+    const top2 = ranked.length >= 2 ? ranked[1] : null;
+    let html = '<b>' + top1.category + ' is the hardest ticket in Arlington.</b> '
+      + fmt(top1) + ' sold out, and many were gone within minutes of registration opening.';
+    if (top2) {
+      html += ' ' + top2.category + ' is the next most competitive &mdash; '
+        + fmt(top2) + ' sold out.';
+    }
+    html += ' Everything else (martial arts, music, sports leagues, ceramics, '
+      + 'science) had near-zero sellouts in this window.';
+    document.getElementById('headline-body').innerHTML = html;
+  }
+
+  // ---- Category chart: sell-out RATE per category, broken down by speed bin ----
+  // Total bar height = % of category's sections that sold out. Segments show
+  // how those sellouts split across speed bins. Matches the headline's framing
+  // ("X% of category sections sold out") rather than absolute counts.
   function renderCategoryChart() {
     const catRows = SNAPSHOT.category_rows || [];
     const totalsByCat = SNAPSHOT.totals_by_cat || [];
@@ -267,19 +299,33 @@
       if (!catBins[c]) { catBins[c] = {}; BIN_DEFS.forEach(b => catBins[c][b.key] = 0); }
       catBins[c][binOf(r.secs)] += 1;
     }
-    const catList = Object.keys(catBins).sort((a, b) => {
-      const sa = totalsMap[a]?.sold_out || 0; const sb = totalsMap[b]?.sold_out || 0;
-      return sb - sa;
-    });
+    // Only chart categories with a meaningful sample size — small categories
+    // (Sewing 2/2 etc.) would otherwise show 100% bars from tiny data.
+    const CAT_MIN_SECTIONS = 5;
+    const catList = Object.keys(catBins)
+      .filter(c => (totalsMap[c]?.classes || 0) >= CAT_MIN_SECTIONS)
+      .sort((a, b) => {
+        const ra = (totalsMap[a]?.sold_out || 0) / (totalsMap[a]?.classes || 1);
+        const rb = (totalsMap[b]?.sold_out || 0) / (totalsMap[b]?.classes || 1);
+        return rb - ra;
+      });
+    // Convert per-bin COUNT to per-bin % OF CATEGORY TOTAL. Total bar height
+    // then equals the category's sell-out rate.
+    const pctOfCategory = (c, binKey) => {
+      const total = totalsMap[c]?.classes || 0;
+      return total ? +(((catBins[c][binKey] || 0) * 100) / total).toFixed(2) : 0;
+    };
     setChart('chart-category', {
       type: 'bar',
       data: {
         labels: catList.map(c => {
-          const t = totalsMap[c] || {}; return c + ' (' + (t.sold_out||0) + '/' + (t.classes||0) + ')';
+          const t = totalsMap[c] || {};
+          const pct = t.classes ? Math.round((t.sold_out || 0) * 100 / t.classes) : 0;
+          return c + ' (' + pct + '%, ' + (t.sold_out||0) + '/' + (t.classes||0) + ')';
         }),
         datasets: BIN_DEFS.map(b => ({
           label: b.label,
-          data: catList.map(c => catBins[c][b.key] || 0),
+          data: catList.map(c => pctOfCategory(c, b.key)),
           backgroundColor: b.color, borderWidth: 0,
         })),
       },
@@ -290,14 +336,14 @@
           tooltip: { callbacks: { label: (ctx) => {
             const c = catList[ctx.dataIndex];
             const bin = BIN_DEFS[ctx.datasetIndex];
-            const v = ctx.parsed.x;
-            const t = totalsMap[c]?.sold_out || 0;
-            const pct = t ? Math.round(v * 100 / t) : 0;
-            return bin.label + ': ' + v + ' sections (' + pct + '% of category sellouts)';
+            const pct = ctx.parsed.x;
+            const count = catBins[c]?.[bin.key] || 0;
+            return bin.label + ': ' + pct + '% (' + count + ' of ' + (totalsMap[c]?.classes || 0) + ' sections)';
           } } }
         },
         scales: {
-          x: { stacked: true, title: { display: true, text: 'Sections sold out' }, beginAtZero: true },
+          x: { stacked: true, max: 100, title: { display: true, text: '% of category sections sold out' }, beginAtZero: true,
+               ticks: { callback: (v) => v + '%' } },
           y: { stacked: true, ticks: { autoSkip: false } }
         }
       }
@@ -538,6 +584,7 @@
 
   // ---- Boot ----
   renderStats();
+  renderHeadline();
   renderCategoryChart();
   populateFilterDropdown();
   refreshFilteredCharts();
