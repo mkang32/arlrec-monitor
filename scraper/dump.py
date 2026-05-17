@@ -341,7 +341,7 @@ def _dump_index_html(conn) -> None:
     else:
         parts.append(_render_table_html(watch_rows, _COLUMNS_WATCHLIST, table_id="watch"))
 
-    parts.append("<h2>Sell-out speed</h2>")
+    parts.append("<h2 id=\"sellout-section\">Sell-out speed</h2>")
     parts.append("<p class='dim'>How fast each section transitioned from open (Unavailable/Available) "
                  "to scarce (Waitlist/Full). Shortest first. "
                  "Each duration is an upper bound — the actual sell-out moment is at or before the value shown.</p>")
@@ -360,7 +360,7 @@ def _dump_index_html(conn) -> None:
         if footnote:
             parts.append(footnote)
 
-    parts.append("<h2>Currently open (Available, Waitlist, or Full)</h2>")
+    parts.append("<h2 id=\"open-section\">Currently open (Available, Waitlist, or Full)</h2>")
     if not active:
         parts.append("<p class='dim'>Nothing is open yet. Registration hasn't started.</p>")
     else:
@@ -576,6 +576,13 @@ class Column:
     # For "tokens" filters: list of (label, token_value). Row passes iff its
     # filter_value (split on ',') contains the selected token.
     tokens: tuple[tuple[str, str], ...] | None = None
+    # URL-param key for deep-links from other pages (e.g. analysis-page chart
+    # clicks → dashboard pre-filtered). Defaults to a slug of the column label.
+    url_key: str | None = None
+
+
+def _slug(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
 def _status_pill(status_key="status"):
@@ -816,6 +823,7 @@ _COLUMNS_SELLOUT: list[Column] = [
         "Sold out within", _sellout_duration_render, "preset", _sellout_duration_value,
         numeric_value=lambda r: float(r["duration_s"]),
         presets=_DURATION_PRESETS,
+        url_key="duration",  # short, memorable URL key for ?duration=,1200 deep-links
     ),
     Column("Final status",    _sellout_current_status_render, "select", _sellout_current_status_value),
     _COLUMN_TYPE,
@@ -902,6 +910,19 @@ function apply(){
   if(c) c.textContent=n+' / '+total;
 }
 fs.forEach(function(f){f.addEventListener('input',apply);f.addEventListener('change',apply);});
+// Apply URL ?key=value filters on load so deep-links from other pages
+// (e.g. the analysis page's clickable chart segments) land here pre-filtered.
+function applyUrlParams(){
+  var params=new URLSearchParams(window.location.search);
+  if(!params.toString()) return false;
+  var changed=false;
+  fs.forEach(function(f){
+    var k=f.dataset.urlKey;
+    if(k && params.has(k)){ f.value=params.get(k); changed=true; }
+  });
+  return changed;
+}
+if(applyUrlParams()) apply();
 })();</script>"""
 
 
@@ -916,6 +937,10 @@ def _render_table_html(rows: list[dict], columns: list[Column], *, table_id: str
     has_any_filter = any(c.filter_kind for c in columns)
     filter_cells_parts = []
     for i, c in enumerate(columns):
+        # URL key for ?type=...&duration=... deep-links. We use the explicit
+        # url_key when set, otherwise slug the label.
+        uk = c.url_key or _slug(c.label)
+        ukattr = f" data-url-key='{html.escape(uk)}'" if uk else ""
         if c.filter_kind == "select":
             values = sorted({c.filter_value(r) for r in rows if c.filter_value(r)})
             opts = "".join(
@@ -923,7 +948,7 @@ def _render_table_html(rows: list[dict], columns: list[Column], *, table_id: str
                 for v in values
             )
             widget = (
-                f"<select class='filter' data-col='{i}'>"
+                f"<select class='filter' data-col='{i}'{ukattr}>"
                 f"<option value=''>all</option>{opts}</select>"
             )
         elif c.filter_kind == "preset" and c.presets:
@@ -932,13 +957,13 @@ def _render_table_html(rows: list[dict], columns: list[Column], *, table_id: str
                 for label, rng in c.presets
             )
             widget = (
-                f"<select class='filter' data-col='{i}' data-kind='preset'>"
+                f"<select class='filter' data-col='{i}' data-kind='preset'{ukattr}>"
                 f"<option value=''>any</option>{opts}</select>"
             )
         elif c.filter_kind == "contains":
             widget = (
                 f"<input type='search' inputmode='decimal' class='filter' "
-                f"data-col='{i}' data-kind='contains' "
+                f"data-col='{i}' data-kind='contains'{ukattr} "
                 f"placeholder='{html.escape(c.contains_placeholder)}'>"
             )
         elif c.filter_kind == "tokens" and c.tokens:
@@ -947,11 +972,11 @@ def _render_table_html(rows: list[dict], columns: list[Column], *, table_id: str
                 for label, tok in c.tokens
             )
             widget = (
-                f"<select class='filter' data-col='{i}' data-kind='tokens'>"
+                f"<select class='filter' data-col='{i}' data-kind='tokens'{ukattr}>"
                 f"<option value=''>any</option>{opts}</select>"
             )
         elif c.filter_kind == "text":
-            widget = f"<input type='search' class='filter' data-col='{i}' placeholder='filter'>"
+            widget = f"<input type='search' class='filter' data-col='{i}'{ukattr} placeholder='filter'>"
         else:
             widget = ""
         filter_cells_parts.append(f"<th>{widget}</th>")
@@ -1048,6 +1073,16 @@ _HTML_HEAD = """<!doctype html>
   .pill--off  {{ background: var(--off); }}
   .table-count {{ color: var(--dim); font-size: 12px; margin: 4px 0 0; }}
   a {{ color: #1a64c8; }}
+  .filter-banner {{
+    background: #fff8e6; border-bottom: 1px solid #d4a017;
+    padding: 8px 16px; font-size: 13px; color: #8a6d10;
+    position: sticky; top: 0; z-index: 10;
+  }}
+  .filter-banner b {{ color: #6b5008; }}
+  .filter-banner a.clear {{
+    margin-left: 12px; color: #1a64c8; text-decoration: none; font-weight: 500;
+  }}
+  .filter-banner a.clear:hover {{ text-decoration: underline; }}
 </style>
 </head><body>
 <p class='breadcrumb'><a href='../../../'>Sellout Watcher</a> &nbsp;·&nbsp; <a href='../../'>Arlington County, VA</a> &nbsp;·&nbsp; <a href='../'>Summer 2026 analysis</a></p>
@@ -1089,7 +1124,39 @@ _HTML_HEAD = """<!doctype html>
 </div>
 """
 
-_HTML_FOOT = "</body></html>"
+_HTML_FOOT = """
+<script>
+// "Filtered by:" banner — shown when arriving from a deep-link with URL filter
+// params (e.g. from clicking a chart segment on the analysis page).
+// Looks up the matching filter widgets to translate raw values into human
+// labels ("type=gymnastics" → "Type: Gymnastics", "duration=,1200" → "Sold out within: Instant (<20 min)").
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  if (!params.toString()) return;
+  // Pretty-cap a key for display: "final-status" -> "Final status"
+  function nicen(k){ return k.replace(/-/g,' ').replace(/^./, function(c){return c.toUpperCase();}); }
+  var items = [];
+  params.forEach(function(value, key){
+    // Find any filter widget on the page with this url_key to derive a label
+    var f = document.querySelector('[data-url-key="' + key + '"]');
+    var displayValue = value;
+    if (f && f.tagName === 'SELECT'){
+      // Look up the option's text
+      for (var i = 0; i < f.options.length; i++){
+        if (f.options[i].value === value){ displayValue = f.options[i].textContent; break; }
+      }
+    }
+    items.push('<b>' + nicen(key) + ':</b> ' + displayValue);
+  });
+  if (!items.length) return;
+  var banner = document.createElement('div');
+  banner.className = 'filter-banner';
+  banner.innerHTML = 'Filtered by &nbsp;' + items.join(' &nbsp;·&nbsp; ') +
+    ' <a class="clear" href="' + window.location.pathname + window.location.hash + '">Clear all filters</a>';
+  document.body.insertBefore(banner, document.body.firstChild);
+})();
+</script>
+</body></html>"""
 
 
 if __name__ == "__main__":

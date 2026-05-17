@@ -61,6 +61,11 @@
     gap: 10px; margin: 18px 0 8px;
   }
   .stat { background: #fff; border: 1px solid #e8e6df; border-radius: 10px; padding: 14px 16px; }
+  /* Clickable stat: links into a pre-filtered dashboard view */
+  a.stat-link { text-decoration: none; color: inherit; display: block; }
+  a.stat-link .stat { transition: border-color 120ms, box-shadow 120ms; }
+  a.stat-link:hover .stat { border-color: #1a64c8; box-shadow: 0 0 0 3px rgba(26,100,200,0.08); }
+  a.stat-link .stat .label::after { content: ' ↗'; color: #1a64c8; font-size: 11px; }
   .stat .label { font-size: 12px; color: #6b6b66; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 6px; }
   .stat .value { font-size: 22px; font-weight: 600; margin: 0; line-height: 1.2; }
   .card { background: #fff; border: 1px solid #e8e6df; border-radius: 10px; padding: 16px 18px; margin: 12px 0; }
@@ -99,7 +104,7 @@
 <div class="stat-grid" id="stats">
   <div class="stat"><p class="label">Classes tracked</p><p class="value" id="s-total">&mdash;</p></div>
   <div class="stat"><p class="label">Sold out</p><p class="value" id="s-soldout">&mdash;</p></div>
-  <div class="stat"><p class="label">Fast sellouts (&lt;20 min)</p><p class="value" id="s-fast">&mdash;</p></div>
+  <a class="stat-link" href="dashboard/?duration=%2C1200#sellout-section" title="Open dashboard filtered to instant sellouts"><div class="stat"><p class="label">Fast sellouts (&lt;20 min)</p><p class="value" id="s-fast">&mdash;</p></div></a>
 </div>
 
 <h2>The headline</h2>
@@ -167,13 +172,24 @@
     accent: '#d9532b',
     muted: '#6b6b66',
   };
+  // `range` maps to the dashboard's "duration" preset value format ("lo,hi")
+  // for deep-links from chart clicks → pre-filtered sellout table.
   const BIN_DEFS = [
-    { key: 'instant',  label: 'Instant (<20 min)',  max: 1200,    color: '#b03a2e' },
-    { key: 'under1h',  label: 'Under 1 hour',       max: 3600,    color: '#d9853b' },
-    { key: 'sameday',  label: '1–6 hours',      max: 21600,   color: '#e8b237' },
-    { key: 'nextday',  label: '6–24 hours',     max: 86400,   color: '#7aa3d4' },
-    { key: 'multiday', label: 'Multi-day (1d+)',    max: Infinity,color: '#3e6ea8' },
+    { key: 'instant',  label: 'Instant (<20 min)',  max: 1200,     range: ',1200',       color: '#b03a2e' },
+    { key: 'under1h',  label: 'Under 1 hour',       max: 3600,     range: '1200,3600',   color: '#d9853b' },
+    { key: 'sameday',  label: '1–6 hours',          max: 21600,    range: '3600,21600',  color: '#e8b237' },
+    { key: 'nextday',  label: '6–24 hours',         max: 86400,    range: '21600,86400', color: '#7aa3d4' },
+    { key: 'multiday', label: 'Multi-day (1d+)',    max: Infinity, range: '86400,',      color: '#3e6ea8' },
   ];
+
+  // Build a dashboard deep-link URL with optional type + duration filters.
+  function dashLink(opts) {
+    opts = opts || {};
+    var params = [];
+    if (opts.type) params.push('type=' + encodeURIComponent(opts.type.toLowerCase()));
+    if (opts.duration) params.push('duration=' + encodeURIComponent(opts.duration));
+    return 'dashboard/' + (params.length ? '?' + params.join('&') : '') + '#sellout-section';
+  }
 
   Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
   Chart.defaults.font.size = 12;
@@ -331,15 +347,34 @@
       },
       options: {
         indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        // Click a segment to open the dashboard pre-filtered to that
+        // category (any duration), anchored to the sellout table.
+        // We intentionally omit the duration filter — when users click a
+        // specific bin segment they often want to see the category's full
+        // sellout context, not just that one duration bin.
+        onClick: (evt, elements) => {
+          if (!elements.length) return;
+          const el = elements[0];
+          const c = catList[el.index];
+          window.open(dashLink({ type: c }), '_blank');
+        },
+        onHover: (evt, elements) => {
+          if (evt.native && evt.native.target && evt.native.target.style) {
+            evt.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+          }
+        },
         plugins: {
           legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 10 } },
-          tooltip: { callbacks: { label: (ctx) => {
-            const c = catList[ctx.dataIndex];
-            const bin = BIN_DEFS[ctx.datasetIndex];
-            const pct = ctx.parsed.x;
-            const count = catBins[c]?.[bin.key] || 0;
-            return bin.label + ': ' + pct + '% (' + count + ' of ' + (totalsMap[c]?.classes || 0) + ' sections)';
-          } } }
+          tooltip: { callbacks: {
+            label: (ctx) => {
+              const c = catList[ctx.dataIndex];
+              const bin = BIN_DEFS[ctx.datasetIndex];
+              const pct = ctx.parsed.x;
+              const count = catBins[c]?.[bin.key] || 0;
+              return bin.label + ': ' + pct + '% (' + count + ' of ' + (totalsMap[c]?.classes || 0) + ' sections)';
+            },
+            afterLabel: () => 'Click to view in dashboard ↗',
+          } }
         },
         scales: {
           x: { stacked: true, max: 100, title: { display: true, text: '% of category sections sold out' }, beginAtZero: true,
