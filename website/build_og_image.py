@@ -3,14 +3,20 @@
 Generate the social-preview image (Open Graph / Twitter Card) for the
 static page.
 
-Outputs `website/og-preview.png` at 1200x630px. Pulls a key stat from the same
-sqlite snapshot used by build_page.py, so the image stays in sync with the
-published data.
+DO NOT RUN AUTOMATICALLY. The current og-preview.png for Arlington Summer
+2026 is a hand-prepared screenshot of the live category chart, frozen
+post-registration. Running this script will overwrite it with the
+text-focused Pillow render. Keep for future seasons where a dynamic image
+makes sense; don't add to any auto-build workflow.
+
+Outputs the OG PNG at 1200x630px. Pulls a key stat from the same sqlite
+snapshot used by build_page.py, so the image stays in sync with the
+published data when re-run.
 
 Style: clean, text-focused, matches the page's cream/dark/orange palette.
 No charts, no logos — just a headline + one highlighted stat + footer URL.
 
-Usage:
+Usage (only when intentional):
     python3 build_og_image.py [DB]   (default: ../data/snapshots.sqlite)
     SITE_URL=https://your-domain.org python3 build_og_image.py
 """
