@@ -104,6 +104,22 @@
   h3.tips-group { font-size: 12px; font-weight: 600; color: #4a4a45;
                   margin: 22px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
   h3.tips-group:first-of-type { margin-top: 10px; }
+  html { scroll-behavior: smooth; }
+  .back-to-top {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: #1a1a1a; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; line-height: 1; text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    opacity: 0.85; transition: opacity 150ms, background 150ms;
+    z-index: 100;
+  }
+  .back-to-top:hover { background: #333; opacity: 1; }
+  .back-to-top:focus-visible { outline: 2px solid #1a64c8; outline-offset: 2px; }
+  @media (max-width: 600px) {
+    .back-to-top { bottom: 16px; right: 16px; width: 40px; height: 40px; font-size: 20px; }
+  }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-jZvDSsmGB9oGGT/4l9bHXGoAv1OxvG/cFmSo0dZaSqmBgvQTKDBFAMftlXTmMbNW" crossorigin="anonymous" />
 </head>
@@ -187,6 +203,8 @@
 
 <h2>About this data</h2>
 <p class="note">Source: an automated monitor that polls Arlington County's public registration system on a schedule and records when each section transitions to <i>waitlist</i> or <i>full</i>. Sellouts faster than our polling resolution all collapse to the same bucket (the "Instant (&lt;20&nbsp;min)" bin is a measurement floor, not a real duration).</p>
+
+<a href="#" class="back-to-top" aria-label="Back to top" title="Back to top">&uarr;</a>
 
 <script>window.__SNAPSHOT__ = /*__SNAPSHOT_JSON__*/{"generated_at":"","overall":{},"category_rows":[],"totals_by_cat":[],"filter_cats":[],"instant_rows":[],"per_filter":{"__all__":{"days":[],"time":[],"age":[],"location":[]}}};</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
