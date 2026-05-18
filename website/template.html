@@ -89,6 +89,37 @@
     border-radius: 6px; background: #fff; color: #1a1a1a; min-width: 240px;
   }
   .filter-bar .summary { font-size: 12px; color: #6b6b66; font-style: italic; }
+  .page-nav { font-size: 13px; color: #6b6b66; margin: 4px 0 18px; }
+  .page-nav a { color: #1a64c8; text-decoration: none; }
+  .page-nav a:hover { text-decoration: underline; }
+  .tldr-callout { background: #fff7ed; border: 1px solid #f0a050; border-left: 4px solid #d9532b;
+                  border-radius: 6px; padding: 14px 18px; margin: 16px 0 28px; }
+  .tldr-callout .tldr-label { font-size: 11px; font-weight: 600; color: #8a4510;
+                              text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 6px; }
+  .tldr-callout p { margin: 0 0 8px; line-height: 1.5; font-size: 14px; }
+  .tldr-callout p:last-child { margin-bottom: 0; }
+  .tldr-callout .tldr-more { font-size: 13px; margin-top: 8px; }
+  .tldr-callout .tldr-more a { color: #1a64c8; text-decoration: none; }
+  .tldr-callout .tldr-more a:hover { text-decoration: underline; }
+  h3.tips-group { font-size: 12px; font-weight: 600; color: #4a4a45;
+                  margin: 22px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+  h3.tips-group:first-of-type { margin-top: 10px; }
+  html { scroll-behavior: smooth; }
+  .back-to-top {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: #1a1a1a; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; line-height: 1; text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    opacity: 0.85; transition: opacity 150ms, background 150ms;
+    z-index: 100;
+  }
+  .back-to-top:hover { background: #333; opacity: 1; }
+  .back-to-top:focus-visible { outline: 2px solid #1a64c8; outline-offset: 2px; }
+  @media (max-width: 600px) {
+    .back-to-top { bottom: 16px; right: 16px; width: 40px; height: 40px; font-size: 20px; }
+  }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-jZvDSsmGB9oGGT/4l9bHXGoAv1OxvG/cFmSo0dZaSqmBgvQTKDBFAMftlXTmMbNW" crossorigin="anonymous" />
 </head>
@@ -99,6 +130,7 @@
 <h1>Class registration sell-out patterns</h1>
 <p class="sub">Which classes need a noon-on-the-dot fingertip, which you can grab next week, and where the real competition is.</p>
 <p class="header-actions"><a href="dashboard/">View live dashboard &rarr;</a></p>
+<nav class="page-nav">Jump to: <a href="#headline">Headline</a> &nbsp;&middot;&nbsp; <a href="#practical-tips">Strategy tips</a> &nbsp;&middot;&nbsp; <a href="#sellout-section">Full sellout table</a></nav>
 <p class="meta" id="meta">&nbsp;</p>
 
 <div class="stat-grid" id="stats">
@@ -107,14 +139,20 @@
   <a class="stat-link" href="dashboard/?duration=%2C1200#sellout-section" title="Open dashboard filtered to instant sellouts"><div class="stat"><p class="label">Fast sellouts (&lt;20 min)</p><p class="value" id="s-fast">&mdash;</p></div></a>
 </div>
 
-<h2>The headline</h2>
+<h2 id="headline">The headline</h2>
 <div class="card">
   <p style="margin:0 0 8px" id="headline-body"><i>Loading&hellip;</i></p>
   <p style="margin:0">If you're after <b>Gymnasticats</b>, <b>Family Gymnastics</b>, <b>Girls Level 1</b>, <b>Tumbling for 3's</b>, or popular adult fitness slots like <b>Body Sculpting</b> at Langston Brown &mdash; you need to be on the page and ready before noon ET on registration day. Pottery, science, most sports leagues, and martial arts can be registered for the next morning.</p>
 </div>
 
+<div class="tldr-callout">
+  <p class="tldr-label">If you only read one thing</p>
+  <p>Be on the registration page <b>before</b> noon ET, not at noon &mdash; the virtual queue can put you minutes behind. Gymnastics for ages 3&ndash;6 and Saturday-morning swim slots sell out in seconds. Ceramics, music, and most sports leagues sit open for weeks &mdash; safe to register at leisure.</p>
+  <p class="tldr-more"><a href="#practical-tips">Full strategy tips below &darr;</a></p>
+</div>
+
 <h2>How fast did each category sell out?</h2>
-<p class="legend-line">Each bar's total height is the % of that category's sections that sold out. Segments show how those sellouts split across speed bins. <b>Instant (under 20&nbsp;min)</b> almost certainly went faster than that &mdash; the scraper polls every ~15&ndash;20&nbsp;min, so anything in the first cycle is "gone before we could measure." The interesting differentiator is the rest of the bar: gymnastics has a long tail of 6&ndash;24-hour and multi-day sellouts, while tennis and adult fitness are almost entirely instant-or-not.</p>
+<p class="legend-line">Total bar height = % of category sections sold out. Look past the red <b>Instant</b> segment to see the differentiator: gymnastics has a long tail of 6&ndash;24-hour sellouts, while tennis and adult fitness are almost entirely instant-or-not.</p>
 <div class="card"><div class="chart-wrap"><canvas id="chart-category" role="img" aria-label="Stacked horizontal bar chart of sellout speed bins by class category"></canvas></div></div>
 
 <div class="filter-bar">
@@ -124,11 +162,11 @@
 </div>
 
 <h2>By day of week</h2>
-<p class="legend-line">Each bar's total height is the % of sections that sold out that day. Segments show how those sellouts split across speed bins (Instant&nbsp;&lt;20m, Under 1h, 1&ndash;6 hours, 6&ndash;24 hours, Multi-day). A tall red-dominated bar = highly competitive; a tall blue-dominated bar = still gone, but you had hours-to-days.</p>
+<p class="legend-line">Total bar height = % sold out that day. A tall red-dominated bar means highly competitive (gone in minutes); a tall blue-dominated bar means still sold out, but you had hours or days to react.</p>
 <div class="card"><div class="chart-wrap"><canvas id="chart-day" role="img" aria-label="Stacked sellout-speed distribution by day of week"></canvas></div></div>
 
 <h2>By time of day &mdash; weekday vs. weekend</h2>
-<p class="legend-line">At each time slot, the left stack is weekday (Mon&ndash;Fri) and the right stack is weekend (Sat/Sun). Stack height = % of sections sold out; segments = speed bins. <b>Solid fill</b> = weekday, <b>diagonal stripes</b> = weekend.</p>
+<p class="legend-line">Two stacks per time slot: left = weekday (Mon&ndash;Fri), right = weekend (Sat/Sun). Stack height = % sold out. <b>Solid fill</b> = weekday, <b>diagonal stripes</b> = weekend.</p>
 <div class="card">
   <div id="daytype-key" style="display:flex; gap:18px; align-items:center; font-size:12px; color:#4a4a45; margin:0 0 8px;">
     <span style="display:inline-flex; align-items:center; gap:6px;"><span id="swatch-wkdy" style="display:inline-block; width:18px; height:12px; background:#888; border:1px solid #6b6b66; border-radius:2px;"></span>Weekday (Mon&ndash;Fri)</span>
@@ -145,20 +183,28 @@
 <p class="legend-line">Top 12 facilities by sellout rate (minimum 3 classes offered). Bar length = % sold out; segments = speed bins.</p>
 <div class="card"><div class="chart-wrap tall"><canvas id="chart-location" role="img" aria-label="Stacked sellout-speed distribution by location"></canvas></div></div>
 
-<h2>Every section that sold out instantly</h2>
-<p class="legend-line">Every section that was already gone by the first scan after registration opened &mdash; meaning the true sellout time is somewhere between 0 and ~20&nbsp;minutes (the scraper's polling interval). The "20 min" upper bound is a measurement ceiling, not a real number. Sortable; click any header.</p>
-<div class="card"><div id="table-wrap"></div></div>
+<h2 id="practical-tips">Practical tips</h2>
 
-<h2>Practical tips</h2>
+<h3 class="tips-group">Day-of strategy</h3>
 <div class="tip"><b>Be on the registration page well before noon ET &mdash; not at noon.</b> Arlington uses a virtual queue: at the moment registration opens, the system hands every person watching a waitlist number and only lets you proceed when your number is called. Depending on traffic that can take seconds or several minutes. The competitive sections (red segments in the charts above) sell out inside the first 20 minutes, so a slow draw means you can be admitted only to find your target already full. Have the activity code copied so you can jump straight to it the moment you're in.</div>
+
+<h3 class="tips-group">Where the real competition is</h3>
 <div class="tip"><b>Gymnastics at Barcroft = hardest target.</b> Sections for ages 3 to 6 (Tumbling for 3's, Gymnasticats, Family Gymnastics, Girls Level 1) are the most contested. If you're after one of these, treat the queue tip above as non-optional.</div>
 <div class="tip"><b>Long Bridge swim Levels 1&ndash;4</b> are very competitive but spots open across many time slots. If your first-choice time fills, pivot fast &mdash; sister sessions at less-popular times (mid-afternoon weekdays) often still have room hours later.</div>
 <div class="tip"><b>Weekend morning slots</b> (Saturday 8:30&ndash;11:30am) are the single most competitive time-and-day combo. If a weekday afternoon slot works for you, you'll face dramatically less competition.</div>
-<div class="tip"><b>You probably don't need to rush for</b>: ceramics, martial arts, music, science &amp; discovery, sports leagues, arts &amp; crafts, woodworking (with rare exceptions like "Intro to Woodshop"). These had near-zero sellouts in this window.</div>
 <div class="tip"><b>Adult fitness has a few sleeper hits.</b> Body Sculpting, Cardio Body Sculpting, and Barre at Langston Brown sold out in the first poll cycle. If you want a specific instructor or time, register on day one.</div>
 
+<h3 class="tips-group">Where it isn't (safe to wait)</h3>
+<div class="tip"><b>You probably don't need to rush for</b>: ceramics, martial arts, music, science &amp; discovery, sports leagues, arts &amp; crafts, woodworking (with rare exceptions like "Intro to Woodshop"). These had near-zero sellouts in this window.</div>
+
+<h2 id="sellout-section">Every section that sold out instantly</h2>
+<p class="legend-line">Every section that was already gone by our first scan after registration opened &mdash; meaning the true sellout time is somewhere between 0 and ~20&nbsp;minutes. The 20 min upper bound is a measurement ceiling, not a real number. Sortable; click any header.</p>
+<div class="card"><div id="table-wrap"></div></div>
+
 <h2>About this data</h2>
-<p class="note">Source: an automated monitor that polls Arlington County's registration system roughly every 15&ndash;20&nbsp;minutes and records when a class transitions to <i>waitlist</i> or <i>full</i>. Because of the polling cadence, sellouts shorter than one poll cycle all show a similar timestamp (the "Instant (&lt;20&nbsp;min)" bin is a floor, not a measurement).</p>
+<p class="note">Source: an automated monitor that polls Arlington County's public registration system on a schedule and records when each section transitions to <i>waitlist</i> or <i>full</i>. Sellouts faster than our polling resolution all collapse to the same bucket (the "Instant (&lt;20&nbsp;min)" bin is a measurement floor, not a real duration).</p>
+
+<a href="#" class="back-to-top" aria-label="Back to top" title="Back to top">&uarr;</a>
 
 <script>window.__SNAPSHOT__ = /*__SNAPSHOT_JSON__*/{"generated_at":"","overall":{},"category_rows":[],"totals_by_cat":[],"filter_cats":[],"instant_rows":[],"per_filter":{"__all__":{"days":[],"time":[],"age":[],"location":[]}}};</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
