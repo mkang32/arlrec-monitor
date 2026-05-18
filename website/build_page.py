@@ -10,9 +10,9 @@ Defaults:
     OUTPUT   = arlington-class-registration.html
 
 The site URL used in OG/Twitter meta tags comes from the SITE_URL environment
-variable (e.g. `SITE_URL=https://example.com python3 build_page.py`). When
-unset, falls back to a placeholder so the file is still well-formed for local
-preview — but social previews won't render correctly until SITE_URL is set.
+variable (e.g. `SITE_URL=https://staging.example.com python3 build_page.py`).
+When unset, falls back to the production custom domain so plain `python3
+build_page.py` produces a deployable file with correct social previews.
 
 Reads the sqlite database, computes everything the page needs, then writes a
 fully self-contained HTML file with the snapshot baked in. Upload OUTPUT to
@@ -27,7 +27,7 @@ from build_snapshot import build_snapshot
 
 PLACEHOLDER = "/*__SNAPSHOT_JSON__*/"
 SITE_URL_TOKEN = "__SITE_URL__"
-SITE_URL_DEFAULT = "https://example.com"  # social previews break with this; set SITE_URL env to fix
+SITE_URL_DEFAULT = "https://selloutwatcher.com"  # production custom domain; override with SITE_URL env for staging
 
 
 def main():
@@ -45,10 +45,6 @@ def main():
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     site_url = os.environ.get("SITE_URL", SITE_URL_DEFAULT).rstrip("/")
-    if site_url == SITE_URL_DEFAULT:
-        print(f"NOTE: SITE_URL not set; using placeholder {SITE_URL_DEFAULT}. "
-              "Social previews (LinkedIn/Twitter/iMessage) will not render the image.",
-              file=sys.stderr)
 
     snapshot = build_snapshot(db_path)
     snapshot_json = json.dumps(snapshot, separators=(",", ":"), default=str)
