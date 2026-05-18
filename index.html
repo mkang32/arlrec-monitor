@@ -4,58 +4,124 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sellout Watcher — Park &amp; Rec class registration analysis</title>
-<meta name="description" content="Track how fast Park &amp; Rec classes sell out during registration windows. Data-driven planning for parents." />
+<meta name="description" content="See how fast local Park &amp; Rec classes sell out — built so residents can plan registration day instead of refreshing in a panic." />
 <style>
   :root { color-scheme: light; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background: #fafaf7;
     color: #1a1a1a;
-    margin: 0;
+    margin: 0 auto;
     padding: 48px 28px;
-    line-height: 1.55;
-    font-size: 15px;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 680px;
   }
-  h1 { font-size: 32px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em; }
-  .tagline { color: #6b6b66; font-size: 16px; margin: 0 0 32px; }
-  h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; letter-spacing: -0.01em; }
+  .hero { display: flex; align-items: center; gap: 18px; margin: 0 0 8px; }
+  .hero-svg { flex: 0 0 auto; width: 56px; height: 56px; }
+  h1 { font-size: 32px; font-weight: 600; margin: 0; letter-spacing: -0.015em; line-height: 1.15; }
+  .tagline { color: #6b6b66; font-size: 17px; margin: 0 0 32px; }
+  h2 { font-size: 18px; font-weight: 600; margin: 36px 0 12px; letter-spacing: -0.01em; }
   p { margin: 0 0 14px; }
-  .county-card {
-    background: #fff; border: 1px solid #e8e6df; border-radius: 10px;
-    padding: 18px 22px; margin: 12px 0;
+  .story { background: #fff; border: 1px solid #e8e6df; border-radius: 12px;
+           padding: 22px 26px; margin: 0 0 8px; }
+  .story p:last-child { margin-bottom: 0; }
+  .story .contact { color: #6b6b66; font-size: 14px; margin-top: 14px; }
+  .story .contact a { color: #1a64c8; text-decoration: none; }
+  .story .contact a:hover { text-decoration: underline; }
+  .examples { margin: 0; padding: 0; list-style: none; }
+  .examples li { padding: 8px 0 8px 28px; border-bottom: 1px solid #f0eee7;
+                  position: relative; font-size: 15px; }
+  .examples li:last-child { border-bottom: none; }
+  .examples li::before {
+    content: ''; position: absolute; left: 4px; top: 16px;
+    width: 8px; height: 8px; border-radius: 50%; background: var(--dot, #6b6b66);
   }
-  .county-card h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
-  .county-card h3 a { color: inherit; text-decoration: none; }
-  .county-card h3 a:hover { color: #1a64c8; }
-  .county-card .meta { color: #6b6b66; font-size: 13px; margin: 0 0 10px; }
-  .county-card a { color: #1a64c8; text-decoration: none; margin-right: 16px; font-weight: 500; }
-  .county-card a:hover { text-decoration: underline; }
-  .footer { color: #888880; font-size: 12px; margin-top: 48px; text-align: center; }
+  .examples .fast { --dot: #b03a2e; }
+  .examples .medium { --dot: #d9853b; }
+  .examples .slow { --dot: #3e6ea8; }
+  .examples b { font-weight: 600; }
+  .county-card {
+    background: #fff; border: 1px solid #e8e6df; border-radius: 12px;
+    padding: 20px 24px; margin: 12px 0 8px;
+  }
+  .county-card h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; }
+  .county-card .meta { color: #6b6b66; font-size: 13px; margin: 0 0 14px; }
+  .county-card .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+  .btn-primary {
+    display: inline-block; padding: 9px 16px;
+    background: #1a1a1a; color: #fff; border-radius: 6px;
+    font-size: 14px; font-weight: 500; text-decoration: none;
+  }
+  .btn-primary:hover { background: #333; }
+  .secondary-link { color: #1a64c8; text-decoration: none; font-size: 14px; }
+  .secondary-link:hover { text-decoration: underline; }
+  .upcoming { color: #6b6b66; font-size: 13px; margin: 0 0 8px; font-style: italic; }
+  details { margin: 32px 0 0; }
+  details summary { cursor: pointer; color: #6b6b66; font-size: 14px;
+                    list-style: none; padding: 4px 0; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: '▸ '; display: inline-block;
+                            transition: transform 150ms; }
+  details[open] summary::before { transform: rotate(90deg); }
+  details p { color: #6b6b66; font-size: 14px; margin-top: 10px; }
+  .footer { color: #888880; font-size: 12px; margin-top: 48px;
+            text-align: center; line-height: 1.6; }
 </style>
 </head>
 <body>
-<h1>Park &amp; Rec Class Sellout Watcher</h1>
-<p class="tagline">How fast do Park &amp; Rec classes sell out? Data-driven planning for the next registration day.</p>
 
-<h2>What this is</h2>
-<p>A free public dashboard that tracks how quickly local Park &amp; Rec classes fill up during their registration windows. Watch which sections sell out in seconds, which linger for days, and which patterns predict competitiveness — by category, time-of-day, location, age, and price.</p>
-<p>Data is collected continuously by a scheduled scraper polling each county's public registration system.</p>
+<div class="hero">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="hero-svg" aria-hidden="true">
+    <rect x="28" y="5" width="8" height="4" rx="1" fill="#1a1a1a"/>
+    <line x1="32" y1="9" x2="32" y2="14" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="22" y1="11" x2="25" y2="14" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="42" y1="11" x2="39" y2="14" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="32" cy="38" r="20" fill="#fff" stroke="#1a1a1a" stroke-width="2.5"/>
+    <line x1="32" y1="20" x2="32" y2="23" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="32" y1="53" x2="32" y2="56" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="14" y1="38" x2="17" y2="38" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="47" y1="38" x2="50" y2="38" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="32" y1="38" x2="46" y2="30" stroke="#d9532b" stroke-width="2.8" stroke-linecap="round"/>
+    <line x1="32" y1="38" x2="32" y2="26" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="32" cy="38" r="2.2" fill="#1a1a1a"/>
+  </svg>
+  <h1>Sellout Watcher</h1>
+</div>
+<p class="tagline">How fast do Park &amp; Rec classes sell out? Plan registration day instead of refreshing in a panic.</p>
+
+<div class="story">
+  <p>Hello, I'm MK, an Arlington parent. I've missed a few class registrations for my kid over the last few seasons because I assumed logging in twenty minutes after the window opened was fine. It turned out some sections sell out in seconds while others sit open for weeks, and the catalog gives no signal which is which! I built this site to give other residents that visibility.</p>
+  <p class="contact">Questions or suggestions: <a href="mailto:info@selloutwatcher.com">info@selloutwatcher.com</a></p>
+</div>
+
+<h2>For example, in Arlington's Summer 2026 window</h2>
+<ul class="examples">
+  <li class="fast"><b>Gymnastics for ages 3–6</b> sold out in the first poll cycle — under 20 minutes, many likely under a minute.</li>
+  <li class="fast"><b>Weekend morning swim slots</b> (Sat 8:30–11:30am) were the most competitive time-and-day combo.</li>
+  <li class="medium"><b>A few adult fitness classes</b> at Langston Brown (Body Sculpting, Barre) also went in the first cycle.</li>
+  <li class="slow"><b>Ceramics, martial arts, music, sports leagues, science, woodworking</b> — near-zero sellouts. Safe to register next week.</li>
+</ul>
 
 <h2>Counties tracked</h2>
 <div class="county-card">
-  <h3><a href="arlington-va/">Arlington County, VA</a></h3>
-  <p class="meta">Vermont Systems WebTrac · Summer 2026 registration windows opened May 12-14</p>
-  <a href="arlington-va/">All seasons →</a>
-  <a href="arlington-va/2026-summer/">Summer 2026 analysis →</a>
-  <a href="arlington-va/2026-summer/dashboard/">Live dashboard →</a>
+  <h3>Arlington County, VA</h3>
+  <p class="meta">Vermont Systems WebTrac · Summer 2026 registration windows opened May 12–14</p>
+  <div class="cta-row">
+    <a href="arlington-va/2026-summer/" class="btn-primary">Read the Summer 2026 analysis →</a>
+    <a href="arlington-va/2026-summer/dashboard/" class="secondary-link">Live dashboard</a>
+  </div>
 </div>
+<p class="upcoming">Coming over the next year: Arlington's fall, winter, and spring registrations, plus a couple of nearby counties.</p>
 
-<h2>About the data</h2>
-<p>Each section's status (Available / Waitlist / Full / Unavailable) is polled on the cadence published on each season's analysis page. Polling resolution is the lower bound on observed sell-out times — any class that sold out within one poll cycle is recorded as "≤ N seconds."</p>
+<details>
+  <summary>How the data works</summary>
+  <p>Each county's public registration system is checked on a schedule that ramps up around the time a window opens and tapers off in the days after. We record each section's status (Available / Waitlist / Full) over time and derive how long it took to sell out.</p>
+  <p>Anything that sold out faster than we could measure shows up as "Instant (&lt;20 min)" — treat that as a "you needed to be ready before noon" floor, not a measured duration.</p>
+</details>
 
-<div class="footer">Sellout Watcher — built by an Arlington parent</div>
+<div class="footer">
+  Sellout Watcher · built by an Arlington parent
+</div>
 </body>
 </html>

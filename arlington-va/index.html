@@ -30,9 +30,16 @@
     padding: 18px 22px; margin: 12px 0;
   }
   .season-card h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
-  .season-card .meta { color: #6b6b66; font-size: 13px; margin: 0 0 10px; }
-  .season-card a { color: #1a64c8; text-decoration: none; margin-right: 16px; font-weight: 500; }
-  .season-card a:hover { text-decoration: underline; }
+  .season-card .meta { color: #6b6b66; font-size: 13px; margin: 0 0 14px; }
+  .season-card .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+  .season-card .btn-primary {
+    display: inline-block; padding: 8px 14px;
+    background: #1a1a1a; color: #fff; border-radius: 6px;
+    font-size: 14px; font-weight: 500; text-decoration: none;
+  }
+  .season-card .btn-primary:hover { background: #333; }
+  .season-card a.secondary-link { color: #1a64c8; text-decoration: none; font-size: 14px; font-weight: 500; }
+  .season-card a.secondary-link:hover { text-decoration: underline; }
   .footer { color: #888880; font-size: 12px; margin-top: 48px; text-align: center; }
 </style>
 </head>
@@ -45,8 +52,10 @@
 <div class="season-card">
   <h3>Summer 2026</h3>
   <p class="meta">Registration opened May 12 (gymnastics) · May 13 (aquatics) · May 14 (other) at 12:00 PM ET</p>
-  <a href="2026-summer/">Analysis →</a>
-  <a href="2026-summer/dashboard/">Live dashboard →</a>
+  <div class="cta-row">
+    <a href="2026-summer/" class="btn-primary">Read the analysis →</a>
+    <a href="2026-summer/dashboard/" class="secondary-link">Live dashboard</a>
+  </div>
 </div>
 
 <h2>Upcoming</h2>
