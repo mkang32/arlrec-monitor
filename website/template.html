@@ -145,10 +145,6 @@
 <p class="legend-line">Top 12 facilities by sellout rate (minimum 3 classes offered). Bar length = % sold out; segments = speed bins.</p>
 <div class="card"><div class="chart-wrap tall"><canvas id="chart-location" role="img" aria-label="Stacked sellout-speed distribution by location"></canvas></div></div>
 
-<h2>Every section that sold out instantly</h2>
-<p class="legend-line">Every section that was already gone by the first scan after registration opened &mdash; meaning the true sellout time is somewhere between 0 and ~20&nbsp;minutes (the scraper's polling interval). The "20 min" upper bound is a measurement ceiling, not a real number. Sortable; click any header.</p>
-<div class="card"><div id="table-wrap"></div></div>
-
 <h2>Practical tips</h2>
 <div class="tip"><b>Be on the registration page well before noon ET &mdash; not at noon.</b> Arlington uses a virtual queue: at the moment registration opens, the system hands every person watching a waitlist number and only lets you proceed when your number is called. Depending on traffic that can take seconds or several minutes. The competitive sections (red segments in the charts above) sell out inside the first 20 minutes, so a slow draw means you can be admitted only to find your target already full. Have the activity code copied so you can jump straight to it the moment you're in.</div>
 <div class="tip"><b>Gymnastics at Barcroft = hardest target.</b> Sections for ages 3 to 6 (Tumbling for 3's, Gymnasticats, Family Gymnastics, Girls Level 1) are the most contested. If you're after one of these, treat the queue tip above as non-optional.</div>
@@ -156,6 +152,10 @@
 <div class="tip"><b>Weekend morning slots</b> (Saturday 8:30&ndash;11:30am) are the single most competitive time-and-day combo. If a weekday afternoon slot works for you, you'll face dramatically less competition.</div>
 <div class="tip"><b>You probably don't need to rush for</b>: ceramics, martial arts, music, science &amp; discovery, sports leagues, arts &amp; crafts, woodworking (with rare exceptions like "Intro to Woodshop"). These had near-zero sellouts in this window.</div>
 <div class="tip"><b>Adult fitness has a few sleeper hits.</b> Body Sculpting, Cardio Body Sculpting, and Barre at Langston Brown sold out in the first poll cycle. If you want a specific instructor or time, register on day one.</div>
+
+<h2>Every section that sold out instantly</h2>
+<p class="legend-line">Every section that was already gone by the first scan after registration opened &mdash; meaning the true sellout time is somewhere between 0 and ~20&nbsp;minutes (the scraper's polling interval). The "20 min" upper bound is a measurement ceiling, not a real number. Sortable; click any header.</p>
+<div class="card"><div id="table-wrap"></div></div>
 
 <h2>About this data</h2>
 <p class="note">Source: an automated monitor that polls Arlington County's registration system roughly every 15&ndash;20&nbsp;minutes and records when a class transitions to <i>waitlist</i> or <i>full</i>. Because of the polling cadence, sellouts shorter than one poll cycle all show a similar timestamp (the "Instant (&lt;20&nbsp;min)" bin is a floor, not a measurement).</p>
