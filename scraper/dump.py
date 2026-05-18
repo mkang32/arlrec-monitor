@@ -1090,18 +1090,10 @@ _HTML_HEAD = """<!doctype html>
 <h1>Live dashboard</h1>
 <p class='header-actions'><a href='../'>&larr; Back to analysis page</a></p>
 <div class='lede'>
-  <p><b>Why this exists:</b> Arlington's most popular kids' classes can sell out
-     within seconds of registration opening. This page surfaces each section's
-     historical sell-out speed so parents can plan registration day —
-     which classes to grab first, which need a backup choice, and which are
-     safe to register for at leisure.</p>
-  <p>A scheduled GitHub Actions job polls the public
-     <a href='https://vaarlingtonweb.myvscloud.com/webtrac/web/search.html?interfaceparameter=WebTrac'>WebTrac</a>
-     catalog and records each section's status (Available / Waitlist / Full /
-     Unavailable) over time into the SQLite database below.
-     The <b>Sell-out speed</b> table shows the upper-bound time it took for each
-     section to transition from open to scarce — shortest first. Use the
-     per-column filters in any table header to narrow results.</p>
+  <p>Live status of every Arlington Summer 2026 section, plus the historical
+     sell-out speed for each one. Use the per-column filters in any table
+     header to narrow results. <a href='../'>Read the analysis &rarr;</a>
+     for the patterns and category-level breakdowns.</p>
   <p class='meta'>Last data poll: {last_data}</p>
 </div>
 <div class='schedule'>
@@ -1113,9 +1105,7 @@ _HTML_HEAD = """<!doctype html>
 <div class='schedule schedule--polling'>
   <b>Polling schedule:</b><br>
   <b>Registration days</b> (May 12, 13, 14):
-    every <b>60 s</b> from 11:50&nbsp;ET (pre-open baseline),
-    every <b>15 s</b> for the first 5 min after noon ET (the explosive open moment),
-    every <b>60 s</b> until 12:30 ET,
+    every <b>60 s</b> from 11:50&nbsp;ET until 12:30 ET,
     every <b>5 min</b> until 1:00 PM ET,
     then every <b>10 min</b> until 3:00 PM ET.<br>
   <b>May 11&ndash;15</b>: hourly background polling.<br>
