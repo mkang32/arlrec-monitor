@@ -70,10 +70,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343429993,310100-C,Abrakadoodle: Twoosy Doodlers,,CRART,Arts & Crafts,04/18/2026,06/13/2026 *,9:00 am,9:45 am,Sa,Arlington Mill,1.66-3.99,$176.00/$196.00,,,,
 343430007,310100-D,Abrakadoodle: Twoosy Doodlers,,CRART,Arts & Crafts,04/17/2026,06/12/2026 *,10:00 am,10:45 am,F,Fairlington Center,1.66-3.99,$176.00/$196.00,,,,
 343430021,310100-E,Abrakadoodle: Twoosy Doodlers,,CRART,Arts & Crafts,04/14/2026,06/02/2026,10:00 am,10:45 am,Tu,Long Bridge Aquatics Center,1.66-3.99,$176.00/$196.00,,,,
-350280510,410100-A,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/07/2026,08/11/2026,10:00 am,10:45 am,Tu,Walter Reed Center,1.66-3.99,$132.00/$152.00,2026-05-20T15:39:07+00:00,Available,6,0
-350223957,410100-B,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/08/2026,08/12/2026,10:00 am,10:45 am,W,Long Bridge Aquatics Center,1.66-3.99,$132.00/$152.00,2026-05-20T15:39:07+00:00,Available,7,0
-350223985,410100-C,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/13/2026,08/17/2026,9:30 am,10:15 am,M,Madison Manor Park,1.66-3.99,$132.00/$152.00,2026-05-20T15:39:07+00:00,Available,3,0
-350223971,410100-D,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/11/2026,08/15/2026,9:30 am,10:15 am,Sa,Arlington Mill,1.66-3.99,$132.00/$152.00,2026-05-20T15:39:07+00:00,Available,3,0
+350280510,410100-A,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/07/2026,08/11/2026,10:00 am,10:45 am,Tu,Walter Reed Center,1.66-3.99,$132.00/$152.00,2026-05-21T15:42:38+00:00,Available,6,0
+350223957,410100-B,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/08/2026,08/12/2026,10:00 am,10:45 am,W,Long Bridge Aquatics Center,1.66-3.99,$132.00/$152.00,2026-05-21T15:42:38+00:00,Available,7,0
+350223985,410100-C,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/13/2026,08/17/2026,9:30 am,10:15 am,M,Madison Manor Park,1.66-3.99,$132.00/$152.00,2026-05-21T15:42:38+00:00,Available,3,0
+350223971,410100-D,Abrakadoodle: Twoosy Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/11/2026,08/15/2026,9:30 am,10:15 am,Sa,Arlington Mill,1.66-3.99,$132.00/$152.00,2026-05-21T15:42:38+00:00,Available,3,0
 365937473,914301-02,Acoustic Cafe (55+ Pass NOT Required),,OSAP,55+ Classes,06/16/2026,06/16/2026,7:00 pm,8:30 pm,Tu,Walter Reed Center,0-999,$0.00/$0.00,,,,
 347285402,913301-03,Acoustic Cafe (55+ Pass Not Required),,OSAP,55+ Classes,05/19/2026,05/19/2026,7:00 pm,8:30 pm,Tu,Walter Reed Center,0-999,$0.00/$0.00,,,,
 365937465,914301-01,Acoustic Hour in the Park,,OSAP,55+ Classes,06/05/2026,06/05/2026,1:00 pm,2:30 pm,F,Virginia Highlands Park,,$0.00/$0.00,,,,
@@ -165,8 +165,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366020272,642950-M,Afternoon Craft,,NCTR,Nature & History,08/13/2026,08/13/2026,12:15 pm,1:00 pm,Th,Long Branch Nature Center,3-99.99,$7.00/$8.00,,,,
 365765358,902608-03,Agatha Christies Mousetrap at Riverside,,SAOT,55+ Trips,08/19/2026,08/19/2026,9:30 am,6:15 pm,W,See Program Details,,$112.00/$129.00,,,,
 343430118,310205-A,All that Jazz & Ballet,,DANCE,Dance,04/16/2026,06/11/2026,5:00 pm,5:45 pm,Th,Barcroft Fitness Center,4.5-6.99,$216.00/$236.00,,,,
-350224022,410205-A,All that Jazz & Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:00 am,10:45 am,Sa,Langston Brown,4.5-6.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,2,0
-350224033,410205-B,All that Jazz & Ballet,ENJOYSUMMER,DANCE,Dance,07/16/2026,08/13/2026,6:00 pm,6:45 pm,Th,Barcroft Fitness Center,4.5-6.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,4,0
+350224022,410205-A,All that Jazz & Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:00 am,10:45 am,Sa,Langston Brown,4.5-6.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,3,0
+350224033,410205-B,All that Jazz & Ballet,ENJOYSUMMER,DANCE,Dance,07/16/2026,08/13/2026,6:00 pm,6:45 pm,Th,Barcroft Fitness Center,4.5-6.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,4,0
 343191337,500208-02,American Revolution! Camp,CAMP,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:30 pm,"M, Tu, W, Th",Fort CF Smith Park,10-12.99,$344.00/$395.00,,,,
 343193358,500412-04,Animal Adoption Match-up Camp!,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,6-10.99,$275.00/$316.00,,,,
 343193292,500411-04,Animal Adoption Match-up! Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,6-10.99,$275.00/$316.00,,,,
@@ -185,9 +185,9 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343437525,320414-A,Aquatics: Adapted Open Swim,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,12:20 pm,1:00 pm,Su,Long Bridge Aquatics Center,6-99.99,$96.00/$116.00,,,,
 350203649,420414-A,Aquatics: Adapted Open Swim,,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,12:20 pm,1:00 pm,Su,Long Bridge Aquatics Center,6-99.99,$84.00/$104.00,,,,
 343436530,310412-A,Aquatics: Adapted Pre-Fin,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,,,,
-350202394,410412-A,Aquatics: Adapted Pre-Fin,ENJOYSUMMER,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Available,6,0
+350202394,410412-A,Aquatics: Adapted Pre-Fin,ENJOYSUMMER,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Available,6,0
 343436519,310411-A,Aquatics: Adapted Pre-Fin & Me,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,2.5-4.99,$80.00/$100.00,,,,
-350202383,410411-A,Aquatics: Adapted Pre-Fin & Me,ENJOYSUMMER,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,2.5-4.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Available,4,0
+350202383,410411-A,Aquatics: Adapted Pre-Fin & Me,ENJOYSUMMER,TRO,Individuals with Disabilities,06/28/2026,08/16/2026 *,1:05 pm,1:35 pm,Su,Long Bridge Aquatics Center,2.5-4.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Available,4,0
 343438066,340415-A,Aquatics: Adapted Teen/Adult Swim Exploration,,TRO,Individuals with Disabilities,04/14/2026,06/16/2026,9:00 am,9:55 am,Tu,Long Bridge Aquatics Center,13-99.99,$140.00/$160.00,,,,
 343438078,340415-B,Aquatics: Adapted Teen/Adult Swim Exploration,,TRO,Individuals with Disabilities,04/16/2026,06/18/2026,9:00 am,9:55 am,Th,Long Bridge Aquatics Center,13-99.99,$140.00/$160.00,,,,
 343438089,340415-C,Aquatics: Adapted Teen/Adult Swim Exploration,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,2:20 pm,2:50 pm,Su,Long Bridge Aquatics Center,13-99.99,$80.00/$100.00,,,,
@@ -324,6 +324,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365937328,914106-25,Brains and Brawn,,OSAP,55+ Classes,06/05/2026,08/21/2026 *,1:00 pm,2:00 pm,F,Lubber Run,,$0.00/$0.00,,,,
 365937944,914400-06,Budgeting Made Simple,,OSAP,55+ Classes,08/10/2026,08/10/2026,1:00 pm,2:00 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
 343193647,500418-04,Build Her Business Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Abingdon School,7-12.99,$399.00/$458.00,,,,
+365938531,914501-03,Build a Better Breakfast,,OSAP,55+ Classes,07/21/2026,07/21/2026,3:00 pm,4:00 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
 365938025,914400-16,Building Safer Spaces,,OSAP,55+ Classes,06/04/2026,06/04/2026,9:15 am,10:15 am,Th,Virtual,,$0.00/$0.00,,,,
 350725987,632950-N,Buzzing Bees,,NCTR,Nature & History,05/16/2026,05/16/2026,5:00 pm,6:00 pm,Sa,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
 366019858,642840-A,Caminata por la Naturaleza,,NCTR,Nature & History,06/12/2026,06/12/2026,5:00 pm,6:00 pm,F,Barcroft Park,18-99.99,$0.00/$0.00,,,,
@@ -345,7 +346,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366020150,642950-B,Campfire Skills for Women and Girls,,NCTR,Nature & History,07/18/2026,07/18/2026,8:00 pm,9:00 pm,Sa,Long Branch Nature Center,8-99.99,$7.00/$8.00,,,,
 343192192,500301-03,Capital Ultimate Club MS Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,8:30 am,2:30 pm,"M, Tu, W, Th, F",Wakefield High School,11-14.99,$375.00/$431.00,,,,
 343192203,500301-04,Capital Ultimate Club MS Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,8:30 am,2:30 pm,"M, Tu, W, Th, F",Greenbrier Park,11-14.99,$375.00/$431.00,,,,
-343432822,340306-A,Cardio Body Sculpting,,FIT,Fitness,04/15/2026,05/27/2026,7:15 pm,8:15 pm,W,Madison Center,18-99.99,$105.00/$125.00,,,,
+343432822,340306-A,Cardio Body Sculpting,,FIT,Fitness,04/15/2026,05/27/2026 *,7:15 pm,8:15 pm,W,Madison Center,18-99.99,$105.00/$125.00,,,,
 343432833,340306-B,Cardio Body Sculpting,,FIT,Fitness,04/13/2026,06/01/2026 *,7:00 pm,8:00 pm,M,Langston Brown,18-99.99,$105.00/$125.00,,,,
 350225869,440306-A,Cardio Body Sculpting,ENJOYSUMMER,FIT,Fitness,06/23/2026,08/18/2026 *,6:15 pm,7:15 pm,Tu,Arlington Mill,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,4,0
 350225880,440306-B,Cardio Body Sculpting,ENJOYSUMMER,FIT,Fitness,06/24/2026,08/19/2026 *,7:00 pm,8:00 pm,W,Langston Brown,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Waitlist,14,5
@@ -440,10 +441,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343430074,310204-B,Dance and Prance,,DANCE,Dance,04/18/2026,06/13/2026 *,4:15 pm,4:45 pm,Sa,Lubber Run,2-3.99,$140.00/$160.00,,,,
 343430085,310204-C,Dance and Prance,,DANCE,Dance,04/13/2026,06/08/2026 *,10:00 am,10:30 am,M,Barcroft Fitness Center,2-3.99,$160.00/$180.00,,,,
 343430096,310204-D,Dance and Prance,,DANCE,Dance,04/18/2026,06/13/2026 *,10:30 am,11:00 am,Sa,Barcroft Fitness Center,2-3.99,$140.00/$160.00,,,,
-350223999,410204-A,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:45 am,11:15 am,Sa,Barcroft Fitness Center,2-3.99,$100.00/$120.00,2026-05-20T15:39:07+00:00,Available,6,0
-350224011,410204-B,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,9:45 am,10:15 am,Sa,Lubber Run,2-3.99,$100.00/$120.00,2026-05-20T15:39:07+00:00,Available,5,0
-351070164,410204-C,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,10:00 am,10:30 am,W,Langston Brown,2-3.99,$100.00/$120.00,2026-05-20T15:39:07+00:00,Available,4,0
-351073176,410204-D,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/17/2026,08/14/2026,10:00 am,10:30 am,F,Long Bridge Aquatics Center,2-3.99,$100.00/$120.00,2026-05-20T15:39:07+00:00,Available,3,0
+350223999,410204-A,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:45 am,11:15 am,Sa,Barcroft Fitness Center,2-3.99,$100.00/$120.00,2026-05-21T15:42:38+00:00,Available,6,0
+350224011,410204-B,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,9:45 am,10:15 am,Sa,Lubber Run,2-3.99,$100.00/$120.00,2026-05-21T15:42:38+00:00,Available,5,0
+351070164,410204-C,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,10:00 am,10:30 am,W,Langston Brown,2-3.99,$100.00/$120.00,2026-05-21T15:42:38+00:00,Available,5,0
+351073176,410204-D,Dance and Prance,ENJOYSUMMER,DANCE,Dance,07/17/2026,08/14/2026,10:00 am,10:30 am,F,Long Bridge Aquatics Center,2-3.99,$100.00/$120.00,2026-05-21T15:42:38+00:00,Available,3,0
 343193670,500420-04,Deal Me In! Card Game Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Abingdon School,9-14.99,$399.00/$458.00,,,,
 365765309,902607-04,Dear America Exhibit at National Gallery of Art,,SAOT,55+ Trips,07/20/2026,07/20/2026,9:30 am,3:30 pm,M,See Program Details,,$12.00/$14.00,,,,
 365938474,914500-06,Dementia Diagnosis: Now What,,OSAP,55+ Classes,07/13/2026,07/13/2026,1:00 pm,2:00 pm,M,Lubber Run,,$0.00/$0.00,,,,
@@ -495,14 +496,15 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343442963,310501-K,Family Gymnastics (Age: 1.5-5),,GYMNA,Gymnastics,04/17/2026,06/12/2026 *,2:00 pm,2:45 pm,F,Barcroft Fitness Center,1.5-5.99,$110.00/$130.00,,,,
 343442974,310501-L,Family Gymnastics (Age: 1.5-5),,GYMNA,Gymnastics,04/18/2026,06/13/2026 *,8:30 am,9:15 am,Sa,Barcroft Fitness Center,1.5-5.99,$96.00/$116.00,,,,
 343442985,310501-M,Family Gymnastics (Age: 1.5-5),,GYMNA,Gymnastics,04/19/2026,06/14/2026 *,1:00 pm,1:45 pm,Su,Barcroft Fitness Center,1.5-5.99,$96.00/$116.00,,,,
-350216376,410501-A,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,11:30 am,12:15 pm,Th,Barcroft Fitness Center,1.5-5.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,8,9
-350216387,410501-B,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,2:00 pm,2:45 pm,Th,Barcroft Fitness Center,1.5-5.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,8,2
-350216398,410501-C,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,1:00 pm,1:45 pm,F,Barcroft Fitness Center,1.5-5.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,8,3
-350216409,410501-D,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,8:30 am,9:15 am,Sa,Barcroft Fitness Center,1.5-5.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,8,29
-350216431,410501-E,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/06/2026,08/10/2026 *,1:00 pm,1:45 pm,M,Barcroft Fitness Center,1.5-5.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,8,0
-350216442,410501-F,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,11:30 am,12:15 pm,Tu,Barcroft Fitness Center,1.5-5.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,7,13
-350216453,410501-G,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,2:00 pm,2:45 pm,Tu,Barcroft Fitness Center,1.5-5.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Available,3,0
-350216465,410501-H,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,1:00 pm,1:45 pm,W,Barcroft Fitness Center,1.5-5.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,8,0
+350216376,410501-A,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,11:30 am,12:15 pm,Th,Barcroft Fitness Center,1.5-5.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,8,9
+350216387,410501-B,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,2:00 pm,2:45 pm,Th,Barcroft Fitness Center,1.5-5.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,8,2
+350216398,410501-C,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,1:00 pm,1:45 pm,F,Barcroft Fitness Center,1.5-5.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,8,3
+350216409,410501-D,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,8:30 am,9:15 am,Sa,Barcroft Fitness Center,1.5-5.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,8,29
+350216431,410501-E,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/06/2026,08/10/2026 *,1:00 pm,1:45 pm,M,Barcroft Fitness Center,1.5-5.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,8,0
+350216442,410501-F,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,11:30 am,12:15 pm,Tu,Barcroft Fitness Center,1.5-5.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,7,13
+350216453,410501-G,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,2:00 pm,2:45 pm,Tu,Barcroft Fitness Center,1.5-5.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Available,3,0
+350216465,410501-H,Family Gymnastics (Age: 1.5-5),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,1:00 pm,1:45 pm,W,Barcroft Fitness Center,1.5-5.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,8,0
+365938539,914501-04,Farmers Markets for Seniors,,OSAP,55+ Classes,06/12/2026,06/12/2026,10:00 am,11:00 am,F,Arlington Mill,,$0.00/$0.00,,,,
 343433089,340845-A,Feldenkrais,,WELLN,Wellness,04/14/2026,06/09/2026 *,7:00 pm,8:00 pm,Tu,Barcroft Fitness Center,15-99.99,$132.00/$152.00,,,,
 343433100,340845-B,Feldenkrais,,WELLN,Wellness,04/16/2026,06/11/2026,1:00 pm,2:00 pm,Th,Lubber Run,15-99.99,$149.00/$169.00,,,,
 350725831,632940-U,Fern Walk,,NCTR,Nature & History,06/02/2026,06/02/2026,10:00 am,11:30 am,Tu,Barcroft Park,14-99.99,$9.00/$10.35,,,,
@@ -531,27 +533,27 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343435871,310404-W,Fin 1,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,10:35 am,11:05 am,Su,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,,,,
 351579514,310404-X,Fin 1,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,10:05 am,10:35 am,Su,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,,,,
 355811219,310404-Y,Fin 1,,AQUAT,Aquatics,04/13/2026,06/15/2026 *,6:55 pm,7:25 pm,M,Long Bridge Aquatics Center,6-12.99,$90.00/$110.00,,,,
-350201492,410404-A,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,10:25 am,10:55 am,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,4,0
-350201503,410404-B,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,11:35 am,12:05 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201514,410404-C,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:25 pm,4:55 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350201525,410404-D,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,7:15 pm,7:45 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201536,410404-E,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,10:25 am,10:55 am,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,4,0
-350201547,410404-F,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350201558,410404-G,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,5:00 pm,5:30 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,5,2
-350201569,410404-H,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,6:45 pm,7:15 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201580,410404-I,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:25 pm,4:55 pm,W,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,5,1
-350201591,410404-J,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,7:15 pm,7:45 pm,W,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201602,410404-K,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:00 pm,4:30 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350201613,410404-L,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,5:00 pm,5:30 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350201624,410404-M,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,6:45 pm,7:15 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,4
-350201635,410404-N,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:25 pm,4:55 pm,F,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,3
-350201646,410404-O,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,6:15 pm,6:45 pm,F,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,5,5
-350201657,410404-P,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,4
-350201668,410404-Q,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:55 am,9:25 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,9
-350201679,410404-R,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:50 am,12:20 pm,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,5,5
-350201690,410404-S,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,9:00 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,4
-350201701,410404-T,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:30 am,10:00 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,5,12
-350201712,410404-U,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:35 am,11:05 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,14
+350201492,410404-A,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,10:25 am,10:55 am,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,4,0
+350201503,410404-B,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,11:35 am,12:05 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,2,0
+350201514,410404-C,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:25 pm,4:55 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350201525,410404-D,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,7:15 pm,7:45 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201536,410404-E,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,10:25 am,10:55 am,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,4,0
+350201547,410404-F,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350201558,410404-G,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,5:00 pm,5:30 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,5,2
+350201569,410404-H,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,6:45 pm,7:15 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201580,410404-I,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:25 pm,4:55 pm,W,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,5,1
+350201591,410404-J,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,7:15 pm,7:45 pm,W,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201602,410404-K,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:00 pm,4:30 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350201613,410404-L,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,5:00 pm,5:30 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350201624,410404-M,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,6:45 pm,7:15 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,4
+350201635,410404-N,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:25 pm,4:55 pm,F,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,3
+350201646,410404-O,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,6:15 pm,6:45 pm,F,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,5,5
+350201657,410404-P,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,4
+350201668,410404-Q,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:55 am,9:25 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,9
+350201679,410404-R,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:50 am,12:20 pm,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,5,5
+350201690,410404-S,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,9:00 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,4
+350201701,410404-T,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:30 am,10:00 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,5,12
+350201712,410404-U,Fin 1,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:35 am,11:05 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,14
 343435882,310405-A,Fin 2,,AQUAT,Aquatics,04/14/2026,06/16/2026,11:45 am,12:15 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$100.00/$120.00,,,,
 343435893,310405-B,Fin 2,,AQUAT,Aquatics,04/14/2026,06/16/2026,5:00 pm,5:30 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$100.00/$120.00,,,,
 343435904,310405-C,Fin 2,,AQUAT,Aquatics,04/14/2026,06/16/2026,5:35 pm,6:05 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$100.00/$120.00,,,,
@@ -574,31 +576,31 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343436093,310405-T,Fin 2,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,11:35 am,12:05 pm,Su,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,,,,
 351579311,310405-U,Fin 2,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,9:30 am,10:00 am,Su,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,,,,
 351579421,310405-V,Fin 2,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,11:05 am,11:35 am,Su,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,,,,
-350201723,410405-A,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,11:00 am,11:30 am,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350201735,410405-B,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:00 pm,5:30 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201746,410405-C,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,6:00 pm,6:30 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,5,1
-350201757,410405-D,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,11:35 am,12:05 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350201768,410405-E,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,4,3
-350201779,410405-F,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,5:35 pm,6:05 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350201790,410405-G,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,6:30 pm,7:00 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350201801,410405-H,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,7:20 pm,7:50 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,5,0
-350201812,410405-I,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:00 pm,5:30 pm,W,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,4
-350201823,410405-J,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,6:00 pm,6:30 pm,W,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350201834,410405-K,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:00 pm,4:30 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201845,410405-L,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,5:35 pm,6:05 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201856,410405-M,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,6:30 pm,7:00 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350201867,410405-N,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,7:20 pm,7:50 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201879,410405-O,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:00 pm,5:30 pm,F,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350201890,410405-P,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,6:50 pm,7:20 pm,F,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201901,410405-Q,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201912,410405-R,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:05 am,9:35 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350201924,410405-S,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:55 am,10:25 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350201935,410405-T,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:40 am,11:10 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350201947,410405-U,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:50 am,12:20 pm,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350201958,410405-V,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,9:00 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350201969,410405-W,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:55 am,9:25 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350201980,410405-X,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:50 am,10:20 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,5,2
-350201991,410405-Y,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:10 am,11:40 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,7,2
+350201723,410405-A,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,11:00 am,11:30 am,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350201735,410405-B,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:00 pm,5:30 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201746,410405-C,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,6:00 pm,6:30 pm,M,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,5,1
+350201757,410405-D,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,11:35 am,12:05 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350201768,410405-E,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,4,3
+350201779,410405-F,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,5:35 pm,6:05 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350201790,410405-G,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,6:30 pm,7:00 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350201801,410405-H,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,7:20 pm,7:50 pm,Tu,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350201812,410405-I,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:00 pm,5:30 pm,W,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,4
+350201823,410405-J,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,6:00 pm,6:30 pm,W,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350201834,410405-K,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:00 pm,4:30 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201845,410405-L,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,5:35 pm,6:05 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201856,410405-M,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,6:30 pm,7:00 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350201867,410405-N,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,7:20 pm,7:50 pm,Th,Long Bridge Aquatics Center,3.25-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,3,0
+350201879,410405-O,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:00 pm,5:30 pm,F,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350201890,410405-P,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,6:50 pm,7:20 pm,F,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201901,410405-Q,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201912,410405-R,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:05 am,9:35 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350201924,410405-S,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:55 am,10:25 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350201935,410405-T,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:40 am,11:10 am,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350201947,410405-U,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:50 am,12:20 pm,Sa,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350201958,410405-V,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,9:00 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350201969,410405-W,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:55 am,9:25 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350201980,410405-X,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:50 am,10:20 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,5,2
+350201991,410405-Y,Fin 2,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:10 am,11:40 am,Su,Long Bridge Aquatics Center,3.25-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,7,2
 343436104,310406-A,Fin 3,,AQUAT,Aquatics,04/14/2026,06/16/2026,11:00 am,11:30 am,Tu,Long Bridge Aquatics Center,4-5.99,$100.00/$120.00,,,,
 343436116,310406-B,Fin 3,,AQUAT,Aquatics,04/14/2026,06/16/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,4-5.99,$100.00/$120.00,,,,
 343436127,310406-C,Fin 3,,AQUAT,Aquatics,04/14/2026,06/16/2026,6:00 pm,6:30 pm,Tu,Long Bridge Aquatics Center,4-5.99,$100.00/$120.00,,,,
@@ -622,23 +624,23 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343436342,310406-U,Fin 3,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,8:30 am,9:00 am,Su,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,,,,
 343436353,310406-V,Fin 3,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,9:50 am,10:20 am,Su,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,,,,
 343436364,310406-W,Fin 3,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,11:15 am,11:45 am,Su,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,,,,
-350202003,410406-A,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:00 pm,4:30 pm,M,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,5,0
-350202018,410406-B,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,6:40 pm,7:10 pm,M,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,2,0
-350202032,410406-C,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,11:00 am,11:30 am,Tu,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,5,0
-350202045,410406-D,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:35 pm,5:05 pm,Tu,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350202056,410406-E,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,6:10 pm,6:40 pm,Tu,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350202069,410406-F,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:00 pm,4:30 pm,W,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,4,0
-350202080,410406-G,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,6:40 pm,7:10 pm,W,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,4,0
-350202091,410406-H,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:35 pm,5:05 pm,Th,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,3
-350202102,410406-I,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,6:10 pm,6:40 pm,Th,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350202113,410406-J,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:30 pm,6:00 pm,F,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Available,3,0
-350202124,410406-K,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:40 pm,6:10 pm,F,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202135,410406-L,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:50 am,10:20 am,Sa,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,3
-350202146,410406-M,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:15 am,11:45 am,Sa,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,5,1
-350202157,410406-N,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:55 am,12:25 pm,Sa,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202168,410406-O,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:50 am,10:20 am,Su,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,4
-350202180,410406-P,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:50 am,11:20 am,Su,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,3
-350202191,410406-Q,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:55 am,12:25 pm,Su,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Available,5,0
+350202003,410406-A,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:00 pm,4:30 pm,M,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350202018,410406-B,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,6:40 pm,7:10 pm,M,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,4,0
+350202032,410406-C,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,11:00 am,11:30 am,Tu,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350202045,410406-D,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:35 pm,5:05 pm,Tu,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350202056,410406-E,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,6:10 pm,6:40 pm,Tu,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350202069,410406-F,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:00 pm,4:30 pm,W,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,4,0
+350202080,410406-G,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,6:40 pm,7:10 pm,W,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,4,0
+350202091,410406-H,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:35 pm,5:05 pm,Th,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,3
+350202102,410406-I,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,6:10 pm,6:40 pm,Th,Long Bridge Aquatics Center,4-5.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350202113,410406-J,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:30 pm,6:00 pm,F,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Available,3,0
+350202124,410406-K,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:40 pm,6:10 pm,F,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202135,410406-L,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:50 am,10:20 am,Sa,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,3
+350202146,410406-M,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:15 am,11:45 am,Sa,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,5,1
+350202157,410406-N,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:55 am,12:25 pm,Sa,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202168,410406-O,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:50 am,10:20 am,Su,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,4
+350202180,410406-P,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:50 am,11:20 am,Su,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,3
+350202191,410406-Q,Fin 3,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:55 am,12:25 pm,Su,Long Bridge Aquatics Center,4-5.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Available,5,0
 343436375,310407-A,Fin 4,,AQUAT,Aquatics,04/14/2026,06/16/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,4.5-6.99,$100.00/$120.00,,,,
 343436386,310407-B,Fin 4,,AQUAT,Aquatics,04/14/2026,06/16/2026,6:10 pm,6:40 pm,Tu,Long Bridge Aquatics Center,4.5-6.99,$100.00/$120.00,,,,
 343436397,310407-C,Fin 4,,AQUAT,Aquatics,04/15/2026,06/17/2026,4:00 pm,4:30 pm,W,Long Bridge Aquatics Center,4.5-6.99,$100.00/$120.00,,,,
@@ -654,22 +656,22 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343436507,310407-M,Fin 4,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,10:35 am,11:05 am,Su,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,,,,
 351579091,310407-N,Fin 4,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,8:55 am,9:25 am,Su,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,,,,
 351579173,310407-O,Fin 4,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,11:40 am,12:10 pm,Su,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,,,,
-350202202,410407-A,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:00 pm,4:30 pm,M,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202213,410407-B,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:20 pm,5:50 pm,M,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,4,0
-350202224,410407-C,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,6:05 pm,6:35 pm,M,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202235,410407-D,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,5:55 pm,6:25 pm,Tu,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202246,410407-E,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,7:05 pm,7:35 pm,Tu,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,4,0
-350202257,410407-F,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:00 pm,4:30 pm,W,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,5,0
-350202268,410407-G,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:20 pm,5:50 pm,W,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202279,410407-H,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,6:05 pm,6:35 pm,W,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202290,410407-I,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,5:55 pm,6:25 pm,Th,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,5,0
-350202301,410407-J,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,7:05 pm,7:35 pm,Th,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350202312,410407-K,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:00 pm,4:30 pm,F,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350202323,410407-L,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,6:05 pm,6:35 pm,F,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202334,410407-M,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:40 am,10:10 am,Sa,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350202347,410407-N,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:15 am,11:45 am,Sa,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,3
-350202361,410407-O,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:15 am,11:45 am,Su,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350202372,410407-P,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:50 am,12:20 pm,Su,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Available,5,0
+350202202,410407-A,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:00 pm,4:30 pm,M,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202213,410407-B,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:20 pm,5:50 pm,M,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,3,0
+350202224,410407-C,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,6:05 pm,6:35 pm,M,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202235,410407-D,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,5:55 pm,6:25 pm,Tu,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202246,410407-E,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,7:05 pm,7:35 pm,Tu,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350202257,410407-F,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:00 pm,4:30 pm,W,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350202268,410407-G,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:20 pm,5:50 pm,W,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202279,410407-H,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,6:05 pm,6:35 pm,W,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202290,410407-I,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,5:55 pm,6:25 pm,Th,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350202301,410407-J,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,7:05 pm,7:35 pm,Th,Long Bridge Aquatics Center,4.5-6.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350202312,410407-K,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:00 pm,4:30 pm,F,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350202323,410407-L,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,6:05 pm,6:35 pm,F,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202334,410407-M,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:40 am,10:10 am,Sa,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350202347,410407-N,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:15 am,11:45 am,Sa,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,3
+350202361,410407-O,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:15 am,11:45 am,Su,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350202372,410407-P,Fin 4,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:50 am,12:20 pm,Su,Long Bridge Aquatics Center,4.5-6.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Available,5,0
 365938362,914403-10,Finding Local News Online,,OSAP,55+ Classes,08/18/2026,08/18/2026,10:30 am,11:30 am,Tu,Langston Brown,,$0.00/$0.00,,,,
 343192870,500313-02,Fine Arts Exploration Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:00 pm,"M, Tu, W, Th",Discovery Elementary,6-11.99,$320.00/$368.00,,,,
 343192881,500313-03,Fine Arts Exploration Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
@@ -841,20 +843,20 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343443459,310505-O,Gymnasticats (Age: 4),,GYMNA,Gymnastics,04/17/2026,06/12/2026 *,3:00 pm,3:45 pm,F,Barcroft Fitness Center,4-4.99,$110.00/$130.00,,,,
 343443470,310505-P,Gymnasticats (Age: 4),,GYMNA,Gymnastics,04/18/2026,06/13/2026 *,9:30 am,10:15 am,Sa,Barcroft Fitness Center,4-4.99,$110.00/$130.00,,,,
 343443481,310505-Q,Gymnasticats (Age: 4),,GYMNA,Gymnastics,04/18/2026,06/13/2026 *,10:30 am,11:15 am,Sa,Barcroft Fitness Center,4-4.99,$110.00/$130.00,,,,
-350216707,410505-A,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,1:00 pm,1:45 pm,Th,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350216718,410505-B,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,3:00 pm,3:45 pm,Th,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,6
-350216729,410505-C,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,11:30 am,12:15 pm,F,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350216740,410505-D,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,2:00 pm,2:45 pm,F,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,4,3
-350216751,410505-E,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,9:30 am,10:15 am,Sa,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,5,22
-350216762,410505-F,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,10:30 am,11:15 am,Sa,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,22
-350216773,410505-G,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/12/2026,08/16/2026,1:00 pm,1:45 pm,Su,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,4,16
-350216784,410505-H,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/06/2026,08/10/2026 *,11:30 am,12:15 pm,M,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350216795,410505-I,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/06/2026,08/10/2026 *,2:00 pm,2:45 pm,M,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350216806,410505-J,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,1:00 pm,1:45 pm,Tu,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350216817,410505-K,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,3:00 pm,3:45 pm,Tu,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350216828,410505-L,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,11:30 am,12:15 pm,W,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350216839,410505-M,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,2:00 pm,2:45 pm,W,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350216850,410505-N,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,3:00 pm,3:45 pm,W,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
+350216707,410505-A,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,1:00 pm,1:45 pm,Th,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350216718,410505-B,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,3:00 pm,3:45 pm,Th,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,6
+350216729,410505-C,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,11:30 am,12:15 pm,F,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350216740,410505-D,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,2:00 pm,2:45 pm,F,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,4,3
+350216751,410505-E,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,9:30 am,10:15 am,Sa,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,5,22
+350216762,410505-F,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,10:30 am,11:15 am,Sa,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,22
+350216773,410505-G,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/12/2026,08/16/2026,1:00 pm,1:45 pm,Su,Barcroft Fitness Center,4-4.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,4,16
+350216784,410505-H,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/06/2026,08/10/2026 *,11:30 am,12:15 pm,M,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350216795,410505-I,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/06/2026,08/10/2026 *,2:00 pm,2:45 pm,M,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350216806,410505-J,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,1:00 pm,1:45 pm,Tu,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350216817,410505-K,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,3:00 pm,3:45 pm,Tu,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350216828,410505-L,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,11:30 am,12:15 pm,W,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350216839,410505-M,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,2:00 pm,2:45 pm,W,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350216850,410505-N,Gymnasticats (Age: 4),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,3:00 pm,3:45 pm,W,Barcroft Fitness Center,4-4.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
 364678079,440502-A,Gymnastics:  Adult Intermediate,ENJOYSUMMER1,GYMNA,Gymnastics,07/09/2026,08/13/2026,7:15 pm,8:45 pm,Th,Barcroft Fitness Center,18-99.99,$132.00/$152.00,2026-05-15T13:59:31+00:00,Available,7,0
 350732033,440502-B,Gymnastics:  Adult Intermediate,ENJOYSUMMER1,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,7:15 pm,8:45 pm,W,Barcroft Fitness Center,18-99.99,$110.00/$130.00,2026-05-15T13:59:31+00:00,Available,3,0
 350740938,440503-A,Gymnastics:  Open Gym:  Adults,ENJOYSUMMER1,GYMNA,Gymnastics,08/19/2026,08/19/2026,6:30 pm,8:30 pm,W,Barcroft Fitness Center,18-99.99,$30.00/$35.00,2026-05-15T13:59:31+00:00,Available,3,0
@@ -862,12 +864,12 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350741599,440503-C,Gymnastics:  Open Gym:  Adults,ENJOYSUMMER1,GYMNA,Gymnastics,08/22/2026,08/22/2026,12:30 pm,2:30 pm,Sa,Barcroft Fitness Center,18-99.99,$30.00/$35.00,2026-05-15T13:59:31+00:00,Available,3,0
 350740400,420523-A,Gymnastics:  Open Gym: Kids & Teens,ENJOYSUMMER1,GYMNA,Gymnastics,08/18/2026,08/18/2026,6:00 pm,7:30 pm,Tu,Barcroft Fitness Center,7-17.99,$22.00/$25.00,2026-05-15T13:59:31+00:00,Available,0,0
 343443536,310520-A,Gymnastics: Adapted Parent/Tot,,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,9:30 am,10:15 am,Su,Barcroft Fitness Center,3-5.99,$96.00/$116.00,,,,
-350216895,410520-A,Gymnastics: Adapted Parent/Tot,ENJOYSUMMER,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,9:30 am,10:15 am,Su,Barcroft Fitness Center,3-5.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Available,9,0
+350216895,410520-A,Gymnastics: Adapted Parent/Tot,ENJOYSUMMER,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,9:30 am,10:15 am,Su,Barcroft Fitness Center,3-5.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,10,0
 350217415,430503-A,Gymnastics: Adapted Teen/Adult (Age 13-Adult),ENJOYSUMMER1,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,10:30 am,11:30 am,Su,Barcroft Fitness Center,13-99.99,$119.00/$139.00,2026-05-15T13:59:31+00:00,Available,5,0
 343444145,330503-A,Gymnastics: Adapted Teen/Adult (Age: 13-99),,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,10:30 am,11:30 am,Su,Barcroft Fitness Center,13-99.99,$138.00/$158.00,,,,
 343444087,320515-A,Gymnastics: Home School,,GYMNA,Gymnastics,04/13/2026,06/08/2026 *,1:00 pm,1:45 pm,M,Barcroft Fitness Center,5-7.99,$110.00/$130.00,,,,
 343444098,320515-B,Gymnastics: Home School,,GYMNA,Gymnastics,04/17/2026,06/12/2026 *,1:00 pm,1:45 pm,F,Barcroft Fitness Center,8-12.99,$110.00/$130.00,,,,
-350739304,410525-A,Gymnastics: Open Gym:  Preschool,ENJOYSUMMER,GYMNA,Gymnastics,08/22/2026,08/22/2026,10:00 am,11:00 am,Sa,Barcroft Fitness Center,1.5-6.99,$20.00/$23.00,2026-05-20T15:39:07+00:00,Available,35,0
+350739304,410525-A,Gymnastics: Open Gym:  Preschool,ENJOYSUMMER,GYMNA,Gymnastics,08/22/2026,08/22/2026,10:00 am,11:00 am,Sa,Barcroft Fitness Center,1.5-6.99,$20.00/$23.00,2026-05-21T15:42:38+00:00,Available,35,0
 343191403,500209-02,Habitat Explorers Camp,CAMP,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,2:00 pm,"M, Tu, W, Th",Gulf Branch Nature Center,8-9.99,$260.00/$299.00,,,,
 343191415,500209-03,Habitat Explorers Camp,CAMP,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,2:00 pm,"M, Tu, W, Th, F",Gulf Branch Nature Center,8-9.99,$325.00/$373.00,,,,
 343432733,340231-A,Hawaiian Dance: Beginners,,DANCE,Dance,04/13/2026,06/08/2026 *,6:30 pm,7:30 pm,M,Lubber Run,18-99.99,$94.00/$114.00,,,,
@@ -886,6 +888,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365937312,914106-23,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,08/20/2026,08/20/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
 365937320,914106-24,Healing Steps: Grief Walking Group,,OSAP,55+ Classes,08/27/2026,08/27/2026,10:00 am,11:00 am,Th,OffSite-See Description,,$0.00/$0.00,,,,
 365938439,914500-02,Hearings Aids - Beware and Be Wise,,OSAP,55+ Classes,06/16/2026,06/16/2026,11:00 am,12:00 pm,Tu,Langston Brown,,$0.00/$0.00,,,,
+365938514,914501-01,Heart Healthy Recipes,,OSAP,55+ Classes,06/09/2026,06/09/2026,3:00 pm,4:00 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
 365938066,914400-21,Her Badge Her Story,,OSAP,55+ Classes,06/18/2026,06/18/2026,1:00 pm,2:00 pm,Th,Arlington Mill,,$0.00/$0.00,,,,
 350725096,632830-B,Hike to the Potomac (NSNP),,NCTR,Nature & History,05/26/2026,05/26/2026,2:00 pm,3:30 pm,Tu,Gulf Branch Nature Center,12-17.99,$0.00/$0.00,,,,
 343431274,320212-A,Hip Hop,,DANCE,Dance,04/19/2026,06/14/2026 *,12:30 pm,1:15 pm,Su,Long Bridge Aquatics Center,8-11.99,$192.00/$212.00,,,,
@@ -969,9 +972,9 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343443492,310506-A,Junior Gymnast (Age: 5),,GYMNA,Gymnastics,04/15/2026,06/10/2026,3:00 pm,3:45 pm,W,Barcroft Fitness Center,5-5.99,$124.00/$144.00,,,,
 343443503,310506-B,Junior Gymnast (Age: 5),,GYMNA,Gymnastics,04/16/2026,06/11/2026,3:00 pm,3:45 pm,Th,Barcroft Fitness Center,5-5.99,$124.00/$144.00,,,,
 343443514,310506-C,Junior Gymnast (Age: 5),,GYMNA,Gymnastics,04/13/2026,06/08/2026 *,4:00 pm,4:45 pm,M,Barcroft Fitness Center,5-5.99,$110.00/$130.00,,,,
-350216884,410506-A,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,3:00 pm,3:45 pm,Th,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350216861,410506-B,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,3:00 pm,3:45 pm,Tu,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,2
-350216872,410506-C,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,3:00 pm,3:45 pm,W,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
+350216884,410506-A,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,3:00 pm,3:45 pm,Th,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,2
+350216861,410506-B,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,3:00 pm,3:45 pm,Tu,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,3
+350216872,410506-C,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,3:00 pm,3:45 pm,W,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
 343431475,320307-A,Junior Judo,,MARTS,Martial Arts,04/14/2026,06/18/2026 *,7:10 pm,8:10 pm,"Tu, Th",Dawson Terrace,5-14.99,$190.00/$210.00,,,,
 343431486,320307-B,Junior Judo,,MARTS,Martial Arts,04/16/2026,06/18/2026,6:00 pm,7:00 pm,Th,Dawson Terrace,5-13.99,$100.00/$120.00,,,,
 350225119,420307-A,Junior Judo,ENJOYSUMMER,MARTS,Martial Arts,06/23/2026,08/27/2026,7:10 pm,8:10 pm,"Tu, Th",Dawson Terrace,5-14.99,$200.00/$220.00,2026-05-15T14:06:18+00:00,Available,3,0
@@ -1055,10 +1058,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343430173,310207-B,Let's Play Ballet,,DANCE,Dance,04/18/2026,06/13/2026 *,9:45 am,10:15 am,Sa,Barcroft Fitness Center,2-3.99,$140.00/$160.00,,,,
 349004136,310207-C,Let's Play Ballet,,DANCE,Dance,04/14/2026,06/02/2026,4:30 pm,5:00 pm,Tu,Lubber Run,2-3.99,$160.00/$180.00,,,,
 343430184,310207-D,Let's Play Ballet,,DANCE,Dance,04/18/2026,06/13/2026 *,9:45 am,10:15 am,Sa,Lubber Run,2-3.99,$140.00/$160.00,,,,
-350224044,410207-A,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:00 am,10:30 am,Sa,Barcroft Fitness Center,2-3.99,$100.00/$120.00,2026-05-20T15:39:07+00:00,Available,8,0
-350224055,410207-B,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/16/2026,08/13/2026,5:15 pm,5:45 pm,Th,Barcroft Fitness Center,2-3.99,$100.00/$120.00,2026-05-20T15:39:07+00:00,Available,4,0
-350224066,410207-C,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:30 am,11:00 am,Sa,Lubber Run,2-3.99,$100.00/$120.00,2026-05-20T15:39:07+00:00,Available,5,0
-350224077,410207-D,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/17/2026,08/14/2026,10:00 am,10:30 am,F,Walter Reed Center,2-3.99,$100.00/$120.00,2026-05-20T15:39:07+00:00,Waitlist,12,0
+350224044,410207-A,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:00 am,10:30 am,Sa,Barcroft Fitness Center,2-3.99,$100.00/$120.00,2026-05-21T15:42:38+00:00,Available,8,0
+350224055,410207-B,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/16/2026,08/13/2026,5:15 pm,5:45 pm,Th,Barcroft Fitness Center,2-3.99,$100.00/$120.00,2026-05-21T15:42:38+00:00,Available,4,0
+350224066,410207-C,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:30 am,11:00 am,Sa,Lubber Run,2-3.99,$100.00/$120.00,2026-05-21T15:42:38+00:00,Available,5,0
+350224077,410207-D,Let's Play Ballet,ENJOYSUMMER,DANCE,Dance,07/17/2026,08/14/2026,10:00 am,10:30 am,F,Walter Reed Center,2-3.99,$100.00/$120.00,2026-05-21T15:42:38+00:00,Waitlist,12,1
 365937903,914400-01,Lets Go Over the Guide!,,OSAP,55+ Classes,08/14/2026,08/14/2026,1:00 pm,2:00 pm,F,Lubber Run,,$0.00/$0.00,,,,
 365937757,914304-13,Lets Play Easy Piano Duets,,OSAP,55+ Classes,06/01/2026,08/31/2026,4:00 pm,5:00 pm,M,Walter Reed Center,,$0.00/$0.00,,,,
 365937085,914103-18,Level 1 Mat Pilates,,OSAP,55+ Classes,06/15/2026,08/24/2026,3:45 pm,4:45 pm,M,Walter Reed Center,,$66.00/$66.00,,,,
@@ -1289,26 +1292,26 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343430622,310605-B,Little Kicks Soccer & Me,,SPORT,Sports,04/19/2026,06/21/2026 *,9:00 am,9:45 am,Su,Barrett Elem. School,2-3.99,$183.00/$203.00,,,,
 343430611,310605-C,Little Kicks Soccer & Me,,SPORT,Sports,04/18/2026,06/20/2026 *,11:00 am,11:45 am,Sa,Barrett Elem. School,2-3.99,$163.00/$183.00,,,,
 343430633,310605-D,Little Kicks Soccer & Me,,SPORT,Sports,04/19/2026,06/21/2026 *,9:00 am,9:45 am,Su,Rocky Run Park,2-3.99,$183.00/$203.00,,,,
-350224433,410605-A,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,11:00 am,11:45 am,Sa,Barrett Elem. School,2-3.99,$183.00/$203.00,2026-05-20T15:39:07+00:00,Available,1,0
-350224444,410605-B,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,9:00 am,9:45 am,Su,Barrett Elem. School,2-3.99,$183.00/$203.00,2026-05-20T15:39:07+00:00,Available,6,0
-350224455,410605-C,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,9:00 am,9:45 am,Sa,Fairlington Center,2-3.99,$183.00/$203.00,2026-05-20T15:39:07+00:00,Available,4,0
-350224466,410605-D,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,9:00 am,9:45 am,Su,Rocky Run Park,2-3.99,$183.00/$203.00,2026-05-20T15:39:07+00:00,Available,7,0
+350224433,410605-A,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,11:00 am,11:45 am,Sa,Barrett Elem. School,2-3.99,$183.00/$203.00,2026-05-21T15:42:38+00:00,Available,1,0
+350224444,410605-B,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,9:00 am,9:45 am,Su,Barrett Elem. School,2-3.99,$183.00/$203.00,2026-05-21T15:42:38+00:00,Available,6,0
+350224455,410605-C,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,9:00 am,9:45 am,Sa,Fairlington Center,2-3.99,$183.00/$203.00,2026-05-21T15:42:38+00:00,Available,4,0
+350224466,410605-D,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,9:00 am,9:45 am,Su,Rocky Run Park,2-3.99,$183.00/$203.00,2026-05-21T15:42:38+00:00,Available,7,0
 343190134,500102-04,Little Kids On Canvas Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Cardinal Elementary School,3.5-6.99,$220.00/$253.00,,,,
-350288650,410602-A,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,4:30 pm,5:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,1,0
-350288664,410602-B,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,5:30 pm,6:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,3,0
-350288680,410602-C,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,6:30 pm,7:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,0,0
-350288691,410602-D,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/23/2026,08/25/2026 *,4:30 pm,5:20 pm,Tu,Quincy Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,1,0
-350288702,410602-E,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/23/2026,08/25/2026 *,5:30 pm,6:20 pm,Tu,Quincy Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,3,0
-350288713,410602-F,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/23/2026,08/25/2026 *,6:30 pm,7:20 pm,Tu,Quincy Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,2,0
-350288724,410602-G,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,07/11/2026,09/05/2026,9:00 am,9:50 am,Sa,Quincy Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Waitlist,5,0
-350288737,410602-H,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,07/11/2026,09/05/2026,10:00 am,10:50 am,Sa,Quincy Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,2,0
-350288748,410602-I,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,07/11/2026,09/05/2026,11:00 am,11:50 am,Sa,Quincy Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,4,0
-350288759,410602-J,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/25/2026,08/27/2026 *,4:30 pm,5:20 pm,Th,Maury Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,1,0
-350288770,410602-K,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/25/2026,08/27/2026 *,5:30 pm,6:20 pm,Th,Maury Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,1,0
-350288781,410602-L,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/25/2026,08/27/2026 *,6:30 pm,7:20 pm,Th,Maury Park,5-6.99,$272.00/$292.00,2026-05-20T15:39:07+00:00,Available,3,0
-350288792,410602-M,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,4:30 pm,5:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-20T15:39:07+00:00,Available,1,0
-350288804,410602-N,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,5:30 pm,6:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-20T15:39:07+00:00,Available,2,0
-350288815,410602-O,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,6:30 pm,7:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-20T15:39:07+00:00,Available,1,0
+350288650,410602-A,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,4:30 pm,5:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,1,0
+350288664,410602-B,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,5:30 pm,6:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,3,0
+350288680,410602-C,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,6:30 pm,7:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,0,0
+350288691,410602-D,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/23/2026,08/25/2026 *,4:30 pm,5:20 pm,Tu,Quincy Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,1,0
+350288702,410602-E,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/23/2026,08/25/2026 *,5:30 pm,6:20 pm,Tu,Quincy Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,3,0
+350288713,410602-F,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/23/2026,08/25/2026 *,6:30 pm,7:20 pm,Tu,Quincy Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,3,0
+350288724,410602-G,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,07/11/2026,09/05/2026,9:00 am,9:50 am,Sa,Quincy Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Waitlist,5,0
+350288737,410602-H,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,07/11/2026,09/05/2026,10:00 am,10:50 am,Sa,Quincy Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,2,0
+350288748,410602-I,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,07/11/2026,09/05/2026,11:00 am,11:50 am,Sa,Quincy Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,4,0
+350288759,410602-J,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/25/2026,08/27/2026 *,4:30 pm,5:20 pm,Th,Maury Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,1,0
+350288770,410602-K,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/25/2026,08/27/2026 *,5:30 pm,6:20 pm,Th,Maury Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,1,0
+350288781,410602-L,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/25/2026,08/27/2026 *,6:30 pm,7:20 pm,Th,Maury Park,5-6.99,$272.00/$292.00,2026-05-21T15:42:38+00:00,Available,3,0
+350288792,410602-M,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,4:30 pm,5:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-21T15:42:38+00:00,Available,1,0
+350288804,410602-N,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,5:30 pm,6:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-21T15:42:38+00:00,Available,2,0
+350288815,410602-O,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,6:30 pm,7:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-05-21T15:42:38+00:00,Available,1,0
 348241660,913402-14,Local History Discussion,,OSAP,55+ Classes,05/27/2026,05/27/2026,1:30 pm,2:45 pm,W,Lubber Run,,$0.00/$0.00,,,,
 346619315,750146-II,Love the Ball Schools Out Soccer Camp- Full Day,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,4:00 pm,W,Gunston Center,6-14.99,$79.00/$91.00,,,,
 346618684,750146-T,Love the Ball Schools Out Soccer Camp- Full Day,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Gunston Center,6-14.99,$79.00/$91.00,,,,
@@ -1322,11 +1325,13 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 347287366,913900-37,Mac iPhone iPad,,OSAP,55+ Classes,05/20/2026,05/20/2026,11:30 am,12:15 pm,W,Aurora Hills Center,,$0.00/$0.00,,,,
 366019936,642850-E,Magnificent Monarchs,,NCTR,Nature & History,08/19/2026,08/19/2026,10:30 am,11:30 am,W,Gulf Branch Nature Center,4-99.99,$0.00/$0.00,,,,
 365765382,902608-06,Maryland State Fair,,SAOT,55+ Trips,08/28/2026,08/28/2026,7:50 am,4:30 pm,F,See Program Details,,$28.00/$32.00,,,,
+365938568,914501-07,Meal Planning Tips,,OSAP,55+ Classes,07/16/2026,07/16/2026,11:00 am,12:00 pm,Th,Langston Brown,,$0.00/$0.00,,,,
 347286587,913501-10,Med not Meds,,OSAP,55+ Classes,05/26/2026,05/26/2026,10:00 am,11:00 am,Tu,Lubber Run,,$0.00/$0.00,,,,
 365938399,914404-04,Medicare in Retirement Planning,,OSAP,55+ Classes,06/29/2026,06/29/2026,1:30 pm,2:30 pm,M,Virtual,,$0.00/$0.00,,,,
 365938145,914400-30,Mediterranean Cruise,,OSAP,55+ Classes,06/11/2026,06/11/2026,1:30 pm,2:30 pm,Th,Langston Brown,,$0.00/$0.00,,,,
 347482868,832600-M1,Men's Doubles 3.0-3.49 Division,,PICKLE,Pickleball,06/20/2026,06/20/2026,8:30 am,12:30 pm,Sa,Thomas Jefferson Center,,$60.00/$69.00,,,,
 347482908,832600-M3,Men's Doubles 3.5-3.99 Division,,PICKLE,Pickleball,06/20/2026,06/20/2026,12:30 pm,4:40 pm,Sa,Thomas Jefferson Center,,$60.00/$69.00,,,,
+365938556,914501-06,Mindful Meals,,OSAP,55+ Classes,07/07/2026,07/07/2026,11:00 am,12:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
 343190366,500105-01,Minecraft Creative Adventures Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,5-12.99,$375.00/$431.00,,,,
 343190377,500105-02,Minecraft Creative Adventures Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Barcroft Elem. Sch.,5-12.99,$300.00/$345.00,,,,
 343190388,500105-03,Minecraft Creative Adventures Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,5-12.99,$375.00/$431.00,,,,
@@ -1364,16 +1369,16 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343430309,310208-I,Music Together,,MOVE,Movement,04/18/2026,06/13/2026 *,11:30 am,12:15 pm,Sa,Fairlington Center,0-5.99,$227.00/$247.00,,,,
 343430324,310208-J,Music Together,,MOVE,Movement,04/18/2026,05/30/2026 *,10:00 am,10:45 am,Sa,Madison Center,0-5.99,$181.00/$201.00,,,,
 343430338,310208-K,Music Together,,MOVE,Movement,04/18/2026,05/30/2026 *,11:00 am,11:45 am,Sa,Madison Center,0-5.99,$181.00/$201.00,,,,
-350224088,410208-A,Music Together,ENJOYSUMMER,MOVE,Movement,06/27/2026,08/22/2026 *,9:30 am,10:15 am,Sa,Fairlington Center,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,3,0
-350224102,410208-B,Music Together,ENJOYSUMMER,MOVE,Movement,06/27/2026,08/22/2026 *,10:30 am,11:15 am,Sa,Fairlington Center,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,4,0
-350224116,410208-C,Music Together,ENJOYSUMMER,MOVE,Movement,06/27/2026,08/22/2026 *,11:30 am,12:15 pm,Sa,Fairlington Center,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,2,0
-350224130,410208-D,Music Together,ENJOYSUMMER,MOVE,Movement,06/29/2026,08/17/2026,9:30 am,10:15 am,M,Lubber Run,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,9,0
-350224144,410208-E,Music Together,ENJOYSUMMER,MOVE,Movement,06/29/2026,08/17/2026,10:30 am,11:15 am,M,Lubber Run,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,6,0
-350224186,410208-F,Music Together,ENJOYSUMMER,MOVE,Movement,07/02/2026,08/20/2026,10:00 am,10:45 am,Th,Lubber Run,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,5,0
-350224200,410208-G,Music Together,ENJOYSUMMER,MOVE,Movement,07/02/2026,08/20/2026,11:00 am,11:45 am,Th,Lubber Run,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,3,0
-350224158,410208-H,Music Together,ENJOYSUMMER,MOVE,Movement,06/30/2026,08/18/2026,9:30 am,10:15 am,Tu,Lubber Run,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,5,0
-350224172,410208-I,Music Together,ENJOYSUMMER,MOVE,Movement,06/30/2026,08/18/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,10,0
-350224214,410209-A,Music Together Babies Only,ENJOYSUMMER,MOVE,Movement,06/29/2026,08/17/2026,11:30 am,12:15 pm,M,Lubber Run,0-0.83,$227.00/$247.00,2026-05-20T15:39:07+00:00,Available,5,0
+350224088,410208-A,Music Together,ENJOYSUMMER,MOVE,Movement,06/27/2026,08/22/2026 *,9:30 am,10:15 am,Sa,Fairlington Center,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,3,0
+350224102,410208-B,Music Together,ENJOYSUMMER,MOVE,Movement,06/27/2026,08/22/2026 *,10:30 am,11:15 am,Sa,Fairlington Center,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,4,0
+350224116,410208-C,Music Together,ENJOYSUMMER,MOVE,Movement,06/27/2026,08/22/2026 *,11:30 am,12:15 pm,Sa,Fairlington Center,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,2,0
+350224130,410208-D,Music Together,ENJOYSUMMER,MOVE,Movement,06/29/2026,08/17/2026,9:30 am,10:15 am,M,Lubber Run,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,9,0
+350224144,410208-E,Music Together,ENJOYSUMMER,MOVE,Movement,06/29/2026,08/17/2026,10:30 am,11:15 am,M,Lubber Run,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,6,0
+350224186,410208-F,Music Together,ENJOYSUMMER,MOVE,Movement,07/02/2026,08/20/2026,10:00 am,10:45 am,Th,Lubber Run,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,5,0
+350224200,410208-G,Music Together,ENJOYSUMMER,MOVE,Movement,07/02/2026,08/20/2026,11:00 am,11:45 am,Th,Lubber Run,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,3,0
+350224158,410208-H,Music Together,ENJOYSUMMER,MOVE,Movement,06/30/2026,08/18/2026,9:30 am,10:15 am,Tu,Lubber Run,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,5,0
+350224172,410208-I,Music Together,ENJOYSUMMER,MOVE,Movement,06/30/2026,08/18/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,10,0
+350224214,410209-A,Music Together Babies Only,ENJOYSUMMER,MOVE,Movement,06/29/2026,08/17/2026,11:30 am,12:15 pm,M,Lubber Run,0-0.83,$227.00/$247.00,2026-05-21T15:42:38+00:00,Available,6,0
 348542216,310209-A,Music Together:  Babies Only,,MOVE,Movement,04/13/2026,06/08/2026 *,11:30 am,12:15 pm,M,Lubber Run,0-0.83,$207.00/$227.00,,,,
 365938185,914400-35,Musician of the Month,,OSAP,55+ Classes,06/02/2026,06/02/2026,1:00 pm,2:30 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
 365938193,914400-36,Musician of the Month,,OSAP,55+ Classes,07/07/2026,07/07/2026,1:00 pm,2:30 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
@@ -1556,7 +1561,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365937344,914106-27,Pond Creatures of Arlington,,OSAP,55+ Classes,06/17/2026,06/17/2026,10:30 am,11:30 am,W,Long Branch Nature Center,,$0.00/$0.00,,,,
 366020298,642950-O,Pond Prowl,,NCTR,Nature & History,08/20/2026,08/20/2026,3:00 pm,4:00 pm,Th,Long Branch Nature Center,4-99.99,$7.00/$8.00,,,,
 343430530,310302-A,Postpartum Yoga with Baby,,YOGA,Yoga,04/13/2026,06/08/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$123.00/$143.00,,,,
-350224361,410302-A,Postpartum Yoga with Baby,ENJOYSUMMER,YOGA,Yoga,07/13/2026,08/10/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,5,0
+350224361,410302-A,Postpartum Yoga with Baby,ENJOYSUMMER,YOGA,Yoga,07/13/2026,08/10/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,5,0
 365765293,902607-02,Potomac Mills Premium Outlets,,SAOT,55+ Trips,07/14/2026,07/14/2026,9:50 am,4:30 pm,Tu,See Program Details,,$12.00/$14.00,,,,
 343192749,500310-02,Pottery Around the World Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:00 pm,"M, Tu, W, Th",Discovery Elementary,6-11.99,$320.00/$368.00,,,,
 343192760,500310-03,Pottery Around the World Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,,,,
@@ -1567,8 +1572,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365938407,914404-05,Power of Attorney Essentials,,OSAP,55+ Classes,07/15/2026,07/15/2026,1:00 pm,2:00 pm,W,Arlington Mill,,$0.00/$0.00,,,,
 343430452,310211-A,Pre-Ballet & Movement 2,,DANCE,Dance,04/15/2026,06/10/2026,5:00 pm,5:45 pm,W,Lubber Run,4-5.99,$216.00/$236.00,,,,
 343430463,310211-B,Pre-Ballet & Movement 2,,DANCE,Dance,04/18/2026,06/13/2026 *,3:15 pm,4:00 pm,Sa,Lubber Run,4-5.99,$168.00/$188.00,,,,
-350224294,410211-A,Pre-Ballet & Movement 2,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,5:45 pm,6:30 pm,W,Langston Brown,4-5.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,1,0
-350224305,410211-B,Pre-Ballet & Movement 2,ENJOYSUMMER,DANCE,Dance,07/20/2026,08/17/2026,5:15 pm,6:00 pm,M,Barcroft Fitness Center,4-5.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,6,0
+350224294,410211-A,Pre-Ballet & Movement 2,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,5:45 pm,6:30 pm,W,Langston Brown,4-5.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,1,0
+350224305,410211-B,Pre-Ballet & Movement 2,ENJOYSUMMER,DANCE,Dance,07/20/2026,08/17/2026,5:15 pm,6:00 pm,M,Barcroft Fitness Center,4-5.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,6,0
 343430352,310210-A,Pre-Ballet & Movement I,,DANCE,Dance,04/14/2026,06/09/2026 *,5:10 pm,5:50 pm,Tu,Barcroft Fitness Center,3-5.99,$192.00/$212.00,,,,
 343430363,310210-B,Pre-Ballet & Movement I,,DANCE,Dance,04/13/2026,06/08/2026 *,10:45 am,11:30 am,M,Barcroft Fitness Center,3-5.99,$192.00/$212.00,,,,
 343430374,310210-C,Pre-Ballet & Movement I,,DANCE,Dance,04/13/2026,06/08/2026 *,5:10 pm,5:55 pm,M,Fairlington Center,3-5.99,$216.00/$236.00,,,,
@@ -1577,12 +1582,12 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343430408,310210-F,Pre-Ballet & Movement I,,DANCE,Dance,04/17/2026,06/12/2026,11:00 am,11:45 am,F,Lubber Run,3-5.99,$216.00/$236.00,,,,
 343430419,310210-G,Pre-Ballet & Movement I,,DANCE,Dance,04/13/2026,06/08/2026 *,4:45 pm,5:25 pm,M,Lubber Run,3-5.99,$192.00/$212.00,,,,
 343430430,310210-H,Pre-Ballet & Movement I,,DANCE,Dance,04/18/2026,06/13/2026 *,10:30 am,11:10 am,Sa,Lubber Run,3-5.99,$168.00/$188.00,,,,
-350224228,410210-A,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,11:10 am,11:50 am,Sa,Lubber Run,3-5.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Waitlist,10,3
-350224239,410210-B,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/12/2026,08/09/2026,3:40 pm,4:20 pm,Su,Lubber Run,3-5.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,9,0
-350224250,410210-C,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/13/2026,08/10/2026,5:10 pm,5:55 pm,M,Fairlington Center,3-5.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,2,0
-350224261,410210-D,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,5:00 pm,5:40 pm,W,Langston Brown,3-5.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,6,0
-350224272,410210-E,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/17/2026,08/14/2026,10:45 am,11:30 am,F,Walter Reed Center,3-5.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,4,0
-350224283,410210-F,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/20/2026,08/17/2026,4:30 pm,5:10 pm,M,Barcroft Fitness Center,3-5.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,3,0
+350224228,410210-A,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,11:10 am,11:50 am,Sa,Lubber Run,3-5.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Waitlist,10,3
+350224239,410210-B,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/12/2026,08/09/2026,3:40 pm,4:20 pm,Su,Lubber Run,3-5.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,9,0
+350224250,410210-C,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/13/2026,08/10/2026,5:10 pm,5:55 pm,M,Fairlington Center,3-5.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,2,0
+350224261,410210-D,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,5:00 pm,5:40 pm,W,Langston Brown,3-5.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,6,0
+350224272,410210-E,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/17/2026,08/14/2026,10:45 am,11:30 am,F,Walter Reed Center,3-5.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,4,0
+350224283,410210-F,Pre-Ballet & Movement I,ENJOYSUMMER,DANCE,Dance,07/20/2026,08/17/2026,4:30 pm,5:10 pm,M,Barcroft Fitness Center,3-5.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,3,0
 343435373,310403-A,Pre-Fin,,AQUAT,Aquatics,04/14/2026,06/16/2026,4:00 pm,4:20 pm,Tu,Long Bridge Aquatics Center,3-3.99,$78.00/$98.00,,,,
 343435384,310403-B,Pre-Fin,,AQUAT,Aquatics,04/14/2026,06/16/2026,4:35 pm,4:55 pm,Tu,Long Bridge Aquatics Center,3-3.99,$78.00/$98.00,,,,
 343435395,310403-C,Pre-Fin,,AQUAT,Aquatics,04/14/2026,06/16/2026,5:35 pm,5:55 pm,Tu,Long Bridge Aquatics Center,3-3.99,$78.00/$98.00,,,,
@@ -1607,32 +1612,32 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343435617,310403-V,Pre-Fin,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,11:10 am,11:30 am,Su,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,,,,
 351578679,310403-W,Pre-Fin,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,8:30 am,8:50 am,Su,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,,,,
 351579699,310403-X,Pre-Fin,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,10:40 am,11:00 am,Su,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,,,,
-350201205,410403-A,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,10:00 am,10:20 am,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201216,410403-B,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,11:45 am,12:05 pm,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,1,0
-350201227,410403-C,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:00 pm,4:20 pm,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,1,0
-350201238,410403-D,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:35 pm,5:55 pm,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201249,410403-E,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:45 pm,6:05 pm,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,0,0
-350201260,410403-F,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,10:00 am,10:20 am,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201271,410403-G,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,11:45 am,12:05 pm,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,1,0
-350201283,410403-H,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:35 pm,4:55 pm,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,1,0
-350201294,410403-I,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,5:10 pm,5:30 pm,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201305,410403-J,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,6:20 pm,6:40 pm,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Waitlist,4,0
-350201316,410403-K,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:00 pm,4:20 pm,W,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201327,410403-L,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:35 pm,5:55 pm,W,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,1,0
-350201338,410403-M,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:45 pm,6:05 pm,W,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,0,0
-350201349,410403-N,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:35 pm,4:55 pm,Th,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,1,0
-350201360,410403-O,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,5:10 pm,5:30 pm,Th,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201371,410403-P,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,6:20 pm,6:40 pm,Th,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-20T15:39:07+00:00,Available,3,0
-350201382,410403-Q,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:00 pm,4:20 pm,F,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Waitlist,4,0
-350201393,410403-R,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:45 pm,6:05 pm,F,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Available,1,0
-350201404,410403-S,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,8:50 am,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Waitlist,4,0
-350201415,410403-T,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:30 am,9:50 am,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Waitlist,4,4
-350201426,410403-U,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:15 am,10:35 am,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Waitlist,4,3
-350201437,410403-V,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:50 am,11:10 am,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Waitlist,4,0
-350201448,410403-W,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,12:00 pm,12:20 pm,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Available,3,0
-350201459,410403-X,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,8:50 am,Su,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Available,2,0
-350201470,410403-Y,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:05 am,10:25 am,Su,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Waitlist,4,2
-350201481,410403-Z,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:45 am,12:05 pm,Su,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-20T15:39:07+00:00,Waitlist,4,2
+350201205,410403-A,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,10:00 am,10:20 am,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,2,0
+350201216,410403-B,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,11:45 am,12:05 pm,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,1,0
+350201227,410403-C,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:00 pm,4:20 pm,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,1,0
+350201238,410403-D,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:35 pm,5:55 pm,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,2,0
+350201249,410403-E,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:45 pm,6:05 pm,M,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,0,0
+350201260,410403-F,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,10:00 am,10:20 am,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,2,0
+350201271,410403-G,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,11:45 am,12:05 pm,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,1,0
+350201283,410403-H,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:35 pm,4:55 pm,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,1,0
+350201294,410403-I,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,5:10 pm,5:30 pm,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,2,0
+350201305,410403-J,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,6:20 pm,6:40 pm,Tu,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Waitlist,4,0
+350201316,410403-K,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:00 pm,4:20 pm,W,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,2,0
+350201327,410403-L,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:35 pm,5:55 pm,W,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,1,0
+350201338,410403-M,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:45 pm,6:05 pm,W,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,0,0
+350201349,410403-N,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:35 pm,4:55 pm,Th,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,1,0
+350201360,410403-O,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,5:10 pm,5:30 pm,Th,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,2,0
+350201371,410403-P,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,6:20 pm,6:40 pm,Th,Long Bridge Aquatics Center,3-3.99,$62.00/$82.00,2026-05-21T15:42:38+00:00,Available,3,0
+350201382,410403-Q,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:00 pm,4:20 pm,F,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Waitlist,4,0
+350201393,410403-R,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:45 pm,6:05 pm,F,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Available,1,0
+350201404,410403-S,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,8:50 am,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Waitlist,4,0
+350201415,410403-T,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:30 am,9:50 am,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Waitlist,4,4
+350201426,410403-U,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:15 am,10:35 am,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Waitlist,4,3
+350201437,410403-V,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:50 am,11:10 am,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Waitlist,4,0
+350201448,410403-W,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,12:00 pm,12:20 pm,Sa,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Available,3,0
+350201459,410403-X,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,8:50 am,Su,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Available,2,0
+350201470,410403-Y,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:05 am,10:25 am,Su,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Waitlist,4,2
+350201481,410403-Z,Pre-Fin,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:45 am,12:05 pm,Su,Long Bridge Aquatics Center,3-3.99,$54.00/$74.00,2026-05-21T15:42:38+00:00,Waitlist,4,2
 343435241,310402-A,Pre-Fin & Me,,AQUAT,Aquatics,04/14/2026,06/16/2026,11:10 am,11:40 am,Tu,Long Bridge Aquatics Center,2.5-3.99,$100.00/$120.00,,,,
 343435252,310402-B,Pre-Fin & Me,,AQUAT,Aquatics,04/14/2026,06/16/2026,5:10 pm,5:40 pm,Tu,Long Bridge Aquatics Center,2.5-3.99,$100.00/$120.00,,,,
 343435263,310402-C,Pre-Fin & Me,,AQUAT,Aquatics,04/15/2026,06/17/2026,5:10 pm,5:40 pm,W,Long Bridge Aquatics Center,2.5-3.99,$100.00/$120.00,,,,
@@ -1646,19 +1651,19 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343435351,310402-K,Pre-Fin & Me,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,10:55 am,11:25 am,Su,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,,,,
 351580293,310402-L,Pre-Fin & Me,,AQUAT,Aquatics,04/18/2026,06/13/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,,,,
 351580419,310402-M,Pre-Fin & Me,,AQUAT,Aquatics,04/18/2026,06/13/2026 *,10:15 am,10:45 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,,,,
-350201058,410402-A,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,11:10 am,11:40 am,M,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,8,0
-350201069,410402-B,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:10 pm,5:40 pm,M,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,6,0
-350201080,410402-C,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,11:10 am,11:40 am,Tu,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,5,0
-350201091,410402-D,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:35 pm,5:05 pm,Tu,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,5,0
-350201102,410402-E,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:10 pm,5:40 pm,W,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,5,0
-350201113,410402-F,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:35 pm,5:05 pm,Th,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,1,0
-350201124,410402-G,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:10 pm,5:40 pm,F,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Available,8,0
-350201135,410402-H,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,10,1
-350201146,410402-I,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:40 am,10:10 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,10,4
-350201157,410402-J,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:15 am,10:45 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,11,3
-350201170,410402-K,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:25 am,11:55 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,10,0
-350201182,410402-L,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:40 am,10:10 am,Su,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,10,8
-350201193,410402-M,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:50 am,11:20 am,Su,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,10,7
+350201058,410402-A,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,11:10 am,11:40 am,M,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,8,0
+350201069,410402-B,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,5:10 pm,5:40 pm,M,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,6,0
+350201080,410402-C,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,11:10 am,11:40 am,Tu,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350201091,410402-D,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:35 pm,5:05 pm,Tu,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350201102,410402-E,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,5:10 pm,5:40 pm,W,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350201113,410402-F,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:35 pm,5:05 pm,Th,Long Bridge Aquatics Center,2.5-3.99,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,1,0
+350201124,410402-G,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,5:10 pm,5:40 pm,F,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Available,8,0
+350201135,410402-H,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,10,1
+350201146,410402-I,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:40 am,10:10 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,10,4
+350201157,410402-J,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:15 am,10:45 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,11,4
+350201170,410402-K,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:25 am,11:55 am,Sa,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,10,0
+350201182,410402-L,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:40 am,10:10 am,Su,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,10,8
+350201193,410402-M,Pre-Fin & Me,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:50 am,11:20 am,Su,Long Bridge Aquatics Center,2.5-3.99,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,10,8
 366020059,642910-K,Pre-K: Animal Parents,,NCTR,Nature & History,08/08/2026,08/08/2026,11:00 am,12:00 pm,Sa,Long Branch Nature Center,3-5.99,$7.00/$8.00,,,,
 366020071,642910-L,Pre-K: Animal Parents,,NCTR,Nature & History,08/18/2026,08/18/2026,11:00 am,12:00 pm,Tu,Long Branch Nature Center,3-5.99,$7.00/$8.00,,,,
 366020082,642910-M,Pre-K: Animal Parents,,NCTR,Nature & History,08/20/2026,08/20/2026,11:00 am,12:00 pm,Th,Long Branch Nature Center,3-5.99,$7.00/$8.00,,,,
@@ -1922,6 +1927,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343431981,320322-A,Strum & Smile! Beginner Ukulele,,MUSIC,Music,04/13/2026,06/15/2026 *,6:15 pm,7:15 pm,M,Long Bridge Aquatics Center,5-12.99,$252.00/$272.00,,,,
 350225471,420322-A,Strum & Smile! Beginner Ukulele,ENJOYSUMMER,MUSIC,Music,07/06/2026,08/10/2026,6:15 pm,7:15 pm,M,Long Bridge Aquatics Center,5-12.99,$175.00/$195.00,2026-05-15T14:06:18+00:00,Available,1,0
 344837708,592026-V,Summer Camp Volunteer Program - 2026,CAMP,CAMP,Summer Camp,06/22/2026,08/28/2026 *,12:00 am,12:00 am,"M, Tu, W, Th, F",See Program Details,13-16.99,$0.00/$0.00,,,,
+365938523,914501-02,Summer Herbs,,OSAP,55+ Classes,07/02/2026,07/02/2026,10:00 am,11:00 am,Th,Arlington Mill,,$0.00/$0.00,,,,
+365938547,914501-05,Summer Picnic Ideas,,OSAP,55+ Classes,06/23/2026,06/23/2026,11:00 am,12:00 pm,Tu,Lubber Run,,$0.00/$0.00,,,,
 365938137,914400-29,Summer Plants for Pollinators,,OSAP,55+ Classes,07/27/2026,07/27/2026,1:00 pm,2:30 pm,M,Aurora Hills Center,,$0.00/$0.00,,,,
 366020309,642950-P,Summer Scavengers,,NCTR,Nature & History,08/27/2026,08/27/2026,2:00 pm,3:00 pm,Th,Long Branch Nature Center,4-99.99,$7.00/$8.00,,,,
 343192003,500231-02,Summertime Thrills Camp,CAMP,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,4:00 pm,"M, Tu, W, Th",Yorktown High Sch.,12-15.99,$320.00/$368.00,,,,
@@ -1949,8 +1956,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343430474,310213-A,Tap n' Ballet,,DANCE,Dance,04/14/2026,06/09/2026,5:15 pm,6:00 pm,Tu,Lubber Run,4-6.99,$216.00/$236.00,,,,
 343430485,310213-B,Tap n' Ballet,,DANCE,Dance,04/13/2026,06/08/2026 *,5:00 pm,5:45 pm,M,Barcroft Fitness Center,4-6.99,$192.00/$212.00,,,,
 343430497,310213-C,Tap n' Ballet,,DANCE,Dance,04/19/2026,06/14/2026 *,10:15 am,11:00 am,Su,Long Bridge Aquatics Center,4-6.99,$192.00/$212.00,,,,
-350224317,410213-A,Tap n' Ballet,ENJOYSUMMER,DANCE,Dance,07/12/2026,08/09/2026,4:30 pm,5:15 pm,Su,Lubber Run,4-6.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,6,0
-350224328,410213-B,Tap n' Ballet,ENJOYSUMMER,DANCE,Dance,07/14/2026,08/11/2026,5:15 pm,6:00 pm,Tu,Barcroft Fitness Center,4-6.99,$120.00/$140.00,2026-05-20T15:39:07+00:00,Available,2,0
+350224317,410213-A,Tap n' Ballet,ENJOYSUMMER,DANCE,Dance,07/12/2026,08/09/2026,4:30 pm,5:15 pm,Su,Lubber Run,4-6.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,6,0
+350224328,410213-B,Tap n' Ballet,ENJOYSUMMER,DANCE,Dance,07/14/2026,08/11/2026,5:15 pm,6:00 pm,Tu,Barcroft Fitness Center,4-6.99,$120.00/$140.00,2026-05-21T15:42:38+00:00,Available,2,0
 347287035,913804-09,Tea and a Movie,,OSAP,55+ Classes,05/22/2026,05/22/2026,12:30 pm,2:30 pm,F,Aurora Hills Center,,$0.00/$0.00,,,,
 343191887,500226-04,Teen Art: Jewelry Bootcamp,CAMP,CAMP,Summer Camp,07/13/2026,07/17/2026,9:30 am,12:30 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,12-16.99,$190.00/$218.00,,,,
 343191899,500226-06,Teen Art: Jewelry Bootcamp,CAMP,CAMP,Summer Camp,07/27/2026,07/31/2026,9:30 am,12:30 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,12-16.99,$190.00/$218.00,,,,
@@ -2182,13 +2189,13 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366019958,642910-B,Tiny Tot: Turtles,,NCTR,Nature & History,07/15/2026,07/15/2026,12:00 pm,12:45 pm,W,Long Branch Nature Center,1.5-3.99,$7.00/$8.00,,,,
 366019969,642910-C,Tiny Tot: Turtles,,NCTR,Nature & History,07/25/2026,07/25/2026,10:00 am,10:45 am,Sa,Long Branch Nature Center,1.5-3.99,$7.00/$8.00,,,,
 343430583,310324-A,Tiny Tunes Guitar,,MUSIC,Music,04/19/2026,06/14/2026 *,6:00 pm,6:30 pm,Su,Arlington Mill,4-7.99,$210.00/$230.00,,,,
-350224416,410324-A,Tiny Tunes Guitar,ENJOYSUMMER,MUSIC,Music,07/07/2026,08/11/2026,10:45 am,11:15 am,Tu,Long Bridge Aquatics Center,4-5.99,$163.00/$183.00,2026-05-20T15:39:07+00:00,Available,1,0
+350224416,410324-A,Tiny Tunes Guitar,ENJOYSUMMER,MUSIC,Music,07/07/2026,08/11/2026,10:45 am,11:15 am,Tu,Long Bridge Aquatics Center,4-5.99,$163.00/$183.00,2026-05-21T15:42:38+00:00,Available,1,0
 343430541,310321-A,Tiny Tunes Piano,,MUSIC,Music,04/15/2026,06/03/2026,10:00 am,10:30 am,W,Long Bridge Aquatics Center,3-6.99,$210.00/$230.00,,,,
 343430555,310321-B,Tiny Tunes Piano,,MUSIC,Music,04/19/2026,06/14/2026 *,4:40 pm,5:10 pm,Su,Arlington Mill,3-6.99,$210.00/$230.00,,,,
 343430569,310321-C,Tiny Tunes Piano,,MUSIC,Music,04/19/2026,06/14/2026 *,5:20 pm,5:50 pm,Su,Arlington Mill,3-6.99,$210.00/$230.00,,,,
-350224372,410321-A,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/07/2026,08/11/2026,10:00 am,10:30 am,Tu,Long Bridge Aquatics Center,3-6.99,$163.00/$183.00,2026-05-20T15:39:07+00:00,Available,6,0
-350224386,410321-B,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/12/2026,08/16/2026,4:40 pm,5:10 pm,Su,Arlington Mill,3-6.99,$163.00/$183.00,2026-05-20T15:39:07+00:00,Available,7,0
-350224401,410321-C,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/12/2026,08/16/2026,5:20 pm,5:50 pm,Su,Arlington Mill,3-6.99,$163.00/$183.00,2026-05-20T15:39:07+00:00,Available,3,0
+350224372,410321-A,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/07/2026,08/11/2026,10:00 am,10:30 am,Tu,Long Bridge Aquatics Center,3-6.99,$163.00/$183.00,2026-05-21T15:42:38+00:00,Available,6,0
+350224386,410321-B,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/12/2026,08/16/2026,4:40 pm,5:10 pm,Su,Arlington Mill,3-6.99,$163.00/$183.00,2026-05-21T15:42:38+00:00,Available,7,0
+350224401,410321-C,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/12/2026,08/16/2026,5:20 pm,5:50 pm,Su,Arlington Mill,3-6.99,$163.00/$183.00,2026-05-21T15:42:38+00:00,Available,3,0
 343430644,310606-A,Tip Top Fit Together & Me,,SPORT,Sports,04/18/2026,06/20/2026 *,10:00 am,10:45 am,Sa,Lubber Run,2-4.99,$163.00/$183.00,,,,
 343431497,320308-A,Tip Top Ninjas 1,,MARTS,Martial Arts,04/13/2026,06/08/2026 *,4:45 pm,5:30 pm,M,Barcroft Fitness Center,4-7.99,$163.00/$183.00,,,,
 343431519,320308-B,Tip Top Ninjas 1,,MARTS,Martial Arts,04/18/2026,06/06/2026 *,9:30 am,10:15 am,Sa,Barcroft Fitness Center,4-7.99,$143.00/$163.00,,,,
@@ -2205,7 +2212,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343430655,310609-A,Tip Top Sticks: Hockey & Lacrosse,,SPORT,Sports,04/16/2026,06/18/2026,6:50 pm,7:50 pm,Th,Fairlington Center,7-9.99,$237.00/$257.00,,,,
 343430666,310609-B,Tip Top Sticks: Hockey & Lacrosse,,SPORT,Sports,04/18/2026,06/20/2026 *,12:00 pm,1:00 pm,Sa,Fairlington Center,4-6.99,$213.00/$233.00,,,,
 343430677,310609-C,Tip Top Sticks: Hockey & Lacrosse,,SPORT,Sports,04/19/2026,06/21/2026 *,1:00 pm,1:45 pm,Su,Rocky Run Park,5-9.99,$183.00/$203.00,,,,
-350224477,410609-A,Tip Top Sticks: Hockey & Lacrosse,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,12:00 pm,12:45 pm,Sa,Fairlington Center,5-7.99,$183.00/$203.00,2026-05-20T15:39:07+00:00,Available,1,0
+350224477,410609-A,Tip Top Sticks: Hockey & Lacrosse,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,12:00 pm,12:45 pm,Sa,Fairlington Center,5-7.99,$183.00/$203.00,2026-05-21T15:42:38+00:00,Available,1,0
 347516425,740301-AA,Tot Private Lesson,,AQUATPVT,Aquatics - Private Lessons,04/13/2026,06/15/2026 *,4:00 pm,4:30 pm,M,Long Bridge Aquatics Center,3.5-4.99,$396.00/$416.00,,,,
 347516458,740301-AD,Tot Private Lesson,,AQUATPVT,Aquatics - Private Lessons,04/13/2026,06/15/2026 *,3:25 pm,3:55 pm,M,Long Bridge Aquatics Center,3.5-4.99,$396.00/$416.00,,,,
 347516590,740301-AR,Tot Private Lesson,,AQUATPVT,Aquatics - Private Lessons,04/16/2026,06/18/2026,3:25 pm,3:55 pm,Th,Long Bridge Aquatics Center,3.5-4.99,$440.00/$460.00,,,,
@@ -2294,17 +2301,17 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343443272,310503-O,Tumbling for 3's (Age: 3),,GYMNA,Gymnastics,04/17/2026,06/12/2026 *,1:00 pm,1:45 pm,F,Barcroft Fitness Center,3-3.99,$110.00/$130.00,,,,
 343443283,310503-P,Tumbling for 3's (Age: 3),,GYMNA,Gymnastics,04/18/2026,06/13/2026 *,9:30 am,10:15 am,Sa,Barcroft Fitness Center,3-3.99,$110.00/$130.00,,,,
 343443294,310503-Q,Tumbling for 3's (Age: 3),,GYMNA,Gymnastics,04/18/2026,06/13/2026 *,10:30 am,11:15 am,Sa,Barcroft Fitness Center,3-3.99,$110.00/$130.00,,,,
-350216575,410503-A,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,1:00 pm,1:45 pm,Th,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350216586,410503-B,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,11:30 am,12:15 pm,F,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,3
-350216597,410503-C,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,2:00 pm,2:45 pm,F,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,0
-350216608,410503-D,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,9:30 am,10:15 am,Sa,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,20
-350216619,410503-E,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,10:30 am,11:15 am,Sa,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,22
-350216630,410503-F,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/12/2026,08/16/2026,1:00 pm,1:45 pm,Su,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,6,15
-350216652,410503-G,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/06/2026,08/10/2026 *,2:00 pm,2:45 pm,M,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350216663,410503-H,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,1:00 pm,1:45 pm,Tu,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,1
-350216674,410503-I,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,3:00 pm,3:45 pm,Tu,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,4
-350216685,410503-J,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,11:30 am,12:15 pm,W,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,6,8
-350216696,410503-K,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,2:00 pm,2:45 pm,W,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Available,5,0
+350216575,410503-A,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,1:00 pm,1:45 pm,Th,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350216586,410503-B,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,11:30 am,12:15 pm,F,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,3
+350216597,410503-C,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,2:00 pm,2:45 pm,F,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,0
+350216608,410503-D,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,9:30 am,10:15 am,Sa,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,20
+350216619,410503-E,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,10:30 am,11:15 am,Sa,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,22
+350216630,410503-F,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/12/2026,08/16/2026,1:00 pm,1:45 pm,Su,Barcroft Fitness Center,3-3.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,6,15
+350216652,410503-G,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/06/2026,08/10/2026 *,2:00 pm,2:45 pm,M,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350216663,410503-H,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,1:00 pm,1:45 pm,Tu,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,1
+350216674,410503-I,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,3:00 pm,3:45 pm,Tu,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,4
+350216685,410503-J,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,11:30 am,12:15 pm,W,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,6,8
+350216696,410503-K,Tumbling for 3's (Age: 3),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,2:00 pm,2:45 pm,W,Barcroft Fitness Center,3-3.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Available,5,0
 343442996,310502-A,Tumbling for Toddlers (Age: 1.5-2),,GYMNA,Gymnastics,04/14/2026,06/09/2026,9:30 am,10:15 am,Tu,Barcroft Fitness Center,1.5-2.99,$124.00/$144.00,,,,
 343443007,310502-B,Tumbling for Toddlers (Age: 1.5-2),,GYMNA,Gymnastics,04/14/2026,06/09/2026,11:30 am,12:15 pm,Tu,Barcroft Fitness Center,1.5-2.99,$124.00/$144.00,,,,
 343443018,310502-C,Tumbling for Toddlers (Age: 1.5-2),,GYMNA,Gymnastics,04/15/2026,06/10/2026,11:30 am,12:15 pm,W,Barcroft Fitness Center,1.5-2.99,$124.00/$144.00,,,,
@@ -2315,14 +2322,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343443084,310502-H,Tumbling for Toddlers (Age: 1.5-2),,GYMNA,Gymnastics,04/17/2026,06/12/2026,11:30 am,12:15 pm,F,Barcroft Fitness Center,1.5-2.99,$110.00/$130.00,,,,
 343443095,310502-I,Tumbling for Toddlers (Age: 1.5-2),,GYMNA,Gymnastics,04/18/2026,06/13/2026 *,8:30 am,9:15 am,Sa,Barcroft Fitness Center,1.5-2.99,$110.00/$130.00,,,,
 343443106,310502-J,Tumbling for Toddlers (Age: 1.5-2),,GYMNA,Gymnastics,04/19/2026,06/14/2026 *,12:00 pm,12:45 pm,Su,Barcroft Fitness Center,1.5-2.99,$96.00/$116.00,,,,
-350216476,410502-A,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,11:30 am,12:15 pm,Th,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,7,5
-350216487,410502-B,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,2:00 pm,2:45 pm,Th,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Available,6,0
-350216498,410502-C,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,1:00 pm,1:45 pm,F,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Available,1,0
-350216509,410502-D,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,8:30 am,9:15 am,Sa,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,7,21
-350216520,410502-E,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/12/2026,08/16/2026,12:00 pm,12:45 pm,Su,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-20T15:39:07+00:00,Waitlist,8,11
-350216542,410502-F,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,11:30 am,12:15 pm,Tu,Barcroft Fitness Center,1.5-2.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,7,8
-350216553,410502-G,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,2:00 pm,2:45 pm,Tu,Barcroft Fitness Center,1.5-2.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Waitlist,8,0
-350216564,410502-H,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,1:00 pm,1:45 pm,W,Barcroft Fitness Center,1.5-2.99,$69.00/$89.00,2026-05-20T15:39:07+00:00,Available,2,0
+350216476,410502-A,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,11:30 am,12:15 pm,Th,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,7,5
+350216487,410502-B,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,2:00 pm,2:45 pm,Th,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,8,0
+350216498,410502-C,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/10/2026,08/14/2026,1:00 pm,1:45 pm,F,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Available,1,0
+350216509,410502-D,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/11/2026,08/15/2026,8:30 am,9:15 am,Sa,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,7,21
+350216520,410502-E,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/12/2026,08/16/2026,12:00 pm,12:45 pm,Su,Barcroft Fitness Center,1.5-2.99,$83.00/$103.00,2026-05-21T15:42:38+00:00,Waitlist,8,11
+350216542,410502-F,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,11:30 am,12:15 pm,Tu,Barcroft Fitness Center,1.5-2.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,7,8
+350216553,410502-G,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,2:00 pm,2:45 pm,Tu,Barcroft Fitness Center,1.5-2.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Waitlist,8,0
+350216564,410502-H,Tumbling for Toddlers (Age: 1.5-2),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,1:00 pm,1:45 pm,W,Barcroft Fitness Center,1.5-2.99,$69.00/$89.00,2026-05-21T15:42:38+00:00,Available,2,0
 366020206,642950-G,Turkey Vultures vs Black Vultures: Those rotten birds,,NCTR,Nature & History,06/12/2026,06/12/2026,5:30 pm,6:30 pm,F,Long Branch Nature Center,4-99.99,$7.00/$8.00,,,,
 350725931,632950-I,Turtle Time,,NCTR,Nature & History,05/14/2026,05/14/2026,3:30 pm,4:15 pm,Th,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
 350725942,632950-J,Turtle Time,,NCTR,Nature & History,06/02/2026,06/02/2026,3:30 pm,4:15 pm,Tu,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
@@ -2369,16 +2376,16 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343435096,310400-L,Water Babies,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,9:40 am,10:10 am,Su,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,,,,
 351580697,310400-M,Water Babies,,AQUAT,Aquatics,04/18/2026,06/13/2026 *,9:40 am,10:10 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,,,,
 351580819,310400-N,Water Babies,,AQUAT,Aquatics,04/18/2026,06/13/2026 *,11:25 am,11:55 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,,,,
-350200801,410400-A,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,10:00 am,10:30 am,M,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,4,0
-350200813,410400-B,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:00 pm,4:30 pm,M,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,7,0
-350200824,410400-C,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,10:00 am,10:30 am,Tu,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,6,0
-350200836,410400-D,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:00 pm,4:30 pm,W,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,7,0
-350200847,410400-E,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:00 pm,4:30 pm,F,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,0
-350200858,410400-F,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:05 am,9:35 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,2
-350200869,410400-G,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:40 am,10:10 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,5
-350200880,410400-H,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:20 am,11:50 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,6
-350200891,410400-I,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,9:00 am,Su,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,1
-350200902,410400-J,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:15 am,10:45 am,Su,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,1
+350200801,410400-A,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,10:00 am,10:30 am,M,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,4,0
+350200813,410400-B,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:00 pm,4:30 pm,M,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,7,0
+350200824,410400-C,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,10:00 am,10:30 am,Tu,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,6,0
+350200836,410400-D,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:00 pm,4:30 pm,W,Long Bridge Aquatics Center,0.5-1.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,7,0
+350200847,410400-E,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:00 pm,4:30 pm,F,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,0
+350200858,410400-F,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:05 am,9:35 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,2
+350200869,410400-G,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:40 am,10:10 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,5
+350200880,410400-H,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,11:20 am,11:50 am,Sa,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,6
+350200891,410400-I,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,8:30 am,9:00 am,Su,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,1
+350200902,410400-J,Water Babies,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,10:15 am,10:45 am,Su,Long Bridge Aquatics Center,0.5-1.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,1
 365936921,914102-12,Water Fit and Tone,,OSAP,55+ Classes,06/10/2026,08/12/2026,10:00 am,11:00 am,W,Long Bridge Aquatics Center,,$50.00/$50.00,,,,
 343435107,310401-A,Water Tots,,AQUAT,Aquatics,04/14/2026,06/16/2026,10:35 am,11:05 am,Tu,Long Bridge Aquatics Center,1.5-2.5,$100.00/$120.00,,,,
 343435118,310401-B,Water Tots,,AQUAT,Aquatics,04/14/2026,06/16/2026,4:35 pm,5:05 pm,Tu,Long Bridge Aquatics Center,1.5-2.5,$100.00/$120.00,,,,
@@ -2394,19 +2401,19 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343435230,310401-L,Water Tots,,AQUAT,Aquatics,04/19/2026,06/14/2026 *,11:30 am,12:00 pm,Su,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,,,,
 351580486,310401-M,Water Tots,,AQUAT,Aquatics,04/18/2026,06/13/2026 *,9:05 am,9:35 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,,,,
 351580602,310401-N,Water Tots,,AQUAT,Aquatics,04/18/2026,06/13/2026 *,10:50 am,11:20 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,,,,
-350200913,410401-A,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,10:35 am,11:05 am,M,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,6,0
-350200924,410401-B,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:35 pm,5:05 pm,M,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,8,0
-350200935,410401-C,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,10:35 am,11:05 am,Tu,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,9,0
-350200946,410401-D,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,4,0
-350200957,410401-E,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:35 pm,5:05 pm,W,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,6,0
-350200968,410401-F,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:00 pm,4:30 pm,Th,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-20T15:39:07+00:00,Available,3,0
-350200979,410401-G,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:35 pm,5:05 pm,F,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Available,6,0
-350200990,410401-H,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Available,11,0
-350201001,410401-I,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:05 am,9:35 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,3
-350201012,410401-J,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:15 am,10:45 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,4
-350201023,410401-K,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:50 am,11:20 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,3
-350201034,410401-L,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:05 am,9:35 am,Su,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,11,5
-350201045,410401-M,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:25 am,11:55 am,Su,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-20T15:39:07+00:00,Waitlist,12,2
+350200913,410401-A,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,10:35 am,11:05 am,M,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,7,0
+350200924,410401-B,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/22/2026,08/10/2026,4:35 pm,5:05 pm,M,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,8,0
+350200935,410401-C,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,10:35 am,11:05 am,Tu,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,9,0
+350200946,410401-D,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/23/2026,08/11/2026,4:00 pm,4:30 pm,Tu,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,5,0
+350200957,410401-E,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/24/2026,08/12/2026,4:35 pm,5:05 pm,W,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,6,0
+350200968,410401-F,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/25/2026,08/13/2026,4:00 pm,4:30 pm,Th,Long Bridge Aquatics Center,1.5-2.5,$80.00/$100.00,2026-05-21T15:42:38+00:00,Available,3,0
+350200979,410401-G,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:35 pm,5:05 pm,F,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Available,7,0
+350200990,410401-H,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,8:30 am,9:00 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,1
+350201001,410401-I,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,9:05 am,9:35 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,4
+350201012,410401-J,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:15 am,10:45 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,5
+350201023,410401-K,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/27/2026,08/15/2026 *,10:50 am,11:20 am,Sa,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,4
+350201034,410401-L,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,9:05 am,9:35 am,Su,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,11,6
+350201045,410401-M,Water Tots,ENJOYSUMMER,AQUAT,Aquatics,06/28/2026,08/16/2026 *,11:25 am,11:55 am,Su,Long Bridge Aquatics Center,1.5-2.5,$70.00/$90.00,2026-05-21T15:42:38+00:00,Waitlist,12,3
 365937878,914310-06,Whimsical Teapot Planters,,OSAP,55+ Classes,06/25/2026,06/25/2026,10:00 am,12:00 pm,Th,Walter Reed Center,,$0.00/$0.00,,,,
 365938415,914404-06,Who Gets Grandmas Pie Plate?,,OSAP,55+ Classes,08/10/2026,08/10/2026,11:30 am,12:30 pm,M,Walter Reed Center,,$0.00/$0.00,,,,
 350726009,632950-P,Wiggling Worms,,NCTR,Nature & History,06/06/2026,06/06/2026,5:00 pm,6:00 pm,Sa,Long Branch Nature Center,3-99.99,$0.00/$0.00,,,,
@@ -2675,5 +2682,5 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350226037,440344-D,Zumba,ENJOYSUMMER,FIT,Fitness,06/25/2026,08/13/2026,11:20 am,12:20 pm,Th,Barcroft Fitness Center,18-99.99,$120.00/$140.00,2026-05-15T14:06:18+00:00,Available,2,0
 365936721,914100-01,Zumba,,OSAP,55+ Classes,06/09/2026,08/25/2026,2:15 pm,3:15 pm,Tu,Lubber Run,,$66.00/$66.00,,,,
 365936729,914100-02,Zumba,,OSAP,55+ Classes,06/10/2026,08/26/2026 *,6:00 pm,7:00 pm,W,Langston Brown,,$61.00/$61.00,,,,
-350224339,410300-A,Zumba Adult/Tot,ENJOYSUMMER,FIT,Fitness,06/30/2026,08/11/2026,5:00 pm,5:45 pm,Tu,Long Bridge Aquatics Center,3-5.99,$154.00/$174.00,2026-05-20T15:39:07+00:00,Available,3,0
-350224350,410301-A,Zumba Kids,ENJOYSUMMER,FIT,Fitness,06/30/2026,08/11/2026,6:00 pm,6:45 pm,Tu,Long Bridge Aquatics Center,5-8.99,$154.00/$174.00,2026-05-20T15:39:07+00:00,Available,3,0
+350224339,410300-A,Zumba Adult/Tot,ENJOYSUMMER,FIT,Fitness,06/30/2026,08/11/2026,5:00 pm,5:45 pm,Tu,Long Bridge Aquatics Center,3-5.99,$154.00/$174.00,2026-05-21T15:42:38+00:00,Available,3,0
+350224350,410301-A,Zumba Kids,ENJOYSUMMER,FIT,Fitness,06/30/2026,08/11/2026,6:00 pm,6:45 pm,Tu,Long Bridge Aquatics Center,5-8.99,$154.00/$174.00,2026-05-21T15:42:38+00:00,Available,3,0
