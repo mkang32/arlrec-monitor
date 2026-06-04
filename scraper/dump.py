@@ -1034,8 +1034,8 @@ _HTML_HEAD = """<!doctype html>
   h1 {{ font-size: 28px; margin: 4px 0 6px; letter-spacing: -0.01em; }}
   h2 {{ margin-top: 2em; border-bottom: 1px solid var(--line); padding-bottom: .2em; }}
   .meta, .dim, .footnote {{ color: var(--dim); }}
-  .breadcrumb {{ font-size: 13px; color: var(--dim); margin: 0 0 14px; }}
-  .breadcrumb a {{ color: #1a64c8; text-decoration: none; }}
+  .breadcrumb {{ font-size: 15px; color: var(--dim); margin: 0 0 18px; }}
+  .breadcrumb a {{ color: #1a64c8; text-decoration: none; font-weight: 500; }}
   .breadcrumb a:hover {{ text-decoration: underline; }}
   .context {{ font-size: 12px; font-weight: 600; color: var(--dim);
               text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 4px; }}

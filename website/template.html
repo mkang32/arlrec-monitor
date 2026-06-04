@@ -42,8 +42,8 @@
   }
   h1 { font-size: 28px; font-weight: 600; margin: 4px 0 6px; letter-spacing: -0.01em; }
   h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; letter-spacing: -0.01em; }
-  .breadcrumb { font-size: 13px; color: #888880; margin: 0 0 14px; }
-  .breadcrumb a { color: #1a64c8; text-decoration: none; }
+  .breadcrumb { font-size: 15px; color: #6b6b66; margin: 0 0 18px; }
+  .breadcrumb a { color: #1a64c8; text-decoration: none; font-weight: 500; }
   .breadcrumb a:hover { text-decoration: underline; }
   .context { font-size: 12px; font-weight: 600; color: #888880;
              text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 4px; }
@@ -339,10 +339,10 @@
     let html = '<b>' + top1.category + ' is the hardest ticket in Arlington.</b> '
       + fmt(top1) + ' sold out, and many were gone within minutes of registration opening.';
     if (top2) {
-      html += ' ' + top2.category + ' is the next most competitive &mdash; '
+      html += ' <b>' + top2.category + '</b> is the next most competitive &mdash; '
         + fmt(top2) + ' sold out.';
     }
-    html += ' Everything else (martial arts, music, sports leagues, ceramics, '
+    html += ' <b>Everything else</b> (martial arts, music, sports leagues, ceramics, '
       + 'science) had near-zero sellouts in this window.';
     document.getElementById('headline-body').innerHTML = html;
   }
