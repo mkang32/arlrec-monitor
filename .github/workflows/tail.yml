@@ -22,7 +22,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -33,8 +33,21 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Refresh per-section type_code (metadata-only catalog pass)
-        run: python -m scraper.scrape --mode types
+      - name: Full catalog snapshot with enrollment counts
+        # Was `--mode types` (metadata-only). That bumped sections.last_seen but
+        # wrote NO status snapshots, so any section that fell out of the
+        # registrationevent filters below (Arlington drops/changes reg_event
+        # tags after the hot window — see CLAUDE.md "reg_event is unstable")
+        # silently stopped accruing snapshots while still appearing live in the
+        # web app. `--mode catalog` iterates ALL_TYPES with counts; since every
+        # section carries a type_code it reaches the stranded sections too. The
+        # event passes below remain for reg_event refresh + a fresher count on
+        # the sections they still match.
+        env:
+          ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
+          ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: python -m scraper.scrape --mode catalog
 
       - name: Scrape all three registration events
         env:
