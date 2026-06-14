@@ -22,7 +22,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -34,31 +34,29 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Full catalog snapshot with enrollment counts
-        # Was `--mode types` (metadata-only). That bumped sections.last_seen but
-        # wrote NO status snapshots, so any section that fell out of the
-        # registrationevent filters below (Arlington drops/changes reg_event
-        # tags after the hot window — see CLAUDE.md "reg_event is unstable")
-        # silently stopped accruing snapshots while still appearing live in the
-        # web app. `--mode catalog` iterates ALL_TYPES with counts; since every
-        # section carries a type_code it reaches the stranded sections too. The
-        # event passes below remain for reg_event refresh + a fresher count on
-        # the sections they still match.
+        # Single authoritative pass. Replaces the old (metadata-only `--mode
+        # types`) + (three `--mode event` registrationevent passes) combo.
+        #
+        # The old combo only wrote status snapshots via the event filters
+        # (ENJOYSUMMER1/2/ENJOYSUMMER). When Arlington drops/changes a section's
+        # reg_event tag after the hot window (reg_event is unstable — see
+        # CLAUDE.md), that section falls out of every event filter and silently
+        # stops accruing snapshots, even though it's still live and reachable by
+        # type. sections.last_seen kept advancing (the metadata-only types pass
+        # still found it) so the gap was invisible.
+        #
+        # `--mode catalog` iterates ALL_TYPES with counts and fires alerts.
+        # Every section carries a type_code (verified), so it reaches the
+        # stranded sections too — a strict superset of what the event passes
+        # covered. The only thing dropped is reg_event refresh, which analysis
+        # deliberately does not rely on (dump.py uses observed scarcity time).
+        # Runs ~26 min (per-section count fetches at the 0.5s politeness floor),
+        # so event passes on top busted the old 30m cap — see timeout-minutes.
         env:
           ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
           ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: python -m scraper.scrape --mode catalog
-
-      - name: Scrape all three registration events
-        env:
-          ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
-          ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
-          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
-        run: |
-          set -e
-          for ev in ENJOYSUMMER1 ENJOYSUMMER2 ENJOYSUMMER; do
-            python -m scraper.scrape --mode event --event "$ev"
-          done
 
       - name: Render CSV + HTML
         run: python -m scraper.dump
