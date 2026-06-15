@@ -158,9 +158,16 @@ python3 -m http.server 8000
   set `SITE_URL=https://selloutwatcher.com` on those steps.
 - **Auto-refresh of analysis page**: `build_page.py` currently runs manually.
   Should be added to the ambient/tail workflows after `python -m scraper.dump`.
-- **Snapshot freeze for past seasons**: `currently_open` drops sections that
-  become `Unavailable` (class started). Summer 2026 data will gradually
-  disappear from the page as classes start in late June. Either freeze the
-  analysis page at end-of-summer-registration, or change the underlying query
-  to keep all sections that *ever* became scarce.
+- **Snapshot freeze for past seasons** *(resolved)*: `currently_open`
+  previously dropped sections once their latest status was `Unavailable`
+  (class started / registration closed ~2 weeks after open), so summer-2026
+  data would have vanished from the page in late June. Fixed in `dump.py`:
+  membership is now by *history* — the `ever_open` CTE keeps every section that
+  was ever observed `Available`/`Waitlist`/`Full`, regardless of current
+  status. This holds the sell-out ratio's denominator stable (keeps never-filled
+  classes counted) and makes the analysis page a permanent season record.
+  Pre-registration-only sections (never anything but `Unavailable`) stay
+  excluded. The dashboard's live "Currently open" table still keys off current
+  status (correctly empties post-season) but now shows a "Registration has
+  closed" message instead of "hasn't started" once anything has ever opened.
 - **Multi-county / multi-season refactor**: see `ROADMAP.md`.
