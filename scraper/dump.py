@@ -166,11 +166,14 @@ def _opens_at_before(scarce_dt: dt.datetime) -> tuple[dt.datetime, str] | tuple[
 
 
 def _dump_analysis(conn) -> None:
-    """Build the 'currently_open' analysis table — same rows as the
-    Currently-open UI table, plus sell-out duration when applicable. The table
-    is materialized inside the main snapshots.sqlite (DROP + CREATE on each
-    run, so it's always in sync with the latest snapshots) and mirrored to
-    data/currently_open.csv for non-SQL consumers.
+    """Build the 'currently_open' analysis table: one row per section that ever
+    entered a registration window (see the ever_open CTE), plus sell-out
+    duration when applicable. Despite the legacy name, membership is by history
+    rather than current status, so the row set is stable once the season ends
+    and WebTrac flips every section to 'Unavailable'. The table is materialized
+    inside the main snapshots.sqlite (DROP + CREATE on each run, so it's always
+    in sync with the latest snapshots) and mirrored to data/currently_open.csv
+    for non-SQL consumers.
     """
     rows = conn.execute(
         """
@@ -201,6 +204,19 @@ def _dump_analysis(conn) -> None:
             WHERE s.status IN ('Available','Unavailable')
               AND s.ts < fs.scarce_ts
             GROUP BY s.fmid
+        ),
+        ever_open AS (
+            -- Sections that ever entered a registration window (observed
+            -- Available/Waitlist/Full at least once). Membership is by *history*,
+            -- not current status, so the analysis survives the post-season flip
+            -- to 'Unavailable' (registration closes ~2 weeks after class start;
+            -- WebTrac marks everything Unavailable once nobody can register).
+            -- Keeping the full registration cohort holds the sell-out ratio's
+            -- denominator stable instead of letting it shrink as classes close.
+            -- Pre-registration-only sections (never anything but Unavailable)
+            -- are correctly excluded.
+            SELECT DISTINCT fmid FROM snapshots
+            WHERE status IN ('Available','Waitlist','Full')
         )
         SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.reg_event,
                sec.date_start, sec.date_end, sec.days, sec.time_start, sec.time_end,
@@ -214,7 +230,7 @@ def _dump_analysis(conn) -> None:
         LEFT JOIN latest_counts lc ON lc.fmid = sec.fmid
         LEFT JOIN first_scarce fs ON fs.fmid = sec.fmid
         LEFT JOIN last_open lo ON lo.fmid = sec.fmid
-        WHERE ls.status != 'Unavailable'
+        WHERE sec.fmid IN (SELECT fmid FROM ever_open)
         ORDER BY sec.type_code, sec.name, sec.activity_code
         """
     ).fetchall()
@@ -362,7 +378,20 @@ def _dump_index_html(conn) -> None:
 
     parts.append("<h2 id=\"open-section\">Currently open (Available, Waitlist, or Full)</h2>")
     if not active:
-        parts.append("<p class='dim'>Nothing is open yet. Registration hasn't started.</p>")
+        # Distinguish "before the window" from "after the window". Once any
+        # section has ever been open, an empty live table means registration
+        # has closed for the season (everything flipped to Unavailable), not
+        # that it hasn't started — see the sell-out table above for the record.
+        ever_opened = conn.execute(
+            "SELECT 1 FROM snapshots WHERE status IN "
+            "('Available','Waitlist','Full') LIMIT 1"
+        ).fetchone() is not None
+        if ever_opened:
+            parts.append("<p class='dim'>Registration has closed for this season — "
+                         "every section is now Unavailable. See the sell-out speed "
+                         "table above for the season's record.</p>")
+        else:
+            parts.append("<p class='dim'>Nothing is open yet. Registration hasn't started.</p>")
     else:
         parts.append(_render_table_html(active, _COLUMNS_OPEN, table_id="open"))
 
