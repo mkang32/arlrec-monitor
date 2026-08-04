@@ -241,7 +241,20 @@ def _parse_results_table(html: str) -> Iterator[SectionRow]:
 
 def _parse_table_body(tbody) -> Iterator[SectionRow]:
     for tr in tbody.find_all("tr", recursive=False):
-        cells = {td.get("data-title"): td for td in tr.find_all("td")}
+        cells = {}
+        for td in tr.find_all("td"):
+            # Column label used to live in a `data-title` attribute on the <td>
+            # itself. As of the 2026 fall season, WebTrac instead nests a
+            # `<span class="mobile-column-header" aria-hidden="true">Label</span>`
+            # as the td's first child (for responsive/mobile layout) and no
+            # longer sets data-title at all. Support both.
+            label = td.get("data-title")
+            if not label:
+                header = td.find("span", class_="mobile-column-header")
+                if header is not None:
+                    label = header.get_text(strip=True)
+            if label:
+                cells[label] = td
         if not cells:
             continue
 
@@ -284,7 +297,16 @@ def _parse_table_body(tbody) -> Iterator[SectionRow]:
 def _cell_text(td) -> str | None:
     if td is None:
         return None
-    text = td.get_text(" ", strip=True)
+    # Skip the mobile-column-header label span (see _parse_table_body) so it
+    # doesn't get concatenated into the actual cell value.
+    parts = []
+    for child in td.children:
+        if getattr(child, "name", None) == "span" and "mobile-column-header" in (child.get("class") or []):
+            continue
+        text = child.get_text(" ", strip=True) if hasattr(child, "get_text") else str(child).strip()
+        if text:
+            parts.append(text)
+    text = " ".join(parts).strip()
     return text or None
 
 
