@@ -1,15 +1,16 @@
 name: ambient-snapshot
-# Hourly polling during the active registration period (May 11-15), with a
-# denser every-10-min boost during the registration days themselves. The
-# dedicated hot-window workflow takes over for the minute-by-minute polling
-# at noon ET; both can safely overlap because of the concurrency group below.
+# Hourly polling during the active registration period (May 11-15 for
+# summer 2026, Aug 4-6 for fall 2026). The dedicated hot-window workflow
+# takes over for the minute-by-minute polling at noon ET; both can safely
+# overlap because of the concurrency group below.
 #
-# Outside May 11-15, daily polling is handled by tail.yml (May 16 - July 10),
-# after which nothing runs — every class will be Unavailable by then.
+# Outside those windows, daily polling is handled by tail.yml, after which
+# nothing runs — every class will be Unavailable by then.
 
 on:
   schedule:
-    - cron: "0 * 11-15 5 *"           # hourly, May 11-15
+    - cron: "0 * 11-15 5 *"           # hourly, May 11-15 (summer 2026)
+    - cron: "0 * 4-6 8 *"             # hourly, Aug 4-6 (fall 2026)
   workflow_dispatch: {}
 
 permissions:
@@ -33,27 +34,58 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Pick season based on UTC date
+        id: pick
+        run: |
+          DATE=$(date -u +%m%d)
+          case "$DATE" in
+            0511|0512|0513|0514|0515)
+              echo "season=arlington-2026-summer" >> "$GITHUB_OUTPUT"
+              echo "events=ENJOYSUMMER1 ENJOYSUMMER2 ENJOYSUMMER" >> "$GITHUB_OUTPUT"
+              echo "out_html=arlington-va/2026-summer/dashboard/index.html" >> "$GITHUB_OUTPUT"
+              ;;
+            0804|0805|0806)
+              echo "season=arlington-2026-fall" >> "$GITHUB_OUTPUT"
+              echo "events=ENJOYFALL1 ENJOYFALL2 ENJOYFALL" >> "$GITHUB_OUTPUT"
+              echo "out_html=arlington-va/2026-fall/dashboard/index.html" >> "$GITHUB_OUTPUT"
+              ;;
+            *)
+              echo "Not an ambient window ($DATE) — exiting."
+              echo "season=" >> "$GITHUB_OUTPUT"
+              ;;
+          esac
+
       # NOTE: --mode types is intentionally NOT run here — it adds ~30 type
       # searches (~360 page fetches) per invocation. Combined with the */10 cron
       # during reg days that's ~60k HTTP requests/day, which gets the runner IP
       # 403'd by Cloudflare. tail.yml runs --mode types once a day instead,
       # which is plenty since section taxonomy is stable.
 
-      - name: Scrape all three registration events
+      - name: Scrape this season's registration events
+        if: steps.pick.outputs.season != ''
         env:
           ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
           ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          SEASON: ${{ steps.pick.outputs.season }}
+          EVENTS: ${{ steps.pick.outputs.events }}
         run: |
           set -e
-          for ev in ENJOYSUMMER1 ENJOYSUMMER2 ENJOYSUMMER; do
-            python -m scraper.scrape --mode event --event "$ev"
+          for ev in $EVENTS; do
+            python -m scraper.scrape --mode event --event "$ev" --season "$SEASON"
           done
 
       - name: Render CSV + HTML
-        run: python -m scraper.dump
+        if: steps.pick.outputs.season != ''
+        env:
+          SEASON: ${{ steps.pick.outputs.season }}
+        run: python -m scraper.dump --season "$SEASON"
 
       - name: Commit snapshot + dumps
+        if: steps.pick.outputs.season != ''
+        env:
+          SEASON: ${{ steps.pick.outputs.season }}
+          OUT_HTML: ${{ steps.pick.outputs.out_html }}
         run: |
           set -e
           git config user.email "actions@github.com"
@@ -74,8 +106,8 @@ jobs:
             git checkout -- data/ index.html 2>/dev/null || true
             git pull --rebase --no-stat -q
             cp /tmp/local-snapshots.sqlite data/snapshots.sqlite
-            python -m scraper.dump
-            git add data/ arlington-va/2026-summer/dashboard/index.html
+            python -m scraper.dump --season "$SEASON"
+            git add data/ "$OUT_HTML"
             if git diff --staged --quiet; then
               echo "no change"; return 0
             fi

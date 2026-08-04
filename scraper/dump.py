@@ -7,6 +7,7 @@ Generates everything from data/snapshots.sqlite. Idempotent — safe to re-run.
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import datetime as dt
 import html
@@ -18,6 +19,7 @@ from typing import Callable
 from zoneinfo import ZoneInfo
 
 from . import config
+from .db import DEFAULT_SEASON_ID
 
 ET = ZoneInfo("America/New_York")
 
@@ -27,25 +29,49 @@ LATEST_CSV = DATA_DIR / "latest.csv"
 SNAPSHOTS_CSV = DATA_DIR / "snapshots.csv"
 # Analysis-friendly export: one row per currently-open section, with sell-out
 # duration. Materialized as a table named `currently_open` inside snapshots.sqlite
-# and mirrored to data/currently_open.csv.
+# (rows from ALL seasons, tagged by site_id/season_id) and mirrored to
+# data/currently_open.csv.
 CURRENTLY_OPEN_CSV = DATA_DIR / "currently_open.csv"
-# Dashboard (live filterable tables) lives under its county/season directory.
-# Future seasons get sibling directories (arlington-va/2026-fall/dashboard/ etc.)
-INDEX_HTML = Path("arlington-va/2026-summer/dashboard/index.html")
+
+# Each site maps to a top-level site directory; the dashboard/analysis page for
+# a given season live at <SITE_DIR>/<season name>/. Season *name* (e.g.
+# "2026-summer", "2026-fall") comes from the `seasons` table at runtime.
+SITE_DIR = {"arlington": "arlington-va"}
+
+
+def _season_dir(conn, season_id: str) -> Path:
+    row = conn.execute(
+        "SELECT site_id, name FROM seasons WHERE id = ?", (season_id,)
+    ).fetchone()
+    if row is None:
+        raise ValueError(f"unknown season_id {season_id!r} — add it to scraper/db.py's seasons seed")
+    site_dir = SITE_DIR.get(row["site_id"], row["site_id"])
+    return Path(site_dir) / row["name"]
 
 
 def main() -> int:
+    p = argparse.ArgumentParser()
+    p.add_argument("--db", default=str(DB_PATH))
+    p.add_argument("--season", default=DEFAULT_SEASON_ID,
+                   help="season_id whose dashboard/index.html + sell-out tables to rebuild "
+                        "(default: arlington-2026-summer)")
+    args = p.parse_args()
+
+    db_path = Path(args.db)
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    if not DB_PATH.exists():
-        print(f"no DB at {DB_PATH} — nothing to dump")
+    if not db_path.exists():
+        print(f"no DB at {db_path} — nothing to dump")
         return 0
-    conn = sqlite3.connect(str(DB_PATH))
+    conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
     try:
         _dump_snapshots_csv(conn)
         _dump_latest_csv(conn)
         _dump_analysis(conn)
-        _dump_index_html(conn)
+        season_dir = _season_dir(conn, args.season)
+        index_html = season_dir / "dashboard" / "index.html"
+        index_html.parent.mkdir(parents=True, exist_ok=True)
+        _dump_index_html(conn, season_id=args.season, index_html=index_html)
     finally:
         conn.close()
     return 0
@@ -143,6 +169,8 @@ _ANALYSIS_COLS: tuple[tuple[str, str], ...] = (
     ("sold_out_within_seconds",    "INTEGER"),
     ("sold_out_within_human",      "TEXT"),
     ("sold_out_start_source",      "TEXT"),  # 'reg-open' (preferred) or 'last-poll'
+    ("site_id",                    "TEXT"),
+    ("season_id",                  "TEXT"),
 )
 
 
@@ -221,6 +249,7 @@ def _dump_analysis(conn) -> None:
         SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.reg_event,
                sec.date_start, sec.date_end, sec.days, sec.time_start, sec.time_end,
                sec.location, sec.ages, sec.cost,
+               sec.site_id, sec.season_id,
                ls.status, ls.ts AS last_seen_ts,
                lc.enrolled, lc.waitlist, lc.counts_ts,
                fs.scarce_ts AS first_scarce_ts,
@@ -297,7 +326,7 @@ def _dump_analysis(conn) -> None:
 
 # ----- HTML page -----------------------------------------------------------
 
-def _dump_index_html(conn) -> None:
+def _dump_index_html(conn, *, season_id: str, index_html: Path) -> None:
     # Show when data was last polled (most recent snapshot row), not when this
     # HTML was generated. The page time is just a deploy artifact; users care
     # about data freshness.
@@ -305,9 +334,10 @@ def _dump_index_html(conn) -> None:
     last_data_iso = row[0] if row and row[0] else None
     last_data_str = _fmt_et(last_data_iso) if last_data_iso else "(no snapshots yet)"
 
-    # Watchlist
+    # Watchlist — restricted to this season so a summer-only watchlist fmid
+    # doesn't leak onto e.g. the fall dashboard (config.WATCH_FMIDS is global).
     watch_rows = [_latest_row_for(conn, fmid) for fmid in config.WATCH_FMIDS]
-    watch_rows = [dict(r) for r in watch_rows if r is not None]
+    watch_rows = [dict(r) for r in watch_rows if r is not None and r["season_id"] == season_id]
 
     # Sections that are currently non-Unavailable.
     # Latest status comes from the most recent snapshot; counts come from the
@@ -338,15 +368,16 @@ def _dump_index_html(conn) -> None:
         FROM sections sec
         JOIN latest_status ls ON ls.fmid = sec.fmid
         LEFT JOIN latest_counts lc ON lc.fmid = sec.fmid
-        WHERE ls.status != 'Unavailable'
+        WHERE ls.status != 'Unavailable' AND sec.season_id = ?
         ORDER BY
           CASE ls.status WHEN 'Full' THEN 0 WHEN 'Waitlist' THEN 1
                           WHEN 'Available' THEN 2 ELSE 3 END,
           sec.name, sec.activity_code
-        """
+        """,
+        (season_id,),
     ).fetchall()]
 
-    sellout = _sellout_rows(conn)
+    sellout = _sellout_rows(conn, season_id=season_id)
 
     parts: list[str] = []
     parts.append(_HTML_HEAD.format(last_data=html.escape(last_data_str)))
@@ -383,8 +414,9 @@ def _dump_index_html(conn) -> None:
         # has closed for the season (everything flipped to Unavailable), not
         # that it hasn't started — see the sell-out table above for the record.
         ever_opened = conn.execute(
-            "SELECT 1 FROM snapshots WHERE status IN "
-            "('Available','Waitlist','Full') LIMIT 1"
+            "SELECT 1 FROM snapshots s JOIN sections sec ON sec.fmid = s.fmid "
+            "WHERE s.status IN ('Available','Waitlist','Full') AND sec.season_id = ? LIMIT 1",
+            (season_id,),
         ).fetchone() is not None
         if ever_opened:
             parts.append("<p class='dim'>Registration has closed for this season — "
@@ -398,15 +430,16 @@ def _dump_index_html(conn) -> None:
     parts.append("<h2>Downloads</h2>")
     parts.append(
         "<ul>"
-        # Dashboard lives at /arlington-va/2026-summer/dashboard/, data files at /data/.
-        # `../../../` walks up 3 dirs to repo root, then into data/.
+        # Dashboard lives at /<site>/<season>/dashboard/, data files at /data/.
+        # `../../../` walks up 3 dirs to repo root, then into data/. Same depth
+        # for every season (site/season/dashboard/), so this is season-independent.
         "<li><a href='../../../data/latest.csv'>latest.csv</a> — one row per section, current state</li>"
         "<li><a href='../../../data/snapshots.csv'>snapshots.csv</a> — full status history</li>"
         "<li><a href='../../../data/snapshots.sqlite'>snapshots.sqlite</a> — raw SQLite database</li>"
         "</ul>"
     )
     parts.append(_HTML_FOOT)
-    INDEX_HTML.write_text("".join(parts))
+    index_html.write_text("".join(parts))
 
 
 # ----- Data helpers --------------------------------------------------------
@@ -418,7 +451,7 @@ def _latest_row_for(conn, fmid: str):
     return conn.execute(
         """
         SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.location, sec.days,
-               sec.time_start, sec.time_end, sec.ages, sec.cost,
+               sec.time_start, sec.time_end, sec.ages, sec.cost, sec.season_id,
                (SELECT status FROM snapshots WHERE fmid = sec.fmid ORDER BY ts DESC LIMIT 1) AS status,
                (SELECT ts     FROM snapshots WHERE fmid = sec.fmid ORDER BY ts DESC LIMIT 1) AS ts,
                (SELECT enrolled FROM snapshots WHERE fmid = sec.fmid AND enrolled IS NOT NULL ORDER BY ts DESC LIMIT 1) AS enrolled,
@@ -430,7 +463,7 @@ def _latest_row_for(conn, fmid: str):
     ).fetchone()
 
 
-def _sellout_rows(conn) -> list[dict]:
+def _sellout_rows(conn, *, season_id: str) -> list[dict]:
     """For each section that has ever been observed as Waitlist or Full, compute:
        - duration_s = upper-bound sell-out duration (max(0, scarce_ts - start_ts))
                        where start_ts = REG_OPENS_AT_UTC[reg_event] if known,
@@ -487,7 +520,9 @@ def _sellout_rows(conn) -> list[dict]:
         JOIN sections sec ON sec.fmid = fs.fmid
         LEFT JOIN latest_status ls ON ls.fmid = fs.fmid
         LEFT JOIN latest_counts lc ON lc.fmid = fs.fmid
-        """
+        WHERE sec.season_id = ?
+        """,
+        (season_id,),
     ).fetchall()
 
     out: list[dict] = []
