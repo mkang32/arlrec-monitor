@@ -29,7 +29,8 @@ def utcnow_iso() -> str:
 
 
 def _record(conn, ts: str, row: SectionRow, counts: EnrollmentCounts | None,
-            *, type_code: str | None = None, reg_event: str | None = None) -> str | None:
+            *, type_code: str | None = None, reg_event: str | None = None,
+            season_id: str = db.DEFAULT_SEASON_ID) -> str | None:
     """Insert metadata + snapshot for one section. Returns prior status if any."""
     prev = db.latest_status(conn, row.fmid)
     db.upsert_section(
@@ -48,6 +49,7 @@ def _record(conn, ts: str, row: SectionRow, counts: EnrollmentCounts | None,
         ages=row.ages,
         cost=row.cost,
         ts=ts,
+        season_id=season_id,
     )
     db.insert_snapshot(
         conn,
@@ -62,7 +64,7 @@ def _record(conn, ts: str, row: SectionRow, counts: EnrollmentCounts | None,
 
 def _maybe_alert(conn, *, row: SectionRow, prev_status: str | None,
                  counts: EnrollmentCounts | None, ts: str) -> None:
-    if row.fmid not in config.WATCH_FMIDS:
+    if row.fmid not in config.WATCH_FMIDS and row.activity_code not in config.WATCH_ACTIVITY_CODES:
         return
     transition = (prev_status, row.status)
     if transition not in config.ALERT_TRANSITIONS:
@@ -102,7 +104,8 @@ def scrape_one_query(client: WebTracClient, conn, *, ts: str,
                      reg_event: str | None = None,
                      fetch_counts: bool = True,
                      fetch_counts_for_unavailable: bool = False,
-                     metadata_only: bool = False) -> int:
+                     metadata_only: bool = False,
+                     season_id: str = db.DEFAULT_SEASON_ID) -> int:
     """Run one search query, store all returned sections. Returns row count.
 
     fetch_counts=False skips all enrollment-count lookups (fastest path; used
@@ -126,6 +129,7 @@ def scrape_one_query(client: WebTracClient, conn, *, ts: str,
                 date_start=row.date_start, date_end=row.date_end,
                 time_start=row.time_start, time_end=row.time_end, days=row.days,
                 location=row.location, ages=row.ages, cost=row.cost, ts=ts,
+                season_id=season_id,
             )
             continue
         counts: EnrollmentCounts | None = None
@@ -135,7 +139,8 @@ def scrape_one_query(client: WebTracClient, conn, *, ts: str,
             except Exception:
                 log.warning("enrollment fetch failed for %s:\n%s",
                             row.fmid, traceback.format_exc())
-        prev = _record(conn, ts, row, counts, type_code=effective_type, reg_event=reg_event)
+        prev = _record(conn, ts, row, counts, type_code=effective_type, reg_event=reg_event,
+                       season_id=season_id)
         _maybe_alert(conn, row=row, prev_status=prev, counts=counts, ts=ts)
     return len(rows)
 
@@ -191,13 +196,15 @@ def _watchlist_status_row(client: WebTracClient, fmid: str) -> SectionRow | None
 
 
 def scrape_catalog(client: WebTracClient, conn, *, ts: str,
-                   fetch_counts: bool = True, metadata_only: bool = False) -> int:
+                   fetch_counts: bool = True, metadata_only: bool = False,
+                   season_id: str = db.DEFAULT_SEASON_ID) -> int:
     total = 0
     for type_code in config.ALL_TYPES:
         try:
             total += scrape_one_query(client, conn, ts=ts, type_code=type_code,
                                        fetch_counts=fetch_counts,
-                                       metadata_only=metadata_only)
+                                       metadata_only=metadata_only,
+                                       season_id=season_id)
         except Exception:
             log.warning("catalog query failed for type=%s", type_code, exc_info=True)
     # If we're in metadata-only mode, also sweep each single-category registration
@@ -207,7 +214,8 @@ def scrape_catalog(client: WebTracClient, conn, *, ts: str,
         for reg_event in config.EVENT_TYPE_FALLBACK:
             try:
                 total += scrape_one_query(client, conn, ts=ts, reg_event=reg_event,
-                                           metadata_only=True)
+                                           metadata_only=True,
+                                           season_id=config.EVENT_SEASON.get(reg_event, season_id))
             except Exception:
                 log.warning("event-fallback query failed for event=%s",
                             reg_event, exc_info=True)
@@ -224,6 +232,10 @@ def main() -> int:
     p.add_argument("--mode", required=True, choices=["watchlist", "catalog", "types", "event"])
     p.add_argument("--event", help="registrationevent code (for --mode event)")
     p.add_argument("--db", default=config.DB_PATH)
+    p.add_argument("--season",
+                   help="season_id to tag newly-discovered sections with "
+                        "(default: auto-resolved from --event via config.EVENT_SEASON "
+                        "for --mode event, else arlington-2026-summer)")
     p.add_argument("--skip-counts", action="store_true",
                    help="Skip per-section enrollment count lookups (faster; status only)")
     args = p.parse_args()
@@ -238,14 +250,17 @@ def main() -> int:
             # Watch-list always pulls counts — that's the whole point of the list.
             n = scrape_watchlist(client, conn, ts=ts)
         elif args.mode == "catalog":
-            n = scrape_catalog(client, conn, ts=ts, fetch_counts=fetch_counts)
+            season_id = args.season or db.DEFAULT_SEASON_ID
+            n = scrape_catalog(client, conn, ts=ts, fetch_counts=fetch_counts, season_id=season_id)
         elif args.mode == "types":
-            n = scrape_catalog(client, conn, ts=ts, metadata_only=True)
+            season_id = args.season or db.DEFAULT_SEASON_ID
+            n = scrape_catalog(client, conn, ts=ts, metadata_only=True, season_id=season_id)
         elif args.mode == "event":
             if not args.event:
                 p.error("--event is required when --mode event")
+            season_id = args.season or config.EVENT_SEASON.get(args.event, db.DEFAULT_SEASON_ID)
             n = scrape_one_query(client, conn, ts=ts, reg_event=args.event,
-                                 fetch_counts=fetch_counts)
+                                 fetch_counts=fetch_counts, season_id=season_id)
         else:
             raise AssertionError(args.mode)
     log.info("done: %d sections recorded at %s", n, ts)

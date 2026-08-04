@@ -15,6 +15,13 @@ on:
     - cron: "55 15 13 5 *"
     - cron: "45 15 14 5 *"
     - cron: "55 15 14 5 *"
+    # Fall 2026: same staged pattern, Aug 4/5/6.
+    - cron: "45 15 4 8 *"
+    - cron: "55 15 4 8 *"
+    - cron: "45 15 5 8 *"
+    - cron: "55 15 5 8 *"
+    - cron: "45 15 6 8 *"
+    - cron: "55 15 6 8 *"
   workflow_dispatch: {}
 
 permissions:
@@ -45,6 +52,9 @@ jobs:
             0512) echo "event=ENJOYSUMMER1" >> "$GITHUB_OUTPUT"; echo "label=Gymnastics" >> "$GITHUB_OUTPUT" ;;
             0513) echo "event=ENJOYSUMMER2" >> "$GITHUB_OUTPUT"; echo "label=Aquatics"   >> "$GITHUB_OUTPUT" ;;
             0514) echo "event=ENJOYSUMMER"  >> "$GITHUB_OUTPUT"; echo "label=Other"      >> "$GITHUB_OUTPUT" ;;
+            0804) echo "event=ENJOYFALL1"   >> "$GITHUB_OUTPUT"; echo "label=Fall Gymnastics" >> "$GITHUB_OUTPUT" ;;
+            0805) echo "event=ENJOYFALL2"   >> "$GITHUB_OUTPUT"; echo "label=Fall Aquatics"   >> "$GITHUB_OUTPUT" ;;
+            0806) echo "event=ENJOYFALL"    >> "$GITHUB_OUTPUT"; echo "label=Fall Other"      >> "$GITHUB_OUTPUT" ;;
             *)
               echo "Not a registration day ($DATE) — exiting."
               echo "event=" >> "$GITHUB_OUTPUT"

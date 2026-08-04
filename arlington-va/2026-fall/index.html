@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arlington class registration — sellout patterns & planning</title>
+
+<!-- SEO -->
+<meta name="description" content="See how quickly Arlington VA Park &amp; Rec classes sell out. Plan your registration day strategy with sell-out data by category, location, age, and time of day." />
+
+<!-- Open Graph (LinkedIn, Facebook, Slack, iMessage, etc.) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="How Fast Arlington Park &amp; Rec Classes Sold Out — Summer 2026" />
+<meta property="og:description" content="What we learned from Arlington's Summer 2026 registration windows (May 12–14). See which categories filled in seconds vs. weeks." />
+<meta property="og:url" content="https://selloutwatcher.com/arlington-va/2026-summer/" />
+<meta property="og:image" content="https://selloutwatcher.com/arlington-va/2026-summer/og-preview.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Stacked bar chart of Arlington Park &amp; Rec class sell-out times by category" />
+<meta property="og:site_name" content="Arlington Class Registration Tracker" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="How Fast Arlington Park &amp; Rec Classes Sold Out — Summer 2026" />
+<meta name="twitter:description" content="From Arlington's Summer 2026 registration windows — which categories filled in seconds vs. weeks." />
+<meta name="twitter:image" content="https://selloutwatcher.com/arlington-va/2026-summer/og-preview.png" />
+<meta name="twitter:image:alt" content="Stacked bar chart of Arlington Park &amp; Rec class sell-out times by category" />
+<style>
+  :root { color-scheme: light; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #fafaf7;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 24px 28px 48px;
+    line-height: 1.55;
+    font-size: 15px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 { font-size: 28px; font-weight: 600; margin: 4px 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; letter-spacing: -0.01em; }
+  .breadcrumb { font-size: 15px; color: #6b6b66; margin: 0 0 18px; }
+  .breadcrumb a { color: #1a64c8; text-decoration: none; font-weight: 500; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .context { font-size: 12px; font-weight: 600; color: #888880;
+             text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 4px; }
+  .sub { color: #6b6b66; font-size: 14px; margin: 0 0 12px; }
+  .header-actions { margin: 0 0 18px; }
+  .header-actions a {
+    display: inline-block; padding: 8px 14px;
+    background: #1a1a1a; color: #fff; border-radius: 6px;
+    font-size: 14px; font-weight: 500; text-decoration: none;
+  }
+  .header-actions a:hover { background: #333; }
+  .meta { color: #888880; font-size: 12px; margin: 0 0 24px; }
+  .stat-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; margin: 18px 0 8px;
+  }
+  .stat { background: #fff; border: 1px solid #e8e6df; border-radius: 10px; padding: 14px 16px; }
+  /* Clickable stat: links into a pre-filtered dashboard view */
+  a.stat-link { text-decoration: none; color: inherit; display: block; }
+  a.stat-link .stat { transition: border-color 120ms, box-shadow 120ms; }
+  a.stat-link:hover .stat { border-color: #1a64c8; box-shadow: 0 0 0 3px rgba(26,100,200,0.08); }
+  a.stat-link .stat .label::after { content: ' ↗'; color: #1a64c8; font-size: 11px; }
+  .stat .label { font-size: 12px; color: #6b6b66; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 6px; }
+  .stat .value { font-size: 22px; font-weight: 600; margin: 0; line-height: 1.2; }
+  .card { background: #fff; border: 1px solid #e8e6df; border-radius: 10px; padding: 16px 18px; margin: 12px 0; }
+  .chart-wrap { position: relative; width: 100%; height: 320px; }
+  .chart-wrap.tall { height: 380px; }
+  .tip { background: #fff8e8; border-left: 3px solid #d9a417; border-radius: 4px; padding: 10px 14px; margin: 8px 0; font-size: 14px; }
+  .tip b { color: #6b4d0a; }
+  #table-wrap .gridjs-wrapper { box-shadow: none; border: 1px solid #e8e6df; border-radius: 8px; }
+  #table-wrap .gridjs-table { font-size: 13px; }
+  .note { color: #6b6b66; font-size: 12px; margin: 6px 0 0; font-style: italic; }
+  .legend-line { font-size: 12px; color: #6b6b66; margin: 0 0 8px; }
+  .filter-bar {
+    background: #fff; border: 1px solid #e8e6df; border-radius: 10px;
+    padding: 12px 16px; margin: 12px 0 0;
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    position: sticky; top: 0; z-index: 10;
+  }
+  .filter-bar label { font-size: 13px; color: #4a4a45; font-weight: 600; }
+  .filter-bar select {
+    font: inherit; font-size: 14px; padding: 6px 10px; border: 1px solid #c8c6bf;
+    border-radius: 6px; background: #fff; color: #1a1a1a; min-width: 240px;
+  }
+  .filter-bar .summary { font-size: 12px; color: #6b6b66; font-style: italic; }
+  .page-nav { font-size: 13px; color: #6b6b66; margin: 4px 0 18px; }
+  .page-nav a { color: #1a64c8; text-decoration: none; }
+  .page-nav a:hover { text-decoration: underline; }
+  .tldr-callout { background: #fff7ed; border: 1px solid #f0a050; border-left: 4px solid #d9532b;
+                  border-radius: 6px; padding: 14px 18px; margin: 16px 0 28px; }
+  .tldr-callout .tldr-label { font-size: 11px; font-weight: 600; color: #8a4510;
+                              text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 6px; }
+  .tldr-callout p { margin: 0 0 8px; line-height: 1.5; font-size: 14px; }
+  .tldr-callout p:last-child { margin-bottom: 0; }
+  .tldr-callout .tldr-more { font-size: 13px; margin-top: 8px; }
+  .tldr-callout .tldr-more a { color: #1a64c8; text-decoration: none; }
+  .tldr-callout .tldr-more a:hover { text-decoration: underline; }
+  h3.tips-group { font-size: 12px; font-weight: 600; color: #4a4a45;
+                  margin: 22px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+  h3.tips-group:first-of-type { margin-top: 10px; }
+  html { scroll-behavior: smooth; }
+  .back-to-top {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: #1a1a1a; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; line-height: 1; text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    opacity: 0.85; transition: opacity 150ms, background 150ms;
+    z-index: 100;
+  }
+  .back-to-top:hover { background: #333; opacity: 1; }
+  .back-to-top:focus-visible { outline: 2px solid #1a64c8; outline-offset: 2px; }
+  @media (max-width: 600px) {
+    .back-to-top { bottom: 16px; right: 16px; width: 40px; height: 40px; font-size: 20px; }
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-jZvDSsmGB9oGGT/4l9bHXGoAv1OxvG/cFmSo0dZaSqmBgvQTKDBFAMftlXTmMbNW" crossorigin="anonymous" />
+</head>
+<body>
+
+<p class="breadcrumb"><a href="../../">Sellout Watcher</a> &nbsp;·&nbsp; <a href="../">Arlington County, VA</a></p>
+<p class="context">Arlington County, VA &nbsp;·&nbsp; Summer 2026</p>
+<h1>Class registration sell-out patterns</h1>
+<p class="sub">Which classes need a noon-on-the-dot fingertip, which you can grab next week, and where the real competition is.</p>
+<p class="header-actions"><a href="dashboard/">View live dashboard &rarr;</a></p>
+<nav class="page-nav">Jump to: <a href="#headline">Headline</a> &nbsp;&middot;&nbsp; <a href="#practical-tips">Strategy tips</a> &nbsp;&middot;&nbsp; <a href="#sellout-section">Full sellout table</a></nav>
+<p class="meta" id="meta">&nbsp;</p>
+
+<div class="stat-grid" id="stats">
+  <div class="stat"><p class="label">Classes tracked</p><p class="value" id="s-total">&mdash;</p></div>
+  <div class="stat"><p class="label">Sold out</p><p class="value" id="s-soldout">&mdash;</p></div>
+  <a class="stat-link" href="dashboard/?duration=%2C1200#sellout-section" title="Open dashboard filtered to instant sellouts"><div class="stat"><p class="label">Fast sellouts (&lt;20 min)</p><p class="value" id="s-fast">&mdash;</p></div></a>
+</div>
+
+<h2 id="headline">The headline</h2>
+<div class="card">
+  <p style="margin:0 0 8px" id="headline-body"><i>Loading&hellip;</i></p>
+  <p style="margin:0">If you're after <b>Gymnasticats</b>, <b>Family Gymnastics</b>, <b>Girls Level 1</b>, <b>Tumbling for 3's</b>, or popular adult fitness slots like <b>Body Sculpting</b> at Langston Brown &mdash; you need to be on the page and ready before noon ET on registration day. Pottery, science, most sports leagues, and martial arts can be registered for the next morning.</p>
+</div>
+
+<div class="tldr-callout">
+  <p class="tldr-label">If you only read one thing</p>
+  <p>Be on the registration page <b>before</b> noon ET, not at noon &mdash; the virtual queue can put you minutes behind. Gymnastics for ages 3&ndash;6 and Saturday-morning swim slots sell out in seconds. Ceramics, music, and most sports leagues sit open for weeks &mdash; safe to register at leisure.</p>
+  <p class="tldr-more"><a href="#practical-tips">Full strategy tips below &darr;</a></p>
+</div>
+
+<h2>How fast did each category sell out?</h2>
+<p class="legend-line">Total bar height = % of category sections sold out. Look past the red <b>Instant</b> segment to see the differentiator: gymnastics has a long tail of 6&ndash;24-hour sellouts, while tennis and adult fitness are almost entirely instant-or-not.</p>
+<div class="card"><div class="chart-wrap"><canvas id="chart-category" role="img" aria-label="Stacked horizontal bar chart of sellout speed bins by class category"></canvas></div></div>
+
+<div class="filter-bar">
+  <label for="cat-filter">Filter the four charts below by class category:</label>
+  <select id="cat-filter"><option value="">All categories</option></select>
+  <span class="summary" id="filter-summary"></span>
+</div>
+
+<h2>By day of week</h2>
+<p class="legend-line">Total bar height = % sold out that day. A tall red-dominated bar means highly competitive (gone in minutes); a tall blue-dominated bar means still sold out, but you had hours or days to react.</p>
+<div class="card"><div class="chart-wrap"><canvas id="chart-day" role="img" aria-label="Stacked sellout-speed distribution by day of week"></canvas></div></div>
+
+<h2>By time of day &mdash; weekday vs. weekend</h2>
+<p class="legend-line">Two stacks per time slot: left = weekday (Mon&ndash;Fri), right = weekend (Sat/Sun). Stack height = % sold out. <b>Solid fill</b> = weekday, <b>diagonal stripes</b> = weekend.</p>
+<div class="card">
+  <div id="daytype-key" style="display:flex; gap:18px; align-items:center; font-size:12px; color:#4a4a45; margin:0 0 8px;">
+    <span style="display:inline-flex; align-items:center; gap:6px;"><span id="swatch-wkdy" style="display:inline-block; width:18px; height:12px; background:#888; border:1px solid #6b6b66; border-radius:2px;"></span>Weekday (Mon&ndash;Fri)</span>
+    <span style="display:inline-flex; align-items:center; gap:6px;"><span id="swatch-wknd" style="display:inline-block; width:18px; height:12px; border:1px solid #6b6b66; border-radius:2px;"></span>Weekend (Sat/Sun)</span>
+  </div>
+  <div class="chart-wrap"><canvas id="chart-time" role="img" aria-label="Stacked sellout-speed distribution by time of day, weekday solid vs weekend striped"></canvas></div>
+</div>
+
+<h2>By age group</h2>
+<p class="legend-line">Bar length = % sold out per age bucket. Segments show the speed distribution.</p>
+<div class="card"><div class="chart-wrap"><canvas id="chart-age" role="img" aria-label="Stacked sellout-speed distribution by age bucket"></canvas></div></div>
+
+<h2>By location</h2>
+<p class="legend-line">Top 12 facilities by sellout rate (minimum 3 classes offered). Bar length = % sold out; segments = speed bins.</p>
+<div class="card"><div class="chart-wrap tall"><canvas id="chart-location" role="img" aria-label="Stacked sellout-speed distribution by location"></canvas></div></div>
+
+<h2 id="practical-tips">Practical tips</h2>
+
+<h3 class="tips-group">Day-of strategy</h3>
+<div class="tip"><b>Be on the registration page well before noon ET &mdash; not at noon.</b> Arlington uses a virtual queue: at the moment registration opens, the system hands every person watching a waitlist number and only lets you proceed when your number is called. Depending on traffic that can take seconds or several minutes. The competitive sections (red segments in the charts above) sell out inside the first 20 minutes, so a slow draw means you can be admitted only to find your target already full. Have the activity code copied so you can jump straight to it the moment you're in.</div>
+
+<h3 class="tips-group">Where the real competition is</h3>
+<div class="tip"><b>Gymnastics at Barcroft = hardest target.</b> Sections for ages 3 to 6 (Tumbling for 3's, Gymnasticats, Family Gymnastics, Girls Level 1) are the most contested. If you're after one of these, treat the queue tip above as non-optional.</div>
+<div class="tip"><b>Long Bridge swim Levels 1&ndash;4</b> are very competitive but spots open across many time slots. If your first-choice time fills, pivot fast &mdash; sister sessions at less-popular times (mid-afternoon weekdays) often still have room hours later.</div>
+<div class="tip"><b>Weekend morning slots</b> (Saturday 8:30&ndash;11:30am) are the single most competitive time-and-day combo. If a weekday afternoon slot works for you, you'll face dramatically less competition.</div>
+<div class="tip"><b>Adult fitness has a few sleeper hits.</b> Body Sculpting, Cardio Body Sculpting, and Barre at Langston Brown sold out in the first poll cycle. If you want a specific instructor or time, register on day one.</div>
+
+<h3 class="tips-group">Where it isn't (safe to wait)</h3>
+<div class="tip"><b>You probably don't need to rush for</b>: ceramics, martial arts, music, science &amp; discovery, sports leagues, arts &amp; crafts, woodworking (with rare exceptions like "Intro to Woodshop"). These had near-zero sellouts in this window.</div>
+
+<h2 id="sellout-section">Every section that sold out instantly</h2>
+<p class="legend-line">Every section that was already gone by our first scan after registration opened &mdash; meaning the true sellout time is somewhere between 0 and ~20&nbsp;minutes. The 20 min upper bound is a measurement ceiling, not a real number. Sortable; click any header.</p>
+<div class="card"><div id="table-wrap"></div></div>
+
+<h2>About this data</h2>
+<p class="note">Source: an automated monitor that polls Arlington County's public registration system on a schedule and records when each section transitions to <i>waitlist</i> or <i>full</i>. Sellouts faster than our polling resolution all collapse to the same bucket (the "Instant (&lt;20&nbsp;min)" bin is a measurement floor, not a real duration).</p>
+
+<a href="#" class="back-to-top" aria-label="Back to top" title="Back to top">&uarr;</a>
+
+<script>window.__SNAPSHOT__ = {"generated_at":"2026-08-04T02:43:20.774709+00:00","overall":{"total":0,"sold_out":null,"latest_reg":null},"category_rows":[],"totals_by_cat":[],"filter_cats":[],"instant_rows":[],"per_filter":{"__all__":{"days":[],"time":[],"age":[],"location":[]}}};</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js" integrity="sha384-/XXDzxe4FsGiAe50i/u9pY/Vy/uX654MHB1xoc1BJNnH1WXHhqHga9g3q5tF4gj7" crossorigin="anonymous"></script>
+<script>
+(function() {
+  const SNAPSHOT = window.__SNAPSHOT__;
+
+  const PALETTE = {
+    bar: '#3e6ea8',
+    accent: '#d9532b',
+    muted: '#6b6b66',
+  };
+  // `range` maps to the dashboard's "duration" preset value format ("lo,hi")
+  // for deep-links from chart clicks → pre-filtered sellout table.
+  const BIN_DEFS = [
+    { key: 'instant',  label: 'Instant (<20 min)',  max: 1200,     range: ',1200',       color: '#b03a2e' },
+    { key: 'under1h',  label: 'Under 1 hour',       max: 3600,     range: '1200,3600',   color: '#d9853b' },
+    { key: 'sameday',  label: '1–6 hours',          max: 21600,    range: '3600,21600',  color: '#e8b237' },
+    { key: 'nextday',  label: '6–24 hours',         max: 86400,    range: '21600,86400', color: '#7aa3d4' },
+    { key: 'multiday', label: 'Multi-day (1d+)',    max: Infinity, range: '86400,',      color: '#3e6ea8' },
+  ];
+
+  // Build a dashboard deep-link URL with optional type + duration filters.
+  function dashLink(opts) {
+    opts = opts || {};
+    var params = [];
+    if (opts.type) params.push('type=' + encodeURIComponent(opts.type.toLowerCase()));
+    if (opts.duration) params.push('duration=' + encodeURIComponent(opts.duration));
+    return 'dashboard/' + (params.length ? '?' + params.join('&') : '') + '#sellout-section';
+  }
+
+  Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+  Chart.defaults.font.size = 12;
+  Chart.defaults.color = PALETTE.muted;
+
+  function binOf(secs) {
+    for (const b of BIN_DEFS) if (secs < b.max) return b.key;
+    return 'multiday';
+  }
+  function pctOf(row) {
+    if (!row || !row.classes) return null;
+    return +(row.sold_out * 100 / row.classes).toFixed(1);
+  }
+  function binPct(row, binKey) {
+    if (!row || !row.classes) return 0;
+    return +(((row['b_' + binKey] || 0) * 100) / row.classes).toFixed(2);
+  }
+  function binCount(row, binKey) {
+    return row ? (row['b_' + binKey] || 0) : 0;
+  }
+  function binDatasets(bucketKeys, lookup, stackName) {
+    return BIN_DEFS.map(b => ({
+      label: b.label,
+      data: bucketKeys.map(k => binPct(lookup(k), b.key)),
+      backgroundColor: b.color,
+      borderWidth: 0,
+      stack: stackName || 'bins',
+    }));
+  }
+
+  const _patternCache = {};
+  function makeStripePattern(color) {
+    if (_patternCache[color]) return _patternCache[color];
+    const c = document.createElement('canvas');
+    const S = 8;
+    c.width = c.height = S;
+    const cx = c.getContext('2d');
+    cx.fillStyle = color; cx.fillRect(0, 0, S, S);
+    cx.strokeStyle = 'rgba(255,255,255,0.55)';
+    cx.lineWidth = 1.8;
+    cx.beginPath();
+    cx.moveTo(-2, S + 2); cx.lineTo(S + 2, -2);
+    cx.moveTo(-2 + S/2, S + 2 + S/2); cx.lineTo(S + 2 + S/2, -2 + S/2);
+    cx.stroke();
+    const pattern = cx.createPattern(c, 'repeat');
+    _patternCache[color] = pattern;
+    return pattern;
+  }
+
+  const chartInstances = {};
+  function setChart(canvasId, config) {
+    if (chartInstances[canvasId]) chartInstances[canvasId].destroy();
+    chartInstances[canvasId] = new Chart(document.getElementById(canvasId), config);
+  }
+
+  let currentFilter = '';
+  function filterKey() { return currentFilter || '__all__'; }
+  function filterLabel() {
+    if (currentFilter === '') return 'showing all categories';
+    if (currentFilter === '__none__') return 'showing only Other (uncategorized)';
+    return 'showing only ' + currentFilter;
+  }
+
+  // ---- Headline stats ----
+  // We intentionally don't show "Fastest" or "Median" sellout times — the
+  // polling cadence puts a measurement floor on individual durations, so
+  // exact numbers can be misleading. The "Fast sellouts (<20 min)" bucket is
+  // a more honest summary that respects the resolution limit.
+  function renderStats() {
+    const o = SNAPSHOT.overall || {};
+    document.getElementById('s-total').textContent = (o.total ?? '—').toLocaleString();
+    const so = o.sold_out ?? 0;
+    const pct = o.total ? Math.round(so * 100 / o.total) : 0;
+    document.getElementById('s-soldout').innerHTML = so + ' <span style="font-size:13px;color:#6b6b66;font-weight:400">(' + pct + '%)</span>';
+    const fastCount = (SNAPSHOT.instant_rows || []).length;
+    const fastPct = o.total ? Math.round(fastCount * 100 / o.total) : 0;
+    document.getElementById('s-fast').innerHTML = fastCount + ' <span style="font-size:13px;color:#6b6b66;font-weight:400">(' + fastPct + '%)</span>';
+    const generated = SNAPSHOT.generated_at ? new Date(SNAPSHOT.generated_at).toLocaleString() : 'unknown';
+    const latest = o.latest_reg || 'unknown';
+    document.getElementById('meta').textContent = 'Latest registration tracked: ' + latest + ' · data snapshot generated ' + generated;
+  }
+
+  // ---- Headline narrative (data-driven, regenerated on each build) ----
+  // Picks the two categories with the highest sell-out rate among categories
+  // with at least HEADLINE_MIN_SECTIONS sections (small categories like Sewing
+  // 2-of-2 = 100% would otherwise dominate). The "Everything else" list is
+  // hardcoded editorial — those are categories with zero observed sellouts in
+  // every cycle we've tracked so far.
+  const HEADLINE_MIN_SECTIONS = 10;
+  function renderHeadline() {
+    const totals = SNAPSHOT.totals_by_cat || [];
+    const ranked = totals
+      .filter(t => t.classes >= HEADLINE_MIN_SECTIONS && t.sold_out > 0)
+      .map(t => Object.assign({}, t, { rate: t.sold_out / t.classes }))
+      .sort((a, b) => b.rate - a.rate);
+    if (!ranked.length) return;
+    const fmt = (t) => Math.round(t.rate * 100) + '% of ' + t.category.toLowerCase()
+      + ' sections (' + t.sold_out + ' of ' + t.classes + ')';
+    const top1 = ranked[0];
+    const top2 = ranked.length >= 2 ? ranked[1] : null;
+    let html = '<b>' + top1.category + ' is the hardest ticket in Arlington.</b> '
+      + fmt(top1) + ' sold out, and many were gone within minutes of registration opening.';
+    if (top2) {
+      html += ' <b>' + top2.category + '</b> is the next most competitive &mdash; '
+        + fmt(top2) + ' sold out.';
+    }
+    html += ' <b>Everything else</b> (martial arts, music, sports leagues, ceramics, '
+      + 'science) had near-zero sellouts in this window.';
+    document.getElementById('headline-body').innerHTML = html;
+  }
+
+  // ---- Category chart: sell-out RATE per category, broken down by speed bin ----
+  // Total bar height = % of category's sections that sold out. Segments show
+  // how those sellouts split across speed bins. Matches the headline's framing
+  // ("X% of category sections sold out") rather than absolute counts.
+  function renderCategoryChart() {
+    const catRows = SNAPSHOT.category_rows || [];
+    const totalsByCat = SNAPSHOT.totals_by_cat || [];
+    const totalsMap = Object.fromEntries(totalsByCat.map(r => [r.category, r]));
+    const catBins = {};
+    for (const r of catRows) {
+      const c = r.category;
+      if (!catBins[c]) { catBins[c] = {}; BIN_DEFS.forEach(b => catBins[c][b.key] = 0); }
+      catBins[c][binOf(r.secs)] += 1;
+    }
+    // Only chart categories with a meaningful sample size — small categories
+    // (Sewing 2/2 etc.) would otherwise show 100% bars from tiny data.
+    const CAT_MIN_SECTIONS = 5;
+    const catList = Object.keys(catBins)
+      .filter(c => (totalsMap[c]?.classes || 0) >= CAT_MIN_SECTIONS)
+      .sort((a, b) => {
+        const ra = (totalsMap[a]?.sold_out || 0) / (totalsMap[a]?.classes || 1);
+        const rb = (totalsMap[b]?.sold_out || 0) / (totalsMap[b]?.classes || 1);
+        return rb - ra;
+      });
+    // Convert per-bin COUNT to per-bin % OF CATEGORY TOTAL. Total bar height
+    // then equals the category's sell-out rate.
+    const pctOfCategory = (c, binKey) => {
+      const total = totalsMap[c]?.classes || 0;
+      return total ? +(((catBins[c][binKey] || 0) * 100) / total).toFixed(2) : 0;
+    };
+    setChart('chart-category', {
+      type: 'bar',
+      data: {
+        labels: catList.map(c => {
+          const t = totalsMap[c] || {};
+          const pct = t.classes ? Math.round((t.sold_out || 0) * 100 / t.classes) : 0;
+          return c + ' (' + pct + '%, ' + (t.sold_out||0) + '/' + (t.classes||0) + ')';
+        }),
+        datasets: BIN_DEFS.map(b => ({
+          label: b.label,
+          data: catList.map(c => pctOfCategory(c, b.key)),
+          backgroundColor: b.color, borderWidth: 0,
+        })),
+      },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        // Click a segment to open the dashboard pre-filtered to that
+        // category (any duration), anchored to the sellout table.
+        // We intentionally omit the duration filter — when users click a
+        // specific bin segment they often want to see the category's full
+        // sellout context, not just that one duration bin.
+        onClick: (evt, elements) => {
+          if (!elements.length) return;
+          const el = elements[0];
+          const c = catList[el.index];
+          window.open(dashLink({ type: c }), '_blank');
+        },
+        onHover: (evt, elements) => {
+          if (evt.native && evt.native.target && evt.native.target.style) {
+            evt.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+          }
+        },
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 10 } },
+          tooltip: { callbacks: {
+            label: (ctx) => {
+              const c = catList[ctx.dataIndex];
+              const bin = BIN_DEFS[ctx.datasetIndex];
+              const pct = ctx.parsed.x;
+              const count = catBins[c]?.[bin.key] || 0;
+              return bin.label + ': ' + pct + '% (' + count + ' of ' + (totalsMap[c]?.classes || 0) + ' sections)';
+            },
+            afterLabel: () => 'Click to view in dashboard ↗',
+          } }
+        },
+        scales: {
+          x: { stacked: true, max: 100, title: { display: true, text: '% of category sections sold out' }, beginAtZero: true,
+               ticks: { callback: (v) => v + '%' } },
+          y: { stacked: true, ticks: { autoSkip: false } }
+        }
+      }
+    });
+  }
+
+  // ---- Filterable charts ----
+  function renderDayChart() {
+    const dayOrder = ['M','Tu','W','Th','F','Sa','Su'];
+    const dayLabels = { M:'Mon', Tu:'Tue', W:'Wed', Th:'Thu', F:'Fri', Sa:'Sat', Su:'Sun' };
+    const rows = SNAPSHOT.per_filter[filterKey()]?.days || [];
+    const by = Object.fromEntries(rows.map(r => [r.days, r]));
+    setChart('chart-day', {
+      type: 'bar',
+      data: { labels: dayOrder.map(d => dayLabels[d]), datasets: binDatasets(dayOrder, k => by[k]) },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 8 } },
+          tooltip: { callbacks: {
+            title: (items) => items[0]?.label || '',
+            label: (ctx) => {
+              const d = dayOrder[ctx.dataIndex]; const r = by[d];
+              const bin = BIN_DEFS[ctx.datasetIndex];
+              return bin.label + ': ' + binCount(r, bin.key) + ' (' + binPct(r, bin.key) + '%)';
+            },
+            footer: (items) => {
+              const d = dayOrder[items[0].dataIndex]; const r = by[d];
+              if (!r) return '';
+              return 'Total: ' + (r.sold_out || 0) + ' of ' + r.classes + ' sold out (' + (pctOf(r) ?? 0) + '%)';
+            }
+          } }
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, title: { display: true, text: '% of sections sold out' }, beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } },
+        }
+      }
+    });
+  }
+
+  function renderTimeChart() {
+    const slotOrder = ['Morning','Midday','After-school','Evening'];
+    const slotLabels = { Morning:'Morning\n(before noon)', Midday:'Midday\n(12–4pm)', 'After-school':'After-school\n(4–6pm)', Evening:'Evening\n(6pm+)' };
+    const rows = SNAPSHOT.per_filter[filterKey()]?.time || [];
+    const by = {};
+    slotOrder.forEach(s => { by[s] = { Weekday: null, Weekend: null }; });
+    for (const r of rows) { if (by[r.slot]) by[r.slot][r.daytype] = r; }
+
+    const wdSets = BIN_DEFS.map(b => ({
+      label: b.label,
+      data: slotOrder.map(s => binPct(by[s].Weekday, b.key)),
+      backgroundColor: b.color, stack: 'weekday', borderWidth: 0,
+      _meta: { daytype: 'Weekday', bin: b }
+    }));
+    const weSets = BIN_DEFS.map(b => ({
+      label: b.label + ' ',
+      data: slotOrder.map(s => binPct(by[s].Weekend, b.key)),
+      backgroundColor: makeStripePattern(b.color),
+      borderColor: b.color, borderWidth: 1, stack: 'weekend',
+      _meta: { daytype: 'Weekend', bin: b }
+    }));
+
+    // Daytype key swatches
+    const keyWknd = document.getElementById('swatch-wknd');
+    if (keyWknd && !keyWknd.dataset.painted) {
+      const c = document.createElement('canvas');
+      c.width = 18; c.height = 12;
+      const cx = c.getContext('2d');
+      cx.fillStyle = '#888'; cx.fillRect(0,0,18,12);
+      cx.strokeStyle = 'rgba(255,255,255,0.55)'; cx.lineWidth = 1.6;
+      cx.beginPath();
+      for (let off = -12; off < 30; off += 4) { cx.moveTo(off, 14); cx.lineTo(off + 14, 0); }
+      cx.stroke();
+      cx.strokeStyle = '#6b6b66'; cx.lineWidth = 1; cx.strokeRect(0.5, 0.5, 17, 11);
+      keyWknd.style.background = 'url("' + c.toDataURL() + '")';
+      keyWknd.style.border = 'none';
+      keyWknd.dataset.painted = '1';
+    }
+
+    setChart('chart-time', {
+      type: 'bar',
+      data: { labels: slotOrder.map(s => slotLabels[s]), datasets: [...wdSets, ...weSets] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 8, filter: (item) => !item.text.endsWith(' ') } },
+          tooltip: { callbacks: {
+            title: (items) => {
+              const dt = items[0].dataset._meta?.daytype || '';
+              return (items[0]?.label || '').replace('\n', ' ') + ' — ' + dt;
+            },
+            label: (ctx) => {
+              const s = slotOrder[ctx.dataIndex];
+              const dt = ctx.dataset._meta?.daytype || 'Weekday';
+              const r = by[s][dt];
+              const bin = ctx.dataset._meta?.bin;
+              if (!r || !bin) return '';
+              return bin.label + ': ' + binCount(r, bin.key) + ' (' + binPct(r, bin.key) + '%)';
+            },
+            footer: (items) => {
+              const s = slotOrder[items[0].dataIndex];
+              const dt = items[0].dataset._meta?.daytype || 'Weekday';
+              const r = by[s][dt];
+              if (!r || !r.classes) return '';
+              return 'Total: ' + (r.sold_out || 0) + ' of ' + r.classes + ' sold out (' + (pctOf(r) ?? 0) + '%)';
+            }
+          } }
+        },
+        scales: {
+          x: { stacked: true, ticks: { callback: function(v) { const lbl = this.getLabelForValue(v); return lbl.split('\n'); } } },
+          y: { stacked: true, title: { display: true, text: '% of sections sold out' }, beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } }
+        }
+      }
+    });
+  }
+
+  function renderAgeChart() {
+    const ageOrder = ['Babies & toddlers (0-2)','Preschool (3-4)','Pre-K & K (4-6)','School-age (5-12)','Teen (13-17)','Adult (15+)','Other / mixed'];
+    const rows = SNAPSHOT.per_filter[filterKey()]?.age || [];
+    const by = Object.fromEntries(rows.map(r => [r.bucket, r]));
+    setChart('chart-age', {
+      type: 'bar',
+      data: {
+        labels: ageOrder.map(a => a + ' (' + (by[a]?.sold_out ?? 0) + '/' + (by[a]?.classes ?? 0) + ')'),
+        datasets: binDatasets(ageOrder, k => by[k]),
+      },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 8 } },
+          tooltip: { callbacks: {
+            title: (items) => items[0]?.label || '',
+            label: (ctx) => {
+              const a = ageOrder[ctx.dataIndex]; const r = by[a];
+              const bin = BIN_DEFS[ctx.datasetIndex];
+              return bin.label + ': ' + binCount(r, bin.key) + ' (' + binPct(r, bin.key) + '%)';
+            },
+            footer: (items) => {
+              const a = ageOrder[items[0].dataIndex]; const r = by[a];
+              if (!r || !r.classes) return '';
+              return 'Total: ' + (r.sold_out || 0) + ' of ' + r.classes + ' sold out (' + (pctOf(r) ?? 0) + '%)';
+            }
+          } }
+        },
+        scales: {
+          x: { stacked: true, title: { display: true, text: '% of sections sold out' }, beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } },
+          y: { stacked: true, ticks: { autoSkip: false } }
+        }
+      }
+    });
+  }
+
+  function renderLocationChart() {
+    const rows = SNAPSHOT.per_filter[filterKey()]?.location || [];
+    const locKeys = rows.map(r => r.location);
+    const by = Object.fromEntries(rows.map(r => [r.location, r]));
+    setChart('chart-location', {
+      type: 'bar',
+      data: { labels: locKeys, datasets: binDatasets(locKeys, k => by[k]) },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, boxHeight: 12, padding: 8 } },
+          tooltip: { callbacks: {
+            title: (items) => items[0]?.label || '',
+            label: (ctx) => {
+              const l = locKeys[ctx.dataIndex]; const r = by[l];
+              const bin = BIN_DEFS[ctx.datasetIndex];
+              return bin.label + ': ' + binCount(r, bin.key) + ' (' + binPct(r, bin.key) + '%)';
+            },
+            footer: (items) => {
+              const l = locKeys[items[0].dataIndex]; const r = by[l];
+              if (!r || !r.classes) return '';
+              return 'Total: ' + (r.sold_out || 0) + ' of ' + r.classes + ' sold out (' + (pctOf(r) ?? 0) + '%)';
+            }
+          } }
+        },
+        scales: {
+          x: { stacked: true, title: { display: true, text: '% of sections sold out' }, beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } },
+          y: { stacked: true, ticks: { autoSkip: false } }
+        }
+      }
+    });
+  }
+
+  function refreshFilteredCharts() {
+    document.getElementById('filter-summary').textContent = filterLabel();
+    renderDayChart(); renderTimeChart(); renderAgeChart(); renderLocationChart();
+  }
+
+  function renderInstantTable() {
+    const instant = SNAPSHOT.instant_rows || [];
+    const tableWrap = document.getElementById('table-wrap');
+    tableWrap.innerHTML = '';
+    const summary = document.createElement('p');
+    summary.style.cssText = 'margin: 0 0 10px; font-size: 13px; color: #4a4a45;';
+    summary.innerHTML = '<b>' + instant.length + ' sections</b> sold out within the first poll cycle after registration opened.';
+    tableWrap.appendChild(summary);
+    const gridHost = document.createElement('div');
+    tableWrap.appendChild(gridHost);
+    new gridjs.Grid({
+      columns: [
+        { name: 'Class', width: '36%' },
+        { name: 'Category', width: '16%' },
+        { name: 'Location', width: '20%' },
+        { name: 'Day', width: '7%' },
+        { name: 'Time', width: '12%' },
+        { name: 'Ages', width: '9%' },
+      ],
+      data: instant.map(r => [r.name, r.category, r.location, r.days, r.time_start, r.ages]),
+      sort: true, search: true,
+      pagination: { limit: 25, summary: true },
+      resizable: false,
+      style: { th: { 'background-color': '#f5f4ef', 'font-weight': '600' } }
+    }).render(gridHost);
+  }
+
+  function populateFilterDropdown() {
+    const select = document.getElementById('cat-filter');
+    // remove placeholder option text and rebuild
+    select.innerHTML = '';
+    const allOpt = document.createElement('option');
+    allOpt.value = ''; allOpt.textContent = 'All categories';
+    select.appendChild(allOpt);
+    for (const c of (SNAPSHOT.filter_cats || [])) {
+      const opt = document.createElement('option');
+      opt.value = c.cat;
+      const label = c.cat === '__none__' ? 'Other (uncategorized)' : c.cat;
+      opt.textContent = label + ' — ' + c.sold_out + ' sellouts (of ' + c.classes + ')';
+      select.appendChild(opt);
+    }
+    select.addEventListener('change', (e) => {
+      currentFilter = e.target.value;
+      refreshFilteredCharts();
+    });
+  }
+
+  // ---- Boot ----
+  renderStats();
+  renderHeadline();
+  renderCategoryChart();
+  populateFilterDropdown();
+  refreshFilteredCharts();
+  renderInstantTable();
+})();
+</script>
+
+</body>
+</html>

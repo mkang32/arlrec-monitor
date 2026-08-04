@@ -12,6 +12,7 @@ from pathlib import Path
 # will thread site_id/season_id through upsert_section explicitly.
 DEFAULT_SITE_ID = "arlington"
 DEFAULT_SEASON_ID = "arlington-2026-summer"
+FALL_SEASON_ID = "arlington-2026-fall"
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS sites (
@@ -114,7 +115,7 @@ def _migrate(conn) -> None:
 
 
 def _seed_arlington(conn) -> None:
-    """Seed the Arlington site + 2026-summer season rows. INSERT OR IGNORE so
+    """Seed the Arlington site + known season rows. INSERT OR IGNORE so
     re-running is harmless and never clobbers hand-edited rows."""
     conn.execute(
         "INSERT OR IGNORE INTO sites (id, name, vendor, base_url, timezone) VALUES (?,?,?,?,?)",
@@ -129,7 +130,7 @@ def _seed_arlington(conn) -> None:
     # registration_events: JSON map of event tag -> opening instant (mirrors
     # config.REG_OPENS_AT_UTC). registration_opens_at_utc holds the season's
     # first opening for convenience.
-    reg_events = json.dumps(
+    summer_reg_events = json.dumps(
         {
             "ENJOYSUMMER1": "2026-05-12T16:00:00+00:00",
             "ENJOYSUMMER2": "2026-05-13T16:00:00+00:00",
@@ -144,21 +145,47 @@ def _seed_arlington(conn) -> None:
             DEFAULT_SEASON_ID,
             DEFAULT_SITE_ID,
             "2026-summer",
-            reg_events,
+            summer_reg_events,
             "2026-05-12T16:00:00+00:00",
+        ),
+    )
+    fall_reg_events = json.dumps(
+        {
+            "ENJOYFALL1": "2026-08-04T16:00:00+00:00",
+            "ENJOYFALL2": "2026-08-05T16:00:00+00:00",
+            "ENJOYFALL": "2026-08-06T16:00:00+00:00",
+        }
+    )
+    conn.execute(
+        "INSERT OR IGNORE INTO seasons "
+        "(id, site_id, name, registration_events, registration_opens_at_utc) "
+        "VALUES (?,?,?,?,?)",
+        (
+            FALL_SEASON_ID,
+            DEFAULT_SITE_ID,
+            "2026-fall",
+            fall_reg_events,
+            "2026-08-04T16:00:00+00:00",
         ),
     )
 
 
 def upsert_section(conn, *, fmid, activity_code, name, type_code, reg_event,
                    date_start, date_end, time_start, time_end, days,
-                   location, ages, cost, ts) -> None:
+                   location, ages, cost, ts,
+                   site_id: str = DEFAULT_SITE_ID,
+                   season_id: str = DEFAULT_SEASON_ID) -> None:
+    # site_id/season_id are set only on first INSERT (a section's season is
+    # permanent — its fmid never reappears in a later season) and deliberately
+    # left out of the ON CONFLICT SET below, so a metadata-refresh call can't
+    # accidentally move an existing section to a different season.
     conn.execute(
         """
         INSERT INTO sections
             (fmid, activity_code, name, type_code, reg_event, date_start, date_end,
-             time_start, time_end, days, location, ages, cost, first_seen, last_seen)
-        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+             time_start, time_end, days, location, ages, cost, first_seen, last_seen,
+             site_id, season_id)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         ON CONFLICT(fmid) DO UPDATE SET
             activity_code = COALESCE(excluded.activity_code, sections.activity_code),
             name          = COALESCE(excluded.name,          sections.name),
@@ -182,7 +209,8 @@ def upsert_section(conn, *, fmid, activity_code, name, type_code, reg_event,
             last_seen     = excluded.last_seen
         """,
         (fmid, activity_code, name, type_code, reg_event, date_start, date_end,
-         time_start, time_end, days, location, ages, cost, ts, ts),
+         time_start, time_end, days, location, ages, cost, ts, ts,
+         site_id, season_id),
     )
 
 

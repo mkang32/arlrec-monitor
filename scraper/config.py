@@ -11,6 +11,24 @@ WATCH_FMIDS: list[str] = [
     "350225141",   # Tip Top Ninjas 1 - Mon 4:45 pm, Barcroft
 ]
 
+# Sections the user wants alerts on, identified by activity_code instead of
+# fmid. Use this when the fmid isn't resolvable yet — e.g. new-season sections
+# before WebTrac's catalog search comes back online (it goes fully dark in the
+# days just before a registration window opens; see CLAUDE.md). Checked in
+# addition to WATCH_FMIDS in _maybe_alert, so these still fire on the very
+# first scrape that ever sees the section, even though we never looked up
+# its fmid ourselves.
+WATCH_ACTIVITY_CODES: list[str] = [
+    "110405-D",    # Fall 2026 watchlist
+    "110405-AA",   # Fall 2026 watchlist
+    "110405-AP",   # Fall 2026 watchlist
+    "110405-S",    # Fall 2026 watchlist
+    "110405-L",    # Fall 2026 watchlist
+    "110405-H",    # Fall 2026 watchlist
+    "110405-AK",   # Fall 2026 watchlist
+    "110405-W",    # Fall 2026 watchlist
+]
+
 # State transitions that should trigger an alert (prev -> new).
 # We alert on anything going scarcer, but not the reverse (cancellations).
 ALERT_TRANSITIONS: list[tuple[str | None, str]] = [
@@ -85,6 +103,25 @@ REG_EVENTS = {
     "other_2026_summer":      "ENJOYSUMMER",   # 2026-05-14 12:00 ET
     "camp_2026_dpr":          "CAMP",
     "camp_2026_partner":      "CAMP1",
+    "gymnastics_2026_fall":   "ENJOYFALL1",    # 2026-08-04 12:00 ET
+    "aquatics_2026_fall":     "ENJOYFALL2",    # 2026-08-05 12:00 ET
+    "other_2026_fall":        "ENJOYFALL",     # 2026-08-06 12:00 ET
+    "55plus_2026_fall":       "55FALL",        # 2026-08-18 — exact time unconfirmed
+}
+
+# reg_event -> season_id (scraper/db.py `seasons` table). Lets scrape.py
+# auto-resolve which season a `--mode event` scrape belongs to, so workflows
+# only need to pass --event, not a redundant --season.
+EVENT_SEASON: dict[str, str] = {
+    "ENJOYSUMMER1": "arlington-2026-summer",
+    "ENJOYSUMMER2": "arlington-2026-summer",
+    "ENJOYSUMMER":  "arlington-2026-summer",
+    "CAMP":         "arlington-2026-summer",
+    "CAMP1":        "arlington-2026-summer",
+    "ENJOYFALL1":   "arlington-2026-fall",
+    "ENJOYFALL2":   "arlington-2026-fall",
+    "ENJOYFALL":    "arlington-2026-fall",
+    "55FALL":       "arlington-2026-fall",
 }
 
 # Fallback type when a section is discovered via a registrationevent filter but
@@ -96,6 +133,10 @@ EVENT_TYPE_FALLBACK: dict[str, str] = {
     "ENJOYSUMMER2": "AQUAT",
     "CAMP":         "CAMP",
     "CAMP1":        "CAMP",
+    "ENJOYFALL1":   "GYMNA",
+    "ENJOYFALL2":   "AQUAT",
+    # ENJOYFALL (Nature/other) and 55FALL are mixed-category, like ENJOYSUMMER —
+    # no single fallback type applies, so they're intentionally left unmapped.
 }
 
 # When each registration event opened (UTC ISO). Used by the viz to compute
@@ -106,6 +147,10 @@ REG_OPENS_AT_UTC: dict[str, str] = {
     "ENJOYSUMMER2": "2026-05-13T16:00:00+00:00",
     "ENJOYSUMMER":  "2026-05-14T16:00:00+00:00",
     # CAMP / CAMP1 opened earlier in the year — exact moment unknown; left unset.
+    "ENJOYFALL1":   "2026-08-04T16:00:00+00:00",
+    "ENJOYFALL2":   "2026-08-05T16:00:00+00:00",
+    "ENJOYFALL":    "2026-08-06T16:00:00+00:00",
+    # 55FALL opens 8/18 — exact time of day unconfirmed; left unset.
 }
 
 DB_PATH = "data/snapshots.sqlite"

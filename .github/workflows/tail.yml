@@ -1,15 +1,19 @@
 name: tail-snapshot
-# Daily snapshot during the post-registration tail (May 16 - July 10). After
-# registration closes, most state changes happen slowly (cancellations,
-# waitlist promotions, late add/drops); hourly polling is overkill. After
-# July 10 we stop entirely — every section will have started by then and be
-# locked as Unavailable.
+# Daily snapshot during the post-registration tail: May 16 - July 10 for
+# summer 2026, Aug 7 - Oct 10 for fall 2026. After registration closes, most
+# state changes happen slowly (cancellations, waitlist promotions, late
+# add/drops); hourly polling is overkill. After each window ends we stop
+# entirely — every section will have started by then and be locked as
+# Unavailable. Extend the fall window's end date if the season runs longer.
 
 on:
   schedule:
-    - cron: "0 12 16-31 5 *"          # daily 12:00 UTC (8am ET) — May 16 to 31
-    - cron: "0 12 * 6 *"              # daily 12:00 UTC — all of June
-    - cron: "0 12 1-10 7 *"           # daily 12:00 UTC — July 1 to 10
+    - cron: "0 12 16-31 5 *"          # daily 12:00 UTC (8am ET) — May 16 to 31 (summer 2026)
+    - cron: "0 12 * 6 *"              # daily 12:00 UTC — all of June (summer 2026)
+    - cron: "0 12 1-10 7 *"           # daily 12:00 UTC — July 1 to 10 (summer 2026)
+    - cron: "0 12 7-31 8 *"           # daily 12:00 UTC — Aug 7 to 31 (fall 2026)
+    - cron: "0 12 * 9 *"              # daily 12:00 UTC — all of September (fall 2026)
+    - cron: "0 12 1-10 10 *"          # daily 12:00 UTC — Oct 1 to 10 (fall 2026)
   workflow_dispatch: {}
 
 permissions:
@@ -33,7 +37,28 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Pick season based on UTC date
+        id: pick
+        run: |
+          DATE=$(date -u +%m%d)
+          # Numeric-ish comparison via string range checks per month, since
+          # each tail window falls within a single named month or spans two
+          # fixed months (mirrors the cron day-ranges above).
+          MONTH=$(date -u +%m)
+          DAY=$(date -u +%d)
+          if { [[ "$MONTH" == "05" && "$DAY" -ge 16 ]] || [[ "$MONTH" == "06" ]] || { [[ "$MONTH" == "07" ]] && [[ "$DAY" -le 10 ]]; }; }; then
+            echo "season=arlington-2026-summer" >> "$GITHUB_OUTPUT"
+            echo "out_html=arlington-va/2026-summer/dashboard/index.html" >> "$GITHUB_OUTPUT"
+          elif { [[ "$MONTH" == "08" && "$DAY" -ge 7 ]] || [[ "$MONTH" == "09" ]] || { [[ "$MONTH" == "10" ]] && [[ "$DAY" -le 10 ]]; }; }; then
+            echo "season=arlington-2026-fall" >> "$GITHUB_OUTPUT"
+            echo "out_html=arlington-va/2026-fall/dashboard/index.html" >> "$GITHUB_OUTPUT"
+          else
+            echo "Not a tail window ($MONTH-$DAY) — exiting."
+            echo "season=" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Full catalog snapshot with enrollment counts
+        if: steps.pick.outputs.season != ''
         # Single authoritative pass. Replaces the old (metadata-only `--mode
         # types`) + (three `--mode event` registrationevent passes) combo.
         #
@@ -56,12 +81,20 @@ jobs:
           ALERT_GMAIL_USER: ${{ secrets.ALERT_GMAIL_USER }}
           ALERT_GMAIL_PASS: ${{ secrets.ALERT_GMAIL_PASS }}
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
-        run: python -m scraper.scrape --mode catalog
+          SEASON: ${{ steps.pick.outputs.season }}
+        run: python -m scraper.scrape --mode catalog --season "$SEASON"
 
       - name: Render CSV + HTML
-        run: python -m scraper.dump
+        if: steps.pick.outputs.season != ''
+        env:
+          SEASON: ${{ steps.pick.outputs.season }}
+        run: python -m scraper.dump --season "$SEASON"
 
       - name: Commit snapshot + dumps
+        if: steps.pick.outputs.season != ''
+        env:
+          SEASON: ${{ steps.pick.outputs.season }}
+          OUT_HTML: ${{ steps.pick.outputs.out_html }}
         run: |
           set -e
           git config user.email "actions@github.com"
@@ -73,8 +106,8 @@ jobs:
             git checkout -- data/ index.html 2>/dev/null || true
             git pull --rebase --no-stat -q
             cp /tmp/local-snapshots.sqlite data/snapshots.sqlite
-            python -m scraper.dump
-            git add data/ arlington-va/2026-summer/dashboard/index.html
+            python -m scraper.dump --season "$SEASON"
+            git add data/ "$OUT_HTML"
             if git diff --staged --quiet; then
               echo "no change"; return 0
             fi
