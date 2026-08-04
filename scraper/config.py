@@ -11,6 +11,24 @@ WATCH_FMIDS: list[str] = [
     "350225141",   # Tip Top Ninjas 1 - Mon 4:45 pm, Barcroft
 ]
 
+# Sections the user wants alerts on, identified by activity_code instead of
+# fmid. Use this when the fmid isn't resolvable yet — e.g. new-season sections
+# before WebTrac's catalog search comes back online (it goes fully dark in the
+# days just before a registration window opens; see CLAUDE.md). Checked in
+# addition to WATCH_FMIDS in _maybe_alert, so these still fire on the very
+# first scrape that ever sees the section, even though we never looked up
+# its fmid ourselves.
+WATCH_ACTIVITY_CODES: list[str] = [
+    "110405-D",    # Fall 2026 watchlist
+    "110405-AA",   # Fall 2026 watchlist
+    "110405-AP",   # Fall 2026 watchlist
+    "110405-S",    # Fall 2026 watchlist
+    "110405-L",    # Fall 2026 watchlist
+    "110405-H",    # Fall 2026 watchlist
+    "110405-AK",   # Fall 2026 watchlist
+    "110405-W",    # Fall 2026 watchlist
+]
+
 # State transitions that should trigger an alert (prev -> new).
 # We alert on anything going scarcer, but not the reverse (cancellations).
 ALERT_TRANSITIONS: list[tuple[str | None, str]] = [

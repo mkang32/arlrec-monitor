@@ -64,7 +64,7 @@ def _record(conn, ts: str, row: SectionRow, counts: EnrollmentCounts | None,
 
 def _maybe_alert(conn, *, row: SectionRow, prev_status: str | None,
                  counts: EnrollmentCounts | None, ts: str) -> None:
-    if row.fmid not in config.WATCH_FMIDS:
+    if row.fmid not in config.WATCH_FMIDS and row.activity_code not in config.WATCH_ACTIVITY_CODES:
         return
     transition = (prev_status, row.status)
     if transition not in config.ALERT_TRANSITIONS:

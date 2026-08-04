@@ -334,10 +334,19 @@ def _dump_index_html(conn, *, season_id: str, index_html: Path) -> None:
     last_data_iso = row[0] if row and row[0] else None
     last_data_str = _fmt_et(last_data_iso) if last_data_iso else "(no snapshots yet)"
 
-    # Watchlist — restricted to this season so a summer-only watchlist fmid
-    # doesn't leak onto e.g. the fall dashboard (config.WATCH_FMIDS is global).
+    # Watchlist — restricted to this season so a summer-only watchlist entry
+    # doesn't leak onto e.g. the fall dashboard (config.WATCH_FMIDS/
+    # WATCH_ACTIVITY_CODES are both global lists spanning every season).
     watch_rows = [_latest_row_for(conn, fmid) for fmid in config.WATCH_FMIDS]
-    watch_rows = [dict(r) for r in watch_rows if r is not None and r["season_id"] == season_id]
+    watch_rows += [_latest_row_for_activity_code(conn, code) for code in config.WATCH_ACTIVITY_CODES]
+    seen_fmids: set[str] = set()
+    deduped = []
+    for r in watch_rows:
+        if r is None or r["season_id"] != season_id or r["fmid"] in seen_fmids:
+            continue
+        seen_fmids.add(r["fmid"])
+        deduped.append(dict(r))
+    watch_rows = deduped
 
     # Sections that are currently non-Unavailable.
     # Latest status comes from the most recent snapshot; counts come from the
@@ -460,6 +469,26 @@ def _latest_row_for(conn, fmid: str):
         WHERE sec.fmid = ?
         """,
         (fmid,),
+    ).fetchone()
+
+
+def _latest_row_for_activity_code(conn, activity_code: str):
+    """Same as _latest_row_for, but keyed by activity_code. Used for
+    config.WATCH_ACTIVITY_CODES entries whose fmid isn't known yet (e.g. a
+    new-season section added to the watchlist before the catalog is
+    searchable — see scrape.py's _maybe_alert)."""
+    return conn.execute(
+        """
+        SELECT sec.fmid, sec.activity_code, sec.name, sec.type_code, sec.location, sec.days,
+               sec.time_start, sec.time_end, sec.ages, sec.cost, sec.season_id,
+               (SELECT status FROM snapshots WHERE fmid = sec.fmid ORDER BY ts DESC LIMIT 1) AS status,
+               (SELECT ts     FROM snapshots WHERE fmid = sec.fmid ORDER BY ts DESC LIMIT 1) AS ts,
+               (SELECT enrolled FROM snapshots WHERE fmid = sec.fmid AND enrolled IS NOT NULL ORDER BY ts DESC LIMIT 1) AS enrolled,
+               (SELECT waitlist FROM snapshots WHERE fmid = sec.fmid AND waitlist IS NOT NULL ORDER BY ts DESC LIMIT 1) AS waitlist
+        FROM sections sec
+        WHERE sec.activity_code = ?
+        """,
+        (activity_code,),
     ).fetchone()
 
 
