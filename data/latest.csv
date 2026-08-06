@@ -54,31 +54,31 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 348541950,320306-B,ABC's of Fencing,,MARTS,Martial Arts,04/18/2026,05/30/2026,10:00 am,11:00 am,Sa,NOVA Fencing and Archery Club,4-6.99,$154.00/$174.00,,,,
 350225097,420306-A,ABC's of Fencing,ENJOYSUMMER,MARTS,Martial Arts,06/20/2026,08/15/2026 *,9:00 am,9:45 am,Sa,NOVA Fencing and Archery Club,4-6.99,$176.00/$196.00,2026-07-10T13:54:57+00:00,Unavailable,5,0
 350225108,420306-B,ABC's of Fencing,ENJOYSUMMER,MARTS,Martial Arts,06/20/2026,08/15/2026 *,10:00 am,10:45 am,Sa,NOVA Fencing and Archery Club,4-6.99,$176.00/$196.00,2026-07-10T13:54:57+00:00,Unavailable,4,0
-380268378,120301-A,AIM USA Self Defense,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,1:00 pm,1:40 pm,Su,Barcroft Fitness Center,4-7.99,$132.00/$152.00,2026-08-06T15:15:09+00:00,Unavailable,,
-380272097,120301-B,AIM USA Self Defense,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,1:45 pm,2:25 pm,Su,Barcroft Fitness Center,7.99-12.99,$132.00/$152.00,2026-08-06T15:15:09+00:00,Unavailable,,
+380268378,120301-A,AIM USA Self Defense,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,1:00 pm,1:40 pm,Su,Barcroft Fitness Center,4-7.99,$132.00/$152.00,2026-08-06T18:59:07+00:00,Available,3,0
+380272097,120301-B,AIM USA Self Defense,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,1:45 pm,2:25 pm,Su,Barcroft Fitness Center,7.99-12.99,$132.00/$152.00,2026-08-06T18:59:07+00:00,Available,2,0
 347286506,913500-06,About the Brain,,OSAP,55+ Classes,05/27/2026,05/27/2026,1:15 pm,3:00 pm,W,Lubber Run,,$0.00/$0.00,,,,
-372170076,120104-A,Abrakadoodle Mini Doodlers,ENJOYFALL,,Other,09/12/2026,10/17/2026,10:00 am,10:45 am,Sa,Arlington Mill,3-6.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170091,120104-B,Abrakadoodle Mini Doodlers,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,10:00 am,10:45 am,Sa,Arlington Mill,3-6.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170106,120104-C,Abrakadoodle Mini Doodlers,ENJOYFALL,,Other,10/30/2026,12/11/2026 *,11:00 am,11:45 am,F,Fairlington Center,3-6.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-391518866,120104-D,Abrakadoodle Mini Doodlers,ENJOYFALL,,Other,09/11/2026,10/16/2026,11:00 am,11:45 am,F,Fairlington Center,3-6.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170076,120104-A,Abrakadoodle Mini Doodlers,ENJOYFALL,,Other,09/12/2026,10/17/2026,10:00 am,10:45 am,Sa,Arlington Mill,3-6.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170091,120104-B,Abrakadoodle Mini Doodlers,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,10:00 am,10:45 am,Sa,Arlington Mill,3-6.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170106,120104-C,Abrakadoodle Mini Doodlers,ENJOYFALL,,Other,10/30/2026,12/11/2026 *,11:00 am,11:45 am,F,Fairlington Center,3-6.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,5,0
+391518866,120104-D,Abrakadoodle Mini Doodlers,ENJOYFALL,,Other,09/11/2026,10/16/2026,11:00 am,11:45 am,F,Fairlington Center,3-6.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,3,0
 343431143,320104-A,Abrakadoodle Mini Doodlers,,CRART,Arts & Crafts,04/17/2026,06/12/2026 *,11:00 am,11:45 am,F,Fairlington Center,3-6.99,$176.00/$196.00,,,,
 343431157,320104-B,Abrakadoodle Mini Doodlers,,CRART,Arts & Crafts,04/18/2026,06/13/2026 *,10:00 am,10:45 am,Sa,Arlington Mill,3-6.99,$176.00/$196.00,,,,
 350224859,420104-A,Abrakadoodle Mini Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/07/2026,08/11/2026,11:00 am,11:45 am,Tu,Walter Reed Center,3-6.99,$132.00/$152.00,2026-07-10T13:54:57+00:00,Available,10,0
 350224873,420104-B,Abrakadoodle Mini Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/08/2026,08/12/2026,11:00 am,11:45 am,W,Long Bridge Aquatics Center,3-6.99,$132.00/$152.00,2026-07-10T13:54:57+00:00,Available,6,0
 350224887,420104-C,Abrakadoodle Mini Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/11/2026,08/15/2026,10:30 am,11:15 am,Sa,Arlington Mill,3-6.99,$132.00/$152.00,2026-07-10T13:54:57+00:00,Available,4,0
 350224901,420104-D,Abrakadoodle Mini Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/13/2026,08/17/2026,10:30 am,11:15 am,M,Madison Manor Park,3-6.99,$132.00/$152.00,2026-07-10T13:54:57+00:00,Available,7,0
-372170135,120107-A,Abrakadoodle: Doodlers,ENJOYFALL,,Other,09/12/2026,10/17/2026,11:00 am,12:00 pm,Sa,Arlington Mill,6-12.99,$168.00/$188.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170150,120107-B,Abrakadoodle: Doodlers,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,11:00 am,12:00 pm,Sa,Arlington Mill,6-12.99,$168.00/$188.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170135,120107-A,Abrakadoodle: Doodlers,ENJOYFALL,,Other,09/12/2026,10/17/2026,11:00 am,12:00 pm,Sa,Arlington Mill,6-12.99,$168.00/$188.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170150,120107-B,Abrakadoodle: Doodlers,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,11:00 am,12:00 pm,Sa,Arlington Mill,6-12.99,$168.00/$188.00,2026-08-06T18:59:07+00:00,Available,1,0
 343431185,320107-A,Abrakadoodle: Doodlers,,CRART,Arts & Crafts,04/18/2026,06/13/2026 *,11:00 am,12:00 pm,Sa,Arlington Mill,6-12.99,$216.00/$236.00,,,,
 350224915,420107-A,Abrakadoodle: Doodlers,ENJOYSUMMER,CRART,Arts & Crafts,07/11/2026,08/15/2026,11:30 am,12:30 pm,Sa,Arlington Mill,6-12.99,$162.00/$182.00,2026-07-10T13:54:57+00:00,Available,10,0
 346619200,750146-GG,Abrakadoodle: Let The Sun Shine In Camp,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,3:00 pm,W,Fairlington Center,5.5-12.99,$65.00/$75.00,,,,
 346618574,750146-R,Abrakadoodle: Let The Sun Shine In Camp,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,3:00 pm,Tu,Fairlington Center,5.5-12.99,$65.00/$75.00,,,,
-372168894,110100-A,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,09/08/2026,10/13/2026,10:00 am,10:45 am,Tu,Long Bridge Aquatics Center,1.66-3.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168913,110100-B,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,09/12/2026,10/17/2026,9:00 am,9:45 am,Sa,Arlington Mill,1.66-3.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168932,110100-C,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,09/14/2026,10/26/2026 *,11:00 am,11:45 am,M,Arlington Mill,1.66-3.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168947,110100-D,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,9:00 am,9:45 am,Sa,Arlington Mill,1.66-3.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168962,110100-E,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,09/11/2026,10/16/2026,10:00 am,10:45 am,F,Fairlington Center,1.66-3.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168976,110100-F,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,10/30/2026,12/11/2026 *,10:00 am,10:45 am,F,Fairlington Center,1.66-3.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372168894,110100-A,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,09/08/2026,10/13/2026,10:00 am,10:45 am,Tu,Long Bridge Aquatics Center,1.66-3.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,3,0
+372168913,110100-B,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,09/12/2026,10/17/2026,9:00 am,9:45 am,Sa,Arlington Mill,1.66-3.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,0,0
+372168932,110100-C,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,09/14/2026,10/26/2026 *,11:00 am,11:45 am,M,Arlington Mill,1.66-3.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,1,0
+372168947,110100-D,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,9:00 am,9:45 am,Sa,Arlington Mill,1.66-3.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,2,0
+372168962,110100-E,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,09/11/2026,10/16/2026,10:00 am,10:45 am,F,Fairlington Center,1.66-3.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,0,0
+372168976,110100-F,Abrakadoodle: Twoosy Doodlers,ENJOYFALL,,Other,10/30/2026,12/11/2026 *,10:00 am,10:45 am,F,Fairlington Center,1.66-3.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,0,0
 343429964,310100-A,Abrakadoodle: Twoosy Doodlers,,CRART,Arts & Crafts,04/13/2026,06/08/2026 *,10:00 am,10:45 am,M,Arlington Mill,1.66-3.99,$176.00/$196.00,,,,
 343429979,310100-B,Abrakadoodle: Twoosy Doodlers,,CRART,Arts & Crafts,04/13/2026,06/08/2026 *,11:00 am,11:45 am,M,Arlington Mill,1.66-3.99,$176.00/$196.00,,,,
 343429993,310100-C,Abrakadoodle: Twoosy Doodlers,,CRART,Arts & Crafts,04/18/2026,06/13/2026 *,9:00 am,9:45 am,Sa,Arlington Mill,1.66-3.99,$176.00/$196.00,,,,
@@ -91,28 +91,28 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365937473,914301-02,Acoustic Cafe (55+ Pass NOT Required),,OSAP,55+ Classes,06/16/2026,06/16/2026,7:00 pm,8:30 pm,Tu,Walter Reed Center,0-999,$0.00/$0.00,2026-06-16T17:00:36+00:00,Unavailable,,
 347285402,913301-03,Acoustic Cafe (55+ Pass Not Required),,OSAP,55+ Classes,05/19/2026,05/19/2026,7:00 pm,8:30 pm,Tu,Walter Reed Center,0-999,$0.00/$0.00,,,,
 365937465,914301-01,Acoustic Hour in the Park,,OSAP,55+ Classes,06/05/2026,06/05/2026,1:00 pm,2:30 pm,F,Virginia Highlands Park,,$0.00/$0.00,,,,
-372168687,102005-A,Adapted Art,ENJOYFALL,,Other,09/14/2026,11/16/2026,6:00 pm,7:00 pm,M,Fairlington Center,13-99.99,$110.00/$130.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168700,102005-B,Adapted Art,ENJOYFALL,,Other,09/08/2026,11/10/2026,5:30 pm,6:30 pm,Tu,Lubber Run,13-99.99,$110.00/$130.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372168687,102005-A,Adapted Art,ENJOYFALL,,Other,09/14/2026,11/16/2026,6:00 pm,7:00 pm,M,Fairlington Center,13-99.99,$110.00/$130.00,2026-08-06T18:59:07+00:00,Available,4,0
+372168700,102005-B,Adapted Art,ENJOYFALL,,Other,09/08/2026,11/10/2026,5:30 pm,6:30 pm,Tu,Lubber Run,13-99.99,$110.00/$130.00,2026-08-06T18:59:07+00:00,Available,7,0
 343429884,302005-A,Adapted Art,,TRO,Individuals with Disabilities,04/14/2026,06/02/2026,5:30 pm,6:30 pm,Tu,Lubber Run,13-99.99,$85.00/$105.00,,,,
-372168714,104001-A,Adapted Family Campfire,ENJOYFALL,,Other,09/26/2026,09/26/2026,6:00 pm,7:30 pm,Sa,Lubber Run,3-99.99,$8.00/$28.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372168714,104001-A,Adapted Family Campfire,ENJOYFALL,,Other,09/26/2026,09/26/2026,6:00 pm,7:30 pm,Sa,Lubber Run,3-99.99,$8.00/$28.00,2026-08-06T18:59:07+00:00,Available,3,0
 343429906,304003-B,Adapted Group Fitness w/SPIRIT Club,,TRO,Individuals with Disabilities,05/16/2026,05/16/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$17.00/$37.00,,,,
 343429917,304003-C,Adapted Group Fitness w/SPIRIT Club,,TRO,Individuals with Disabilities,06/06/2026,06/06/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$17.00/$37.00,,,,
-372168741,104005-A,Adapted Group Fitness w/SPIRIT Club:  Strength Training,ENJOYFALL,,Other,10/17/2026,10/17/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168727,104003-A,Adapted Group Fitness w/SPIRIT Club: Club Cardio Workout,ENJOYFALL,,Other,09/26/2026,09/26/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168755,104003-B,Adapted Group Fitness w/SPIRIT Club: Club Cardio Workout,ENJOYFALL,,Other,10/31/2026,10/31/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168796,104003-C,Adapted Group Fitness w/SPIRIT Club: Club Cardio Workout,ENJOYFALL,,Other,11/21/2026,11/21/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168809,104003-D,Adapted Group Fitness w/SPIRIT Club: Club Cardio Workout,ENJOYFALL,,Other,12/12/2026,12/12/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168768,104005-B,Adapted Group Fitness w/SPIRIT Club: Strength Training,ENJOYFALL,,Other,11/14/2026,11/14/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168783,104005-C,Adapted Group Fitness w/SPIRIT Club: Strength Training,ENJOYFALL,,Other,12/05/2026,12/05/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372168741,104005-A,Adapted Group Fitness w/SPIRIT Club:  Strength Training,ENJOYFALL,,Other,10/17/2026,10/17/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T18:59:07+00:00,Available,9,0
+372168727,104003-A,Adapted Group Fitness w/SPIRIT Club: Club Cardio Workout,ENJOYFALL,,Other,09/26/2026,09/26/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T18:59:07+00:00,Available,14,0
+372168755,104003-B,Adapted Group Fitness w/SPIRIT Club: Club Cardio Workout,ENJOYFALL,,Other,10/31/2026,10/31/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T18:59:07+00:00,Available,14,0
+372168796,104003-C,Adapted Group Fitness w/SPIRIT Club: Club Cardio Workout,ENJOYFALL,,Other,11/21/2026,11/21/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T18:59:07+00:00,Available,14,0
+372168809,104003-D,Adapted Group Fitness w/SPIRIT Club: Club Cardio Workout,ENJOYFALL,,Other,12/12/2026,12/12/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T18:59:07+00:00,Available,14,0
+372168768,104005-B,Adapted Group Fitness w/SPIRIT Club: Strength Training,ENJOYFALL,,Other,11/14/2026,11/14/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T18:59:07+00:00,Available,11,0
+372168783,104005-C,Adapted Group Fitness w/SPIRIT Club: Strength Training,ENJOYFALL,,Other,12/05/2026,12/05/2026,9:45 am,10:45 am,Sa,Langston Brown,13-99.99,$18.00/$38.00,2026-08-06T18:59:07+00:00,Available,11,0
 343444109,320521-A,Adapted Level 1 (Age: 5-7),,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,9:30 am,10:15 am,Su,Barcroft Fitness Center,5-7.99,$96.00/$116.00,,,,
 350217393,420521-A,Adapted Level 1 (Age: 5-7),ENJOYSUMMER1,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,9:30 am,10:15 am,Su,Barcroft Fitness Center,5-7.99,$83.00/$103.00,2026-07-10T13:54:57+00:00,Waitlist,5,2
 343444122,320521-B,Adapted Level 1 (Age: 8-12),,TRO,Individuals with Disabilities,04/19/2026,06/14/2026 *,8:30 am,9:15 am,Su,Barcroft Fitness Center,8-12.99,$96.00/$116.00,,,,
 350217404,420521-B,Adapted Level 1 (Age: 8-12),ENJOYSUMMER1,TRO,Individuals with Disabilities,07/12/2026,08/16/2026,8:30 am,9:15 am,Su,Barcroft Fitness Center,8-12.99,$83.00/$103.00,2026-07-10T13:54:57+00:00,Waitlist,6,1
-372168822,104004-A,Adapted Try-athlon Training Sessions,ENJOYFALL,,Other,09/10/2026,11/05/2026,6:00 pm,7:00 pm,Th,Long Bridge Aquatics Center,14-99.99,$150.00/$170.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168864,104008-A,Adapted Yoga for Adults,ENJOYFALL,,Other,09/16/2026,11/04/2026,5:30 pm,6:20 pm,W,Lubber Run,18-99.99,$128.00/$148.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372168879,104008-B,Adapted Yoga for Adults,ENJOYFALL,,Other,11/18/2026,12/23/2026,5:30 pm,6:20 pm,W,Lubber Run,18-99.99,$96.00/$116.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372168822,104004-A,Adapted Try-athlon Training Sessions,ENJOYFALL,,Other,09/10/2026,11/05/2026,6:00 pm,7:00 pm,Th,Long Bridge Aquatics Center,14-99.99,$150.00/$170.00,2026-08-06T18:59:07+00:00,Available,8,0
+372168864,104008-A,Adapted Yoga for Adults,ENJOYFALL,,Other,09/16/2026,11/04/2026,5:30 pm,6:20 pm,W,Lubber Run,18-99.99,$128.00/$148.00,2026-08-06T18:59:07+00:00,Available,7,0
+372168879,104008-B,Adapted Yoga for Adults,ENJOYFALL,,Other,11/18/2026,12/23/2026,5:30 pm,6:20 pm,W,Lubber Run,18-99.99,$96.00/$116.00,2026-08-06T18:59:07+00:00,Available,6,0
 343429942,304008-A,Adapted Yoga for Adults,,TRO,Individuals with Disabilities,04/15/2026,06/10/2026 *,5:30 pm,6:20 pm,W,Lubber Run,18-99.99,$120.00/$140.00,,,,
-372168848,104007-A,Adapted Zumba w/Spirit Club,ENJOYFALL,,Other,09/26/2026,12/12/2026 *,11:00 am,12:00 pm,Sa,Langston Brown,13-99.99,$232.00/$252.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372168848,104007-A,Adapted Zumba w/Spirit Club,ENJOYFALL,,Other,09/26/2026,12/12/2026 *,11:00 am,12:00 pm,Sa,Langston Brown,13-99.99,$232.00/$252.00,2026-08-06T18:59:07+00:00,Waitlist,15,1
 343429929,304007-A,Adapted Zumba w/Spirit Club,,TRO,Individuals with Disabilities,04/18/2026,06/13/2026 *,11:00 am,12:00 pm,Sa,Langston Brown,13-99.99,$180.00/$200.00,,,,
 343444178,340501-A,Adult Advanced,,GYMNA,Gymnastics,04/16/2026,06/11/2026,7:15 pm,8:45 pm,Th,Barcroft Fitness Center,18-99.99,$198.00/$218.00,,,,
 350217448,440501-A,Adult Advanced,ENJOYSUMMER1,GYMNA,Gymnastics,07/09/2026,08/13/2026,7:15 pm,8:45 pm,Th,Barcroft Fitness Center,18-99.99,$132.00/$152.00,2026-07-10T13:54:57+00:00,Waitlist,10,2
@@ -201,8 +201,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366020261,642950-L,Afternoon Craft,,NCTR,Nature & History,08/04/2026,08/04/2026,12:15 pm,1:00 pm,Tu,Long Branch Nature Center,3-99.99,$7.00/$8.00,2026-07-10T13:54:57+00:00,Available,5,0
 366020272,642950-M,Afternoon Craft,,NCTR,Nature & History,08/13/2026,08/13/2026,12:15 pm,1:00 pm,Th,Long Branch Nature Center,3-99.99,$7.00/$8.00,2026-07-10T13:54:57+00:00,Available,1,0
 365765358,902608-03,Agatha Christies Mousetrap at Riverside,,SAOT,55+ Trips,08/19/2026,08/19/2026,9:30 am,6:15 pm,W,See Program Details,,$112.00/$129.00,2026-07-10T13:54:57+00:00,Waitlist,38,11
-372169035,110205-A,All that Jazz & Ballet,ENJOYFALL,,Other,09/10/2026,12/10/2026 *,5:10 pm,5:55 pm,Th,Barcroft Fitness Center,4-6.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169046,110205-B,All that Jazz & Ballet,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,11:00 am,11:45 am,Sa,Langston Brown,4-6.99,$275.00/$295.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169035,110205-A,All that Jazz & Ballet,ENJOYFALL,,Other,09/10/2026,12/10/2026 *,5:10 pm,5:55 pm,Th,Barcroft Fitness Center,4-6.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,5,0
+372169046,110205-B,All that Jazz & Ballet,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,11:00 am,11:45 am,Sa,Langston Brown,4-6.99,$275.00/$295.00,2026-08-06T18:59:07+00:00,Available,3,0
 343430118,310205-A,All that Jazz & Ballet,,DANCE,Dance,04/16/2026,06/11/2026,5:00 pm,5:45 pm,Th,Barcroft Fitness Center,4.5-6.99,$216.00/$236.00,,,,
 350224022,410205-A,All that Jazz & Ballet,ENJOYSUMMER,DANCE,Dance,07/11/2026,08/08/2026,10:00 am,10:45 am,Sa,Langston Brown,4.5-6.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Available,5,0
 350224033,410205-B,All that Jazz & Ballet,ENJOYSUMMER,DANCE,Dance,07/16/2026,08/13/2026,6:00 pm,6:45 pm,Th,Barcroft Fitness Center,4.5-6.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Available,6,0
@@ -252,8 +252,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365938095,914400-24,Arlingtons Urban Forest,,OSAP,55+ Classes,07/16/2026,07/16/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,18,0
 365938161,914400-32,Armchair Travel,,OSAP,55+ Classes,06/25/2026,06/25/2026,10:00 am,11:00 am,Th,Virtual,,$0.00/$0.00,2026-06-25T14:38:39+00:00,Unavailable,24,0
 365938169,914400-33,Armchair Travel,,OSAP,55+ Classes,08/20/2026,08/20/2026,10:00 am,11:00 am,Th,Virtual,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,21,0
-372170206,120129-A,Art 101: Drawing,ENJOYFALL,,Other,09/12/2026,10/24/2026,10:00 am,11:00 am,Sa,Fairlington Center,10-13.99,$151.00/$171.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170192,120128-A,Art 101: Intro to Art,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,10:00 am,11:00 am,Sa,Fairlington Center,10-13.99,$129.00/$149.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170206,120129-A,Art 101: Drawing,ENJOYFALL,,Other,09/12/2026,10/24/2026,10:00 am,11:00 am,Sa,Fairlington Center,10-13.99,$151.00/$171.00,2026-08-06T18:59:07+00:00,Available,4,0
+372170192,120128-A,Art 101: Intro to Art,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,10:00 am,11:00 am,Sa,Fairlington Center,10-13.99,$129.00/$149.00,2026-08-06T18:59:07+00:00,Available,5,0
 343431213,320128-A,Art 101: Intro to Art,,DWPT,Drawing/Painting,04/18/2026,06/06/2026 *,9:45 am,11:00 am,Sa,Fairlington Center,10-12.99,$160.00/$180.00,,,,
 343431227,320128-B,Art 101: Intro to Art,,DWPT,Drawing/Painting,04/18/2026,06/06/2026 *,11:45 am,1:00 pm,Sa,Fairlington Center,10-12.99,$160.00/$180.00,,,,
 343190101,500101-10,Art Innovators Art Camp,CAMP1,CAMP,Summer Camp,08/24/2026,08/28/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Arlington Mill,5.5-12.99,$320.00/$368.00,2026-07-10T13:54:57+00:00,Waitlist,30,3
@@ -271,17 +271,17 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 344699811,320607-B,Ball Hockey,,SPORT,Sports,04/19/2026,06/21/2026 *,10:30 am,11:30 am,Su,Quincy Street Deck,10-12.99,$213.00/$233.00,,,,
 350225540,420607-A,Ball Hockey,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,10:30 am,11:30 am,Su,Quincy Street Deck,7-9.99,$213.00/$233.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
 350225551,420607-B,Ball Hockey,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,10:30 am,11:30 am,Su,Quincy Street Deck,10-12.99,$213.00/$233.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
-372170278,120221-A,Ballet 1,ENJOYFALL,,Other,09/14/2026,12/14/2026,5:30 pm,6:15 pm,M,Lubber Run,5-7.99,$350.00/$370.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170289,120221-B,Ballet 1,ENJOYFALL,,Other,09/10/2026,12/10/2026 *,6:00 pm,6:45 pm,Th,Barcroft Fitness Center,5-7.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170278,120221-A,Ballet 1,ENJOYFALL,,Other,09/14/2026,12/14/2026,5:30 pm,6:15 pm,M,Lubber Run,5-7.99,$350.00/$370.00,2026-08-06T18:59:07+00:00,Available,7,0
+372170289,120221-B,Ballet 1,ENJOYFALL,,Other,09/10/2026,12/10/2026 *,6:00 pm,6:45 pm,Th,Barcroft Fitness Center,5-7.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,3,0
 343431319,320221-A,Ballet 1,,DANCE,Dance,04/13/2026,06/08/2026 *,5:30 pm,6:15 pm,M,Lubber Run,5-7.99,$192.00/$212.00,,,,
 343431330,320221-B,Ballet 1,,DANCE,Dance,04/14/2026,06/09/2026 *,6:00 pm,6:45 pm,Tu,Barcroft Fitness Center,5-7.99,$192.00/$212.00,,,,
 343431341,320221-C,Ballet 1,,DANCE,Dance,04/19/2026,06/14/2026 *,11:10 am,11:55 am,Su,Long Bridge Aquatics Center,5-7.99,$192.00/$212.00,,,,
 350224985,420221-A,Ballet 1,ENJOYSUMMER,DANCE,Dance,07/14/2026,08/11/2026,6:00 pm,6:45 pm,Tu,Barcroft Fitness Center,5-7.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Available,13,0
 350224996,420221-B,Ballet 1,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,5:00 pm,5:45 pm,W,Lubber Run,5-7.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Available,6,0
-379425776,120222-A,Ballet 2,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,5:50 pm,6:50 pm,W,Lubber Run,6.5-10.99,$396.00/$416.00,2026-08-06T15:15:09+00:00,Unavailable,,
+379425776,120222-A,Ballet 2,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,5:50 pm,6:50 pm,W,Lubber Run,6.5-10.99,$396.00/$416.00,2026-08-06T18:59:07+00:00,Available,2,0
 343431352,320222-A,Ballet 2,,DANCE,Dance,04/15/2026,06/10/2026,5:50 pm,6:50 pm,W,Lubber Run,6.5-8.99,$288.00/$308.00,,,,
 350225008,420222-A,Ballet 2,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,5:50 pm,6:50 pm,W,Lubber Run,6.5-8.99,$160.00/$180.00,2026-07-10T13:54:57+00:00,Available,6,0
-388815852,120225-A,Ballet 2 & 3,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:00 pm,5:00 pm,Su,Walter Reed Center,6.5-12.99,$396.00/$416.00,2026-08-06T15:15:09+00:00,Unavailable,,
+388815852,120225-A,Ballet 2 & 3,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:00 pm,5:00 pm,Su,Walter Reed Center,6.5-12.99,$396.00/$416.00,2026-08-06T18:59:07+00:00,Available,0,0
 343431363,320225-A,Ballet 2 & 3,,DANCE,Dance,04/19/2026,06/14/2026 *,4:00 pm,5:00 pm,Su,Walter Reed Center,6.5-11.99,$256.00/$276.00,,,,
 350225030,420225-A,Ballet 2 & 3,ENJOYSUMMER,DANCE,Dance,07/16/2026,08/13/2026,5:30 pm,6:30 pm,Th,Walter Reed Center,6.5-11.99,$160.00/$180.00,2026-07-10T13:54:57+00:00,Available,5,0
 350225019,420223-A,Ballet for Boys,ENJOYSUMMER,DANCE,Dance,07/14/2026,08/11/2026,5:10 pm,5:55 pm,Tu,Lubber Run,5-9.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
@@ -300,7 +300,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343191348,500208-03,Battlefield Explorers Camp,CAMP,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,4:30 pm,"M, Tu, W, Th, F",Fort CF Smith Park,11-14.99,$430.00/$494.00,2026-07-10T13:54:57+00:00,Unavailable,15,0
 366281313,642940-C,Beginner Birding,,NCTR,Nature & History,08/20/2026,08/20/2026,10:00 am,11:00 am,Th,Bluemont Park,12-99.99,$7.00/$8.00,2026-07-10T13:54:57+00:00,Available,3,0
 343433034,340354-A,Beginner Judo for Teens/Adults,,MARTS,Martial Arts,04/16/2026,06/18/2026,8:20 pm,9:20 pm,Th,Dawson Terrace,13-99.99,$100.00/$120.00,,,,
-372170395,120305-A,Beginner Judo for Youth,ENJOYFALL,,Other,09/08/2026,12/15/2026 *,6:00 pm,7:00 pm,Tu,Dawson Terrace,5-13.99,$154.00/$174.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170395,120305-A,Beginner Judo for Youth,ENJOYFALL,,Other,09/08/2026,12/15/2026 *,6:00 pm,7:00 pm,Tu,Dawson Terrace,5-13.99,$154.00/$174.00,2026-08-06T18:59:07+00:00,Available,10,0
 343431452,320305-A,Beginner Judo for Youth,,MARTS,Martial Arts,04/14/2026,06/16/2026 *,6:00 pm,7:00 pm,Tu,Dawson Terrace,5-13.99,$90.00/$110.00,,,,
 365937118,914105-01,Beginner Tai Chi Chuan,,OSAP,55+ Classes,06/08/2026,08/24/2026 *,2:00 pm,3:00 pm,M,Walter Reed Center,,$66.00/$66.00,2026-07-10T13:54:57+00:00,Unavailable,,
 272789126,730045-A1,Beginners Latin Dance,,TEEN,Teen Programs,10/02/2025,08/27/2026 *,4:00 pm,5:30 pm,Th,Lubber Run,5-99.99,$0.00/$0.00,2026-07-10T13:54:57+00:00,Check Availability,,
@@ -349,9 +349,9 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343193125,500406-01,Boolean Girl microbit robotics (Girls Only) Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Marymount - Ballston Campus,11-13.99,$425.00/$488.00,,,,
 343295307,500406-08,Boolean Girl microbit robotics (Girls Only) Camp,CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Marymount - Ballston Campus,11-13.99,$425.00/$488.00,2026-07-10T13:54:57+00:00,Waitlist,5,2
 350724635,632740-B,Bootleggers Guide to Rosslyn,,NCTR,Nature & History,06/06/2026,06/06/2026,3:00 pm,4:30 pm,Sa,Rosslyn Highlands,21-99.99,$9.00/$10.35,,,,
-372171034,120321-A,Bow & Go! Beginner Violin,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,2:20 pm,3:20 pm,Su,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171048,120321-B,Bow & Go! Beginner Violin,ENJOYFALL,,Other,09/19/2026,12/19/2026 *,12:15 pm,1:15 pm,Sa,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171062,120321-C,Bow & Go! Beginner Violin,ENJOYFALL,,Other,09/15/2026,12/15/2026 *,7:10 pm,8:10 pm,Tu,Langston Brown,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171034,120321-A,Bow & Go! Beginner Violin,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,2:20 pm,3:20 pm,Su,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,3,0
+372171048,120321-B,Bow & Go! Beginner Violin,ENJOYFALL,,Other,09/19/2026,12/19/2026 *,12:15 pm,1:15 pm,Sa,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,2,0
+372171062,120321-C,Bow & Go! Beginner Violin,ENJOYFALL,,Other,09/15/2026,12/15/2026 *,7:10 pm,8:10 pm,Tu,Langston Brown,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,1,0
 343431953,320321-A,Bow & Go! Beginner Violin,,MUSIC,Music,04/18/2026,06/13/2026 *,12:15 pm,1:15 pm,Sa,Arlington Mill,5-12.99,$226.00/$246.00,,,,
 343431967,320321-B,Bow & Go! Beginner Violin,,MUSIC,Music,04/19/2026,06/14/2026 *,2:20 pm,3:20 pm,Su,Arlington Mill,5-12.99,$226.00/$246.00,,,,
 350225457,420321-A,Bow & Go! Beginner Violin,ENJOYSUMMER,MUSIC,Music,07/11/2026,08/15/2026,12:15 pm,1:15 pm,Sa,Arlington Mill,5-12.99,$175.00/$195.00,2026-07-10T13:54:57+00:00,Available,9,0
@@ -435,14 +435,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343192936,500314-05,Ceramics & Culinary Creations Camp,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,2026-07-10T13:54:57+00:00,Available,47,0
 343192947,500314-06,Ceramics & Culinary Creations Camp,CAMP1,CAMP,Summer Camp,07/27/2026,07/31/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,2026-07-10T13:54:57+00:00,Available,53,0
 343192958,500314-07,Ceramics & Culinary Creations Camp,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,2026-07-10T13:54:57+00:00,Available,51,0
-372170062,120102-A,Ceramics: Handbuilding for Families,ENJOYFALL,,Other,09/13/2026,11/08/2026 *,2:00 pm,3:30 pm,Su,Walter Reed Center,6-15.99,$249.00/$269.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170062,120102-A,Ceramics: Handbuilding for Families,ENJOYFALL,,Other,09/13/2026,11/08/2026 *,2:00 pm,3:30 pm,Su,Walter Reed Center,6-15.99,$249.00/$269.00,2026-08-06T18:59:07+00:00,Available,8,0
 365937017,914103-10,Chair Hatha Yoga,,OSAP,55+ Classes,06/10/2026,08/26/2026 *,12:15 pm,1:15 pm,W,Langston Brown,,$44.00/$44.00,2026-07-10T13:54:57+00:00,Unavailable,,
 343433356,340908-B,Chair Yoga for Every Body,,YOGA,Yoga,05/11/2026,05/11/2026,12:30 pm,1:30 pm,M,Lubber Run,18-99.99,$16.00/$18.00,,,,
 343433367,340908-C,Chair Yoga for Every Body,,YOGA,Yoga,06/01/2026,06/01/2026,12:30 pm,1:30 pm,M,Lubber Run,18-99.99,$16.00/$18.00,,,,
 346617066,750146-I,Chess Camp by Silver Knights Chess,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Madison Center,6-13.99,$89.00/$102.00,,,,
 346618828,750146-X,Chess Camp by Silver Knights Chess,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,4:00 pm,W,Madison Center,6-13.99,$89.00/$102.00,,,,
-372170368,120299-A,Chess Club with Silver Knights,ENJOYFALL,,Other,09/17/2026,11/19/2026,6:00 pm,7:00 pm,Th,Arlington Mill,6-13.99,$260.00/$280.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170381,120299-B,Chess Club with Silver Knights,ENJOYFALL,,Other,09/18/2026,12/04/2026 *,6:00 pm,7:00 pm,F,Lubber Run,6-13.99,$260.00/$280.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170368,120299-A,Chess Club with Silver Knights,ENJOYFALL,,Other,09/17/2026,11/19/2026,6:00 pm,7:00 pm,Th,Arlington Mill,6-13.99,$260.00/$280.00,2026-08-06T18:59:07+00:00,Available,8,0
+372170381,120299-B,Chess Club with Silver Knights,ENJOYFALL,,Other,09/18/2026,12/04/2026 *,6:00 pm,7:00 pm,F,Lubber Run,6-13.99,$260.00/$280.00,2026-08-06T18:59:07+00:00,Available,2,0
 343431430,320299-A,Chess Club with Silver Knights,,SS,This-n-That,04/16/2026,05/28/2026 *,6:00 pm,7:00 pm,Th,Madison Center,6-13.99,$173.00/$193.00,,,,
 343431441,320299-B,Chess Club with Silver Knights,,SS,This-n-That,04/17/2026,05/29/2026 *,6:00 pm,7:00 pm,F,Madison Center,6-13.99,$173.00/$193.00,,,,
 350225075,420299-A,Chess Club with Silver Knights,ENJOYSUMMER,SS,This-n-That,06/25/2026,08/20/2026 *,6:00 pm,7:00 pm,Th,Lubber Run,6-13.99,$216.00/$236.00,2026-07-10T13:54:57+00:00,Unavailable,29,1
@@ -471,16 +471,16 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350225730,440125-C,Continuing Wheel,ENJOYSUMMER,CERAM,Ceramics,06/25/2026,07/30/2026,6:00 pm,8:30 pm,Th,Thomas Jefferson Center,18-99.99,$281.00/$301.00,2026-07-10T13:54:57+00:00,Unavailable,14,0
 343431751,320316-A,Cooking: Baroody Bakes,,COOKI,Cooking,04/15/2026,06/03/2026,6:15 pm,7:15 pm,W,Long Bridge Aquatics Center,5-11.99,$212.00/$232.00,,,,
 350225375,420316-A,Cooking: Baroody Bakes,ENJOYSUMMER,COOKI,Cooking,07/08/2026,08/12/2026,6:30 pm,7:30 pm,W,Long Bridge Aquatics Center,5-11.99,$159.00/$179.00,2026-07-10T13:54:57+00:00,Available,10,0
-372171194,120330-A,Cooking: Baroody's No Bake Bonanza,ENJOYFALL,,Other,09/09/2026,10/14/2026,6:15 pm,7:15 pm,W,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171194,120330-A,Cooking: Baroody's No Bake Bonanza,ENJOYFALL,,Other,09/09/2026,10/14/2026,6:15 pm,7:15 pm,W,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T18:59:07+00:00,Available,1,0
 350225485,420330-A,Cooking: Baroody's No Bake Bonanza,ENJOYSUMMER,COOKI,Cooking,07/12/2026,08/16/2026,11:30 am,12:30 pm,Su,Long Bridge Aquatics Center,5-11.99,$159.00/$179.00,2026-07-10T13:54:57+00:00,Available,9,0
-372170814,120317-A,Cooking: Breakfast Club,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,3:00 pm,4:00 pm,Sa,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170825,120317-B,Cooking: Breakfast Club,ENJOYFALL,,Other,09/13/2026,10/04/2026,10:00 am,11:00 am,Su,Long Bridge Aquatics Center,5-11.99,$112.00/$132.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170814,120317-A,Cooking: Breakfast Club,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,3:00 pm,4:00 pm,Sa,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T18:59:07+00:00,Available,2,0
+372170825,120317-B,Cooking: Breakfast Club,ENJOYFALL,,Other,09/13/2026,10/04/2026,10:00 am,11:00 am,Su,Long Bridge Aquatics Center,5-11.99,$112.00/$132.00,2026-08-06T18:59:07+00:00,Available,2,0
 343431763,320317-A,Cooking: Breakfast Club,,COOKI,Cooking,04/19/2026,06/14/2026 *,10:00 am,11:00 am,Su,Long Bridge Aquatics Center,5-7.99,$212.00/$232.00,,,,
 353250216,420317-A,Cooking: Breakfast Club,ENJOYSUMMER,COOKI,Cooking,07/12/2026,08/16/2026,10:00 am,11:00 am,Su,Long Bridge Aquatics Center,5-11.99,$159.00/$179.00,2026-07-10T13:54:57+00:00,Available,7,0
-372171148,120326-A,Cooking: Cooking Around the World,ENJOYFALL,,Other,09/12/2026,10/17/2026,4:30 pm,5:30 pm,Sa,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171148,120326-A,Cooking: Cooking Around the World,ENJOYFALL,,Other,09/12/2026,10/17/2026,4:30 pm,5:30 pm,Sa,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T18:59:07+00:00,Available,4,0
 343432009,320326-A,Cooking: Cooking Around the World,,COOKI,Cooking,04/18/2026,06/13/2026 *,4:30 pm,5:30 pm,Sa,Long Bridge Aquatics Center,5-11.99,$212.00/$232.00,,,,
-372171159,120327-A,Cooking: Savory & Sweet,ENJOYFALL,,Other,09/09/2026,10/14/2026,5:00 pm,6:00 pm,W,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171172,120327-B,Cooking: Savory & Sweet,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,4:30 pm,5:30 pm,Sa,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171159,120327-A,Cooking: Savory & Sweet,ENJOYFALL,,Other,09/09/2026,10/14/2026,5:00 pm,6:00 pm,W,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T18:59:07+00:00,Available,2,0
+372171172,120327-B,Cooking: Savory & Sweet,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,4:30 pm,5:30 pm,Sa,Long Bridge Aquatics Center,5-11.99,$168.00/$188.00,2026-08-06T18:59:07+00:00,Available,2,0
 343432020,320327-A,Cooking: Savory & Sweet,,COOKI,Cooking,04/15/2026,06/03/2026,5:00 pm,6:00 pm,W,Long Bridge Aquatics Center,5-11.99,$212.00/$232.00,,,,
 343433223,340903-A,Core Yoga,,YOGA,Yoga,04/16/2026,06/18/2026,6:00 pm,7:00 pm,Th,Lubber Run,18-99.99,$154.00/$174.00,,,,
 350226204,440903-A,Core Yoga,,YOGA,Yoga,06/22/2026,08/17/2026,7:15 pm,8:15 pm,M,Lubber Run,18-99.99,$139.00/$159.00,2026-07-10T13:54:57+00:00,Unavailable,18,0
@@ -525,10 +525,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 345170126,710136-F,DPR Break Blast (May 27),,OST,Out of School Time,05/27/2026,05/27/2026,8:00 am,4:00 pm,W,Drew Center & Park,5-11.99,$55.00/$63.00,,,,
 343190769,500113-04,Dance Camps,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Taylor Elem. School,7-11.99,$325.00/$373.00,2026-07-10T13:54:57+00:00,Unavailable,49,0
 343190780,500113-05,Dance Camps,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Taylor Elem. School,7-11.99,$325.00/$373.00,2026-07-10T13:54:57+00:00,Available,48,0
-372168990,110204-A,Dance and Prance,ENJOYFALL,,Other,09/11/2026,12/11/2026 *,10:30 am,11:00 am,F,Lubber Run,2-3.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169001,110204-B,Dance and Prance,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,4:15 pm,4:45 pm,Sa,Lubber Run,2-3.99,$252.00/$272.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169012,110204-C,Dance and Prance,ENJOYFALL,,Other,09/19/2026,12/12/2026 *,11:00 am,11:30 am,Sa,Barcroft Fitness Center,2-3.99,$210.00/$230.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169024,110204-D,Dance and Prance,ENJOYFALL,,Other,09/14/2026,12/14/2026,9:45 am,10:15 am,M,Barcroft Fitness Center,2-3.99,$294.00/$314.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372168990,110204-A,Dance and Prance,ENJOYFALL,,Other,09/11/2026,12/11/2026 *,10:30 am,11:00 am,F,Lubber Run,2-3.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,6,0
+372169001,110204-B,Dance and Prance,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,4:15 pm,4:45 pm,Sa,Lubber Run,2-3.99,$252.00/$272.00,2026-08-06T18:59:07+00:00,Available,6,0
+372169012,110204-C,Dance and Prance,ENJOYFALL,,Other,09/19/2026,12/12/2026 *,11:00 am,11:30 am,Sa,Barcroft Fitness Center,2-3.99,$210.00/$230.00,2026-08-06T18:59:07+00:00,Available,5,0
+372169024,110204-D,Dance and Prance,ENJOYFALL,,Other,09/14/2026,12/14/2026,9:45 am,10:15 am,M,Barcroft Fitness Center,2-3.99,$294.00/$314.00,2026-08-06T18:59:07+00:00,Available,1,0
 343430063,310204-A,Dance and Prance,,DANCE,Dance,04/17/2026,06/12/2026,10:15 am,10:45 am,F,Lubber Run,2-3.99,$180.00/$200.00,,,,
 343430074,310204-B,Dance and Prance,,DANCE,Dance,04/18/2026,06/13/2026 *,4:15 pm,4:45 pm,Sa,Lubber Run,2-3.99,$140.00/$160.00,,,,
 343430085,310204-C,Dance and Prance,,DANCE,Dance,04/13/2026,06/08/2026 *,10:00 am,10:30 am,M,Barcroft Fitness Center,2-3.99,$160.00/$180.00,,,,
@@ -558,8 +558,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365937489,914301-04,Elton John: The 70s,,OSAP,55+ Classes,07/20/2026,07/20/2026,11:00 am,12:00 pm,M,Walter Reed Center,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Waitlist,36,1
 365937497,914301-05,Elton John: The 70s,,OSAP,55+ Classes,07/21/2026,07/21/2026,11:00 am,12:00 pm,Tu,Lubber Run,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,21,0
 365937505,914301-06,Elton John: The 70s,,OSAP,55+ Classes,07/23/2026,07/23/2026,11:00 am,12:00 pm,Th,Langston Brown,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,9,0
-372170121,120106-A,Embossed Clay Ornaments - Family Pottery Project,ENJOYFALL,,Other,11/07/2026,11/07/2026,10:00 am,11:30 am,Sa,Walter Reed Center,8-99.99,$56.00/$76.00,2026-08-06T15:15:09+00:00,Unavailable,,
-375836489,120106-B,Embossed Clay Ornaments - Family Pottery Project,ENJOYFALL,,Other,11/07/2026,11/07/2026,12:30 pm,2:00 pm,Sa,Walter Reed Center,8-99.99,$56.00/$76.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170121,120106-A,Embossed Clay Ornaments - Family Pottery Project,ENJOYFALL,,Other,11/07/2026,11/07/2026,10:00 am,11:30 am,Sa,Walter Reed Center,8-99.99,$56.00/$76.00,2026-08-06T18:59:07+00:00,Available,8,0
+375836489,120106-B,Embossed Clay Ornaments - Family Pottery Project,ENJOYFALL,,Other,11/07/2026,11/07/2026,12:30 pm,2:00 pm,Sa,Walter Reed Center,8-99.99,$56.00/$76.00,2026-08-06T18:59:07+00:00,Available,3,0
 343433455,340918-A,Energizing Yoga,,YOGA,Yoga,04/15/2026,06/17/2026 *,7:00 pm,8:30 pm,W,Barcroft Fitness Center,16-99.99,$208.00/$228.00,,,,
 350226315,440918-A,Energizing Yoga,,YOGA,Yoga,07/08/2026,08/26/2026,7:00 pm,8:30 pm,W,Barcroft Fitness Center,16-99.99,$185.00/$205.00,2026-07-10T13:54:57+00:00,Available,11,0
 365938017,914400-15,Equality in Action,,OSAP,55+ Classes,06/11/2026,06/11/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
@@ -579,14 +579,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 367658325,440309-A,EverStrong Demo,ENJOYSUMMER,FIT,Fitness,05/23/2026,05/23/2026,10:30 am,11:00 am,Sa,Long Bridge Aquatics Center,18-99.99,$0.00/$0.00,2026-05-15T14:06:18+00:00,Available,3,0
 365939136,914804-14,Every Body Documentary,,OSAP,55+ Classes,06/30/2026,06/30/2026,6:00 pm,7:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,2026-06-30T14:25:16+00:00,Unavailable,12,0
 350724712,632750-G,Exercise...with Bayonets!,,NCTR,Nature & History,05/30/2026,05/30/2026,11:00 am,12:00 pm,Sa,Fort CF Smith Park,8-99.99,$7.00/$8.00,,,,
-372170725,120312-A,Explore Archery,ENJOYFALL,,Other,09/16/2026,10/21/2026,5:00 pm,6:00 pm,W,NOVA Fencing and Archery Club,8-12.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170736,120312-B,Explore Archery,ENJOYFALL,,Other,10/28/2026,12/16/2026 *,5:00 pm,6:00 pm,W,NOVA Fencing and Archery Club,8-12.99,$138.00/$158.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170725,120312-A,Explore Archery,ENJOYFALL,,Other,09/16/2026,10/21/2026,5:00 pm,6:00 pm,W,NOVA Fencing and Archery Club,8-12.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170736,120312-B,Explore Archery,ENJOYFALL,,Other,10/28/2026,12/16/2026 *,5:00 pm,6:00 pm,W,NOVA Fencing and Archery Club,8-12.99,$138.00/$158.00,2026-08-06T18:59:07+00:00,Available,1,0
 343431696,320312-A,Explore Archery,,SPORT,Sports,04/13/2026,05/18/2026,5:00 pm,6:00 pm,M,NOVA Fencing and Archery Club,8-99.99,$132.00/$152.00,,,,
 343431707,320312-B,Explore Archery,,SPORT,Sports,04/15/2026,05/20/2026,5:00 pm,6:00 pm,W,NOVA Fencing and Archery Club,8-99.99,$132.00/$152.00,,,,
 350225329,420312-A,Explore Archery,ENJOYSUMMER,SPORT,Sports,06/22/2026,07/27/2026 *,5:00 pm,6:00 pm,M,NOVA Fencing and Archery Club,8-99.99,$110.00/$130.00,2026-07-10T13:54:57+00:00,Unavailable,9,0
 350225341,420312-B,Explore Archery,ENJOYSUMMER,SPORT,Sports,06/24/2026,07/29/2026 *,5:00 pm,6:00 pm,W,NOVA Fencing and Archery Club,8-99.99,$110.00/$130.00,2026-07-10T13:54:57+00:00,Unavailable,11,0
 347286015,913310-09,Exploring Book Arts,,OSAP,55+ Classes,05/19/2026,05/19/2026,3:00 pm,4:30 pm,Tu,Arlington Mill,,$20.00/$20.00,,,,
-383296961,110206-A,FALL in Love with Ballet!,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:15 pm,5:00 pm,Su,Long Bridge Aquatics Center,3-6.99,$275.00/$295.00,2026-08-06T15:15:09+00:00,Unavailable,,
+383296961,110206-A,FALL in Love with Ballet!,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:15 pm,5:00 pm,Su,Long Bridge Aquatics Center,3-6.99,$275.00/$295.00,2026-08-06T18:59:07+00:00,Available,10,0
 365937977,914400-10,Facing Debt Collection,,OSAP,55+ Classes,08/28/2026,08/28/2026,10:00 am,11:00 am,F,Lubber Run,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,1,0
 372141402,110501-A,Family Gymnastics (Age: 1.5-5),ENJOYFALL1,GYMNA,Gymnastics,09/13/2026,10/25/2026,12:00 pm,12:45 pm,Su,Barcroft Fitness Center,1.5-5.99,$147.00/$167.00,2026-08-06T15:04:00+00:00,Waitlist,8,14
 372141414,110501-B,Family Gymnastics (Age: 1.5-5),ENJOYFALL1,GYMNA,Gymnastics,09/14/2026,10/26/2026,10:30 am,11:15 am,M,Barcroft Fitness Center,1.5-5.99,$147.00/$167.00,2026-08-06T15:04:00+00:00,Waitlist,7,6
@@ -981,11 +981,11 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 346002813,761003-B29,Free Agent Registration - Spring 2026 Adult Softball Men's Wednesday,,LEAGUE,Sports League,04/01/2026,07/01/2026,12:00 am,12:00 am,W,See Program Details,18-99.99,$0.00/$0.00,2026-07-01T14:05:01+00:00,Unavailable,,
 380283672,761000-26FC,Free Agent: Indoor Soccer Coed (Fall 2026),,LEAGUE,Sports League,08/20/2026,11/19/2026 *,12:00 am,12:00 am,"M, Tu, W, Th",See Program Details,18-99.99,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,6,0
 380286024,761000-26FM,Free Agent: Indoor Soccer Men's (Fall 2026),,LEAGUE,Sports League,08/19/2026,11/18/2026 *,12:00 am,12:00 am,W,See Program Details,18-99.99,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,5,0
-372170848,120319-A,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/19/2026,12/19/2026 *,10:45 am,11:45 am,Sa,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170863,120319-B,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,3:30 pm,4:30 pm,Su,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170878,120319-C,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,7:20 pm,8:20 pm,W,Arlington Mill,13-99.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170892,120319-D,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/14/2026,12/14/2026,7:20 pm,8:20 pm,M,Long Bridge Aquatics Center,13-99.99,$398.00/$418.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170906,120319-E,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/17/2026,12/17/2026 *,6:20 pm,7:20 pm,Th,Lubber Run,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170848,120319-A,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/19/2026,12/19/2026 *,10:45 am,11:45 am,Sa,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,2,0
+372170863,120319-B,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,3:30 pm,4:30 pm,Su,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170878,120319-C,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,7:20 pm,8:20 pm,W,Arlington Mill,13-99.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170892,120319-D,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/14/2026,12/14/2026,7:20 pm,8:20 pm,M,Long Bridge Aquatics Center,13-99.99,$398.00/$418.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170906,120319-E,Frets & Fun! Beginner Guitar,ENJOYFALL,,Other,09/17/2026,12/17/2026 *,6:20 pm,7:20 pm,Th,Lubber Run,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,0,0
 343431774,320319-A,Frets & Fun! Beginner Guitar,,MUSIC,Music,04/16/2026,06/18/2026,6:30 pm,7:30 pm,Th,Lubber Run,5-12.99,$278.00/$298.00,,,,
 343431791,320319-B,Frets & Fun! Beginner Guitar,,MUSIC,Music,04/13/2026,06/15/2026 *,7:30 pm,8:30 pm,M,Long Bridge Aquatics Center,13-99.99,$252.00/$272.00,,,,
 343431811,320319-C,Frets & Fun! Beginner Guitar,,MUSIC,Music,04/17/2026,06/12/2026 *,6:15 pm,7:15 pm,F,Long Bridge Aquatics Center,5-12.99,$226.00/$246.00,,,,
@@ -1199,15 +1199,15 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350217240,420502-C,Girls Level 2 (Age: 9-12),ENJOYSUMMER1,GYMNA,Gymnastics,07/10/2026,08/14/2026,5:30 pm,7:00 pm,F,Barcroft Fitness Center,9-12.99,$132.00/$152.00,2026-07-10T13:54:57+00:00,Waitlist,9,11
 350217251,420502-D,Girls Level 2 (Age: 9-12),ENJOYSUMMER1,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,5:45 pm,7:15 pm,Tu,Barcroft Fitness Center,9-12.99,$110.00/$130.00,2026-07-10T13:54:57+00:00,Waitlist,10,14
 378534465,420502-F,Girls Level 2 (Age: 9-12),,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,5:45 pm,7:15 pm,Tu,Barcroft Fitness Center,9-12.99,$110.00/$130.00,2026-07-10T13:54:57+00:00,Available,8,0
-372169929,110617-A,Grand Slam T-ball,ENJOYFALL,,Other,09/12/2026,11/21/2026,10:00 am,10:45 am,Sa,Barrett Elem. School,4-6.99,$231.00/$251.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169941,110617-B,Grand Slam T-ball,ENJOYFALL,,Other,09/13/2026,11/22/2026,10:00 am,10:45 am,Su,Barrett Elem. School,4-6.99,$231.00/$251.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169929,110617-A,Grand Slam T-ball,ENJOYFALL,,Other,09/12/2026,11/21/2026,10:00 am,10:45 am,Sa,Barrett Elem. School,4-6.99,$231.00/$251.00,2026-08-06T18:59:07+00:00,Available,6,0
+372169941,110617-B,Grand Slam T-ball,ENJOYFALL,,Other,09/13/2026,11/22/2026,10:00 am,10:45 am,Su,Barrett Elem. School,4-6.99,$231.00/$251.00,2026-08-06T18:59:07+00:00,Available,3,0
 343431008,310617-A,Grand Slam T-ball,,SPORT,Sports,04/19/2026,06/21/2026 *,11:00 am,11:45 am,Su,Barrett Elem. School,4-6.99,$183.00/$203.00,,,,
 343430997,310617-B,Grand Slam T-ball,,SPORT,Sports,04/18/2026,06/20/2026 *,10:00 am,10:45 am,Sa,Barrett Elem. School,4-6.99,$163.00/$183.00,,,,
 350224725,410617-A,Grand Slam T-ball,ENJOYSUMMER,SPORT,Sports,06/24/2026,08/26/2026,5:30 pm,6:15 pm,W,Rocky Run Park,4-6.99,$204.00/$224.00,2026-07-10T13:54:57+00:00,Unavailable,13,0
 350224738,410617-B,Grand Slam T-ball,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,10:00 am,10:45 am,Sa,Barrett Elem. School,4-6.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,11,0
 350224749,410617-C,Grand Slam T-ball,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,11:00 am,11:45 am,Su,Barrett Elem. School,4-6.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
-372169952,110618-A,Grand Slam T-ball & Me,ENJOYFALL,,Other,09/12/2026,11/21/2026,9:00 am,9:45 am,Sa,Barrett Elem. School,2-3.99,$231.00/$251.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169963,110618-B,Grand Slam T-ball & Me,ENJOYFALL,,Other,09/13/2026,11/22/2026,9:00 am,9:45 am,Su,Barrett Elem. School,2-3.99,$231.00/$251.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169952,110618-A,Grand Slam T-ball & Me,ENJOYFALL,,Other,09/12/2026,11/21/2026,9:00 am,9:45 am,Sa,Barrett Elem. School,2-3.99,$231.00/$251.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169963,110618-B,Grand Slam T-ball & Me,ENJOYFALL,,Other,09/13/2026,11/22/2026,9:00 am,9:45 am,Su,Barrett Elem. School,2-3.99,$231.00/$251.00,2026-08-06T18:59:07+00:00,Available,8,0
 343431030,310618-A,Grand Slam T-ball & Me,,SPORT,Sports,04/19/2026,06/21/2026 *,10:00 am,10:45 am,Su,Barrett Elem. School,2-3.99,$183.00/$203.00,,,,
 343431019,310618-B,Grand Slam T-ball & Me,,SPORT,Sports,04/18/2026,06/20/2026 *,9:00 am,9:45 am,Sa,Barrett Elem. School,2-3.99,$163.00/$183.00,,,,
 350224760,410618-A,Grand Slam T-ball & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,9:00 am,9:45 am,Sa,Barrett Elem. School,2-3.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,13,0
@@ -1337,12 +1337,12 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365938514,914501-01,Heart Healthy Recipes,,OSAP,55+ Classes,06/09/2026,06/09/2026,3:00 pm,4:00 pm,Tu,Walter Reed Center,,$0.00/$0.00,,,,
 365938066,914400-21,Her Badge Her Story,,OSAP,55+ Classes,06/18/2026,06/18/2026,1:00 pm,2:00 pm,Th,Arlington Mill,,$0.00/$0.00,2026-06-18T15:32:31+00:00,Unavailable,20,0
 350725096,632830-B,Hike to the Potomac (NSNP),,NCTR,Nature & History,05/26/2026,05/26/2026,2:00 pm,3:30 pm,Tu,Gulf Branch Nature Center,12-17.99,$0.00/$0.00,,,,
-372170253,120212-A,Hip Hop,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,1:00 pm,1:45 pm,Su,Walter Reed Center,8-11.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170253,120212-A,Hip Hop,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,1:00 pm,1:45 pm,Su,Walter Reed Center,8-11.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,4,0
 343431274,320212-A,Hip Hop,,DANCE,Dance,04/19/2026,06/14/2026 *,12:30 pm,1:15 pm,Su,Long Bridge Aquatics Center,8-11.99,$192.00/$212.00,,,,
 350224951,420212-A,Hip Hop,ENJOYSUMMER,DANCE,Dance,07/12/2026,08/09/2026,11:30 am,12:15 pm,Su,Long Bridge Aquatics Center,8-11.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
-372170220,120200-A,Hip Hop & Jazz,ENJOYFALL,,Other,09/10/2026,12/10/2026 *,6:00 pm,6:45 pm,Th,Fairlington Center,6-8.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170231,120200-B,Hip Hop & Jazz,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,6:00 pm,6:45 pm,W,Langston Brown,6-8.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170242,120200-C,Hip Hop & Jazz,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:30 pm,5:15 pm,Su,Lubber Run,6-8.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170220,120200-A,Hip Hop & Jazz,ENJOYFALL,,Other,09/10/2026,12/10/2026 *,6:00 pm,6:45 pm,Th,Fairlington Center,6-8.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,7,0
+372170231,120200-B,Hip Hop & Jazz,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,6:00 pm,6:45 pm,W,Langston Brown,6-8.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,4,0
+372170242,120200-C,Hip Hop & Jazz,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:30 pm,5:15 pm,Su,Lubber Run,6-8.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,1,0
 343431241,320200-A,Hip Hop & Jazz,,DANCE,Dance,04/13/2026,06/08/2026 *,6:00 pm,6:45 pm,M,Fairlington Center,6-8.99,$192.00/$212.00,,,,
 343431252,320200-B,Hip Hop & Jazz,,DANCE,Dance,04/16/2026,06/11/2026,6:00 pm,6:45 pm,Th,Barcroft Fitness Center,6-8.99,$216.00/$236.00,,,,
 343431263,320200-C,Hip Hop & Jazz,,DANCE,Dance,04/15/2026,06/10/2026,6:00 pm,6:45 pm,W,Langston Brown,5-8.99,$216.00/$236.00,,,,
@@ -1401,24 +1401,24 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343432649,340180-E,Intro to Woodshop,,WOOD,Woodworking,05/12/2026,06/02/2026,6:00 pm,8:30 pm,Tu,Thomas Jefferson Center,18-99.99,$267.00/$287.00,,,,
 350225786,440180-A,Intro to Woodshop,ENJOYSUMMER,WOOD,Woodworking,06/23/2026,07/14/2026,6:00 pm,8:30 pm,Tu,Thomas Jefferson Center,18-99.99,$267.00/$287.00,2026-07-10T13:54:57+00:00,Unavailable,4,10
 365938651,914600-09,Introduction to 501 Darts,,OSAP,55+ Classes,07/28/2026,07/28/2026,5:30 pm,7:30 pm,Tu,Walter Reed Center,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,10,0
-372170505,120310-A,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/14/2026,10/07/2026,5:00 pm,6:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170518,120310-B,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/12/2026,11/04/2026,5:00 pm,6:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170530,120310-C,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/09/2026,12/09/2026 *,5:00 pm,6:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170544,120310-D,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/10/2026,12/08/2026 *,5:00 pm,6:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170556,120310-E,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/14/2026,10/07/2026,6:00 pm,7:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170567,120310-F,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/12/2026,11/04/2026,6:00 pm,7:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170578,120310-G,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/09/2026,12/09/2026 *,6:00 pm,7:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170589,120310-H,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/15/2026,10/08/2026,5:00 pm,6:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170601,120310-I,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/13/2026,11/05/2026,5:00 pm,6:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170612,120310-J,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/15/2026,10/08/2026,6:00 pm,7:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170624,120310-K,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/13/2026,11/05/2026,6:00 pm,7:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170635,120310-L,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/10/2026,12/08/2026 *,6:00 pm,7:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170646,120310-M,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/14/2026,10/07/2026,7:00 pm,8:00 pm,"M, W",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170657,120310-N,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/12/2026,11/04/2026,7:00 pm,8:00 pm,"M, W",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170668,120310-O,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/09/2026,12/09/2026 *,7:00 pm,8:00 pm,"M, W",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170679,120310-P,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/15/2026,10/08/2026,7:00 pm,8:00 pm,"Tu, Th",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170690,120310-Q,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/13/2026,11/05/2026,7:00 pm,8:00 pm,"Tu, Th",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170701,120310-R,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/10/2026,12/08/2026 *,7:00 pm,8:00 pm,"Tu, Th",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170505,120310-A,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/14/2026,10/07/2026,5:00 pm,6:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,6,0
+372170518,120310-B,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/12/2026,11/04/2026,5:00 pm,6:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,2,0
+372170530,120310-C,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/09/2026,12/09/2026 *,5:00 pm,6:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,2,0
+372170544,120310-D,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/10/2026,12/08/2026 *,5:00 pm,6:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170556,120310-E,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/14/2026,10/07/2026,6:00 pm,7:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170567,120310-F,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/12/2026,11/04/2026,6:00 pm,7:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170578,120310-G,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/09/2026,12/09/2026 *,6:00 pm,7:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170589,120310-H,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/15/2026,10/08/2026,5:00 pm,6:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170601,120310-I,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/13/2026,11/05/2026,5:00 pm,6:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170612,120310-J,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/15/2026,10/08/2026,6:00 pm,7:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170624,120310-K,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/13/2026,11/05/2026,6:00 pm,7:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170635,120310-L,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/10/2026,12/08/2026 *,6:00 pm,7:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170646,120310-M,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/14/2026,10/07/2026,7:00 pm,8:00 pm,"M, W",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170657,120310-N,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/12/2026,11/04/2026,7:00 pm,8:00 pm,"M, W",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170668,120310-O,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/09/2026,12/09/2026 *,7:00 pm,8:00 pm,"M, W",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170679,120310-P,Introduction to Olympic Fencing,ENJOYFALL,,Other,09/15/2026,10/08/2026,7:00 pm,8:00 pm,"Tu, Th",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170690,120310-Q,Introduction to Olympic Fencing,ENJOYFALL,,Other,10/13/2026,11/05/2026,7:00 pm,8:00 pm,"Tu, Th",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170701,120310-R,Introduction to Olympic Fencing,ENJOYFALL,,Other,11/10/2026,12/08/2026 *,7:00 pm,8:00 pm,"Tu, Th",NOVA Fencing and Archery Club,13-99.99,$184.00/$204.00,2026-08-06T18:59:07+00:00,Available,0,0
 343431597,320310-B,Introduction to Olympic Fencing,,MARTS,Martial Arts,05/11/2026,06/08/2026 *,5:00 pm,6:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$176.00/$196.00,,,,
 343431619,320310-D,Introduction to Olympic Fencing,,MARTS,Martial Arts,05/11/2026,06/08/2026 *,6:00 pm,7:00 pm,"M, W",NOVA Fencing and Archery Club,7-12.99,$176.00/$196.00,,,,
 343431641,320310-F,Introduction to Olympic Fencing,,MARTS,Martial Arts,05/12/2026,06/04/2026,6:00 pm,7:00 pm,"Tu, Th",NOVA Fencing and Archery Club,7-12.99,$176.00/$196.00,,,,
@@ -1442,8 +1442,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365938085,914400-23,It Happened Here,,OSAP,55+ Classes,08/18/2026,08/18/2026,1:00 pm,2:00 pm,Tu,Arlington Mill,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,38,0
 365938772,914600-24,Jeopardy,,OSAP,55+ Classes,06/01/2026,06/01/2026,1:00 pm,2:00 pm,M,Walter Reed Center,,$0.00/$0.00,,,,
 366019914,642850-C,Journey of the Eels Campfire,,NCTR,Nature & History,08/22/2026,08/22/2026,6:00 pm,7:00 pm,Sa,Gulf Branch Nature Center,3-99.99,$7.00/$8.00,2026-07-10T13:54:57+00:00,Available,23,0
-372170483,120309-A,Judo Advanced Workout,ENJOYFALL,,Other,09/14/2026,12/14/2026 *,7:00 pm,8:00 pm,M,Dawson Terrace,5-13.99,$143.00/$163.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170494,120309-B,Judo Advanced Workout,ENJOYFALL,,Other,09/14/2026,12/14/2026 *,8:10 pm,9:10 pm,M,Dawson Terrace,13-99.99,$143.00/$163.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170483,120309-A,Judo Advanced Workout,ENJOYFALL,,Other,09/14/2026,12/14/2026 *,7:00 pm,8:00 pm,M,Dawson Terrace,5-13.99,$143.00/$163.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170494,120309-B,Judo Advanced Workout,ENJOYFALL,,Other,09/14/2026,12/14/2026 *,8:10 pm,9:10 pm,M,Dawson Terrace,13-99.99,$143.00/$163.00,2026-08-06T18:59:07+00:00,Available,0,0
 343431563,320309-A,Judo Advanced Workout,,MARTS,Martial Arts,04/13/2026,06/15/2026 *,7:00 pm,8:00 pm,M,Dawson Terrace,5-13.99,$80.00/$100.00,,,,
 343431574,320309-B,Judo Advanced Workout,,MARTS,Martial Arts,04/13/2026,06/15/2026 *,8:10 pm,9:10 pm,M,Dawson Terrace,13-99.99,$80.00/$100.00,,,,
 350225207,420309-A,Judo Advanced Workout,ENJOYSUMMER,MARTS,Martial Arts,06/22/2026,08/24/2026,7:00 pm,8:00 pm,M,Dawson Terrace,5-13.99,$100.00/$120.00,2026-07-10T13:54:57+00:00,Unavailable,12,0
@@ -1462,8 +1462,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350216884,410506-A,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/09/2026,08/13/2026,3:00 pm,3:45 pm,Th,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-07-10T13:54:57+00:00,Waitlist,6,2
 350216861,410506-B,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/07/2026,08/11/2026 *,3:00 pm,3:45 pm,Tu,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-07-10T13:54:57+00:00,Waitlist,6,2
 350216872,410506-C,Junior Gymnast (Age: 5),ENJOYSUMMER,GYMNA,Gymnastics,07/08/2026,08/12/2026 *,3:00 pm,3:45 pm,W,Barcroft Fitness Center,5-5.99,$69.00/$89.00,2026-07-10T13:54:57+00:00,Waitlist,5,1
-372170406,120307-A,Junior Judo,ENJOYFALL,,Other,09/08/2026,12/17/2026 *,7:10 pm,8:10 pm,"Tu, Th",Dawson Terrace,5-14.99,$297.00/$317.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170417,120307-B,Junior Judo,ENJOYFALL,,Other,09/10/2026,12/17/2026 *,6:00 pm,7:00 pm,Th,Dawson Terrace,5-13.99,$154.00/$174.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170406,120307-A,Junior Judo,ENJOYFALL,,Other,09/08/2026,12/17/2026 *,7:10 pm,8:10 pm,"Tu, Th",Dawson Terrace,5-14.99,$297.00/$317.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170417,120307-B,Junior Judo,ENJOYFALL,,Other,09/10/2026,12/17/2026 *,6:00 pm,7:00 pm,Th,Dawson Terrace,5-13.99,$154.00/$174.00,2026-08-06T18:59:07+00:00,Available,1,0
 343431475,320307-A,Junior Judo,,MARTS,Martial Arts,04/14/2026,06/18/2026 *,7:10 pm,8:10 pm,"Tu, Th",Dawson Terrace,5-14.99,$190.00/$210.00,,,,
 343431486,320307-B,Junior Judo,,MARTS,Martial Arts,04/16/2026,06/18/2026,6:00 pm,7:00 pm,Th,Dawson Terrace,5-13.99,$100.00/$120.00,,,,
 350225119,420307-A,Junior Judo,ENJOYSUMMER,MARTS,Martial Arts,06/23/2026,08/27/2026,7:10 pm,8:10 pm,"Tu, Th",Dawson Terrace,5-14.99,$200.00/$220.00,2026-07-10T13:54:57+00:00,Unavailable,14,0
@@ -1480,14 +1480,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365937781,914304-16,Karaoke,,OSAP,55+ Classes,08/11/2026,08/11/2026,2:00 pm,3:00 pm,Tu,Lubber Run,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,6,0
 365937789,914304-17,Karaoke,,OSAP,55+ Classes,08/27/2026,08/27/2026,6:00 pm,7:00 pm,Th,Lubber Run,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,3,0
 365937960,914400-08,Keep the Best and Get Rid of the Rest,,OSAP,55+ Classes,08/26/2026,08/26/2026,10:00 am,11:00 am,W,Langston Brown,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Waitlist,23,12
-372170922,120320-A,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/14/2026,12/14/2026,5:00 pm,6:00 pm,M,Long Bridge Aquatics Center,5-12.99,$398.00/$418.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170936,120320-B,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/18/2026,12/18/2026 *,5:00 pm,6:00 pm,F,Long Bridge Aquatics Center,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170950,120320-C,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,1:15 pm,2:15 pm,Su,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170964,120320-D,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,6:10 pm,7:10 pm,W,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170978,120320-E,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/19/2026,12/19/2026 *,9:30 am,10:30 am,Sa,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170992,120320-F,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/15/2026,12/15/2026 *,6:00 pm,7:00 pm,Tu,Langston Brown,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171006,120320-G,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/17/2026,12/17/2026 *,5:15 pm,6:15 pm,Th,Lubber Run,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171020,120320-H,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/17/2026,12/17/2026 *,7:25 pm,8:25 pm,Th,Lubber Run,13-17.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170922,120320-A,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/14/2026,12/14/2026,5:00 pm,6:00 pm,M,Long Bridge Aquatics Center,5-12.99,$398.00/$418.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170936,120320-B,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/18/2026,12/18/2026 *,5:00 pm,6:00 pm,F,Long Bridge Aquatics Center,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170950,120320-C,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,1:15 pm,2:15 pm,Su,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170964,120320-D,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,6:10 pm,7:10 pm,W,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,4,0
+372170978,120320-E,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/19/2026,12/19/2026 *,9:30 am,10:30 am,Sa,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170992,120320-F,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/15/2026,12/15/2026 *,6:00 pm,7:00 pm,Tu,Langston Brown,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,2,0
+372171006,120320-G,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/17/2026,12/17/2026 *,5:15 pm,6:15 pm,Th,Lubber Run,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,5,0
+372171020,120320-H,Keys to Fun! Beginner Piano,ENJOYFALL,,Other,09/17/2026,12/17/2026 *,7:25 pm,8:25 pm,Th,Lubber Run,13-17.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,0,0
 343431854,320320-A,Keys to Fun! Beginner Piano,,MUSIC,Music,04/16/2026,06/18/2026,5:15 pm,6:15 pm,Th,Lubber Run,5-12.99,$278.00/$298.00,,,,
 343431868,320320-B,Keys to Fun! Beginner Piano,,MUSIC,Music,04/13/2026,06/15/2026 *,5:00 pm,6:00 pm,M,Long Bridge Aquatics Center,5-12.99,$252.00/$272.00,,,,
 343431882,320320-C,Keys to Fun! Beginner Piano,,MUSIC,Music,04/17/2026,06/12/2026 *,5:00 pm,6:00 pm,F,Long Bridge Aquatics Center,5-12.99,$226.00/$246.00,,,,
@@ -1499,19 +1499,19 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350225429,420320-B,Keys to Fun! Beginner Piano,ENJOYSUMMER,MUSIC,Music,07/11/2026,08/15/2026,9:45 am,10:45 am,Sa,Arlington Mill,5-12.99,$175.00/$195.00,2026-07-10T13:54:57+00:00,Waitlist,12,4
 350225443,420320-C,Keys to Fun! Beginner Piano,ENJOYSUMMER,MUSIC,Music,07/12/2026,08/16/2026,6:00 pm,7:00 pm,Su,Arlington Mill,13-99.99,$175.00/$195.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
 343433056,340357-A,Kickboxing,,MARTS,Martial Arts,04/21/2026,06/23/2026 *,6:00 pm,7:00 pm,"Tu, Th",Barcroft Fitness Center,16-99.99,$297.00/$317.00,,,,
-372169727,110612-A,Kicks for Tots Soccer,ENJOYFALL,,Other,09/10/2026,11/05/2026,10:30 am,11:10 am,Th,Lacey Woods Park,2-3.99,$198.00/$218.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169738,110612-B,Kicks for Tots Soccer,ENJOYFALL,,Other,09/13/2026,11/08/2026 *,3:00 pm,3:40 pm,Su,Lacey Woods Park,2-3.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169749,110612-C,Kicks for Tots Soccer,ENJOYFALL,,Other,09/13/2026,11/08/2026 *,4:00 pm,4:45 pm,Su,Lacey Woods Park,3-6.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169760,110612-D,Kicks for Tots Soccer,ENJOYFALL,,Other,09/13/2026,11/08/2026 *,5:00 pm,5:50 pm,Su,Lacey Woods Park,5-8.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169771,110612-E,Kicks for Tots Soccer,ENJOYFALL,,Other,09/11/2026,11/06/2026 *,11:00 am,11:45 am,F,Fairlington Center,2-3.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169782,110612-F,Kicks for Tots Soccer,ENJOYFALL,,Other,09/11/2026,11/06/2026 *,11:50 am,12:35 pm,F,Fairlington Center,3-6.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169793,110612-G,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,12:30 pm,1:10 pm,Sa,Mosaic Park,2-3.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169804,110612-H,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,1:20 pm,2:05 pm,Sa,Mosaic Park,3-6.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169816,110612-I,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,8:00 am,8:40 am,Sa,Rocky Run Park,2-3.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169827,110612-J,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,9:00 am,9:45 am,Sa,Rocky Run Park,3-6.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169838,110612-K,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,10:00 am,10:45 am,Sa,Rocky Run Park,3-6.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169849,110612-L,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,11:00 am,11:50 am,Sa,Rocky Run Park,5-8.99,$176.00/$196.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169860,110612-M,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,8:05 am,8:45 am,Sa,Lubber Run,3-6.99,$154.00/$174.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169727,110612-A,Kicks for Tots Soccer,ENJOYFALL,,Other,09/10/2026,11/05/2026,10:30 am,11:10 am,Th,Lacey Woods Park,2-3.99,$198.00/$218.00,2026-08-06T18:59:07+00:00,Available,3,0
+372169738,110612-B,Kicks for Tots Soccer,ENJOYFALL,,Other,09/13/2026,11/08/2026 *,3:00 pm,3:40 pm,Su,Lacey Woods Park,2-3.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,15,0
+372169749,110612-C,Kicks for Tots Soccer,ENJOYFALL,,Other,09/13/2026,11/08/2026 *,4:00 pm,4:45 pm,Su,Lacey Woods Park,3-6.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,20,0
+372169760,110612-D,Kicks for Tots Soccer,ENJOYFALL,,Other,09/13/2026,11/08/2026 *,5:00 pm,5:50 pm,Su,Lacey Woods Park,5-8.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169771,110612-E,Kicks for Tots Soccer,ENJOYFALL,,Other,09/11/2026,11/06/2026 *,11:00 am,11:45 am,F,Fairlington Center,2-3.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169782,110612-F,Kicks for Tots Soccer,ENJOYFALL,,Other,09/11/2026,11/06/2026 *,11:50 am,12:35 pm,F,Fairlington Center,3-6.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,1,0
+372169793,110612-G,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,12:30 pm,1:10 pm,Sa,Mosaic Park,2-3.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169804,110612-H,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,1:20 pm,2:05 pm,Sa,Mosaic Park,3-6.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,5,0
+372169816,110612-I,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,8:00 am,8:40 am,Sa,Rocky Run Park,2-3.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,11,0
+372169827,110612-J,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,9:00 am,9:45 am,Sa,Rocky Run Park,3-6.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,13,0
+372169838,110612-K,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,10:00 am,10:45 am,Sa,Rocky Run Park,3-6.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,19,0
+372169849,110612-L,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,11:00 am,11:50 am,Sa,Rocky Run Park,5-8.99,$176.00/$196.00,2026-08-06T18:59:07+00:00,Available,3,0
+372169860,110612-M,Kicks for Tots Soccer,ENJOYFALL,,Other,09/12/2026,11/07/2026 *,8:05 am,8:45 am,Sa,Lubber Run,3-6.99,$154.00/$174.00,2026-08-06T18:59:07+00:00,Available,3,0
 343430743,310612-A,Kicks for Tots Soccer,,SPORT,Sports,04/16/2026,06/04/2026,3:00 pm,3:40 pm,Th,Fairlington Center,2-3.99,$170.00/$190.00,,,,
 343430754,310612-B,Kicks for Tots Soccer,,SPORT,Sports,04/16/2026,06/04/2026,4:00 pm,4:45 pm,Th,Fairlington Center,3-6.99,$170.00/$190.00,,,,
 343430765,310612-C,Kicks for Tots Soccer,,SPORT,Sports,04/14/2026,06/02/2026,4:00 pm,4:45 pm,Tu,Fairlington Center,3.5-6.99,$170.00/$190.00,,,,
@@ -1545,13 +1545,13 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343193281,500411-03,Krazy Kinetic Parade! Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,6-10.99,$275.00/$316.00,,,,
 343190465,500106-02,LEGO Robotics WeDo 2.0 Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Abingdon School,5-12.99,$300.00/$345.00,2026-07-02T13:27:01+00:00,Unavailable,17,0
 343190476,500106-03,LEGO Robotics WeDo 2.0 Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,5-12.99,$300.00/$345.00,2026-07-10T13:54:57+00:00,Unavailable,24,1
-372171183,120329-A,LEGO Robotics: BricQ Motion: Train to Win,ENJOYFALL,,Other,11/01/2026,12/13/2026 *,11:30 am,12:30 pm,Su,Long Bridge Aquatics Center,5-7.99,$162.00/$182.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372174991,120336-A,LEGO Robotics: BricQ Motion: Winning with Science,ENJOYFALL,,Other,11/01/2026,12/13/2026 *,10:00 am,11:00 am,Su,Long Bridge Aquatics Center,5-7.99,$162.00/$182.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171183,120329-A,LEGO Robotics: BricQ Motion: Train to Win,ENJOYFALL,,Other,11/01/2026,12/13/2026 *,11:30 am,12:30 pm,Su,Long Bridge Aquatics Center,5-7.99,$162.00/$182.00,2026-08-06T18:59:07+00:00,Available,3,0
+372174991,120336-A,LEGO Robotics: BricQ Motion: Winning with Science,ENJOYFALL,,Other,11/01/2026,12/13/2026 *,10:00 am,11:00 am,Su,Long Bridge Aquatics Center,5-7.99,$162.00/$182.00,2026-08-06T18:59:07+00:00,Available,1,0
 343190487,500107-02,LEGO SPIKE Essential Robotics Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Abingdon School,5-12.99,$300.00/$345.00,2026-07-02T13:27:01+00:00,Unavailable,19,0
 343190498,500107-03,LEGO SPIKE Essential Robotics Camp,CAMP1,CAMP,Summer Camp,07/06/2026,07/10/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,5-12.99,$375.00/$431.00,2026-07-10T13:54:57+00:00,Unavailable,24,0
-372171205,120331-A,LEGO STEAM Park,ENJOYFALL,,Other,10/28/2026,12/09/2026 *,5:00 pm,5:45 pm,W,Long Bridge Aquatics Center,3-5.99,$162.00/$182.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171216,120331-B,LEGO STEAM Park,ENJOYFALL,,Other,09/12/2026,10/10/2026,9:30 am,10:15 am,Sa,Long Bridge Aquatics Center,3-5.99,$135.00/$155.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171227,120331-C,LEGO STEAM Park,ENJOYFALL,,Other,09/12/2026,10/10/2026,10:30 am,11:15 am,Sa,Long Bridge Aquatics Center,3-5.99,$135.00/$155.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171205,120331-A,LEGO STEAM Park,ENJOYFALL,,Other,10/28/2026,12/09/2026 *,5:00 pm,5:45 pm,W,Long Bridge Aquatics Center,3-5.99,$162.00/$182.00,2026-08-06T18:59:07+00:00,Available,3,0
+372171216,120331-B,LEGO STEAM Park,ENJOYFALL,,Other,09/12/2026,10/10/2026,9:30 am,10:15 am,Sa,Long Bridge Aquatics Center,3-5.99,$135.00/$155.00,2026-08-06T18:59:07+00:00,Available,2,0
+372171227,120331-C,LEGO STEAM Park,ENJOYFALL,,Other,09/12/2026,10/10/2026,10:30 am,11:15 am,Sa,Long Bridge Aquatics Center,3-5.99,$135.00/$155.00,2026-08-06T18:59:07+00:00,Available,6,0
 343432031,320331-A,LEGO STEAM Park,,SCDI,Science & Discovery,04/18/2026,06/13/2026 *,9:30 am,10:15 am,Sa,Long Bridge Aquatics Center,3-5.99,$206.00/$226.00,,,,
 343432042,320331-B,LEGO STEAM Park,,SCDI,Science & Discovery,04/18/2026,06/13/2026 *,10:30 am,11:15 am,Sa,Long Bridge Aquatics Center,3-5.99,$206.00/$226.00,,,,
 350225496,420331-A,LEGO STEAM Park,ENJOYSUMMER,SCDI,Science & Discovery,07/11/2026,08/15/2026,9:30 am,10:15 am,Sa,Long Bridge Aquatics Center,3-5.99,$155.00/$175.00,2026-07-10T13:54:57+00:00,Available,7,0
@@ -1563,22 +1563,22 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365937400,914206-07,Learn to Ride a Bike,,OSAP,55+ Classes,06/02/2026,06/02/2026,8:00 am,11:00 am,Tu,Walter Reed Center,,$0.00/$0.00,,,,
 343432266,340100-B,Leathercraft Essentials: From Tools to Technique,,CRART,Arts & Crafts,05/20/2026,05/20/2026,6:00 pm,8:30 pm,W,Fairlington Center,18-99.99,$50.00/$70.00,,,,
 343432280,340100-C,Leathercraft Essentials: From Tools to Technique,,CRART,Arts & Crafts,06/03/2026,06/03/2026,6:00 pm,8:30 pm,W,Fairlington Center,18-99.99,$50.00/$70.00,,,,
-372171238,120332-A,Lego SPIKE: Essential Robotics: Great Adventures,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,10:30 am,11:15 am,Sa,Long Bridge Aquatics Center,5-12.99,$162.00/$182.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171238,120332-A,Lego SPIKE: Essential Robotics: Great Adventures,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,10:30 am,11:15 am,Sa,Long Bridge Aquatics Center,5-12.99,$162.00/$182.00,2026-08-06T18:59:07+00:00,Available,4,0
 350225518,420341-A,Lego Spike Amazing Amusement Park,ENJOYSUMMER,SCDI,Science & Discovery,07/11/2026,08/15/2026,3:00 pm,4:00 pm,Sa,Long Bridge Aquatics Center,5-7.99,$155.00/$175.00,2026-07-10T13:54:57+00:00,Available,9,0
 350225529,420342-A,Lego Spike Essential Robotics Happy Traveler,ENJOYSUMMER,SCDI,Science & Discovery,07/11/2026,08/15/2026,4:30 pm,5:30 pm,Sa,Long Bridge Aquatics Center,7-11.99,$155.00/$175.00,2026-07-10T13:54:57+00:00,Available,7,0
-372171249,120334-A,Lego Spike: Essential Robotics,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,9:30 am,10:15 am,Sa,Long Bridge Aquatics Center,5-12.99,$162.00/$182.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171249,120334-A,Lego Spike: Essential Robotics,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,9:30 am,10:15 am,Sa,Long Bridge Aquatics Center,5-12.99,$162.00/$182.00,2026-08-06T18:59:07+00:00,Available,4,0
 350225086,420301-A,Lego WeDo 2.0: Aquatic Robots,ENJOYSUMMER,SCDI,Science & Discovery,07/08/2026,08/12/2026,5:00 pm,6:00 pm,W,Long Bridge Aquatics Center,5-11.99,$155.00/$175.00,2026-07-10T13:54:57+00:00,Waitlist,11,2
-372170267,120214-A,Let's Dance,ENJOYFALL,,Other,09/14/2026,12/14/2026,6:00 pm,6:45 pm,M,Barcroft Fitness Center,5-9.99,$350.00/$370.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170267,120214-A,Let's Dance,ENJOYFALL,,Other,09/14/2026,12/14/2026,6:00 pm,6:45 pm,M,Barcroft Fitness Center,5-9.99,$350.00/$370.00,2026-08-06T18:59:07+00:00,Available,5,0
 343431286,320214-A,Let's Dance,,DANCE,Dance,04/16/2026,06/11/2026,4:15 pm,5:00 pm,Th,Lubber Run,5-9.99,$216.00/$236.00,,,,
 343431297,320214-B,Let's Dance,,DANCE,Dance,04/18/2026,06/13/2026 *,11:15 am,12:00 pm,Sa,Lubber Run,5-9.99,$168.00/$188.00,,,,
 350224962,420214-A,Let's Dance,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,4:00 pm,4:45 pm,W,Lubber Run,5-9.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Available,6,0
-372169057,110207-A,Let's Play Ballet,ENJOYFALL,,Other,09/11/2026,12/11/2026 *,10:00 am,10:30 am,F,Walter Reed Center,2-3.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169102,110207-B,Let's Play Ballet,ENJOYFALL,,Other,09/10/2026,10/15/2026,5:15 pm,5:45 pm,Th,Walter Reed Center,2-3.99,$126.00/$146.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169114,110207-C,Let's Play Ballet,ENJOYFALL,,Other,10/29/2026,12/10/2026 *,5:15 pm,5:45 pm,Th,Walter Reed Center,2-3.99,$126.00/$146.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169069,110207-D,Let's Play Ballet,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,10:00 am,10:30 am,W,Barcroft Fitness Center,2-3.99,$252.00/$272.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169080,110207-E,Let's Play Ballet,ENJOYFALL,,Other,09/19/2026,12/12/2026 *,10:20 am,10:50 am,Sa,Barcroft Fitness Center,2-3.99,$210.00/$230.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169091,110207-F,Let's Play Ballet,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:45 am,10:15 am,Sa,Lubber Run,2-3.99,$252.00/$272.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169125,110207-G,Let's Play Ballet,ENJOYFALL,,Other,11/01/2026,12/06/2026 *,10:30 am,11:00 am,Su,Long Bridge Aquatics Center,2-3.99,$105.00/$125.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169057,110207-A,Let's Play Ballet,ENJOYFALL,,Other,09/11/2026,12/11/2026 *,10:00 am,10:30 am,F,Walter Reed Center,2-3.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,1,0
+372169102,110207-B,Let's Play Ballet,ENJOYFALL,,Other,09/10/2026,10/15/2026,5:15 pm,5:45 pm,Th,Walter Reed Center,2-3.99,$126.00/$146.00,2026-08-06T18:59:07+00:00,Available,6,0
+372169114,110207-C,Let's Play Ballet,ENJOYFALL,,Other,10/29/2026,12/10/2026 *,5:15 pm,5:45 pm,Th,Walter Reed Center,2-3.99,$126.00/$146.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169069,110207-D,Let's Play Ballet,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,10:00 am,10:30 am,W,Barcroft Fitness Center,2-3.99,$252.00/$272.00,2026-08-06T18:59:07+00:00,Available,6,0
+372169080,110207-E,Let's Play Ballet,ENJOYFALL,,Other,09/19/2026,12/12/2026 *,10:20 am,10:50 am,Sa,Barcroft Fitness Center,2-3.99,$210.00/$230.00,2026-08-06T18:59:07+00:00,Available,9,0
+372169091,110207-F,Let's Play Ballet,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:45 am,10:15 am,Sa,Lubber Run,2-3.99,$252.00/$272.00,2026-08-06T18:59:07+00:00,Available,5,0
+372169125,110207-G,Let's Play Ballet,ENJOYFALL,,Other,11/01/2026,12/06/2026 *,10:30 am,11:00 am,Su,Long Bridge Aquatics Center,2-3.99,$105.00/$125.00,2026-08-06T18:59:07+00:00,Available,6,0
 343430162,310207-A,Let's Play Ballet,,DANCE,Dance,04/17/2026,06/12/2026,10:00 am,10:30 am,F,Walter Reed Center,2-3.99,$180.00/$200.00,,,,
 343430173,310207-B,Let's Play Ballet,,DANCE,Dance,04/18/2026,06/13/2026 *,9:45 am,10:15 am,Sa,Barcroft Fitness Center,2-3.99,$140.00/$160.00,,,,
 349004136,310207-C,Let's Play Ballet,,DANCE,Dance,04/14/2026,06/02/2026,4:30 pm,5:00 pm,Tu,Lubber Run,2-3.99,$160.00/$180.00,,,,
@@ -1778,17 +1778,17 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 351866663,913400-30,Level Up at the Library,,OSAP,55+ Classes,05/28/2026,05/28/2026,3:00 pm,4:00 pm,Th,Virtual,,$0.00/$0.00,,,,
 343193369,500412-05,Lights On Camp!,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,6-10.99,$275.00/$316.00,,,,
 343193303,500411-05,Lights On! Camp,CAMP1,CAMP,Summer Camp,07/20/2026,07/24/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,6-10.99,$275.00/$316.00,,,,
-372169918,110616-A,Little Athletes,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,11:00 am,11:45 am,Sa,Lubber Run,4-6.99,$252.00/$272.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169918,110616-A,Little Athletes,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,11:00 am,11:45 am,Sa,Lubber Run,4-6.99,$252.00/$272.00,2026-08-06T18:59:07+00:00,Available,6,0
 343430964,310616-A,Little Athletes,,SPORT,Sports,04/18/2026,06/20/2026 *,10:00 am,10:45 am,Sa,Fairlington Center,4-6.99,$183.00/$203.00,,,,
 343430986,310616-B,Little Athletes,,SPORT,Sports,04/19/2026,06/21/2026 *,3:10 pm,3:55 pm,Su,Lubber Run,4-6.99,$183.00/$203.00,,,,
 343430975,310616-C,Little Athletes,,SPORT,Sports,04/18/2026,06/20/2026 *,12:10 pm,12:55 pm,Sa,Lubber Run,4-6.99,$163.00/$183.00,,,,
 350224692,410616-A,Little Athletes,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,10:00 am,10:45 am,Sa,Lubber Run,4-5.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,17,0
 350224714,410616-B,Little Athletes,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,3:10 pm,3:55 pm,Su,Lubber Run,4-6.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,6,0
-372169872,110615-A,Little Athletes & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:00 am,9:45 am,Sa,Fairlington Center,2-3.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-375999945,110615-B,Little Athletes & Me,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,5:00 pm,5:45 pm,W,Fairlington Center,2-3.99,$252.00/$272.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169884,110615-C,Little Athletes & Me,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:00 pm,4:45 pm,Su,Lubber Run,2-3.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169896,110615-D,Little Athletes & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,10:00 am,10:45 am,Sa,Lubber Run,2-3.99,$252.00/$272.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169907,110615-E,Little Athletes & Me,ENJOYFALL,,Other,09/13/2026,11/08/2026,10:00 am,10:45 am,Su,Gunston Park,4-6.99,$189.00/$209.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169872,110615-A,Little Athletes & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:00 am,9:45 am,Sa,Fairlington Center,2-3.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,1,0
+375999945,110615-B,Little Athletes & Me,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,5:00 pm,5:45 pm,W,Fairlington Center,2-3.99,$252.00/$272.00,2026-08-06T18:59:07+00:00,Available,3,0
+372169884,110615-C,Little Athletes & Me,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:00 pm,4:45 pm,Su,Lubber Run,2-3.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,8,0
+372169896,110615-D,Little Athletes & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,10:00 am,10:45 am,Sa,Lubber Run,2-3.99,$252.00/$272.00,2026-08-06T18:59:07+00:00,Available,17,0
+372169907,110615-E,Little Athletes & Me,ENJOYFALL,,Other,09/13/2026,11/08/2026,10:00 am,10:45 am,Su,Gunston Park,4-6.99,$189.00/$209.00,2026-08-06T18:59:07+00:00,Available,3,0
 343430919,310615-A,Little Athletes & Me,,SPORT,Sports,04/16/2026,06/18/2026,5:00 pm,5:45 pm,Th,Fairlington Center,2-3.99,$204.00/$224.00,,,,
 343430930,310615-B,Little Athletes & Me,,SPORT,Sports,04/18/2026,06/20/2026 *,9:00 am,9:45 am,Sa,Fairlington Center,2-3.99,$183.00/$203.00,,,,
 343430952,310615-C,Little Athletes & Me,,SPORT,Sports,04/19/2026,06/21/2026 *,4:00 pm,4:45 pm,Su,Lubber Run,2-3.99,$183.00/$203.00,,,,
@@ -1796,8 +1796,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350224658,410615-A,Little Athletes & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,9:00 am,9:45 am,Sa,Lubber Run,2-3.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,18,2
 350224669,410615-B,Little Athletes & Me,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,4:00 pm,4:45 pm,Su,Lubber Run,2-3.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,17,0
 350224680,410615-C,Little Athletes & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/22/2026 *,10:00 am,10:45 am,Sa,Arlington Mill,2-3.99,$163.00/$183.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
-372170040,110621-A,Little Champions Soccer,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,11:00 am,11:45 am,Sa,Arlington Mill,7-9.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170051,110621-B,Little Champions Soccer,ENJOYFALL,,Other,09/13/2026,11/08/2026,11:00 am,11:45 am,Su,Gunston Park,7-9.99,$189.00/$209.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170040,110621-A,Little Champions Soccer,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,11:00 am,11:45 am,Sa,Arlington Mill,7-9.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170051,110621-B,Little Champions Soccer,ENJOYFALL,,Other,09/13/2026,11/08/2026,11:00 am,11:45 am,Su,Gunston Park,7-9.99,$189.00/$209.00,2026-08-06T18:59:07+00:00,Available,1,0
 343431107,310621-A,Little Champions Soccer,,SPORT,Sports,04/18/2026,06/20/2026 *,11:00 am,12:00 pm,Sa,Arlington Mill,7-9.99,$213.00/$233.00,,,,
 343431118,310621-B,Little Champions Soccer,,SPORT,Sports,04/19/2026,06/21/2026 *,11:00 am,12:00 pm,Su,Rocky Run Park,7-9.99,$213.00/$233.00,,,,
 350224837,410621-A,Little Champions Soccer,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/22/2026 *,11:10 am,12:10 pm,Sa,Arlington Mill,7-9.99,$189.00/$209.00,2026-07-10T13:54:57+00:00,Unavailable,11,0
@@ -1818,10 +1818,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343189980,500002-06,Little Explorers Camp @ Fairlington,CAMP,CAMP,Summer Camp,07/27/2026,07/31/2026,9:30 am,12:30 pm,"M, Tu, W, Th, F",Fairlington Center,3-5.99,$175.00/$201.00,2026-07-10T13:54:57+00:00,Waitlist,24,2
 343189991,500002-07,Little Explorers Camp @ Fairlington,CAMP,CAMP,Summer Camp,08/03/2026,08/07/2026,9:30 am,12:30 pm,"M, Tu, W, Th, F",Fairlington Center,3-5.99,$175.00/$201.00,2026-07-10T13:54:57+00:00,Waitlist,23,5
 343190002,500002-08,Little Explorers Camp @ Fairlington,CAMP,CAMP,Summer Camp,08/10/2026,08/14/2026,9:30 am,12:30 pm,"M, Tu, W, Th, F",Fairlington Center,3-5.99,$175.00/$201.00,2026-07-10T13:54:57+00:00,Waitlist,19,5
-372169681,110610-A,Little Kicks Soccer,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,10:00 am,10:45 am,Sa,Arlington Mill,4-6.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169693,110610-B,Little Kicks Soccer,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,11:00 am,11:45 am,Sa,Fairlington Center,4-6.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169704,110610-C,Little Kicks Soccer,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,3:10 pm,3:55 pm,Su,Lubber Run,4-6.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169715,110610-D,Little Kicks Soccer,ENJOYFALL,,Other,09/12/2026,11/21/2026,12:00 pm,1:00 pm,Sa,Barrett Elem. School,4-6.99,$275.00/$295.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169681,110610-A,Little Kicks Soccer,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,10:00 am,10:45 am,Sa,Arlington Mill,4-6.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,7,0
+372169693,110610-B,Little Kicks Soccer,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,11:00 am,11:45 am,Sa,Fairlington Center,4-6.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,3,0
+372169704,110610-C,Little Kicks Soccer,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,3:10 pm,3:55 pm,Su,Lubber Run,4-6.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,12,0
+372169715,110610-D,Little Kicks Soccer,ENJOYFALL,,Other,09/12/2026,11/21/2026,12:00 pm,1:00 pm,Sa,Barrett Elem. School,4-6.99,$275.00/$295.00,2026-08-06T18:59:07+00:00,Available,2,0
 343430688,310610-A,Little Kicks Soccer,,SPORT,Sports,04/16/2026,06/18/2026,6:00 pm,6:45 pm,Th,Fairlington Center,4-6.66,$204.00/$224.00,,,,
 343430699,310610-B,Little Kicks Soccer,,SPORT,Sports,04/18/2026,06/20/2026 *,11:00 am,11:45 am,Sa,Fairlington Center,4-6.99,$183.00/$203.00,,,,
 343430710,310610-C,Little Kicks Soccer,,SPORT,Sports,04/18/2026,06/20/2026 *,12:00 pm,1:00 pm,Sa,Barrett Elem. School,4-6.99,$190.00/$210.00,,,,
@@ -1832,10 +1832,10 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350224511,410610-C,Little Kicks Soccer,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,10:00 am,10:45 am,Su,Rocky Run Park,4-6.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,14,0
 350224522,410610-D,Little Kicks Soccer,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/22/2026 *,10:00 am,10:45 am,Sa,Arlington Mill,4-6.99,$163.00/$183.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
 350224703,410610-E,Little Kicks Soccer,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,12:10 pm,12:55 pm,Sa,Lubber Run,4-6.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
-372169602,110605-A,Little Kicks Soccer & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:00 am,9:45 am,Sa,Arlington Mill,2-3.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169613,110605-B,Little Kicks Soccer & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,10:00 am,10:45 am,Sa,Fairlington Center,2-3.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169624,110605-C,Little Kicks Soccer & Me,ENJOYFALL,,Other,09/12/2026,11/21/2026,11:00 am,11:45 am,Sa,Barrett Elem. School,2-3.99,$231.00/$251.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169635,110605-D,Little Kicks Soccer & Me,ENJOYFALL,,Other,09/13/2026,11/22/2026,11:00 am,11:45 am,Su,Barrett Elem. School,2-3.99,$231.00/$251.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169602,110605-A,Little Kicks Soccer & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:00 am,9:45 am,Sa,Arlington Mill,2-3.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,3,0
+372169613,110605-B,Little Kicks Soccer & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,10:00 am,10:45 am,Sa,Fairlington Center,2-3.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,9,0
+372169624,110605-C,Little Kicks Soccer & Me,ENJOYFALL,,Other,09/12/2026,11/21/2026,11:00 am,11:45 am,Sa,Barrett Elem. School,2-3.99,$231.00/$251.00,2026-08-06T18:59:07+00:00,Available,6,0
+372169635,110605-D,Little Kicks Soccer & Me,ENJOYFALL,,Other,09/13/2026,11/22/2026,11:00 am,11:45 am,Su,Barrett Elem. School,2-3.99,$231.00/$251.00,2026-08-06T18:59:07+00:00,Available,9,0
 343430600,310605-A,Little Kicks Soccer & Me,,SPORT,Sports,04/18/2026,06/20/2026 *,9:00 am,9:45 am,Sa,Arlington Mill,2-3.99,$183.00/$203.00,,,,
 343430622,310605-B,Little Kicks Soccer & Me,,SPORT,Sports,04/19/2026,06/21/2026 *,9:00 am,9:45 am,Su,Barrett Elem. School,2-3.99,$183.00/$203.00,,,,
 343430611,310605-C,Little Kicks Soccer & Me,,SPORT,Sports,04/18/2026,06/20/2026 *,11:00 am,11:45 am,Sa,Barrett Elem. School,2-3.99,$163.00/$183.00,,,,
@@ -1845,23 +1845,23 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350224455,410605-C,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/27/2026,08/29/2026 *,9:00 am,9:45 am,Sa,Fairlington Center,2-3.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,7,0
 350224466,410605-D,Little Kicks Soccer & Me,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,9:00 am,9:45 am,Su,Rocky Run Park,2-3.99,$183.00/$203.00,2026-07-10T13:54:57+00:00,Unavailable,11,0
 343190134,500102-04,Little Kids On Canvas Camp,CAMP1,CAMP,Summer Camp,07/13/2026,07/17/2026,9:00 am,12:00 pm,"M, Tu, W, Th, F",Cardinal Elementary School,3.5-6.99,$220.00/$253.00,2026-07-10T13:54:57+00:00,Unavailable,24,0
-372175962,110602-A,Little Shots (Age 5-6),ENJOYFALL,,Other,09/10/2026,11/19/2026,4:30 pm,5:20 pm,Th,Langston Brown,5-6.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372175973,110602-B,Little Shots (Age 5-6),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:30 pm,6:20 pm,Th,Langston Brown,5-6.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372175984,110602-C,Little Shots (Age 5-6),ENJOYFALL,,Other,09/10/2026,11/19/2026,6:30 pm,7:20 pm,Th,Langston Brown,5-6.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176119,110602-D,Little Shots (Age 5-6),ENJOYFALL,,Other,09/14/2026,11/16/2026 *,4:30 pm,5:20 pm,M,Langston Brown,5-6.99,$288.00/$308.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176130,110602-E,Little Shots (Age 5-6),ENJOYFALL,,Other,09/14/2026,11/16/2026 *,5:30 pm,6:20 pm,M,Langston Brown,5-6.99,$288.00/$308.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176143,110602-F,Little Shots (Age 5-6),ENJOYFALL,,Other,09/14/2026,11/16/2026 *,6:30 pm,7:20 pm,M,Langston Brown,5-6.99,$288.00/$308.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372175995,110602-G,Little Shots (Age 5-6),ENJOYFALL,,Other,09/08/2026,11/17/2026,4:30 pm,5:20 pm,Tu,Quincy Park,5-6.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Cancelled,0,0
-372176006,110602-H,Little Shots (Age 5-6),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:30 pm,6:20 pm,Tu,Quincy Park,5-6.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Cancelled,0,0
-372176018,110602-I,Little Shots (Age 5-6),ENJOYFALL,,Other,09/08/2026,11/17/2026,6:30 pm,7:20 pm,Tu,Quincy Park,5-6.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Cancelled,0,0
-372176031,110602-J,Little Shots (Age 5-6),ENJOYFALL,,Other,09/12/2026,11/14/2026 *,9:00 am,9:50 am,Sa,Quincy Park,5-6.99,$288.00/$308.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176042,110602-K,Little Shots (Age 5-6),ENJOYFALL,,Other,09/12/2026,11/14/2026 *,10:00 am,10:50 am,Sa,Quincy Park,5-6.99,$288.00/$308.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176053,110602-L,Little Shots (Age 5-6),ENJOYFALL,,Other,09/12/2026,11/14/2026 *,11:00 am,11:50 am,Sa,Quincy Park,5-6.99,$288.00/$308.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176064,110602-M,Little Shots (Age 5-6),ENJOYFALL,,Other,09/12/2026,11/14/2026 *,12:00 pm,12:50 pm,Sa,Quincy Park,5-6.99,$288.00/$308.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176075,110602-N,Little Shots (Age 5-6),ENJOYFALL,,Other,09/13/2026,11/15/2026 *,9:00 am,9:50 am,Su,Greenbrier Park,5-6.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176086,110602-O,Little Shots (Age 5-6),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,4:30 pm,5:20 pm,W,Jennie Dean Park,5-6.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176097,110602-P,Little Shots (Age 5-6),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,5:30 pm,6:20 pm,W,Jennie Dean Park,5-6.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176108,110602-Q,Little Shots (Age 5-6),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,6:30 pm,7:20 pm,W,Jennie Dean Park,5-6.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372175962,110602-A,Little Shots (Age 5-6),ENJOYFALL,,Other,09/10/2026,11/19/2026,4:30 pm,5:20 pm,Th,Langston Brown,5-6.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Waitlist,5,1
+372175973,110602-B,Little Shots (Age 5-6),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:30 pm,6:20 pm,Th,Langston Brown,5-6.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Waitlist,5,1
+372175984,110602-C,Little Shots (Age 5-6),ENJOYFALL,,Other,09/10/2026,11/19/2026,6:30 pm,7:20 pm,Th,Langston Brown,5-6.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,1,0
+372176119,110602-D,Little Shots (Age 5-6),ENJOYFALL,,Other,09/14/2026,11/16/2026 *,4:30 pm,5:20 pm,M,Langston Brown,5-6.99,$288.00/$308.00,2026-08-06T18:59:07+00:00,Available,1,0
+372176130,110602-E,Little Shots (Age 5-6),ENJOYFALL,,Other,09/14/2026,11/16/2026 *,5:30 pm,6:20 pm,M,Langston Brown,5-6.99,$288.00/$308.00,2026-08-06T18:59:07+00:00,Waitlist,5,0
+372176143,110602-F,Little Shots (Age 5-6),ENJOYFALL,,Other,09/14/2026,11/16/2026 *,6:30 pm,7:20 pm,M,Langston Brown,5-6.99,$288.00/$308.00,2026-08-06T18:59:07+00:00,Available,2,0
+372175995,110602-G,Little Shots (Age 5-6),ENJOYFALL,,Other,09/08/2026,11/17/2026,4:30 pm,5:20 pm,Tu,Quincy Park,5-6.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Cancelled,0,0
+372176006,110602-H,Little Shots (Age 5-6),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:30 pm,6:20 pm,Tu,Quincy Park,5-6.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Cancelled,0,0
+372176018,110602-I,Little Shots (Age 5-6),ENJOYFALL,,Other,09/08/2026,11/17/2026,6:30 pm,7:20 pm,Tu,Quincy Park,5-6.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Cancelled,0,0
+372176031,110602-J,Little Shots (Age 5-6),ENJOYFALL,,Other,09/12/2026,11/14/2026 *,9:00 am,9:50 am,Sa,Quincy Park,5-6.99,$288.00/$308.00,2026-08-06T18:59:07+00:00,Available,1,0
+372176042,110602-K,Little Shots (Age 5-6),ENJOYFALL,,Other,09/12/2026,11/14/2026 *,10:00 am,10:50 am,Sa,Quincy Park,5-6.99,$288.00/$308.00,2026-08-06T18:59:07+00:00,Available,3,0
+372176053,110602-L,Little Shots (Age 5-6),ENJOYFALL,,Other,09/12/2026,11/14/2026 *,11:00 am,11:50 am,Sa,Quincy Park,5-6.99,$288.00/$308.00,2026-08-06T18:59:07+00:00,Available,2,0
+372176064,110602-M,Little Shots (Age 5-6),ENJOYFALL,,Other,09/12/2026,11/14/2026 *,12:00 pm,12:50 pm,Sa,Quincy Park,5-6.99,$288.00/$308.00,2026-08-06T18:59:07+00:00,Available,1,0
+372176075,110602-N,Little Shots (Age 5-6),ENJOYFALL,,Other,09/13/2026,11/15/2026 *,9:00 am,9:50 am,Su,Greenbrier Park,5-6.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,5,0
+372176086,110602-O,Little Shots (Age 5-6),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,4:30 pm,5:20 pm,W,Jennie Dean Park,5-6.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,3,0
+372176097,110602-P,Little Shots (Age 5-6),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,5:30 pm,6:20 pm,W,Jennie Dean Park,5-6.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,1,0
+372176108,110602-Q,Little Shots (Age 5-6),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,6:30 pm,7:20 pm,W,Jennie Dean Park,5-6.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,0,0
 350288650,410602-A,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,4:30 pm,5:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
 350288664,410602-B,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,5:30 pm,6:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-07-10T13:54:57+00:00,Unavailable,3,0
 350288680,410602-C,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,6:30 pm,7:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
@@ -1877,7 +1877,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350288792,410602-M,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,4:30 pm,5:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-07-10T13:54:57+00:00,Unavailable,3,0
 350288804,410602-N,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,5:30 pm,6:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-07-10T13:54:57+00:00,Unavailable,4,0
 350288815,410602-O,Little Shots (Age 5-6),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,6:30 pm,7:20 pm,M,Tuckahoe Park,5-6.99,$303.00/$323.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
-372170164,120109-A,Little Spins Big Wins - Family Wheel Throwing,ENJOYFALL,,Other,09/12/2026,11/14/2026 *,9:30 am,12:00 pm,Sa,Thomas Jefferson Center,12-99.99,$365.00/$385.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170164,120109-A,Little Spins Big Wins - Family Wheel Throwing,ENJOYFALL,,Other,09/12/2026,11/14/2026 *,9:30 am,12:00 pm,Sa,Thomas Jefferson Center,12-99.99,$365.00/$385.00,2026-08-06T18:59:07+00:00,Available,1,0
 348241660,913402-14,Local History Discussion,,OSAP,55+ Classes,05/27/2026,05/27/2026,1:30 pm,2:45 pm,W,Lubber Run,,$0.00/$0.00,,,,
 346619315,750146-II,Love the Ball Schools Out Soccer Camp- Full Day,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,4:00 pm,W,Gunston Center,6-14.99,$79.00/$91.00,,,,
 346618684,750146-T,Love the Ball Schools Out Soccer Camp- Full Day,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Gunston Center,6-14.99,$79.00/$91.00,,,,
@@ -1960,17 +1960,17 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365938934,914801-03,Murder Mystery Dinner Night,,OSAP,55+ Classes,06/10/2026,06/10/2026,5:30 pm,7:00 pm,W,Arlington Mill,,$0.00/$0.00,,,,
 365938942,914801-04,Murder Mystery Dinner Night,,OSAP,55+ Classes,07/08/2026,07/08/2026,5:30 pm,7:00 pm,W,Arlington Mill,,$0.00/$0.00,2026-07-08T13:27:58+00:00,Unavailable,22,0
 365938950,914801-05,Murder Mystery Dinner Night,,OSAP,55+ Classes,08/12/2026,08/12/2026,5:30 pm,7:00 pm,W,Arlington Mill,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,24,0
-372169136,110208-A,Music Together,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,9:30 am,10:15 am,Sa,Fairlington Center,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169150,110208-B,Music Together,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,10:30 am,11:15 am,Sa,Fairlington Center,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169164,110208-C,Music Together,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,11:30 am,12:15 pm,Sa,Fairlington Center,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169178,110208-D,Music Together,ENJOYFALL,,Other,09/14/2026,11/30/2026,9:30 am,10:15 am,M,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169193,110208-E,Music Together,ENJOYFALL,,Other,09/14/2026,11/30/2026,10:30 am,11:15 am,M,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169237,110208-F,Music Together,ENJOYFALL,,Other,09/10/2026,12/03/2026 *,10:00 am,10:45 am,Th,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169251,110208-G,Music Together,ENJOYFALL,,Other,09/10/2026,12/03/2026 *,11:00 am,11:45 am,Th,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169209,110208-H,Music Together,ENJOYFALL,,Other,09/15/2026,12/01/2026,9:30 am,10:15 am,Tu,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169223,110208-I,Music Together,ENJOYFALL,,Other,09/15/2026,12/01/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169265,110208-J,Music Together,ENJOYFALL,,Other,09/26/2026,12/12/2026 *,10:00 am,10:45 am,Sa,Lubber Run,0-5.99,$284.00/$304.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169280,110208-K,Music Together,ENJOYFALL,,Other,09/26/2026,12/12/2026 *,11:00 am,11:45 am,Sa,Lubber Run,0-5.99,$284.00/$304.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169136,110208-A,Music Together,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,9:30 am,10:15 am,Sa,Fairlington Center,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169150,110208-B,Music Together,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,10:30 am,11:15 am,Sa,Fairlington Center,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,2,0
+372169164,110208-C,Music Together,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,11:30 am,12:15 pm,Sa,Fairlington Center,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,2,0
+372169178,110208-D,Music Together,ENJOYFALL,,Other,09/14/2026,11/30/2026,9:30 am,10:15 am,M,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,11,0
+372169193,110208-E,Music Together,ENJOYFALL,,Other,09/14/2026,11/30/2026,10:30 am,11:15 am,M,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,8,0
+372169237,110208-F,Music Together,ENJOYFALL,,Other,09/10/2026,12/03/2026 *,10:00 am,10:45 am,Th,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,2,0
+372169251,110208-G,Music Together,ENJOYFALL,,Other,09/10/2026,12/03/2026 *,11:00 am,11:45 am,Th,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,2,0
+372169209,110208-H,Music Together,ENJOYFALL,,Other,09/15/2026,12/01/2026,9:30 am,10:15 am,Tu,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169223,110208-I,Music Together,ENJOYFALL,,Other,09/15/2026,12/01/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,3,0
+372169265,110208-J,Music Together,ENJOYFALL,,Other,09/26/2026,12/12/2026 *,10:00 am,10:45 am,Sa,Lubber Run,0-5.99,$284.00/$304.00,2026-08-06T18:59:07+00:00,Waitlist,13,0
+372169280,110208-K,Music Together,ENJOYFALL,,Other,09/26/2026,12/12/2026 *,11:00 am,11:45 am,Sa,Lubber Run,0-5.99,$284.00/$304.00,2026-08-06T18:59:07+00:00,Available,9,0
 343430195,310208-A,Music Together,,MOVE,Movement,04/14/2026,06/16/2026,9:30 am,10:15 am,Tu,Lubber Run,0-5.99,$273.00/$293.00,,,,
 343430209,310208-B,Music Together,,MOVE,Movement,04/14/2026,06/16/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$273.00/$293.00,,,,
 343430223,310208-C,Music Together,,MOVE,Movement,04/16/2026,06/18/2026,10:00 am,10:45 am,Th,Lubber Run,0-5.99,$273.00/$293.00,,,,
@@ -1991,14 +1991,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350224200,410208-G,Music Together,ENJOYSUMMER,MOVE,Movement,07/02/2026,08/20/2026,11:00 am,11:45 am,Th,Lubber Run,0-5.99,$227.00/$247.00,2026-07-10T13:54:57+00:00,Unavailable,9,0
 350224158,410208-H,Music Together,ENJOYSUMMER,MOVE,Movement,06/30/2026,08/18/2026,9:30 am,10:15 am,Tu,Lubber Run,0-5.99,$227.00/$247.00,2026-07-10T13:54:57+00:00,Unavailable,13,1
 350224172,410208-I,Music Together,ENJOYSUMMER,MOVE,Movement,06/30/2026,08/18/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$227.00/$247.00,2026-07-10T13:54:57+00:00,Unavailable,13,0
-372169294,110209-A,Music Together Babies Only,ENJOYFALL,,Other,09/14/2026,11/30/2026,11:30 am,12:15 pm,M,Lubber Run,0-1.83,$332.00/$352.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169294,110209-A,Music Together Babies Only,ENJOYFALL,,Other,09/14/2026,11/30/2026,11:30 am,12:15 pm,M,Lubber Run,0-1.83,$332.00/$352.00,2026-08-06T18:59:07+00:00,Available,3,0
 350224214,410209-A,Music Together Babies Only,ENJOYSUMMER,MOVE,Movement,06/29/2026,08/17/2026,11:30 am,12:15 pm,M,Lubber Run,0-0.83,$227.00/$247.00,2026-07-10T13:54:57+00:00,Unavailable,11,0
-372169465,110221-A,Music Together Jingle Jam,ENJOYFALL,,Other,12/07/2026,12/07/2026,9:30 am,10:15 am,M,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169476,110221-B,Music Together Jingle Jam,ENJOYFALL,,Other,12/07/2026,12/07/2026,10:30 am,11:15 am,M,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169487,110221-C,Music Together Jingle Jam,ENJOYFALL,,Other,12/08/2026,12/08/2026,9:30 am,10:15 am,Tu,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169498,110221-D,Music Together Jingle Jam,ENJOYFALL,,Other,12/08/2026,12/08/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169509,110221-E,Music Together Jingle Jam,ENJOYFALL,,Other,12/10/2026,12/10/2026,9:30 am,10:15 am,Th,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169520,110221-F,Music Together Jingle Jam,ENJOYFALL,,Other,12/10/2026,12/10/2026,10:30 am,11:15 am,Th,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169465,110221-A,Music Together Jingle Jam,ENJOYFALL,,Other,12/07/2026,12/07/2026,9:30 am,10:15 am,M,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T18:59:07+00:00,Available,2,0
+372169476,110221-B,Music Together Jingle Jam,ENJOYFALL,,Other,12/07/2026,12/07/2026,10:30 am,11:15 am,M,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T18:59:07+00:00,Available,0,0
+372169487,110221-C,Music Together Jingle Jam,ENJOYFALL,,Other,12/08/2026,12/08/2026,9:30 am,10:15 am,Tu,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T18:59:07+00:00,Available,2,0
+372169498,110221-D,Music Together Jingle Jam,ENJOYFALL,,Other,12/08/2026,12/08/2026,10:30 am,11:15 am,Tu,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T18:59:07+00:00,Available,1,0
+372169509,110221-E,Music Together Jingle Jam,ENJOYFALL,,Other,12/10/2026,12/10/2026,9:30 am,10:15 am,Th,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T18:59:07+00:00,Available,2,0
+372169520,110221-F,Music Together Jingle Jam,ENJOYFALL,,Other,12/10/2026,12/10/2026,10:30 am,11:15 am,Th,Lubber Run,0-5.99,$24.00/$44.00,2026-08-06T18:59:07+00:00,Available,4,0
 348542216,310209-A,Music Together:  Babies Only,,MOVE,Movement,04/13/2026,06/08/2026 *,11:30 am,12:15 pm,M,Lubber Run,0-0.83,$207.00/$227.00,,,,
 365938684,914600-13,Musical Bingo,,OSAP,55+ Classes,06/24/2026,06/24/2026,4:00 pm,5:30 pm,W,Arlington Mill,,$0.00/$0.00,2026-06-24T14:37:51+00:00,Unavailable,10,0
 365938692,914600-14,Musical Bingo,,OSAP,55+ Classes,07/22/2026,07/22/2026,4:00 pm,5:30 pm,W,Arlington Mill,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,14,0
@@ -2191,7 +2191,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 347632044,902605-07,Pippin at Signature Theatre,,SAOT,55+ Trips,05/23/2026,05/23/2026,12:15 pm,5:50 pm,Sa,See Program Details,,$124.00/$143.00,,,,
 365937344,914106-27,Pond Creatures of Arlington,,OSAP,55+ Classes,06/17/2026,06/17/2026,10:30 am,11:30 am,W,Long Branch Nature Center,,$0.00/$0.00,2026-06-17T15:40:27+00:00,Unavailable,11,0
 366020298,642950-O,Pond Prowl,,NCTR,Nature & History,08/20/2026,08/20/2026,3:00 pm,4:00 pm,Th,Long Branch Nature Center,4-99.99,$7.00/$8.00,2026-07-10T13:54:57+00:00,Available,10,0
-372169531,110302-A,Postpartum Yoga with Baby,ENJOYFALL,,Other,09/14/2026,12/07/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$192.00/$212.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169531,110302-A,Postpartum Yoga with Baby,ENJOYFALL,,Other,09/14/2026,12/07/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$192.00/$212.00,2026-08-06T18:59:07+00:00,Available,1,0
 343430530,310302-A,Postpartum Yoga with Baby,,YOGA,Yoga,04/13/2026,06/08/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$123.00/$143.00,,,,
 350224361,410302-A,Postpartum Yoga with Baby,ENJOYSUMMER,YOGA,Yoga,07/13/2026,08/10/2026 *,10:45 am,11:45 am,M,Lubber Run,18-99.99,$62.00/$82.00,2026-07-10T13:54:57+00:00,Available,6,0
 365765293,902607-02,Potomac Mills Premium Outlets,,SAOT,55+ Trips,07/14/2026,07/14/2026,9:50 am,4:30 pm,Tu,See Program Details,,$12.00/$14.00,2026-07-10T13:54:57+00:00,Unavailable,19,0
@@ -2202,23 +2202,23 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343192793,500311-06,Pottery and Sweets Camp,CAMP1,CAMP,Summer Camp,07/27/2026,07/31/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,2026-07-10T13:54:57+00:00,Available,51,0
 343192804,500311-08,Pottery and Sweets Camp,CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,4:00 pm,"M, Tu, W, Th, F",Discovery Elementary,6-11.99,$399.00/$458.00,2026-07-10T13:54:57+00:00,Waitlist,59,12
 365938407,914404-05,Power of Attorney Essentials,,OSAP,55+ Classes,07/15/2026,07/15/2026,1:00 pm,2:00 pm,W,Arlington Mill,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,28,0
-372169409,110211-A,Pre-Ballet & Movement 2,ENJOYFALL,,Other,09/08/2026,12/08/2026 *,5:15 pm,6:00 pm,Tu,Lubber Run,4-5.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169420,110211-B,Pre-Ballet & Movement 2,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,11:15 am,12:00 pm,Sa,Lubber Run,4-5.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169409,110211-A,Pre-Ballet & Movement 2,ENJOYFALL,,Other,09/08/2026,12/08/2026 *,5:15 pm,6:00 pm,Tu,Lubber Run,4-5.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169420,110211-B,Pre-Ballet & Movement 2,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,11:15 am,12:00 pm,Sa,Lubber Run,4-5.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,9,0
 343430452,310211-A,Pre-Ballet & Movement 2,,DANCE,Dance,04/15/2026,06/10/2026,5:00 pm,5:45 pm,W,Lubber Run,4-5.99,$216.00/$236.00,,,,
 343430463,310211-B,Pre-Ballet & Movement 2,,DANCE,Dance,04/18/2026,06/13/2026 *,3:15 pm,4:00 pm,Sa,Lubber Run,4-5.99,$168.00/$188.00,,,,
 350224294,410211-A,Pre-Ballet & Movement 2,ENJOYSUMMER,DANCE,Dance,07/15/2026,08/12/2026,5:45 pm,6:30 pm,W,Langston Brown,4-5.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
 350224305,410211-B,Pre-Ballet & Movement 2,ENJOYSUMMER,DANCE,Dance,07/20/2026,08/17/2026,5:15 pm,6:00 pm,M,Barcroft Fitness Center,4-5.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Available,8,0
-372169308,110210-A,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/14/2026,12/14/2026,4:45 pm,5:25 pm,M,Lubber Run,3-5.99,$350.00/$370.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169320,110210-B,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/11/2026,12/11/2026 *,11:10 am,11:55 am,F,Lubber Run,3-5.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169331,110210-C,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,10:30 am,11:10 am,Sa,Lubber Run,3-5.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
-384251103,110210-D,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,3:30 pm,4:15 pm,Su,Lubber Run,3-5.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
-384250746,110210-E,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/14/2026,12/14/2026,10:30 am,11:15 am,M,Barcroft Fitness Center,4-6.99,$350.00/$370.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169353,110210-F,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/14/2026,12/14/2026,5:10 pm,5:55 pm,M,Barcroft Fitness Center,4-6.99,$350.00/$370.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169342,110210-G,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/08/2026,12/08/2026 *,5:10 pm,5:50 pm,Tu,Barcroft Fitness Center,3-5.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
-384248363,110210-H,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:30 am,10:10 am,Sa,Barcroft Fitness Center,3-5.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169364,110210-I,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/10/2026,12/10/2026 *,5:00 pm,5:45 pm,Th,Fairlington Center,3-5.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169375,110210-J,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,5:10 pm,5:50 pm,W,Langston Brown,3-5.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169386,110210-K,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,10:10 am,10:50 am,Sa,Langston Brown,3-5.99,$275.00/$295.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169308,110210-A,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/14/2026,12/14/2026,4:45 pm,5:25 pm,M,Lubber Run,3-5.99,$350.00/$370.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169320,110210-B,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/11/2026,12/11/2026 *,11:10 am,11:55 am,F,Lubber Run,3-5.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,0,0
+372169331,110210-C,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,10:30 am,11:10 am,Sa,Lubber Run,3-5.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,11,0
+384251103,110210-D,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,3:30 pm,4:15 pm,Su,Lubber Run,3-5.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,6,0
+384250746,110210-E,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/14/2026,12/14/2026,10:30 am,11:15 am,M,Barcroft Fitness Center,4-6.99,$350.00/$370.00,2026-08-06T18:59:07+00:00,Available,1,0
+372169353,110210-F,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/14/2026,12/14/2026,5:10 pm,5:55 pm,M,Barcroft Fitness Center,4-6.99,$350.00/$370.00,2026-08-06T18:59:07+00:00,Available,2,0
+372169342,110210-G,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/08/2026,12/08/2026 *,5:10 pm,5:50 pm,Tu,Barcroft Fitness Center,3-5.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,0,0
+384248363,110210-H,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:30 am,10:10 am,Sa,Barcroft Fitness Center,3-5.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,5,0
+372169364,110210-I,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/10/2026,12/10/2026 *,5:00 pm,5:45 pm,Th,Fairlington Center,3-5.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,3,0
+372169375,110210-J,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,5:10 pm,5:50 pm,W,Langston Brown,3-5.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,1,0
+372169386,110210-K,Pre-Ballet & Movement I,ENJOYFALL,,Other,09/12/2026,12/05/2026 *,10:10 am,10:50 am,Sa,Langston Brown,3-5.99,$275.00/$295.00,2026-08-06T18:59:07+00:00,Available,9,0
 343430352,310210-A,Pre-Ballet & Movement I,,DANCE,Dance,04/14/2026,06/09/2026 *,5:10 pm,5:50 pm,Tu,Barcroft Fitness Center,3-5.99,$192.00/$212.00,,,,
 343430363,310210-B,Pre-Ballet & Movement I,,DANCE,Dance,04/13/2026,06/08/2026 *,10:45 am,11:30 am,M,Barcroft Fitness Center,3-5.99,$192.00/$212.00,,,,
 343430374,310210-C,Pre-Ballet & Movement I,,DANCE,Dance,04/13/2026,06/08/2026 *,5:10 pm,5:55 pm,M,Fairlington Center,3-5.99,$216.00/$236.00,,,,
@@ -2533,16 +2533,16 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365938391,914404-03,Retire Well Live Well (55+ Pass NOT Required),,OSAP,55+ Classes,08/24/2026,08/24/2026,1:00 pm,2:00 pm,M,Aurora Hills Center,0-999,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,10,0
 347286442,913404-03,Retire Well Live Well (55+ Pass Not Required),,OSAP,55+ Classes,05/18/2026,05/18/2026,1:00 pm,2:00 pm,M,Aurora Hills Center,0-999,$0.00/$0.00,,,,
 365938423,914404-07,Retirement Readiness,,OSAP,55+ Classes,08/13/2026,08/13/2026,6:00 pm,7:00 pm,Th,Lubber Run,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,12,0
-372171119,120323-A,Rhythm Rockers! Beginner Drumming,ENJOYFALL,,Other,09/18/2026,12/18/2026 *,6:10 pm,7:10 pm,F,Long Bridge Aquatics Center,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171134,120323-B,Rhythm Rockers! Beginner Drumming,ENJOYFALL,,Other,09/19/2026,12/19/2026 *,1:30 pm,2:30 pm,Sa,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171119,120323-A,Rhythm Rockers! Beginner Drumming,ENJOYFALL,,Other,09/18/2026,12/18/2026 *,6:10 pm,7:10 pm,F,Long Bridge Aquatics Center,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,2,0
+372171134,120323-B,Rhythm Rockers! Beginner Drumming,ENJOYFALL,,Other,09/19/2026,12/19/2026 *,1:30 pm,2:30 pm,Sa,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,1,0
 343431995,320323-A,Rhythm Rockers! Beginner Drumming,,MUSIC,Music,04/17/2026,06/12/2026 *,7:20 pm,8:20 pm,F,Long Bridge Aquatics Center,5-12.99,$226.00/$246.00,,,,
 365765326,902607-06,Rock the Block! Summer Concert with The U.S. Army Band Downrange,,SAOT,55+ Trips,07/24/2026,07/24/2026,5:00 pm,8:30 pm,F,Thomas Jefferson Center,,$11.00/$13.00,2026-07-10T13:54:57+00:00,Waitlist,37,17
-372169974,110619-A,Run Shoot Basketball,ENJOYFALL,,Other,09/14/2026,12/14/2026,4:30 pm,5:15 pm,M,Fairlington Center,3-4.99,$294.00/$314.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169985,110619-B,Run Shoot Basketball,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,12:00 pm,12:45 pm,Sa,Fairlington Center,3-4.99,$273.00/$293.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169996,110619-C,Run Shoot Basketball,ENJOYFALL,,Other,09/14/2026,12/14/2026,5:20 pm,6:20 pm,M,Fairlington Center,5-6.99,$350.00/$370.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170007,110619-D,Run Shoot Basketball,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,12:00 pm,12:45 pm,Sa,Lubber Run,3-4.99,$252.00/$272.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170018,110619-E,Run Shoot Basketball,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,1:00 pm,2:00 pm,Sa,Lubber Run,5-6.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170029,110619-F,Run Shoot Basketball,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,2:05 pm,3:05 pm,Su,Lubber Run,5-6.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169974,110619-A,Run Shoot Basketball,ENJOYFALL,,Other,09/14/2026,12/14/2026,4:30 pm,5:15 pm,M,Fairlington Center,3-4.99,$294.00/$314.00,2026-08-06T18:59:07+00:00,Available,1,0
+372169985,110619-B,Run Shoot Basketball,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,12:00 pm,12:45 pm,Sa,Fairlington Center,3-4.99,$273.00/$293.00,2026-08-06T18:59:07+00:00,Available,1,0
+372169996,110619-C,Run Shoot Basketball,ENJOYFALL,,Other,09/14/2026,12/14/2026,5:20 pm,6:20 pm,M,Fairlington Center,5-6.99,$350.00/$370.00,2026-08-06T18:59:07+00:00,Available,2,0
+372170007,110619-D,Run Shoot Basketball,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,12:00 pm,12:45 pm,Sa,Lubber Run,3-4.99,$252.00/$272.00,2026-08-06T18:59:07+00:00,Available,6,0
+372170018,110619-E,Run Shoot Basketball,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,1:00 pm,2:00 pm,Sa,Lubber Run,5-6.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,7,0
+372170029,110619-F,Run Shoot Basketball,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,2:05 pm,3:05 pm,Su,Lubber Run,5-6.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,3,0
 343431041,310619-A,Run Shoot Basketball,,SPORT,Sports,04/13/2026,06/15/2026 *,4:30 pm,5:15 pm,M,Fairlington Center,3-4.99,$183.00/$203.00,,,,
 343431052,310619-B,Run Shoot Basketball,,SPORT,Sports,04/13/2026,06/15/2026 *,5:20 pm,6:20 pm,M,Fairlington Center,4-6.99,$213.00/$233.00,,,,
 343431063,310619-C,Run Shoot Basketball,,SPORT,Sports,04/18/2026,06/20/2026 *,1:05 pm,2:05 pm,Sa,Fairlington Center,4-6.99,$213.00/$233.00,,,,
@@ -2556,8 +2556,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350224826,410619-E,Run Shoot Basketball,ENJOYSUMMER,SPORT,Sports,06/28/2026,08/30/2026 *,2:05 pm,3:05 pm,Su,Lubber Run,5-6.99,$213.00/$233.00,2026-07-10T13:54:57+00:00,Unavailable,7,0
 346618861,750146-Y,SPARK business academy: Model UN Camp,,OST,Out of School Time,05/27/2026,05/27/2026,9:00 am,4:00 pm,W,Fairlington Center,8-12.99,$104.00/$120.00,,,,
 346617289,750146-J,SPARK business academy: My First Food Truck Camp,,OST,Out of School Time,05/26/2026,05/26/2026,9:00 am,4:00 pm,Tu,Fairlington Center,10-13.99,$104.00/$120.00,,,,
-372175002,120339-A,STEM Adventures,ENJOYFALL,,Other,09/17/2026,11/05/2026,5:00 pm,6:00 pm,Th,Long Bridge Aquatics Center,5-7.99,$216.00/$236.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372175013,120339-B,STEM Adventures,ENJOYFALL,,Other,09/17/2026,11/05/2026,6:15 pm,7:15 pm,Th,Long Bridge Aquatics Center,8-12.99,$216.00/$236.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372175002,120339-A,STEM Adventures,ENJOYFALL,,Other,09/17/2026,11/05/2026,5:00 pm,6:00 pm,Th,Long Bridge Aquatics Center,5-7.99,$216.00/$236.00,2026-08-06T18:59:07+00:00,Available,5,0
+372175013,120339-B,STEM Adventures,ENJOYFALL,,Other,09/17/2026,11/05/2026,6:15 pm,7:15 pm,Th,Long Bridge Aquatics Center,8-12.99,$216.00/$236.00,2026-08-06T18:59:07+00:00,Available,6,0
 343432053,320339-A,STEM Adventures,,SCDI,Science & Discovery,04/16/2026,06/04/2026,5:00 pm,6:00 pm,Th,Long Bridge Aquatics Center,5-7.99,$206.00/$226.00,,,,
 343432064,320339-B,STEM Adventures,,SCDI,Science & Discovery,04/16/2026,06/04/2026,6:15 pm,7:15 pm,Th,Long Bridge Aquatics Center,8-12.99,$206.00/$226.00,,,,
 350280525,420339-A,STEM Adventures,ENJOYSUMMER,SCDI,Science & Discovery,07/09/2026,08/13/2026,5:00 pm,6:00 pm,Th,Long Bridge Aquatics Center,5-7.99,$155.00/$175.00,2026-07-10T13:54:57+00:00,Available,9,0
@@ -2571,7 +2571,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343190708,500111-08,STEM Adventures Camp,CAMP1,CAMP,Summer Camp,08/10/2026,08/14/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,5-12.99,$375.00/$431.00,2026-07-10T13:54:57+00:00,Available,43,0
 343190723,500111-09,STEM Adventures Camp,CAMP1,CAMP,Summer Camp,08/17/2026,08/21/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Fairlington Center,5-12.99,$375.00/$431.00,2026-07-10T13:54:57+00:00,Waitlist,48,20
 365937985,914400-11,Safety in the Neighborhood,,OSAP,55+ Classes,06/23/2026,06/23/2026,11:00 am,12:00 pm,Tu,Langston Brown,,$0.00/$0.00,2026-06-23T14:55:17+00:00,Unavailable,15,0
-372170837,120318-A,Science: Potions & Explosions,ENJOYFALL,,Other,09/13/2026,10/04/2026,11:30 am,12:30 pm,Su,Long Bridge Aquatics Center,5-10.99,$108.00/$128.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170837,120318-A,Science: Potions & Explosions,ENJOYFALL,,Other,09/13/2026,10/04/2026,11:30 am,12:30 pm,Su,Long Bridge Aquatics Center,5-10.99,$108.00/$128.00,2026-08-06T18:59:07+00:00,Available,9,0
 343433278,340906-A,Sculpting Yoga,,YOGA,Yoga,04/13/2026,06/15/2026 *,7:00 pm,8:00 pm,M,Barcroft Fitness Center,18-99.99,$139.00/$159.00,,,,
 343433289,340906-B,Sculpting Yoga,,YOGA,Yoga,04/16/2026,06/18/2026,7:15 pm,8:15 pm,Th,Lubber Run,18-99.99,$154.00/$174.00,,,,
 343433301,340906-C,Sculpting Yoga,,YOGA,Yoga,04/14/2026,05/26/2026 *,6:00 pm,7:00 pm,Tu,Madison Center,18-99.99,$92.00/$112.00,,,,
@@ -2586,8 +2586,8 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366020228,642950-I,Serpent Showcase,,NCTR,Nature & History,07/09/2026,07/09/2026,4:00 pm,4:45 pm,Th,Long Branch Nature Center,3-99.99,$0.00/$0.00,2026-07-09T14:27:42+00:00,Unavailable,15,0
 366020239,642950-J,Serpent Showcase,,NCTR,Nature & History,07/21/2026,07/21/2026,4:00 pm,4:45 pm,Tu,Long Branch Nature Center,3-99.99,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,5,0
 343432353,340113-A,Sewing Next Steps,,FIBER,Sewing & Fiber Arts,04/19/2026,06/14/2026,4:00 pm,6:00 pm,Su,Arlington Mill,18-99.99,$242.00/$262.00,,,,
-372170792,120315-A,Slime Time,ENJOYFALL,,Other,09/12/2026,10/17/2026,3:00 pm,4:00 pm,Sa,Long Bridge Aquatics Center,5-10.99,$162.00/$182.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170803,120315-B,Slime Time,ENJOYFALL,,Other,10/28/2026,12/09/2026 *,6:00 pm,7:00 pm,W,Long Bridge Aquatics Center,5-10.99,$162.00/$182.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170792,120315-A,Slime Time,ENJOYFALL,,Other,09/12/2026,10/17/2026,3:00 pm,4:00 pm,Sa,Long Bridge Aquatics Center,5-10.99,$162.00/$182.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170803,120315-B,Slime Time,ENJOYFALL,,Other,10/28/2026,12/09/2026 *,6:00 pm,7:00 pm,W,Long Bridge Aquatics Center,5-10.99,$162.00/$182.00,2026-08-06T18:59:07+00:00,Available,0,0
 343431740,320315-A,Slime Time,,SCDI,Science & Discovery,04/18/2026,06/13/2026 *,3:00 pm,4:00 pm,Sa,Long Bridge Aquatics Center,5-10.99,$206.00/$226.00,,,,
 343190311,500104-01,Slime Time Camp,CAMP1,CAMP,Summer Camp,06/22/2026,06/26/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,5-10.99,$375.00/$431.00,2026-06-26T14:31:35+00:00,Unavailable,26,0
 343190322,500104-02,Slime Time Camp,CAMP1,CAMP,Summer Camp,06/29/2026,07/02/2026,9:00 am,3:00 pm,"M, Tu, W, Th",Barcroft Elem. Sch.,5-10.99,$300.00/$345.00,2026-07-02T13:27:01+00:00,Unavailable,30,0
@@ -2666,9 +2666,9 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350225847,440304-A,Strong Camp 1,ENJOYSUMMER,FIT,Fitness,06/23/2026,08/11/2026,7:00 pm,8:00 pm,Tu,Long Bridge Aquatics Center,15-99.99,$120.00/$140.00,2026-07-10T13:54:57+00:00,Unavailable,19,0
 350225858,440304-B,Strong Camp 1,ENJOYSUMMER,FIT,Fitness,06/27/2026,08/15/2026 *,9:15 am,10:15 am,Sa,Long Bridge Aquatics Center,15-99.99,$105.00/$125.00,2026-07-10T13:54:57+00:00,Unavailable,20,1
 343432811,340305-A,Strong Camp 2,,FIT,Fitness,04/18/2026,06/20/2026 *,10:30 am,11:30 am,Sa,Long Bridge Aquatics Center,15-99.99,$120.00/$140.00,,,,
-372171076,120322-A,Strum & Smile! Beginner Ukulele,ENJOYFALL,,Other,09/14/2026,12/14/2026,6:10 pm,7:10 pm,M,Long Bridge Aquatics Center,5-12.99,$398.00/$418.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171091,120322-B,Strum & Smile! Beginner Ukulele,ENJOYFALL,,Other,09/18/2026,12/18/2026 *,7:10 pm,8:10 pm,F,Long Bridge Aquatics Center,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372171105,120322-C,Strum & Smile! Beginner Ukulele,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,5:00 pm,6:00 pm,W,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372171076,120322-A,Strum & Smile! Beginner Ukulele,ENJOYFALL,,Other,09/14/2026,12/14/2026,6:10 pm,7:10 pm,M,Long Bridge Aquatics Center,5-12.99,$398.00/$418.00,2026-08-06T18:59:07+00:00,Available,0,0
+372171091,120322-B,Strum & Smile! Beginner Ukulele,ENJOYFALL,,Other,09/18/2026,12/18/2026 *,7:10 pm,8:10 pm,F,Long Bridge Aquatics Center,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,0,0
+372171105,120322-C,Strum & Smile! Beginner Ukulele,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,5:00 pm,6:00 pm,W,Arlington Mill,5-12.99,$371.00/$391.00,2026-08-06T18:59:07+00:00,Available,1,0
 343431981,320322-A,Strum & Smile! Beginner Ukulele,,MUSIC,Music,04/13/2026,06/15/2026 *,6:15 pm,7:15 pm,M,Long Bridge Aquatics Center,5-12.99,$252.00/$272.00,,,,
 350225471,420322-A,Strum & Smile! Beginner Ukulele,ENJOYSUMMER,MUSIC,Music,07/06/2026,08/10/2026,6:15 pm,7:15 pm,M,Long Bridge Aquatics Center,5-12.99,$175.00/$195.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
 374668971,777130-B38,Summer 2026 Advanced Thursdays Pick-Up Soccer,,SPCDI,Sports Clinics/Drop In,07/30/2026,10/08/2026 *,8:00 pm,9:30 pm,Th,Long Bridge Park,18-99,$88.77/$114.18,2026-07-10T13:54:57+00:00,Available,11,0
@@ -2712,9 +2712,9 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365937126,914105-02,Tai Chi Chuan,,OSAP,55+ Classes,06/12/2026,08/28/2026 *,2:30 pm,3:30 pm,F,Walter Reed Center,,$54.00/$54.00,2026-07-10T13:54:57+00:00,Unavailable,,
 343193325,500411-07,Take the Show on the Road Camp!,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Abingdon School,6-10.99,$275.00/$316.00,,,,
 343193391,500412-07,Take the Show on the Road Camp!,CAMP1,CAMP,Summer Camp,08/03/2026,08/07/2026,9:00 am,3:00 pm,"M, Tu, W, Th, F",Barcroft Elem. Sch.,6-10.99,$275.00/$316.00,,,,
-372169431,110213-A,Tap n' Ballet,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,5:00 pm,5:45 pm,W,Lubber Run,4-6.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169442,110213-B,Tap n' Ballet,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,3:15 pm,4:00 pm,Sa,Lubber Run,4-6.99,$300.00/$320.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169454,110213-C,Tap n' Ballet,ENJOYFALL,,Other,09/08/2026,12/08/2026 *,6:00 pm,6:45 pm,Tu,Barcroft Fitness Center,4-6.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169431,110213-A,Tap n' Ballet,ENJOYFALL,,Other,09/09/2026,12/09/2026 *,5:00 pm,5:45 pm,W,Lubber Run,4-6.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,4,0
+372169442,110213-B,Tap n' Ballet,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,3:15 pm,4:00 pm,Sa,Lubber Run,4-6.99,$300.00/$320.00,2026-08-06T18:59:07+00:00,Available,5,0
+372169454,110213-C,Tap n' Ballet,ENJOYFALL,,Other,09/08/2026,12/08/2026 *,6:00 pm,6:45 pm,Tu,Barcroft Fitness Center,4-6.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,3,0
 343430474,310213-A,Tap n' Ballet,,DANCE,Dance,04/14/2026,06/09/2026,5:15 pm,6:00 pm,Tu,Lubber Run,4-6.99,$216.00/$236.00,,,,
 343430485,310213-B,Tap n' Ballet,,DANCE,Dance,04/13/2026,06/08/2026 *,5:00 pm,5:45 pm,M,Barcroft Fitness Center,4-6.99,$192.00/$212.00,,,,
 343430497,310213-C,Tap n' Ballet,,DANCE,Dance,04/19/2026,06/14/2026 *,10:15 am,11:00 am,Su,Long Bridge Aquatics Center,4-6.99,$192.00/$212.00,,,,
@@ -2762,14 +2762,14 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350289126,440601-H,Tennis 1,ENJOYSUMMER,TENIS,Tennis,06/23/2026,08/25/2026 *,6:10 pm,7:20 pm,Tu,Stratford Park,15-99.99,$371.00/$391.00,2026-07-10T13:54:57+00:00,Unavailable,6,3
 350289137,440601-I,Tennis 1,ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,6:10 pm,7:20 pm,W,Stratford Park,15-99.99,$371.00/$391.00,2026-07-10T13:54:57+00:00,Unavailable,10,7
 350289148,440601-J,Tennis 1,ENJOYSUMMER,TENIS,Tennis,06/25/2026,08/27/2026 *,6:10 pm,7:20 pm,Th,Virginia Highlands Park,15-99.99,$371.00/$391.00,2026-07-10T13:54:57+00:00,Unavailable,10,6
-372176197,120602-D,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/08/2026,11/17/2026,6:30 pm,7:20 pm,Tu,Barcroft Park,10-13.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176210,120602-E,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:10 pm,6:00 pm,Th,Barcroft Park,10-13.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176243,120602-H,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/13/2026,11/15/2026 *,12:00 pm,12:50 pm,Su,Greenbrier Park,10-13.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176266,120602-J,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,4:30 pm,5:20 pm,W,Lyon Village Park,10-13.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176288,120602-L,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:10 pm,6:00 pm,Th,Thomas Jefferson Center,10-13.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176322,120602-O,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:10 pm,6:00 pm,Tu,Virginia Highlands Park,10-13.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176333,120602-P,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:30 pm,6:20 pm,Th,Virginia Highlands Park,10-13.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176344,120602-R,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:10 pm,6:00 pm,Tu,Stratford Park,10-13.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372176197,120602-D,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/08/2026,11/17/2026,6:30 pm,7:20 pm,Tu,Barcroft Park,10-13.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,3,0
+372176210,120602-E,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:10 pm,6:00 pm,Th,Barcroft Park,10-13.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,5,0
+372176243,120602-H,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/13/2026,11/15/2026 *,12:00 pm,12:50 pm,Su,Greenbrier Park,10-13.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,3,0
+372176266,120602-J,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,4:30 pm,5:20 pm,W,Lyon Village Park,10-13.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,3,0
+372176288,120602-L,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:10 pm,6:00 pm,Th,Thomas Jefferson Center,10-13.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,3,0
+372176322,120602-O,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:10 pm,6:00 pm,Tu,Virginia Highlands Park,10-13.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,2,0
+372176333,120602-P,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:30 pm,6:20 pm,Th,Virginia Highlands Park,10-13.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,1,0
+372176344,120602-R,Tennis 1 & 2 (Age 10-13),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:10 pm,6:00 pm,Tu,Stratford Park,10-13.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,4,0
 343444521,320602-E,Tennis 1 & 2 (Age 10-13),,TENIS,Tennis,04/14/2026,06/09/2026,6:30 pm,7:20 pm,Tu,Barcroft Park,10-13.99,$272.00/$292.00,,,,
 343444532,320602-F,Tennis 1 & 2 (Age 10-13),,TENIS,Tennis,04/15/2026,06/10/2026,6:30 pm,7:20 pm,W,Barcroft Park,10-13.99,$272.00/$292.00,,,,
 343444576,320602-J,Tennis 1 & 2 (Age 10-13),,TENIS,Tennis,04/19/2026,06/14/2026 *,12:00 pm,12:50 pm,Su,Greenbrier Park,10-13.99,$242.00/$262.00,,,,
@@ -2782,22 +2782,22 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350288903,420602-H,Tennis 1 & 2 (Age 10-13),ENJOYSUMMER,TENIS,Tennis,06/24/2026,08/26/2026 *,6:30 pm,7:20 pm,W,Lyon Village Park,10-13.99,$272.00/$292.00,2026-07-10T13:54:57+00:00,Unavailable,6,0
 350288925,420602-J,Tennis 1 & 2 (Age 10-13),ENJOYSUMMER,TENIS,Tennis,06/23/2026,08/25/2026 *,5:10 pm,6:00 pm,Tu,Stratford Park,10-13.99,$272.00/$292.00,2026-07-10T13:54:57+00:00,Unavailable,6,1
 350288948,420602-L,Tennis 1 & 2 (Age 10-13),ENJOYSUMMER,TENIS,Tennis,06/22/2026,08/31/2026 *,6:30 pm,7:20 pm,M,Virginia Highlands Park,10-13.99,$303.00/$323.00,2026-07-10T13:54:57+00:00,Unavailable,3,0
-372176356,120602-Q,Tennis 1 & 2 (Age 13-16),ENJOYFALL,,Other,09/10/2026,11/19/2026,6:30 pm,7:20 pm,Th,Virginia Highlands Park,13-16.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372176356,120602-Q,Tennis 1 & 2 (Age 13-16),ENJOYFALL,,Other,09/10/2026,11/19/2026,6:30 pm,7:20 pm,Th,Virginia Highlands Park,13-16.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,2,0
 343444477,320602-A,Tennis 1 & 2 (Age 5-6),,TENIS,Tennis,04/14/2026,06/09/2026,4:30 pm,5:20 pm,Tu,Barcroft Park,5-6.99,$272.00/$292.00,,,,
 343444488,320602-B,Tennis 1 & 2 (Age 5-6),,TENIS,Tennis,04/15/2026,06/10/2026,5:30 pm,6:20 pm,W,Barcroft Park,5-6.99,$272.00/$292.00,,,,
 343444543,320602-G,Tennis 1 & 2 (Age 5-6),,TENIS,Tennis,04/19/2026,06/14/2026 *,9:00 am,9:50 am,Su,Greenbrier Park,5-6.99,$242.00/$262.00,,,,
 343444587,320602-K,Tennis 1 & 2 (Age 5-6),,TENIS,Tennis,04/15/2026,06/10/2026,4:30 pm,5:20 pm,W,Lyon Village Park,5-6.99,$272.00/$292.00,,,,
 343444598,320602-L,Tennis 1 & 2 (Age 5-6),,TENIS,Tennis,04/13/2026,06/08/2026 *,4:30 pm,5:20 pm,M,Lyon Village Park,5-6.99,$242.00/$262.00,,,,
 343444656,320602-Q,Tennis 1 & 2 (Age 5-6),,TENIS,Tennis,04/16/2026,06/11/2026 *,4:30 pm,5:20 pm,Th,Virginia Highlands Park,5-6.99,$272.00/$292.00,,,,
-372176155,120602-A,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:30 pm,6:20 pm,Tu,Barcroft Park,7-9.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176171,120602-B,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:10 pm,6:00 pm,Th,Barcroft Park,7-9.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176185,120602-C,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,5:30 pm,6:20 pm,W,Barcroft Park,7-9.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176221,120602-F,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/13/2026,11/15/2026 *,10:00 am,10:50 am,Su,Greenbrier Park,7-9.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176232,120602-G,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/13/2026,11/15/2026 *,11:00 am,11:50 am,Su,Greenbrier Park,7-9.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176254,120602-I,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,5:30 pm,6:20 pm,W,Lyon Village Park,7-9.99,$320.00/$340.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176277,120602-K,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:10 pm,6:00 pm,Th,Thomas Jefferson Center,7-9.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176300,120602-M,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:10 pm,6:00 pm,Tu,Virginia Highlands Park,7-9.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372176311,120602-N,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/10/2026,11/19/2026,4:30 pm,5:20 pm,Th,Virginia Highlands Park,7-9.99,$352.00/$372.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372176155,120602-A,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:30 pm,6:20 pm,Tu,Barcroft Park,7-9.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Waitlist,6,1
+372176171,120602-B,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:10 pm,6:00 pm,Th,Barcroft Park,7-9.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Waitlist,6,2
+372176185,120602-C,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,5:30 pm,6:20 pm,W,Barcroft Park,7-9.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,5,0
+372176221,120602-F,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/13/2026,11/15/2026 *,10:00 am,10:50 am,Su,Greenbrier Park,7-9.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,4,0
+372176232,120602-G,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/13/2026,11/15/2026 *,11:00 am,11:50 am,Su,Greenbrier Park,7-9.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,4,0
+372176254,120602-I,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/09/2026,11/18/2026 *,5:30 pm,6:20 pm,W,Lyon Village Park,7-9.99,$320.00/$340.00,2026-08-06T18:59:07+00:00,Available,2,0
+372176277,120602-K,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/10/2026,11/19/2026,5:10 pm,6:00 pm,Th,Thomas Jefferson Center,7-9.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Waitlist,6,1
+372176300,120602-M,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/08/2026,11/17/2026,5:10 pm,6:00 pm,Tu,Virginia Highlands Park,7-9.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,2,0
+372176311,120602-N,Tennis 1 & 2 (Age 7-9),ENJOYFALL,,Other,09/10/2026,11/19/2026,4:30 pm,5:20 pm,Th,Virginia Highlands Park,7-9.99,$352.00/$372.00,2026-08-06T18:59:07+00:00,Available,2,0
 343444499,320602-C,Tennis 1 & 2 (Age 7-9),,TENIS,Tennis,04/14/2026,06/09/2026,5:30 pm,6:20 pm,Tu,Barcroft Park,7-9.99,$272.00/$292.00,,,,
 343444510,320602-D,Tennis 1 & 2 (Age 7-9),,TENIS,Tennis,04/15/2026,06/10/2026,6:30 pm,7:20 pm,W,Barcroft Park,7-9.99,$272.00/$292.00,,,,
 343444554,320602-H,Tennis 1 & 2 (Age 7-9),,TENIS,Tennis,04/19/2026,06/14/2026 *,10:00 am,10:50 am,Su,Greenbrier Park,7-9.99,$242.00/$262.00,,,,
@@ -2935,11 +2935,11 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 367957371,720427-C,The REC @ Kenmore Teen After School Program,,TEEN,Teen Programs,09/09/2026,06/04/2027 *,2:30 pm,6:00 pm,"M, W, F",Kenmore MS,11-17.99,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,1,0
 367965114,720427-D,The REC @ TJ Teen After School Program,,TEEN,Teen Programs,09/08/2026,06/04/2027 *,2:30 pm,6:00 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,11-17.99,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,2,0
 365765318,902607-05,The Rose Gaming Resort,,SAOT,55+ Trips,07/22/2026,07/22/2026,8:30 am,3:30 pm,W,See Program Details,,$13.00/$15.00,2026-07-10T13:54:57+00:00,Available,24,0
-372170311,120279-A,The Science Seed,ENJOYFALL,,Other,09/28/2026,11/09/2026 *,3:00 pm,3:45 pm,M,Lubber Run,3-6.99,$150.00/$170.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170322,120279-B,The Science Seed,ENJOYFALL,,Other,09/26/2026,11/14/2026 *,9:00 am,9:45 am,Sa,Lubber Run,3-6.99,$150.00/$170.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170333,120279-C,The Science Seed,ENJOYFALL,,Other,09/26/2026,11/14/2026 *,10:00 am,10:45 am,Sa,Lubber Run,3-6.99,$150.00/$170.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170345,120279-D,The Science Seed,ENJOYFALL,,Other,09/28/2026,11/09/2026 *,4:15 pm,5:00 pm,M,Lubber Run,5-8.99,$150.00/$170.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170356,120279-E,The Science Seed,ENJOYFALL,,Other,09/26/2026,11/14/2026 *,11:00 am,11:45 am,Sa,Lubber Run,5-8.99,$150.00/$170.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170311,120279-A,The Science Seed,ENJOYFALL,,Other,09/28/2026,11/09/2026 *,3:00 pm,3:45 pm,M,Lubber Run,3-6.99,$150.00/$170.00,2026-08-06T18:59:07+00:00,Available,5,0
+372170322,120279-B,The Science Seed,ENJOYFALL,,Other,09/26/2026,11/14/2026 *,9:00 am,9:45 am,Sa,Lubber Run,3-6.99,$150.00/$170.00,2026-08-06T18:59:07+00:00,Available,6,0
+372170333,120279-C,The Science Seed,ENJOYFALL,,Other,09/26/2026,11/14/2026 *,10:00 am,10:45 am,Sa,Lubber Run,3-6.99,$150.00/$170.00,2026-08-06T18:59:07+00:00,Available,5,0
+372170345,120279-D,The Science Seed,ENJOYFALL,,Other,09/28/2026,11/09/2026 *,4:15 pm,5:00 pm,M,Lubber Run,5-8.99,$150.00/$170.00,2026-08-06T18:59:07+00:00,Available,1,0
+372170356,120279-E,The Science Seed,ENJOYFALL,,Other,09/26/2026,11/14/2026 *,11:00 am,11:45 am,Sa,Lubber Run,5-8.99,$150.00/$170.00,2026-08-06T18:59:07+00:00,Available,3,0
 343431374,320279-A,The Science Seed,,SCDI,Science & Discovery,04/13/2026,05/18/2026 *,3:00 pm,3:45 pm,M,Lubber Run,3-6.99,$141.00/$161.00,,,,
 343431396,320279-B,The Science Seed,,SCDI,Science & Discovery,04/18/2026,06/06/2026 *,9:00 am,9:45 am,Sa,Lubber Run,3-6.99,$141.00/$161.00,,,,
 343431407,320279-C,The Science Seed,,SCDI,Science & Discovery,04/18/2026,06/06/2026 *,10:00 am,10:45 am,Sa,Lubber Run,3-6.99,$141.00/$161.00,,,,
@@ -2982,27 +2982,27 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 366019722,642810-F,Tiny Tot: Sharks,,NCTR,Nature & History,08/13/2026,08/13/2026,10:00 am,10:45 am,Th,Gulf Branch Nature Center,1.5-3.99,$7.00/$8.00,2026-07-10T13:54:57+00:00,Available,7,0
 366019958,642910-B,Tiny Tot: Turtles,,NCTR,Nature & History,07/15/2026,07/15/2026,12:00 pm,12:45 pm,W,Long Branch Nature Center,1.5-3.99,$7.00/$8.00,2026-07-10T13:54:57+00:00,Available,6,0
 366019969,642910-C,Tiny Tot: Turtles,,NCTR,Nature & History,07/25/2026,07/25/2026,10:00 am,10:45 am,Sa,Long Branch Nature Center,1.5-3.99,$7.00/$8.00,2026-07-10T13:54:57+00:00,Waitlist,13,2
-372169587,110324-A,Tiny Tunes Guitar,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,6:00 pm,6:30 pm,Su,Arlington Mill,4-7.99,$345.00/$365.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169587,110324-A,Tiny Tunes Guitar,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,6:00 pm,6:30 pm,Su,Arlington Mill,4-7.99,$345.00/$365.00,2026-08-06T18:59:07+00:00,Available,2,0
 343430583,310324-A,Tiny Tunes Guitar,,MUSIC,Music,04/19/2026,06/14/2026 *,6:00 pm,6:30 pm,Su,Arlington Mill,4-7.99,$210.00/$230.00,,,,
 350224416,410324-A,Tiny Tunes Guitar,ENJOYSUMMER,MUSIC,Music,07/07/2026,08/11/2026,10:45 am,11:15 am,Tu,Long Bridge Aquatics Center,4-5.99,$163.00/$183.00,2026-07-10T13:54:57+00:00,Cancelled,0,0
-372169543,110321-A,Tiny Tunes Piano,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,10:00 am,10:30 am,W,Long Bridge Aquatics Center,3-6.99,$345.00/$365.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169559,110321-B,Tiny Tunes Piano,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:40 pm,5:10 pm,Su,Arlington Mill,3-6.99,$345.00/$365.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169573,110321-C,Tiny Tunes Piano,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,5:20 pm,5:50 pm,Su,Arlington Mill,3-6.99,$345.00/$365.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169543,110321-A,Tiny Tunes Piano,ENJOYFALL,,Other,09/16/2026,12/16/2026 *,10:00 am,10:30 am,W,Long Bridge Aquatics Center,3-6.99,$345.00/$365.00,2026-08-06T18:59:07+00:00,Available,0,0
+372169559,110321-B,Tiny Tunes Piano,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,4:40 pm,5:10 pm,Su,Arlington Mill,3-6.99,$345.00/$365.00,2026-08-06T18:59:07+00:00,Available,7,0
+372169573,110321-C,Tiny Tunes Piano,ENJOYFALL,,Other,09/13/2026,12/13/2026 *,5:20 pm,5:50 pm,Su,Arlington Mill,3-6.99,$345.00/$365.00,2026-08-06T18:59:07+00:00,Available,3,0
 343430541,310321-A,Tiny Tunes Piano,,MUSIC,Music,04/15/2026,06/03/2026,10:00 am,10:30 am,W,Long Bridge Aquatics Center,3-6.99,$210.00/$230.00,,,,
 343430555,310321-B,Tiny Tunes Piano,,MUSIC,Music,04/19/2026,06/14/2026 *,4:40 pm,5:10 pm,Su,Arlington Mill,3-6.99,$210.00/$230.00,,,,
 343430569,310321-C,Tiny Tunes Piano,,MUSIC,Music,04/19/2026,06/14/2026 *,5:20 pm,5:50 pm,Su,Arlington Mill,3-6.99,$210.00/$230.00,,,,
 350224372,410321-A,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/07/2026,08/11/2026,10:00 am,10:30 am,Tu,Long Bridge Aquatics Center,3-6.99,$163.00/$183.00,2026-07-10T13:54:57+00:00,Waitlist,10,4
 350224386,410321-B,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/12/2026,08/16/2026,4:40 pm,5:10 pm,Su,Arlington Mill,3-6.99,$163.00/$183.00,2026-07-10T13:54:57+00:00,Available,8,0
 350224401,410321-C,Tiny Tunes Piano,ENJOYSUMMER,MUSIC,Music,07/12/2026,08/16/2026,5:20 pm,5:50 pm,Su,Arlington Mill,3-6.99,$163.00/$183.00,2026-07-10T13:54:57+00:00,Available,7,0
-372169646,110606-A,Tip Top Fit Together & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:00 am,9:45 am,Sa,Lubber Run,2-4.99,$252.00/$272.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372169659,110606-B,Tip Top Fit Together & Me,ENJOYFALL,,Other,09/13/2026,11/08/2026,9:00 am,9:45 am,Su,Gunston Park,2-4.99,$189.00/$209.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169646,110606-A,Tip Top Fit Together & Me,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,9:00 am,9:45 am,Sa,Lubber Run,2-4.99,$252.00/$272.00,2026-08-06T18:59:07+00:00,Available,3,0
+372169659,110606-B,Tip Top Fit Together & Me,ENJOYFALL,,Other,09/13/2026,11/08/2026,9:00 am,9:45 am,Su,Gunston Park,2-4.99,$189.00/$209.00,2026-08-06T18:59:07+00:00,Available,3,0
 343430644,310606-A,Tip Top Fit Together & Me,,SPORT,Sports,04/18/2026,06/20/2026 *,10:00 am,10:45 am,Sa,Lubber Run,2-4.99,$163.00/$183.00,,,,
-372170428,120308-A,Tip Top Ninjas 1,ENJOYFALL,,Other,09/14/2026,11/16/2026,4:45 pm,5:30 pm,M,Barcroft Fitness Center,4-7.99,$210.00/$230.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170439,120308-B,Tip Top Ninjas 1,ENJOYFALL,,Other,09/12/2026,11/21/2026 *,9:30 am,10:15 am,Sa,Barcroft Fitness Center,4-7.99,$210.00/$230.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170461,120308-C,Tip Top Ninjas 1,ENJOYFALL,,Other,09/12/2026,11/21/2026 *,10:30 am,11:15 am,Sa,Barcroft Fitness Center,5-7.99,$210.00/$230.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170450,120308-D,Tip Top Ninjas 1,ENJOYFALL,,Other,09/14/2026,11/16/2026,5:45 pm,6:30 pm,M,Barcroft Fitness Center,5-9.99,$210.00/$230.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170714,120308-E,Tip Top Ninjas 1,ENJOYFALL,,Other,09/14/2026,11/16/2026,6:45 pm,7:30 pm,M,Barcroft Fitness Center,5-12.99,$210.00/$230.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170472,120308-F,Tip Top Ninjas 1,ENJOYFALL,,Other,09/12/2026,11/21/2026 *,11:30 am,12:15 pm,Sa,Barcroft Fitness Center,5-12.99,$210.00/$230.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170428,120308-A,Tip Top Ninjas 1,ENJOYFALL,,Other,09/14/2026,11/16/2026,4:45 pm,5:30 pm,M,Barcroft Fitness Center,4-7.99,$210.00/$230.00,2026-08-06T18:59:07+00:00,Available,7,0
+372170439,120308-B,Tip Top Ninjas 1,ENJOYFALL,,Other,09/12/2026,11/21/2026 *,9:30 am,10:15 am,Sa,Barcroft Fitness Center,4-7.99,$210.00/$230.00,2026-08-06T18:59:07+00:00,Available,10,0
+372170461,120308-C,Tip Top Ninjas 1,ENJOYFALL,,Other,09/12/2026,11/21/2026 *,10:30 am,11:15 am,Sa,Barcroft Fitness Center,5-7.99,$210.00/$230.00,2026-08-06T18:59:07+00:00,Available,2,0
+372170450,120308-D,Tip Top Ninjas 1,ENJOYFALL,,Other,09/14/2026,11/16/2026,5:45 pm,6:30 pm,M,Barcroft Fitness Center,5-9.99,$210.00/$230.00,2026-08-06T18:59:07+00:00,Available,6,0
+372170714,120308-E,Tip Top Ninjas 1,ENJOYFALL,,Other,09/14/2026,11/16/2026,6:45 pm,7:30 pm,M,Barcroft Fitness Center,5-12.99,$210.00/$230.00,2026-08-06T18:59:07+00:00,Available,2,0
+372170472,120308-F,Tip Top Ninjas 1,ENJOYFALL,,Other,09/12/2026,11/21/2026 *,11:30 am,12:15 pm,Sa,Barcroft Fitness Center,5-12.99,$210.00/$230.00,2026-08-06T18:59:07+00:00,Available,2,0
 343431497,320308-A,Tip Top Ninjas 1,,MARTS,Martial Arts,04/13/2026,06/08/2026 *,4:45 pm,5:30 pm,M,Barcroft Fitness Center,4-7.99,$163.00/$183.00,,,,
 343431519,320308-B,Tip Top Ninjas 1,,MARTS,Martial Arts,04/18/2026,06/06/2026 *,9:30 am,10:15 am,Sa,Barcroft Fitness Center,4-7.99,$143.00/$163.00,,,,
 343431530,320308-C,Tip Top Ninjas 1,,MARTS,Martial Arts,04/18/2026,06/06/2026 *,10:30 am,11:15 am,Sa,Barcroft Fitness Center,5-12.99,$143.00/$163.00,,,,
@@ -3015,7 +3015,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 350225196,420308-E,Tip Top Ninjas 1,ENJOYSUMMER,MARTS,Martial Arts,06/22/2026,08/10/2026,5:45 pm,6:30 pm,M,Barcroft Fitness Center,7-11.99,$163.00/$183.00,2026-07-10T13:54:57+00:00,Unavailable,15,0
 343431685,320311-A,Tip Top Ninjas 2,,MARTS,Martial Arts,04/13/2026,06/08/2026 *,6:45 pm,7:30 pm,M,Barcroft Fitness Center,6-12.99,$163.00/$183.00,,,,
 350225318,420311-A,Tip Top Ninjas 2,ENJOYSUMMER,MARTS,Martial Arts,06/22/2026,08/10/2026,6:45 pm,7:30 pm,M,Barcroft Fitness Center,6-12.99,$163.00/$183.00,2026-07-10T13:54:57+00:00,Unavailable,7,0
-372169670,110609-A,Tip Top Sticks: Hockey & Lacrosse,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,1:00 pm,2:00 pm,Sa,Fairlington Center,4-6.99,$325.00/$345.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372169670,110609-A,Tip Top Sticks: Hockey & Lacrosse,ENJOYFALL,,Other,09/12/2026,12/12/2026 *,1:00 pm,2:00 pm,Sa,Fairlington Center,4-6.99,$325.00/$345.00,2026-08-06T18:59:07+00:00,Available,1,0
 343430655,310609-A,Tip Top Sticks: Hockey & Lacrosse,,SPORT,Sports,04/16/2026,06/18/2026,6:50 pm,7:50 pm,Th,Fairlington Center,7-9.99,$237.00/$257.00,,,,
 343430666,310609-B,Tip Top Sticks: Hockey & Lacrosse,,SPORT,Sports,04/18/2026,06/20/2026 *,12:00 pm,1:00 pm,Sa,Fairlington Center,4-6.99,$213.00/$233.00,,,,
 343430677,310609-C,Tip Top Sticks: Hockey & Lacrosse,,SPORT,Sports,04/19/2026,06/21/2026 *,1:00 pm,1:45 pm,Su,Rocky Run Park,5-9.99,$183.00/$203.00,,,,
@@ -3080,12 +3080,12 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343433011,340351-B,Traditional Japanese Karate Adult,,MARTS,Martial Arts,04/18/2026,06/20/2026 *,1:00 pm,1:50 pm,Sa,Lubber Run,18-99.99,$133.00/$153.00,,,,
 350226048,440351-A,Traditional Japanese Karate Adult,ENJOYSUMMER,MARTS,Martial Arts,06/26/2026,08/28/2026 *,6:15 pm,7:15 pm,F,Arlington Mill,18-99.99,$149.00/$169.00,2026-07-10T13:54:57+00:00,Unavailable,4,0
 350226059,440351-B,Traditional Japanese Karate Adult,ENJOYSUMMER,MARTS,Martial Arts,06/27/2026,08/29/2026 *,1:00 pm,1:50 pm,Sa,Lubber Run,18-99.99,$149.00/$169.00,2026-07-10T13:54:57+00:00,Unavailable,4,0
-372170747,120313-A,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,09/11/2026,10/30/2026,5:00 pm,6:00 pm,F,Arlington Mill,6-17.99,$136.00/$156.00,2026-08-06T15:15:09+00:00,Unavailable,,
-375977373,120313-B,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,09/12/2026,10/24/2026,10:00 am,11:00 am,Sa,Arlington Mill,6-17.99,$119.00/$139.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170758,120313-C,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,11/06/2026,12/18/2026 *,5:00 pm,6:00 pm,F,Arlington Mill,6-17.99,$85.00/$105.00,2026-08-06T15:15:09+00:00,Unavailable,,
-375978810,120313-D,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,11/07/2026,12/12/2026 *,10:00 am,11:00 am,Sa,Arlington Mill,6-17.99,$85.00/$105.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170769,120313-E,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,09/12/2026,10/31/2026 *,2:00 pm,2:50 pm,Sa,Lubber Run,6-17.99,$119.00/$139.00,2026-08-06T15:15:09+00:00,Unavailable,,
-372170781,120313-F,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,2:00 pm,2:50 pm,Sa,Lubber Run,6-17.99,$85.00/$105.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170747,120313-A,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,09/11/2026,10/30/2026,5:00 pm,6:00 pm,F,Arlington Mill,6-17.99,$136.00/$156.00,2026-08-06T18:59:07+00:00,Available,8,0
+375977373,120313-B,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,09/12/2026,10/24/2026,10:00 am,11:00 am,Sa,Arlington Mill,6-17.99,$119.00/$139.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170758,120313-C,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,11/06/2026,12/18/2026 *,5:00 pm,6:00 pm,F,Arlington Mill,6-17.99,$85.00/$105.00,2026-08-06T18:59:07+00:00,Available,2,0
+375978810,120313-D,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,11/07/2026,12/12/2026 *,10:00 am,11:00 am,Sa,Arlington Mill,6-17.99,$85.00/$105.00,2026-08-06T18:59:07+00:00,Available,0,0
+372170769,120313-E,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,09/12/2026,10/31/2026 *,2:00 pm,2:50 pm,Sa,Lubber Run,6-17.99,$119.00/$139.00,2026-08-06T18:59:07+00:00,Available,5,0
+372170781,120313-F,Traditional Japanese Karate Youth/Teen,ENJOYFALL,,Other,11/07/2026,12/19/2026 *,2:00 pm,2:50 pm,Sa,Lubber Run,6-17.99,$85.00/$105.00,2026-08-06T18:59:07+00:00,Available,5,0
 343431718,320313-A,Traditional Japanese Karate Youth/Teen,,MARTS,Martial Arts,04/17/2026,06/12/2026,5:00 pm,6:00 pm,F,Arlington Mill,6-17.99,$149.00/$169.00,,,,
 343431729,320313-B,Traditional Japanese Karate Youth/Teen,,MARTS,Martial Arts,04/18/2026,06/20/2026 *,2:00 pm,2:50 pm,Sa,Lubber Run,6-17.99,$133.00/$153.00,,,,
 350225352,420313-A,Traditional Japanese Karate Youth/Teen,ENJOYSUMMER,MARTS,Martial Arts,06/26/2026,08/28/2026 *,5:00 pm,6:00 pm,F,Arlington Mill,6-17.99,$149.00/$169.00,2026-07-10T13:54:57+00:00,Unavailable,24,0
@@ -3100,7 +3100,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 365938748,914600-21,Trivia,,OSAP,55+ Classes,06/04/2026,06/04/2026,11:00 am,12:30 pm,Th,Virtual,,$0.00/$0.00,,,,
 365938756,914600-22,Trivia,,OSAP,55+ Classes,07/02/2026,07/02/2026,11:00 am,12:30 pm,Th,Virtual,,$0.00/$0.00,2026-07-02T13:27:01+00:00,Unavailable,11,0
 365938764,914600-23,Trivia,,OSAP,55+ Classes,08/13/2026,08/13/2026,11:00 am,12:30 pm,Th,Virtual,,$0.00/$0.00,2026-07-10T13:54:57+00:00,Available,9,0
-372168835,104006-A,Try-Athlon Main Event,ENJOYFALL,,Other,11/07/2026,11/07/2026,11:00 am,1:00 pm,Sa,Long Bridge Aquatics Center,14-99.99,$0.00/$20.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372168835,104006-A,Try-Athlon Main Event,ENJOYFALL,,Other,11/07/2026,11/07/2026,11:00 am,1:00 pm,Sa,Long Bridge Aquatics Center,14-99.99,$0.00/$20.00,2026-08-06T18:59:07+00:00,Available,8,0
 343443117,310503-A,Tumbling for 3's (Age: 3),,GYMNA,Gymnastics,04/14/2026,06/09/2026,10:30 am,11:15 am,Tu,Barcroft Fitness Center,3-3.99,$124.00/$144.00,,,,
 343443128,310503-B,Tumbling for 3's (Age: 3),,GYMNA,Gymnastics,04/14/2026,06/09/2026,11:30 am,12:15 pm,Tu,Barcroft Fitness Center,3-3.99,$124.00/$144.00,,,,
 343443139,310503-C,Tumbling for 3's (Age: 3),,GYMNA,Gymnastics,04/14/2026,06/09/2026,1:00 pm,1:45 pm,Tu,Barcroft Fitness Center,3-3.99,$124.00/$144.00,,,,
@@ -3419,7 +3419,7 @@ fmid,activity_code,name,reg_event,type_code,type_label,date_start,date_end,time_
 343193836,500424-09,Young Anglers Camp,CAMP1,CAMP,Summer Camp,08/17/2026,08/21/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Barcroft Fitness Center,7-10.99,$747.00/$859.00,,,,
 343193847,500424-10,Young Anglers Camp,CAMP1,CAMP,Summer Camp,08/24/2026,08/28/2026,8:30 am,4:30 pm,"M, Tu, W, Th, F",Thomas Jefferson Center,7-10.99,$747.00/$859.00,,,,
 346568088,330102-A,Young Metalsmiths,,JEWEL,Jewelry,04/16/2026,06/04/2026,3:30 pm,5:30 pm,Th,Thomas Jefferson Center,14-17.99,$276.00/$296.00,,,,
-372170178,120115-A,Young Potters,ENJOYFALL,,Other,09/10/2026,10/29/2026,3:30 pm,5:30 pm,Th,Thomas Jefferson Center,12-17.99,$289.00/$309.00,2026-08-06T15:15:09+00:00,Unavailable,,
+372170178,120115-A,Young Potters,ENJOYFALL,,Other,09/10/2026,10/29/2026,3:30 pm,5:30 pm,Th,Thomas Jefferson Center,12-17.99,$289.00/$309.00,2026-08-06T18:59:07+00:00,Available,4,0
 343431199,320115-A,Young Potters,,CERAM,Ceramics,04/16/2026,06/11/2026,3:30 pm,5:30 pm,Th,Thomas Jefferson Center,13-17.99,$281.00/$301.00,,,,
 343437502,320408-A,Youth Advanced Diving,,AQUAT,Aquatics,04/19/2026,06/07/2026 *,4:55 pm,5:35 pm,Su,Long Bridge Aquatics Center,6-12.99,$98.00/$118.00,,,,
 350203604,420408-A,Youth Advanced Diving,,AQUAT,Aquatics,06/26/2026,08/14/2026 *,4:55 pm,5:35 pm,F,Long Bridge Aquatics Center,6-12.99,$98.00/$118.00,2026-06-17T15:40:27+00:00,Available,0,0
